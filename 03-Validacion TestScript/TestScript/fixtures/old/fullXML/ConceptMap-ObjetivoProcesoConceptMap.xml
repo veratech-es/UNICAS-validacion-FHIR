@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="ObjetivoProcesoConceptMap"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ConceptMap ObjetivoProcesoConceptMap</b></p><a name="ObjetivoProcesoConceptMap"> </a><a name="hcObjetivoProcesoConceptMap"> </a><a name="ObjetivoProcesoConceptMap-en-US"> </a><p>Mapping from <a href="StructureDefinition-ObjetivoProcesoModeloLogico.html">Modelo Lógico de Objetivo en el Proceso de ÚNICAS</a> to <a href="StructureDefinition-UNICASGoal.html">Goal Objetivo ÚNICAS</a></p><br/><p><b>Group 1 </b>Mapping from <a href="StructureDefinition-ObjetivoProcesoModeloLogico.html">Modelo Lógico de Objetivo en el Proceso de ÚNICAS</a> to <a href="StructureDefinition-UNICASGoal.html">Goal Objetivo ÚNICAS</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>ObjetivoProcesoModeloLogico.Objetivo (Código o texto que describe el objetivo)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>Goal.description (Código o texto que describe el objetivo)</td></tr><tr><td>ObjetivoProcesoModeloLogico.FechaInicio (Fecha de inicio para la persecución de objetivo)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>Goal.start[x] (Fecha de inicio para la persecución de objetivo)</td></tr><tr><td>ObjetivoProcesoModeloLogico.ReferenciaProblema (Referencia al problema que este objetivo resuelve)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>Goal.addresses (Referencia al problema que este objetivo resuelve)</td></tr><tr><td>ObjetivoProcesoModeloLogico.ReferenciaResponsable (Referencia al responsable de la creación del objetivo)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>Goal.source (Referencia al responsable de la creación del objetivo)</td></tr><tr><td>ObjetivoProcesoModeloLogico.ReferenciaPaciente (Referencia al paciente)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>Goal.subject (Referencia al paciente)</td></tr></table></div>
+  </text>
+  <url value="https://unicas-fhir.sanidad.gob.es/ConceptMap/ObjetivoProcesoConceptMap"/>
+  <version value="0.0.1"/>
+  <name value="ObjetivoProcesoConceptMap"/>
+  <title value="Modelo de Objetivo en el Proceso mapeado en FHIR profile"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-04-09T15:17:44+02:00"/>
+  <description value="Este recurso muestra cómo se asigna el modelo del objetivo en el proceso al FHIR Profile/StructureDefinition"/>
+  <sourceScopeUri value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/ObjetivoProcesoModeloLogico"/>
+  <targetScopeUri value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASGoal"/>
+  <group>
+    <source value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/ObjetivoProcesoModeloLogico"/>
+    <target value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASGoal"/>
+    <element>
+      <code value="ObjetivoProcesoModeloLogico.Objetivo"/>
+      <display value="Código o texto que describe el objetivo"/>
+      <target>
+        <code value="Goal.description"/>
+        <display value="Código o texto que describe el objetivo"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="ObjetivoProcesoModeloLogico.FechaInicio"/>
+      <display value="Fecha de inicio para la persecución de objetivo"/>
+      <target>
+        <code value="Goal.start[x]"/>
+        <display value="Fecha de inicio para la persecución de objetivo"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="ObjetivoProcesoModeloLogico.ReferenciaProblema"/>
+      <display value="Referencia al problema que este objetivo resuelve"/>
+      <target>
+        <code value="Goal.addresses"/>
+        <display value="Referencia al problema que este objetivo resuelve"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="ObjetivoProcesoModeloLogico.ReferenciaResponsable"/>
+      <display value="Referencia al responsable de la creación del objetivo"/>
+      <target>
+        <code value="Goal.source"/>
+        <display value="Referencia al responsable de la creación del objetivo"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="ObjetivoProcesoModeloLogico.ReferenciaPaciente"/>
+      <display value="Referencia al paciente"/>
+      <target>
+        <code value="Goal.subject"/>
+        <display value="Referencia al paciente"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

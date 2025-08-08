@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="PatientConceptMap"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ConceptMap PatientConceptMap</b></p><a name="PatientConceptMap"> </a><a name="hcPatientConceptMap"> </a><a name="PatientConceptMap-en-US"> </a><p>Mapping from <a href="StructureDefinition-PacienteModeloLogico.html">Modelo Lógico de Paciente ÚNICAS</a> to <a href="StructureDefinition-UNICASPatient.html">Patient Paciente ÚNICAS</a></p><br/><p><b>Group 1 </b>Mapping from <a href="StructureDefinition-PacienteModeloLogico.html">Modelo Lógico de Paciente ÚNICAS</a> to <a href="StructureDefinition-UNICASPatient.html">Patient Paciente ÚNICAS</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>PacienteModeloLogico.IdentificadorPaciente (Identificadores del paciente (documento nacional de identidad, pasaporte, tarjeta de identidad de extranjero, número de historia clínica, número de afiliación a la Seguridad Social, código de identificación del paciente en la comunidad autónoma, código de identificación personal en el Sistema Nacional de Salud, código de identificación personal europeo))</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#source-is-broader-than-target" title="source-is-broader-than-target">is broader than</a></td><td>Patient.identifier (Identificadores del paciente (Pueden ser documento nacional de identidad, pasaporte, tarjeta de identidad de extranjero, número de historia clínica, número de afiliación a la Seguridad Social, código de identificación del paciente en la comunidad autónoma, código de identificación personal en el Sistema Nacional de Salud, código de identificación personal europeo))</td></tr><tr><td>PacienteModeloLogico.FechaNacimiento (Fecha de nacimiento)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.birthDate (Fecha de nacimiento del paciente)</td></tr><tr><td>PacienteModeloLogico.SexoPaciente (Sexo asignado al nacer)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.gender (Sexo asignado al nacer)</td></tr><tr><td>PacienteModeloLogico.NombreCompletoPaciente (Nombre completo del paciente)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>Patient.name.text (Nombre completo del paciente)</td></tr><tr><td>PacienteModeloLogico.NombrePaciente (Nombre del paciente)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.name.given (Nombre del paciente)</td></tr><tr><td>PacienteModeloLogico.PrimerApellidoPaciente (Primer apellido del paciente)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>Patient.name.family.extension:primerApellido (Primer apellido del paciente)</td></tr><tr><td>PacienteModeloLogico.SegundoApellidoPaciente (Segundo apellido del paciente)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>Patient.name.family.extension:segundoApellido (Segundo apellido del paciente)</td></tr><tr><td>PacienteModeloLogico.TelefonoMovil (Teléfono móvil)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.telecom:Telefono (Teléfono móvil de contacto)</td></tr><tr><td>PacienteModeloLogico.OtroTelefonos (Otros teléfonos de contacto)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.telecom:OtroTelefonos (Otro teléfonos)</td></tr><tr><td>PacienteModeloLogico.CorreoElectronico (Correo electrónico)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.telecom:CorreoElectronico (Correo electrónico)</td></tr><tr><td>PacienteModeloLogico.DireccionDomicilio (Tipo de vía, nombre de la vía, número de la vía, piso, letra)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.address.line (Tipo de vía, Nombre de vía, Número de vía, Piso, Letra del paciente)</td></tr><tr><td>PacienteModeloLogico.Ciudad (Ciudad)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.address.city (Ciudad)</td></tr><tr><td>PacienteModeloLogico.Municipio (Municipio)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.address.extension:municipio (Municipio en la dirección)</td></tr><tr><td>PacienteModeloLogico.Provincia (Provincia)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.address.extension:provincia (Provincia en la dirección)</td></tr><tr><td>PacienteModeloLogico.ComunidadAutonoma (Comunidad Autónoma)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>Patient.address.state (Comunidad Autónoma)</td></tr><tr><td>PacienteModeloLogico.CodigoPostal (Código Postal)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.address.postalCode (Código postal)</td></tr><tr><td>PacienteModeloLogico.Pais (País)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.address.country (País)</td></tr><tr><td>PacienteModeloLogico.Edad (Edad)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.extension:edadPaciente (Edad del Paciente)</td></tr><tr><td>PacienteModeloLogico.Fallecido (Fallecido/a)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.deceased[x] (Fallecido/a)</td></tr><tr><td>PacienteModeloLogico.EstadoEnrolamiento (Estado de enrolamiento)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#source-is-narrower-than-target" title="source-is-narrower-than-target">is narrower than</a></td><td>Patient.extension:estadoEnrolamientoPaciente (Estado de enrolamiento del paciente en la red de ÚNICAS)</td></tr><tr><td>PacienteModeloLogico.MotivoBaja (Motivo de la baja)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#source-is-narrower-than-target" title="source-is-narrower-than-target">is narrower than</a></td><td>Patient.extension:estadoEnrolamientoPaciente (Estado de enrolamiento del paciente en la red de ÚNICAS)</td></tr><tr><td>PacienteModeloLogico.NombrePersonaContacto (Nombre de la persona de contacto)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.contact.name</td></tr><tr><td>PacienteModeloLogico.TelefonoPersonaContacto (Teléfono de la persona contacto)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.contact.telecom:Telefono (Teléfonos de contacto)</td></tr><tr><td>PacienteModeloLogico.CorreoPersonaContacto (Correo de la persona contacto)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.contact.telecom:CorreoElectronico (Correo electrónico de contacto)</td></tr><tr><td>PacienteModeloLogico.TipoRelacion (Tipo de relación de la persona contacto con el paciente)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.contact.relationship (Tipo de relación de la persona contacto con el paciente)</td></tr><tr><td>PacienteModeloLogico.ReferenciaCentroAtencionPrimaria (Referencia al centro de atención primaria)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>Patient.managingOrganization (Referencia al centro de atención primaria)</td></tr></table></div>
+  </text>
+  <url value="https://unicas-fhir.sanidad.gob.es/ConceptMap/PatientConceptMap"/>
+  <version value="0.0.1"/>
+  <name value="PatientConceptMap"/>
+  <title value="Modelo de Paciente mapeado en FHIR profile"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-04-09T15:17:44+02:00"/>
+  <description value="Este recurso muestra cómo se asigna el modelo del paciente al FHIR Profile/StructureDefinition"/>
+  <sourceScopeUri value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/PacienteModeloLogico"/>
+  <targetScopeUri value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASPatient"/>
+  <group>
+    <source value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/PacienteModeloLogico"/>
+    <target value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASPatient"/>
+    <element>
+      <code value="PacienteModeloLogico.IdentificadorPaciente"/>
+      <display value="Identificadores del paciente (documento nacional de identidad, pasaporte, tarjeta de identidad de extranjero, número de historia clínica, número de afiliación a la Seguridad Social, código de identificación del paciente en la comunidad autónoma, código de identificación personal en el Sistema Nacional de Salud, código de identificación personal europeo)"/>
+      <target>
+        <code value="Patient.identifier"/>
+        <display value="Identificadores del paciente (Pueden ser documento nacional de identidad, pasaporte, tarjeta de identidad de extranjero, número de historia clínica, número de afiliación a la Seguridad Social, código de identificación del paciente en la comunidad autónoma, código de identificación personal en el Sistema Nacional de Salud, código de identificación personal europeo)"/>
+        <relationship value="source-is-broader-than-target"/>
+      </target>
+    </element>
+    <element>
+      <code value="PacienteModeloLogico.FechaNacimiento"/>
+      <display value="Fecha de nacimiento"/>
+      <target>
+        <code value="Patient.birthDate"/>
+        <display value="Fecha de nacimiento del paciente"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="PacienteModeloLogico.SexoPaciente"/>
+      <display value="Sexo asignado al nacer"/>
+      <target>
+        <code value="Patient.gender"/>
+        <display value="Sexo asignado al nacer"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="PacienteModeloLogico.NombreCompletoPaciente"/>
+      <display value="Nombre completo del paciente"/>
+      <target>
+        <code value="Patient.name.text"/>
+        <display value="Nombre completo del paciente"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="PacienteModeloLogico.NombrePaciente"/>
+      <display value="Nombre del paciente"/>
+      <target>
+        <code value="Patient.name.given"/>
+        <display value="Nombre del paciente"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="PacienteModeloLogico.PrimerApellidoPaciente"/>
+      <display value="Primer apellido del paciente"/>
+      <target>
+        <code value="Patient.name.family.extension:primerApellido"/>
+        <display value="Primer apellido del paciente"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="PacienteModeloLogico.SegundoApellidoPaciente"/>
+      <display value="Segundo apellido del paciente"/>
+      <target>
+        <code value="Patient.name.family.extension:segundoApellido"/>
+        <display value="Segundo apellido del paciente"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="PacienteModeloLogico.TelefonoMovil"/>
+      <display value="Teléfono móvil"/>
+      <target>
+        <code value="Patient.telecom:Telefono"/>
+        <display value="Teléfono móvil de contacto"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="PacienteModeloLogico.OtroTelefonos"/>
+      <display value="Otros teléfonos de contacto"/>
+      <target>
+        <code value="Patient.telecom:OtroTelefonos"/>
+        <display value="Otro teléfonos"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="PacienteModeloLogico.CorreoElectronico"/>
+      <display value="Correo electrónico"/>
+      <target>
+        <code value="Patient.telecom:CorreoElectronico"/>
+        <display value="Correo electrónico"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="PacienteModeloLogico.DireccionDomicilio"/>
+      <display value="Tipo de vía, nombre de la vía, número de la vía, piso, letra"/>
+      <target>
+        <code value="Patient.address.line"/>
+        <display value="Tipo de vía, Nombre de vía, Número de vía, Piso, Letra del paciente"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="PacienteModeloLogico.Ciudad"/>
+      <display value="Ciudad"/>
+      <target>
+        <code value="Patient.address.city"/>
+        <display value="Ciudad"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="PacienteModeloLogico.Municipio"/>
+      <display value="Municipio"/>
+      <target>
+        <code value="Patient.address.extension:municipio"/>
+        <display value="Municipio en la dirección"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="PacienteModeloLogico.Provincia"/>
+      <display value="Provincia"/>
+      <target>
+        <code value="Patient.address.extension:provincia"/>
+        <display value="Provincia en la dirección"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="PacienteModeloLogico.ComunidadAutonoma"/>
+      <display value="Comunidad Autónoma"/>
+      <target>
+        <code value="Patient.address.state"/>
+        <display value="Comunidad Autónoma"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="PacienteModeloLogico.CodigoPostal"/>
+      <display value="Código Postal"/>
+      <target>
+        <code value="Patient.address.postalCode"/>
+        <display value="Código postal"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="PacienteModeloLogico.Pais"/>
+      <display value="País"/>
+      <target>
+        <code value="Patient.address.country"/>
+        <display value="País"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="PacienteModeloLogico.Edad"/>
+      <display value="Edad"/>
+      <target>
+        <code value="Patient.extension:edadPaciente"/>
+        <display value="Edad del Paciente"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="PacienteModeloLogico.Fallecido"/>
+      <display value="Fallecido/a"/>
+      <target>
+        <code value="Patient.deceased[x]"/>
+        <display value="Fallecido/a"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="PacienteModeloLogico.EstadoEnrolamiento"/>
+      <display value="Estado de enrolamiento"/>
+      <target>
+        <code value="Patient.extension:estadoEnrolamientoPaciente"/>
+        <display value="Estado de enrolamiento del paciente en la red de ÚNICAS"/>
+        <relationship value="source-is-narrower-than-target"/>
+      </target>
+    </element>
+    <element>
+      <code value="PacienteModeloLogico.MotivoBaja"/>
+      <display value="Motivo de la baja"/>
+      <target>
+        <code value="Patient.extension:estadoEnrolamientoPaciente"/>
+        <display value="Estado de enrolamiento del paciente en la red de ÚNICAS"/>
+        <relationship value="source-is-narrower-than-target"/>
+      </target>
+    </element>
+    <element>
+      <code value="PacienteModeloLogico.NombrePersonaContacto"/>
+      <display value="Nombre de la persona de contacto"/>
+      <target>
+        <code value="Patient.contact.name"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="PacienteModeloLogico.TelefonoPersonaContacto"/>
+      <display value="Teléfono de la persona contacto"/>
+      <target>
+        <code value="Patient.contact.telecom:Telefono"/>
+        <display value="Teléfonos de contacto"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="PacienteModeloLogico.CorreoPersonaContacto"/>
+      <display value="Correo de la persona contacto"/>
+      <target>
+        <code value="Patient.contact.telecom:CorreoElectronico"/>
+        <display value="Correo electrónico de contacto"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="PacienteModeloLogico.TipoRelacion"/>
+      <display value="Tipo de relación de la persona contacto con el paciente"/>
+      <target>
+        <code value="Patient.contact.relationship"/>
+        <display value="Tipo de relación de la persona contacto con el paciente"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="PacienteModeloLogico.ReferenciaCentroAtencionPrimaria"/>
+      <display value="Referencia al centro de atención primaria"/>
+      <target>
+        <code value="Patient.managingOrganization"/>
+        <display value="Referencia al centro de atención primaria"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

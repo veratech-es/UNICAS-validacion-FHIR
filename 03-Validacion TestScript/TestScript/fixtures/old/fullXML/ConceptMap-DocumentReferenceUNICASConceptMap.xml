@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="DocumentReferenceUNICASConceptMap"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ConceptMap DocumentReferenceUNICASConceptMap</b></p><a name="DocumentReferenceUNICASConceptMap"> </a><a name="hcDocumentReferenceUNICASConceptMap"> </a><a name="DocumentReferenceUNICASConceptMap-en-US"> </a><p>Mapping from <a href="StructureDefinition-DocumentReferenceUNICASModeloLogico.html">Modelo Lógico de Documento (DocumentReference) ÚNICAS</a> to <a href="StructureDefinition-UNICASDocumentReference.html">DocumentReference Documento en Base64 ÚNICAS</a></p><br/><p><b>Group 1 </b>Mapping from <a href="StructureDefinition-DocumentReferenceUNICASModeloLogico.html">Modelo Lógico de Documento (DocumentReference) ÚNICAS</a> to <a href="StructureDefinition-UNICASDocumentReference.html">DocumentReference Documento en Base64 ÚNICAS</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>DocumentReferenceUNICASModeloLogico.TipoDocumento (Tipo de documento)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>DocumentReference.type (Tipo de informe/información ÚNICAS)</td></tr><tr><td>DocumentReferenceUNICASModeloLogico.TituloDocumento (Título de documento)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>DocumentReference.description (Título del informe/información ÚNICAS)</td></tr><tr><td>DocumentReferenceUNICASModeloLogico.FechaPublicacion (Fecha de publicación del documento)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>DocumentReference.date (Fecha de publicación del documento)</td></tr><tr><td>DocumentReferenceUNICASModeloLogico.URLDatos (URL del datos Base64)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>DocumentReference.content.attachment.url (URL del dato en formato Base64 (recurso Binary))</td></tr><tr><td>DocumentReferenceUNICASModeloLogico.Binary (Datos del documento en formato Base64 (PDF o HL7 CDA))</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>DocumentReference.content.attachment.data (Datos en base64 (Debe indicar un HL7 CDA o un PDF convertido a datos base64))</td></tr><tr><td>DocumentReferenceUNICASModeloLogico.ReferenciaInstitucion (Referencia a la institución)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>DocumentReference.custodian (Referencia a la institución)</td></tr><tr><td>DocumentReferenceUNICASModeloLogico.ReferenciaPaciente (Referencia al paciente)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>DocumentReference.subject (Referencia al paciente)</td></tr></table><hr/><p><b>Group 2 </b>Mapping from <a href="StructureDefinition-DocumentReferenceUNICASModeloLogico.html">Modelo Lógico de Documento (DocumentReference) ÚNICAS</a> to <a href="StructureDefinition-UNICASBinary.html">Binary Documento en Base64 ÚNICAS</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>DocumentReferenceUNICASModeloLogico.Binary (Datos del documento en formato Base64 (PDF o HL7 CDA))</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Binary.data (Datos en base64 (Debe indicar un HL7 CDA o un PDF convertido a datos base64))</td></tr></table></div>
+  </text>
+  <url value="https://unicas-fhir.sanidad.gob.es/ConceptMap/DocumentReferenceUNICASConceptMap"/>
+  <version value="0.0.1"/>
+  <name value="DocumentReferenceUNICASConceptMap"/>
+  <title value="Modelo de Documento (DocumentReference) mapeado en FHIR profile"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-04-09T15:17:44+02:00"/>
+  <description value="Este recurso muestra cómo se asigna el modelo de documento (DocumentReference) para red ÚNICAS al FHIR Profile/StructureDefinition"/>
+  <sourceScopeUri value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/DocumentReferenceUNICASModeloLogico"/>
+  <targetScopeUri value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASDocumentReference"/>
+  <group>
+    <source value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/DocumentReferenceUNICASModeloLogico"/>
+    <target value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASDocumentReference"/>
+    <element>
+      <code value="DocumentReferenceUNICASModeloLogico.TipoDocumento"/>
+      <display value="Tipo de documento"/>
+      <target>
+        <code value="DocumentReference.type"/>
+        <display value="Tipo de informe/información ÚNICAS"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="DocumentReferenceUNICASModeloLogico.TituloDocumento"/>
+      <display value="Título de documento"/>
+      <target>
+        <code value="DocumentReference.description"/>
+        <display value="Título del informe/información ÚNICAS"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="DocumentReferenceUNICASModeloLogico.FechaPublicacion"/>
+      <display value="Fecha de publicación del documento"/>
+      <target>
+        <code value="DocumentReference.date"/>
+        <display value="Fecha de publicación del documento"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="DocumentReferenceUNICASModeloLogico.URLDatos"/>
+      <display value="URL del datos Base64"/>
+      <target>
+        <code value="DocumentReference.content.attachment.url"/>
+        <display value="URL del dato en formato Base64 (recurso Binary)"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="DocumentReferenceUNICASModeloLogico.Binary"/>
+      <display value="Datos del documento en formato Base64 (PDF o HL7 CDA)"/>
+      <target>
+        <code value="DocumentReference.content.attachment.data"/>
+        <display value="Datos en base64 (Debe indicar un HL7 CDA o un PDF convertido a datos base64)"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="DocumentReferenceUNICASModeloLogico.ReferenciaInstitucion"/>
+      <display value="Referencia a la institución"/>
+      <target>
+        <code value="DocumentReference.custodian"/>
+        <display value="Referencia a la institución"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="DocumentReferenceUNICASModeloLogico.ReferenciaPaciente"/>
+      <display value="Referencia al paciente"/>
+      <target>
+        <code value="DocumentReference.subject"/>
+        <display value="Referencia al paciente"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+  </group>
+  <group>
+    <source value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/DocumentReferenceUNICASModeloLogico"/>
+    <target value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASBinary"/>
+    <element>
+      <code value="DocumentReferenceUNICASModeloLogico.Binary"/>
+      <display value="Datos del documento en formato Base64 (PDF o HL7 CDA)"/>
+      <target>
+        <code value="Binary.data"/>
+        <display value="Datos en base64 (Debe indicar un HL7 CDA o un PDF convertido a datos base64)"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

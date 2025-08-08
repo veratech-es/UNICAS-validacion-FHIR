@@ -1,0 +1,70 @@
+{
+  "id": "b85375370e8304551ba5464ddbf3608c9ed9587d1f12a18f8b085e53714ebbb8",
+  "url": "https://github.com/fhir-crucible/testscript-generator/b85375370e8304551ba5464ddbf3608c9ed9587d1f12a18f8b085e53714ebbb8",
+  "version": "0.0",
+  "name": "UnicasUNICASAllergyIntoleranceReadProfile",
+  "title": "IG: unicas; Profile: UNICASAllergyIntolerance; Case: Read Profile",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-07-07T20:12:01+02:00",
+  "publisher": "The MITRE Corporation",
+  "profile": [
+    {
+      "id": "targetProfileUNICASAllergyIntolerance",
+      "reference": "https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASAllergyIntolerance"
+    }
+  ],
+  "variable": [
+    {
+      "name": "targetResourceIdUNICASAllergyIntolerance",
+      "defaultValue": "example",
+      "description": "Enter a known instance id on the destination system. Will be checked for conformance against profile UNICASAllergyIntolerance.",
+      "hint": "[resource.id]"
+    }
+  ],
+  "test": [
+    {
+      "name": "Validate the identified resource conforms to the UNICASAllergyIntolerance profile",
+      "action": [
+        {
+          "operation": {
+            "type": {
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
+              "code": "read"
+            },
+            "resource": "AllergyIntolerance",
+            "label": "Read_AllergyIntolerance_Instance",
+            "description": "Read AllergyIntolerance Instance",
+            "encodeRequestUrl": false,
+            "params": "/${targetResourceIdUNICASAllergyIntolerance}",
+            "responseId": "targetInstance"
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_Response_OK",
+            "response": "okay",
+            "warningOnly": false
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_AllergyIntolerance_Returned",
+            "description": "Assert AllergyIntolerance Returned",
+            "resource": "AllergyIntolerance",
+            "warningOnly": false
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_Instance_Conforms_to_UNICASAllergyIntolerance_Profile",
+            "description": "Assert returned instance conforms to the UNICASAllergyIntolerance Profile",
+            "validateProfileId": "targetProfileUNICASAllergyIntolerance",
+            "warningOnly": false
+          }
+        }
+      ]
+    }
+  ],
+  "resourceType": "TestScript"
+}

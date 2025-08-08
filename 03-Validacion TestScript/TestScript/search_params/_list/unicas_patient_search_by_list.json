@@ -1,0 +1,80 @@
+{
+  "id": "Unicas-Patient-Search_by-List",
+  "url": "https://github.com/fhir-crucible/testscript-generator",
+  "version": "0.0",
+  "name": "Unicas_Patient_Search_by_List",
+  "title": "unicas patient search_by list",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-07-07T20:11:55+02:00",
+  "publisher": "The MITRE Corporation",
+  "fixture": [
+    {
+      "id": "example_patient",
+      "autocreate": false,
+      "autodelete": false,
+      "resource": {
+        "reference": "fixtures/example_patient.json"
+      }
+    }
+  ],
+  "variable": [
+    {
+      "name": "KJ9WO9zKM4MgcsLB",
+      "expression": "Patient.id",
+      "sourceId": "VRJYW2Du9viENTkI"
+    }
+  ],
+  "setup": {
+    "action": [
+      {
+        "operation": {
+          "type": {
+            "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
+            "code": "create"
+          },
+          "label": "Operation_1",
+          "encodeRequestUrl": false,
+          "responseId": "VRJYW2Du9viENTkI",
+          "sourceId": "example_patient"
+        }
+      }
+    ]
+  },
+  "test": [
+    {
+      "name": "Test_1",
+      "action": [
+        {
+          "operation": {
+            "type": {
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
+              "code": "search"
+            },
+            "resource": "Patient",
+            "label": "Operation_2",
+            "encodeRequestUrl": false,
+            "params": "?_list"
+          }
+        }
+      ]
+    }
+  ],
+  "teardown": {
+    "action": [
+      {
+        "operation": {
+          "type": {
+            "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
+            "code": "delete"
+          },
+          "resource": "Patient",
+          "label": "Operation_3",
+          "encodeRequestUrl": false,
+          "params": "/${KJ9WO9zKM4MgcsLB}"
+        }
+      }
+    ]
+  },
+  "resourceType": "TestScript"
+}

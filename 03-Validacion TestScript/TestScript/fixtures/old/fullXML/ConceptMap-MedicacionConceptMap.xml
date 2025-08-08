@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="MedicacionConceptMap"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ConceptMap MedicacionConceptMap</b></p><a name="MedicacionConceptMap"> </a><a name="hcMedicacionConceptMap"> </a><a name="MedicacionConceptMap-en-US"> </a><p>Mapping from <a href="StructureDefinition-MedicacionModeloLogico.html">Modelo Lógico de Medicación ÚNICAS</a> to <a href="StructureDefinition-UNICASMedication.html">Medication Medicación ÚNICAS</a></p><br/><p><b>Group 1 </b>Mapping from <a href="StructureDefinition-MedicacionModeloLogico.html">Modelo Lógico de Medicación ÚNICAS</a> to <a href="StructureDefinition-UNICASMedication.html">Medication Medicación ÚNICAS</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>MedicacionModeloLogico.Farmaco (Fármaco)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Medication.code (Fármaco)</td></tr><tr><td>MedicacionModeloLogico.NombreComercial (Nombre comercial)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>Medication.code.text (Nombre comercial)</td></tr><tr><td>MedicacionModeloLogico.FormaFarmaceutica (Forma farmacéutica)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Medication.doseForm (Forma farmacéutica)</td></tr><tr><td>MedicacionModeloLogico.Estado (Estado)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Medication.status (Estado)</td></tr><tr><td>MedicacionModeloLogico.PrincipioActivo (Principio activo)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>Medication.ingredient (Principio activo)</td></tr></table></div>
+  </text>
+  <url value="https://unicas-fhir.sanidad.gob.es/ConceptMap/MedicacionConceptMap"/>
+  <version value="0.0.1"/>
+  <name value="MedicacionConceptMap"/>
+  <title value="Modelo de Medicación mapeado en FHIR profile"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-04-09T15:17:44+02:00"/>
+  <description value="Este recurso muestra cómo se asigna el modelo de medicación al FHIR Profile/StructureDefinition"/>
+  <sourceScopeUri value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/MedicacionModeloLogico"/>
+  <targetScopeUri value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASMedication"/>
+  <group>
+    <source value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/MedicacionModeloLogico"/>
+    <target value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASMedication"/>
+    <element>
+      <code value="MedicacionModeloLogico.Farmaco"/>
+      <display value="Fármaco"/>
+      <target>
+        <code value="Medication.code"/>
+        <display value="Fármaco"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="MedicacionModeloLogico.NombreComercial"/>
+      <display value="Nombre comercial"/>
+      <target>
+        <code value="Medication.code.text"/>
+        <display value="Nombre comercial"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="MedicacionModeloLogico.FormaFarmaceutica"/>
+      <display value="Forma farmacéutica"/>
+      <target>
+        <code value="Medication.doseForm"/>
+        <display value="Forma farmacéutica"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="MedicacionModeloLogico.Estado"/>
+      <display value="Estado"/>
+      <target>
+        <code value="Medication.status"/>
+        <display value="Estado"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="MedicacionModeloLogico.PrincipioActivo"/>
+      <display value="Principio activo"/>
+      <target>
+        <code value="Medication.ingredient"/>
+        <display value="Principio activo"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

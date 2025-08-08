@@ -1,0 +1,80 @@
+{
+  "id": "Unicas-Careplan-Search_by-List",
+  "url": "https://github.com/fhir-crucible/testscript-generator",
+  "version": "0.0",
+  "name": "Unicas_Careplan_Search_by_List",
+  "title": "unicas careplan search_by list",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-07-07T20:11:55+02:00",
+  "publisher": "The MITRE Corporation",
+  "fixture": [
+    {
+      "id": "example_careplan",
+      "autocreate": false,
+      "autodelete": false,
+      "resource": {
+        "reference": "fixtures/example_careplan.json"
+      }
+    }
+  ],
+  "variable": [
+    {
+      "name": "KJ9WO9zKM4MgcsLB",
+      "expression": "CarePlan.id",
+      "sourceId": "VRJYW2Du9viENTkI"
+    }
+  ],
+  "setup": {
+    "action": [
+      {
+        "operation": {
+          "type": {
+            "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
+            "code": "create"
+          },
+          "label": "Operation_1",
+          "encodeRequestUrl": false,
+          "responseId": "VRJYW2Du9viENTkI",
+          "sourceId": "example_careplan"
+        }
+      }
+    ]
+  },
+  "test": [
+    {
+      "name": "Test_1",
+      "action": [
+        {
+          "operation": {
+            "type": {
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
+              "code": "search"
+            },
+            "resource": "CarePlan",
+            "label": "Operation_2",
+            "encodeRequestUrl": false,
+            "params": "?_list"
+          }
+        }
+      ]
+    }
+  ],
+  "teardown": {
+    "action": [
+      {
+        "operation": {
+          "type": {
+            "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
+            "code": "delete"
+          },
+          "resource": "CarePlan",
+          "label": "Operation_3",
+          "encodeRequestUrl": false,
+          "params": "/${KJ9WO9zKM4MgcsLB}"
+        }
+      }
+    ]
+  },
+  "resourceType": "TestScript"
+}

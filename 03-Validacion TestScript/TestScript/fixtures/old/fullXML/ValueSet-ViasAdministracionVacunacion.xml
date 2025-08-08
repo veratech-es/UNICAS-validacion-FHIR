@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ViasAdministracionVacunacion"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ViasAdministracionVacunacion</b></p><a name="ViasAdministracionVacunacion"> </a><a name="hcViasAdministracionVacunacion"> </a><a name="ViasAdministracionVacunacion-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<code>urn:oid:2.16.724.4.21.5.13</code> where NOMBRE-VARIABLE  = Vía</li><li>Include these codes as defined in <code>urn:oid:2.16.724.4.21.5.13</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>78421000</td><td>Vía intramuscular</td></tr><tr><td>372464004</td><td>Vía intradérmica</td></tr><tr><td>26643006</td><td>Vía oral</td></tr><tr><td>34206005</td><td>Vía subcutánea</td></tr><tr><td>46713006</td><td>Vía de administración en cavidad nasal</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://unicas-fhir.sanidad.gob.es/ValueSet/ViasAdministracionVacunacion"/>
+  <version value="0.0.1"/>
+  <name value="ValuesetViasAdministracionVacunacion"/>
+  <title value="Value set de Vias de administración vacunación"/>
+  <status value="draft"/>
+  <date value="2025-02-05"/>
+  <description value="Este value set incluye los códigos correspondientes a la vía del catálogo Sistema de Información en Vacunaciones e Inmunizaciones (SIVAIN) (OID: 2.16.724.4.21.5.13)."/>
+  <compose>
+    <include>
+      <system value="urn:oid:2.16.724.4.21.5.13"/>
+      <filter>
+        <property value="NOMBRE-VARIABLE"/>
+        <op value="="/>
+        <value value="Vía"/>
+      </filter>
+    </include>
+    <include>
+      <system value="urn:oid:2.16.724.4.21.5.13"/>
+      <concept>
+        <code value="78421000"/>
+        <display value="Vía intramuscular"/>
+      </concept>
+      <concept>
+        <code value="372464004"/>
+        <display value="Vía intradérmica"/>
+      </concept>
+      <concept>
+        <code value="26643006"/>
+        <display value="Vía oral"/>
+      </concept>
+      <concept>
+        <code value="34206005"/>
+        <display value="Vía subcutánea"/>
+      </concept>
+      <concept>
+        <code value="46713006"/>
+        <display value="Vía de administración en cavidad nasal"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

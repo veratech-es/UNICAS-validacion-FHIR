@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ClasificacionesDiagnosticos"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ClasificacionesDiagnosticos</b></p><a name="ClasificacionesDiagnosticos"> </a><a name="hcClasificacionesDiagnosticos"> </a><a name="ClasificacionesDiagnosticos-en-US"> </a><ul><li>Include these codes as defined in <code>http://snomed.info/sct/900000001000122104</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>8319008</td><td>diagnóstico primario</td></tr><tr><td>85097005</td><td>diagnóstico secundario</td></tr><tr><td>2094951000122101</td><td>diagnóstico genético</td></tr><tr><td>2094961000122104</td><td>diagnóstico sindrómico</td></tr><tr><td>2094971000122109</td><td>diagnóstico etiológico</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://unicas-fhir.sanidad.gob.es/ValueSet/ClasificacionesDiagnosticos"/>
+  <version value="0.0.1"/>
+  <name value="ValuesetClasificacionesDiagnosticos"/>
+  <title value="Value set de Clasificaciones de diagnósticos"/>
+  <status value="draft"/>
+  <date value="2025-03-14"/>
+  <description value="Este value set define un conjunto de códigos de SNOMED CT. Extensión para España del SNS (OID: 2.16.724.4.21.5.8) que pueden utilizarse para clasificar los diagnósticos realizados a los pacientes en el caso de uso de ÚNICAS."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct/900000001000122104"/>
+      <concept>
+        <code value="8319008"/>
+        <display value="diagnóstico primario"/>
+      </concept>
+      <concept>
+        <code value="85097005"/>
+        <display value="diagnóstico secundario"/>
+      </concept>
+      <concept>
+        <code value="2094951000122101"/>
+        <display value="diagnóstico genético"/>
+      </concept>
+      <concept>
+        <code value="2094961000122104"/>
+        <display value="diagnóstico sindrómico"/>
+      </concept>
+      <concept>
+        <code value="2094971000122109"/>
+        <display value="diagnóstico etiológico"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

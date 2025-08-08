@@ -1,0 +1,20 @@
+<Location xmlns="http://hl7.org/fhir">
+         <meta>
+          <profile value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASLocation" />
+        </meta>
+        <identifier>
+          <system value="urn:regcess:0908005177" />
+          <value value="id-interno-localizacion-ejemplo-220" />
+        </identifier>
+        <status value="active" />
+        <name value="Consulta general 01, P2" />
+        <description value="Consulta general 01, Planta 2 del Hospital Sant Joan de Déu" />
+        <managingOrganization>
+          <type value="Organization" />
+          <identifier>
+            <system value="urn:oid:2.16.724.4.21.5.10" />
+            <value value="0908005177" />
+          </identifier>
+          <display value="Hospital Sant Joan de Déu" />
+        </managingOrganization>
+      </Location>

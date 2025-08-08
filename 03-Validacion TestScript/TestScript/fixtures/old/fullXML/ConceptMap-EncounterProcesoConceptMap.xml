@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="EncounterProcesoConceptMap"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ConceptMap EncounterProcesoConceptMap</b></p><a name="EncounterProcesoConceptMap"> </a><a name="hcEncounterProcesoConceptMap"> </a><a name="EncounterProcesoConceptMap-en-US"> </a><p>Mapping from <a href="StructureDefinition-EncounterProcesoModeloLogico.html">Modelo Lógico de Encounter en el Proceso de ÚNICAS</a> to <a href="StructureDefinition-UNICASEncounter.html">Encounter ÚNICAS</a></p><br/><p><b>Group 1 </b>Mapping from <a href="StructureDefinition-EncounterProcesoModeloLogico.html">Modelo Lógico de Encounter en el Proceso de ÚNICAS</a> to <a href="StructureDefinition-UNICASEncounter.html">Encounter ÚNICAS</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>EncounterProcesoModeloLogico.ReferenciaDiagnostico (Referencia al diagnóstico)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>Encounter.diagnosis.condition (Diagnóstico)</td></tr><tr><td>EncounterProcesoModeloLogico.ReferenciaInstitucion (Referencia a la institución)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>Encounter.serviceProvider (Referencia a la institución)</td></tr><tr><td>EncounterProcesoModeloLogico.ReferenciaProfesionalSanitario (Referencia al profesional sanitario)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>Encounter.participant.actor (Referencia al profesional sanitario)</td></tr><tr><td>EncounterProcesoModeloLogico.ReferenciaPaciente (Referencia al paciente)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>Encounter.subject (Referencia al paciente)</td></tr></table></div>
+  </text>
+  <url value="https://unicas-fhir.sanidad.gob.es/ConceptMap/EncounterProcesoConceptMap"/>
+  <version value="0.0.1"/>
+  <name value="EncounterProcesoConceptMap"/>
+  <title value="Modelo de Encounter en el Proceso mapeado en FHIR profile"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-04-09T15:17:44+02:00"/>
+  <description value="Este recurso muestra cómo se asigna el modelo del encounter en el proceso al FHIR Profile/StructureDefinition"/>
+  <sourceScopeUri value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/EncounterProcesoModeloLogico"/>
+  <targetScopeUri value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASEncounter"/>
+  <group>
+    <source value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/EncounterProcesoModeloLogico"/>
+    <target value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASEncounter"/>
+    <element>
+      <code value="EncounterProcesoModeloLogico.ReferenciaDiagnostico"/>
+      <display value="Referencia al diagnóstico"/>
+      <target>
+        <code value="Encounter.diagnosis.condition"/>
+        <display value="Diagnóstico"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="EncounterProcesoModeloLogico.ReferenciaInstitucion"/>
+      <display value="Referencia a la institución"/>
+      <target>
+        <code value="Encounter.serviceProvider"/>
+        <display value="Referencia a la institución"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="EncounterProcesoModeloLogico.ReferenciaProfesionalSanitario"/>
+      <display value="Referencia al profesional sanitario"/>
+      <target>
+        <code value="Encounter.participant.actor"/>
+        <display value="Referencia al profesional sanitario"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="EncounterProcesoModeloLogico.ReferenciaPaciente"/>
+      <display value="Referencia al paciente"/>
+      <target>
+        <code value="Encounter.subject"/>
+        <display value="Referencia al paciente"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

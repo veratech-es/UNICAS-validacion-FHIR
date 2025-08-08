@@ -1,0 +1,43 @@
+<FamilyMemberHistory>
+        <meta>
+          <profile value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASFamilyMemberHistory" />
+        </meta>
+        <identifier>
+          <system value="urn:regcess:0908005177" />
+          <value value="id-interno-enfermedadfamiliar-ejemplo-300" />
+        </identifier>
+        <status value="completed" />
+        <patient>
+          <type value="Patient" />
+          <identifier>
+            <type>
+              <coding>
+                <system value="http://snomed.info/sct/900000001000122104" />
+                <code value="1551000122105" />
+                <display value="código de identificación personal en el Sistema Nacional de Salud" />
+              </coding>
+            </type>
+            <system value="urn:oid:2.16.724.4.40" />
+            <value value="BBBBBBBBQR648597" />
+          </identifier>
+          <display value="Maria Puig Grau" />
+        </patient>
+        <relationship>
+          <coding>
+            <system value="http://snomed.info/sct/900000001000122104" />
+            <code value="9947008" />
+            <!--REVISAR ejemplo código-->
+            <display value="padre natural" />
+          </coding>
+        </relationship>
+        <condition>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct/900000001000122104" />
+              <code value="613003" />
+              <!--REVISAR ejemplo código-->
+              <display value="síndrome del cromosoma X frágil" />
+            </coding>
+          </code>
+        </condition>
+      </FamilyMemberHistory>

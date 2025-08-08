@@ -1,0 +1,70 @@
+{
+  "id": "b46e90d5f1409d1fa5b3fca490fbace8ceb873f93b45293825bd79ba6c8c08b2",
+  "url": "https://github.com/fhir-crucible/testscript-generator/b46e90d5f1409d1fa5b3fca490fbace8ceb873f93b45293825bd79ba6c8c08b2",
+  "version": "0.0",
+  "name": "UnicasUNICASAppointmentReadProfile",
+  "title": "IG: unicas; Profile: UNICASAppointment; Case: Read Profile",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-07-07T20:12:01+02:00",
+  "publisher": "The MITRE Corporation",
+  "profile": [
+    {
+      "id": "targetProfileUNICASAppointment",
+      "reference": "https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASAppointment"
+    }
+  ],
+  "variable": [
+    {
+      "name": "targetResourceIdUNICASAppointment",
+      "defaultValue": "example",
+      "description": "Enter a known instance id on the destination system. Will be checked for conformance against profile UNICASAppointment.",
+      "hint": "[resource.id]"
+    }
+  ],
+  "test": [
+    {
+      "name": "Validate the identified resource conforms to the UNICASAppointment profile",
+      "action": [
+        {
+          "operation": {
+            "type": {
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
+              "code": "read"
+            },
+            "resource": "Appointment",
+            "label": "Read_Appointment_Instance",
+            "description": "Read Appointment Instance",
+            "encodeRequestUrl": false,
+            "params": "/${targetResourceIdUNICASAppointment}",
+            "responseId": "targetInstance"
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_Response_OK",
+            "response": "okay",
+            "warningOnly": false
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_Appointment_Returned",
+            "description": "Assert Appointment Returned",
+            "resource": "Appointment",
+            "warningOnly": false
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_Instance_Conforms_to_UNICASAppointment_Profile",
+            "description": "Assert returned instance conforms to the UNICASAppointment Profile",
+            "validateProfileId": "targetProfileUNICASAppointment",
+            "warningOnly": false
+          }
+        }
+      ]
+    }
+  ],
+  "resourceType": "TestScript"
+}

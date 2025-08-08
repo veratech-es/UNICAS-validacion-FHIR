@@ -1,0 +1,49 @@
+<DocumentReference>
+        <meta>
+          <profile value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASDocumentReference" />
+        </meta>
+        <identifier>
+          <system value="urn:regcess:0908005177" />
+          <value value="id-interno-documento-ejemplo-215" />
+        </identifier>
+        <status value="current" />
+        <docStatus value="final" />
+        <type>
+          <coding>
+            <system value="http://snomed.info/sct/900000001000122104" />
+            <code value="2095331000122109" />
+            <display value="Receta Electrónica del SNS" />
+          </coding>
+        </type>
+        <subject>
+          <type value="Patient" />
+          <identifier>
+            <type>
+              <coding>
+                <system value="http://snomed.info/sct/900000001000122104" />
+                <code value="1551000122105" />
+                <display value="código de identificación personal en el Sistema Nacional de Salud" />
+              </coding>
+            </type>
+            <system value="urn:oid:2.16.724.4.40" />
+            <value value="BBBBBBBBQR648597" />
+          </identifier>
+          <display value="Maria Puig Grau" />
+        </subject>
+        <date value="2024-12-09T13:28:17.239+02:00" />
+        <custiodian>
+          <type value="Organization" />
+          <identifier>
+            <system value="urn:oid:2.16.724.4.21.5.10" />
+            <value value="0908005177" />
+          </identifier>
+          <display value="Hospital Sant Joan de Déu" />
+        </custiodian>
+        <description value="Receta Electrónica del SNS" />
+        <content>
+          <attachment>
+            <contentType value="application/pdf" />
+            <url value="urn:uuid:fda6541c-3294-11f0-9cd2-0242ac120002" />
+          </attachment>
+        </content>
+</DocumentReference>

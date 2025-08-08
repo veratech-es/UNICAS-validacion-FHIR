@@ -1,0 +1,70 @@
+{
+  "id": "c2ff274a7bfe961e81f66f84712886b792ac2dcebfcb5ab01ecbc97cbd60552b",
+  "url": "https://github.com/fhir-crucible/testscript-generator/c2ff274a7bfe961e81f66f84712886b792ac2dcebfcb5ab01ecbc97cbd60552b",
+  "version": "0.0",
+  "name": "UnicasUNICASOrganizationReadProfile",
+  "title": "IG: unicas; Profile: UNICASOrganization; Case: Read Profile",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-07-07T20:11:59+02:00",
+  "publisher": "The MITRE Corporation",
+  "profile": [
+    {
+      "id": "targetProfileUNICASOrganization",
+      "reference": "https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASOrganization"
+    }
+  ],
+  "variable": [
+    {
+      "name": "targetResourceIdUNICASOrganization",
+      "defaultValue": "example",
+      "description": "Enter a known instance id on the destination system. Will be checked for conformance against profile UNICASOrganization.",
+      "hint": "[resource.id]"
+    }
+  ],
+  "test": [
+    {
+      "name": "Validate the identified resource conforms to the UNICASOrganization profile",
+      "action": [
+        {
+          "operation": {
+            "type": {
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
+              "code": "read"
+            },
+            "resource": "Organization",
+            "label": "Read_Organization_Instance",
+            "description": "Read Organization Instance",
+            "encodeRequestUrl": false,
+            "params": "/${targetResourceIdUNICASOrganization}",
+            "responseId": "targetInstance"
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_Response_OK",
+            "response": "okay",
+            "warningOnly": false
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_Organization_Returned",
+            "description": "Assert Organization Returned",
+            "resource": "Organization",
+            "warningOnly": false
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_Instance_Conforms_to_UNICASOrganization_Profile",
+            "description": "Assert returned instance conforms to the UNICASOrganization Profile",
+            "validateProfileId": "targetProfileUNICASOrganization",
+            "warningOnly": false
+          }
+        }
+      ]
+    }
+  ],
+  "resourceType": "TestScript"
+}

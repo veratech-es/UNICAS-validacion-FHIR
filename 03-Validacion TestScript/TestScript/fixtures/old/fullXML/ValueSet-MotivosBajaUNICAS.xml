@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="MotivosBajaUNICAS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet MotivosBajaUNICAS</b></p><a name="MotivosBajaUNICAS"> </a><a name="hcMotivosBajaUNICAS"> </a><a name="MotivosBajaUNICAS-en-US"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-CodigosMotivosBajaUNICAS.html"><code>https://unicas-fhir.sanidad.gob.es/CodeSystem/CodigosMotivosBajaUNICAS</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-CodigosMotivosBajaUNICAS.html#CodigosMotivosBajaUNICAS-01">01</a></td><td>Revocamiento del Consentimiento Informado</td></tr><tr><td><a href="CodeSystem-CodigosMotivosBajaUNICAS.html#CodigosMotivosBajaUNICAS-02">02</a></td><td>Revocación/cambio diagnóstico de enfermedad minoritaria a otra enfermedad prevalente</td></tr><tr><td><a href="CodeSystem-CodigosMotivosBajaUNICAS.html#CodigosMotivosBajaUNICAS-03">03</a></td><td>Paciente ya no es pediátrico</td></tr><tr><td><a href="CodeSystem-CodigosMotivosBajaUNICAS.html#CodigosMotivosBajaUNICAS-04">04</a></td><td>Profesional Autorizado manualmente da de baja un Paciente</td></tr><tr><td><a href="CodeSystem-CodigosMotivosBajaUNICAS.html#CodigosMotivosBajaUNICAS-05">05</a></td><td>Fallecimiento</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://unicas-fhir.sanidad.gob.es/ValueSet/MotivosBajaUNICAS"/>
+  <version value="0.0.1"/>
+  <name value="ValuesetMotivosBajaUNICAS"/>
+  <title value="Value set de Motivos de baja en ÚNICAS"/>
+  <status value="draft"/>
+  <date value="2025-03-27"/>
+  <description value="Este value set incluye todos los códigos del code system de Motivos de baja en ÚNICAS."/>
+  <compose>
+    <include>
+      <system value="https://unicas-fhir.sanidad.gob.es/CodeSystem/CodigosMotivosBajaUNICAS"/>
+      <concept>
+        <code value="01"/>
+        <display value="Revocamiento del Consentimiento Informado"/>
+      </concept>
+      <concept>
+        <code value="02"/>
+        <display value="Revocación/cambio diagnóstico de enfermedad minoritaria a otra enfermedad prevalente"/>
+      </concept>
+      <concept>
+        <code value="03"/>
+        <display value="Paciente ya no es pediátrico"/>
+      </concept>
+      <concept>
+        <code value="04"/>
+        <display value="Profesional Autorizado manualmente da de baja un Paciente"/>
+      </concept>
+      <concept>
+        <code value="05"/>
+        <display value="Fallecimiento"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

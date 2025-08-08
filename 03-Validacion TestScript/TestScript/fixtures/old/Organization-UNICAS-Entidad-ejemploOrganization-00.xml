@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="UNICAS-Entidad-ejemploOrganization-00"/>
+  <meta>
+    <profile value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASOrganization"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization UNICAS-Entidad-ejemploOrganization-00</b></p><a name="UNICAS-Entidad-ejemploOrganization-00"> </a><a name="hcUNICAS-Entidad-ejemploOrganization-00"> </a><a name="UNICAS-Entidad-ejemploOrganization-00-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-UNICASOrganization.html">Organization Institución ÚNICAS</a></p></div><p><b>Identificador de los Nodos de Comunidades Autónomas en participar ÚNICAS</b>: <span title="Codes:{urn:oid:2.16.840.1.113883.2.19.40.1 09}">Cataluña</span></p><p><b>identifier</b>: <code>urn:oid:2.16.724.4.21.5.10</code>/0908005177</p><p><b>name</b>: Hospital Sant Joan de Déu</p><h3>Contacts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Telecom</b></td><td><b>Address</b></td></tr><tr><td style="display: none">*</td><td>ph: 999999999(Work), <a href="mailto:ejemplo@ejemplo.cat">ejemplo@ejemplo.cat</a>, <a href="mailto:ejemploweb.cat">ejemploweb.cat</a></td><td>Pg. de Sant Joan de Déu, 2 Barcelona Catalunya 08950 España </td></tr></table></div>
+  </text>
+  <extension url="https://unicas-fhir.sanidad.gob.es/StructureDefinition/NodoCCAA">
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.19.40.1"/>
+        <code value="09"/>
+        <display value="Cataluña"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <identifier>
+    <system value="urn:oid:2.16.724.4.21.5.10"/>
+    <value value="0908005177"/>
+  </identifier>
+  <name value="Hospital Sant Joan de Déu"/>
+  <contact>
+    <telecom>
+      <system value="phone"/>
+      <value value="999999999"/>
+      <use value="work"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="ejemplo@ejemplo.cat"/>
+      <use value="work"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="ejemploweb.cat"/>
+      <use value="work"/>
+    </telecom>
+    <address>
+      <extension url="https://unicas-fhir.sanidad.gob.es/StructureDefinition/Municipio">
+        <valueString value="Esplugues de Llobregat"/>
+      </extension>
+      <extension url="https://unicas-fhir.sanidad.gob.es/StructureDefinition/Provincia">
+        <valueString value="Barcelona"/>
+      </extension>
+      <line value="Pg. de Sant Joan de Déu, 2"/>
+      <city value="Barcelona"/>
+      <state value="Catalunya"/>
+      <postalCode value="08950"/>
+      <country value="España"/>
+    </address>
+  </contact>
+</Organization>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DocumentReference xmlns="http://hl7.org/fhir">
+  <id value="UNICAS-Consentimiento-ejemploDocumentReferenceCI-00"/>
+  <meta>
+    <profile value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASDocumentReference"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: DocumentReference UNICAS-Consentimiento-ejemploDocumentReferenceCI-00</b></p><a name="UNICAS-Consentimiento-ejemploDocumentReferenceCI-00"> </a><a name="hcUNICAS-Consentimiento-ejemploDocumentReferenceCI-00"> </a><a name="UNICAS-Consentimiento-ejemploDocumentReferenceCI-00-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-UNICASDocumentReference.html">DocumentReference Documento en Base64 ÚNICAS</a></p></div><p><b>identifier</b>: <code>urn:ietf:rfc:4122</code>/urn:uuid:2a16c07e-6b63-4264-ba53-83ab14f66d38</p><p><b>status</b>: Current</p><p><b>docStatus</b>: Final</p><p><b>type</b>: <span title="Codes:{http://snomed.info/sct/900000001000122104 61861000000100}">consentimiento</span></p><p><b>subject</b>: Maria Puig Grau (Identifier: código de identificación personal en el Sistema Nacional de Salud/BBBBBBBBQR648597)</p><p><b>date</b>: 2025-03-25 11:00:00+0000</p><p><b>description</b>: </p><div><p>Consetimiento informado</p>
+</div><blockquote><p><b>content</b></p><h3>Attachments</h3><table class="grid"><tr><td style="display: none">-</td><td><b>ContentType</b></td><td><b>Url</b></td></tr><tr><td style="display: none">*</td><td>application/pdf</td><td>urn:uuid:6949c2ad-e789-495c-887b-f934420e62fa</td></tr></table></blockquote></div>
+  </text>
+  <identifier>
+    <system value="urn:ietf:rfc:4122"/>
+    <value value="urn:uuid:2a16c07e-6b63-4264-ba53-83ab14f66d38"/>
+  </identifier>
+  <status value="current"/>
+  <docStatus value="final"/>
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct/900000001000122104"/>
+      <code value="61861000000100"/>
+      <display value="consentimiento"/>
+    </coding>
+  </type>
+  <subject>
+    <type value="Patient"/>
+    <identifier>
+      <type>
+        <coding>
+          <system value="http://snomed.info/sct/900000001000122104"/>
+          <code value="1551000122105"/>
+          <display value="código de identificación personal en el Sistema Nacional de Salud"/>
+        </coding>
+      </type>
+      <system value="urn:oid:2.16.724.4.40"/>
+      <value value="BBBBBBBBQR648597"/>
+    </identifier>
+    <display value="Maria Puig Grau"/>
+  </subject>
+  <date value="2025-03-25T11:00:00+00:00"/>
+  <description value="Consetimiento informado"/>
+  <content>
+    <attachment>
+      <contentType value="application/pdf"/>
+      <url value="urn:uuid:6949c2ad-e789-495c-887b-f934420e62fa"/>
+    </attachment>
+  </content>
+</DocumentReference>

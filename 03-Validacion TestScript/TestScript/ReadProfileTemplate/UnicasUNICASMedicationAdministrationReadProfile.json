@@ -1,0 +1,70 @@
+{
+  "id": "ff7ea16df5e0b30a4dffcb034722b91a3ab6f453e86bfc2908f029ba74368816",
+  "url": "https://github.com/fhir-crucible/testscript-generator/ff7ea16df5e0b30a4dffcb034722b91a3ab6f453e86bfc2908f029ba74368816",
+  "version": "0.0",
+  "name": "UnicasUNICASMedicationAdministrationReadProfile",
+  "title": "IG: unicas; Profile: UNICASMedicationAdministration; Case: Read Profile",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-07-07T20:12:00+02:00",
+  "publisher": "The MITRE Corporation",
+  "profile": [
+    {
+      "id": "targetProfileUNICASMedicationAdministration",
+      "reference": "https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASMedicationAdministration"
+    }
+  ],
+  "variable": [
+    {
+      "name": "targetResourceIdUNICASMedicationAdministration",
+      "defaultValue": "example",
+      "description": "Enter a known instance id on the destination system. Will be checked for conformance against profile UNICASMedicationAdministration.",
+      "hint": "[resource.id]"
+    }
+  ],
+  "test": [
+    {
+      "name": "Validate the identified resource conforms to the UNICASMedicationAdministration profile",
+      "action": [
+        {
+          "operation": {
+            "type": {
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
+              "code": "read"
+            },
+            "resource": "MedicationAdministration",
+            "label": "Read_MedicationAdministration_Instance",
+            "description": "Read MedicationAdministration Instance",
+            "encodeRequestUrl": false,
+            "params": "/${targetResourceIdUNICASMedicationAdministration}",
+            "responseId": "targetInstance"
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_Response_OK",
+            "response": "okay",
+            "warningOnly": false
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_MedicationAdministration_Returned",
+            "description": "Assert MedicationAdministration Returned",
+            "resource": "MedicationAdministration",
+            "warningOnly": false
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_Instance_Conforms_to_UNICASMedicationAdministration_Profile",
+            "description": "Assert returned instance conforms to the UNICASMedicationAdministration Profile",
+            "validateProfileId": "targetProfileUNICASMedicationAdministration",
+            "warningOnly": false
+          }
+        }
+      ]
+    }
+  ],
+  "resourceType": "TestScript"
+}

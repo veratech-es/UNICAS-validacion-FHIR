@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ViasAdministracionFarmacologica"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ViasAdministracionFarmacologica</b></p><a name="ViasAdministracionFarmacologica"> </a><a name="hcViasAdministracionFarmacologica"> </a><a name="ViasAdministracionFarmacologica-en-US"> </a><ul><li>Include all codes defined in <code>urn:oid:2.16.724.4.21.5.14.2</code></li></ul></div>
+  </text>
+  <url value="https://unicas-fhir.sanidad.gob.es/ValueSet/ViasAdministracionFarmacologica"/>
+  <version value="0.0.1"/>
+  <name value="ValuesetViasAdministracionFarmacologica"/>
+  <title value="Value set de Vías de administración farmacológica"/>
+  <status value="draft"/>
+  <date value="2025-02-05"/>
+  <description value="Este value set incluye todos los códigos del Nomenclátor de Prescripción AEMPS. Vía de administración (OID: 2.16.724.4.21.5.14.2)."/>
+  <compose>
+    <include>
+      <system value="urn:oid:2.16.724.4.21.5.14.2"/>
+    </include>
+  </compose>
+</ValueSet>

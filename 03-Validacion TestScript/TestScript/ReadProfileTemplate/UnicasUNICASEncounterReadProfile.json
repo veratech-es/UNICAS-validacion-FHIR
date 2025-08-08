@@ -1,0 +1,70 @@
+{
+  "id": "07b76876043de89d8eb94ef94e7190db97b18c394ceb4f6dcf2a3948ef259a9c",
+  "url": "https://github.com/fhir-crucible/testscript-generator/07b76876043de89d8eb94ef94e7190db97b18c394ceb4f6dcf2a3948ef259a9c",
+  "version": "0.0",
+  "name": "UnicasUNICASEncounterReadProfile",
+  "title": "IG: unicas; Profile: UNICASEncounter; Case: Read Profile",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-07-07T20:12:00+02:00",
+  "publisher": "The MITRE Corporation",
+  "profile": [
+    {
+      "id": "targetProfileUNICASEncounter",
+      "reference": "https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASEncounter"
+    }
+  ],
+  "variable": [
+    {
+      "name": "targetResourceIdUNICASEncounter",
+      "defaultValue": "example",
+      "description": "Enter a known instance id on the destination system. Will be checked for conformance against profile UNICASEncounter.",
+      "hint": "[resource.id]"
+    }
+  ],
+  "test": [
+    {
+      "name": "Validate the identified resource conforms to the UNICASEncounter profile",
+      "action": [
+        {
+          "operation": {
+            "type": {
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
+              "code": "read"
+            },
+            "resource": "Encounter",
+            "label": "Read_Encounter_Instance",
+            "description": "Read Encounter Instance",
+            "encodeRequestUrl": false,
+            "params": "/${targetResourceIdUNICASEncounter}",
+            "responseId": "targetInstance"
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_Response_OK",
+            "response": "okay",
+            "warningOnly": false
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_Encounter_Returned",
+            "description": "Assert Encounter Returned",
+            "resource": "Encounter",
+            "warningOnly": false
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_Instance_Conforms_to_UNICASEncounter_Profile",
+            "description": "Assert returned instance conforms to the UNICASEncounter Profile",
+            "validateProfileId": "targetProfileUNICASEncounter",
+            "warningOnly": false
+          }
+        }
+      ]
+    }
+  ],
+  "resourceType": "TestScript"
+}

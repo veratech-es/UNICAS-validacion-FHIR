@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="LocalizacionesAnatomicas"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet LocalizacionesAnatomicas</b></p><a name="LocalizacionesAnatomicas"> </a><a name="hcLocalizacionesAnatomicas"> </a><a name="LocalizacionesAnatomicas-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<code>urn:oid:2.16.724.4.21.5.13</code> where NOMBRE-VARIABLE  = Localización</li><li>Include these codes as defined in <code>urn:oid:2.16.724.4.21.5.13</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>35259002</td><td>Músculo deltoides</td></tr><tr><td>16217661000119109</td><td>Estructura del músculo deltoide derecho</td></tr><tr><td>16217701000119102</td><td>Estructura del músculo deltoide izquierdo</td></tr><tr><td>181681008</td><td>Músculo vasto externo del cuádriceps [como un todo]</td></tr><tr><td>1217006009</td><td>Estructura de músculo vasto externo derecho</td></tr><tr><td>1217007000</td><td>Estructura de músculo vasto externo izquierdo</td></tr><tr><td>46862004</td><td>Glúteo</td></tr><tr><td>723980000</td><td>Estructura de nalga derecha</td></tr><tr><td>723979003</td><td>Estructura de nalga izquierda</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://unicas-fhir.sanidad.gob.es/ValueSet/LocalizacionesAnatomicas"/>
+  <version value="0.0.1"/>
+  <name value="ValuesetLocalizacionesAnatomicasAdministracion"/>
+  <title value="Value set de Localizaciones anatómicas de administración"/>
+  <status value="draft"/>
+  <date value="2025-02-05"/>
+  <description value="Este value set incluye los códigos correspondientes a la localización del catálogo Sistema de Información en Vacunaciones e Inmunizaciones (SIVAIN) (OID: 2.16.724.4.21.5.13)."/>
+  <compose>
+    <include>
+      <system value="urn:oid:2.16.724.4.21.5.13"/>
+      <filter>
+        <property value="NOMBRE-VARIABLE"/>
+        <op value="="/>
+        <value value="Localización"/>
+      </filter>
+    </include>
+    <include>
+      <system value="urn:oid:2.16.724.4.21.5.13"/>
+      <concept>
+        <code value="35259002"/>
+        <display value="Músculo deltoides"/>
+      </concept>
+      <concept>
+        <code value="16217661000119109"/>
+        <display value="Estructura del músculo deltoide derecho"/>
+      </concept>
+      <concept>
+        <code value="16217701000119102"/>
+        <display value="Estructura del músculo deltoide izquierdo"/>
+      </concept>
+      <concept>
+        <code value="181681008"/>
+        <display value="Músculo vasto externo del cuádriceps [como un todo]"/>
+      </concept>
+      <concept>
+        <code value="1217006009"/>
+        <display value="Estructura de músculo vasto externo derecho"/>
+      </concept>
+      <concept>
+        <code value="1217007000"/>
+        <display value="Estructura de músculo vasto externo izquierdo"/>
+      </concept>
+      <concept>
+        <code value="46862004"/>
+        <display value="Glúteo"/>
+      </concept>
+      <concept>
+        <code value="723980000"/>
+        <display value="Estructura de nalga derecha"/>
+      </concept>
+      <concept>
+        <code value="723979003"/>
+        <display value="Estructura de nalga izquierda"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

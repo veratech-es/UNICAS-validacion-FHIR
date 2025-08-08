@@ -1,0 +1,1087 @@
+<Bundle xmlns="http://hl7.org/fhir">
+  <meta>
+    <profile value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASBundleAntecedentes" />
+  </meta>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://snomed.info/sct/900000001000122104" />
+        <code value="31221000122105" />
+        <display value="antecedentes" />
+      </coding>
+    </type>
+    <system value="urn:ietf:rfc:4122" />
+    <value value="a13f9746-795a-4a11-864f-4f40b51b62de" />
+    <!--REVISAR ejemplo identificador-->
+  </identifier>
+  <type value="transaction" />
+  <timestamp value="2025-02-19T13:28:17.239+02:00" />
+  <!--******************** Recurso Condition: Enfermedad previa ********************-->
+  <entry>
+    <fullUrl value="urn:uuid:5d84c09e-4d7f-4825-9044-ff1683f0982f" />
+    <resource>
+      <Condition>
+        <meta>
+          <profile value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASConditionEnfermedad" />
+        </meta>
+        <identifier>
+          <system value="urn:regcess:0908005177" />
+          <value value="id-interno-enfermedadprevia-ejemplo-300" />
+        </identifier>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical" />
+            <code value="resolved" />
+            <display value="Resolved" />
+          </coding>
+        </clinicalStatus>
+        <category>
+          <coding>
+            <system value="http://snomed.info/sct/900000001000122104" />
+            <code value="31231000122108" />
+            <!--REVISAR ejemplo código-->
+            <display value="enfermedades previas" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct/900000001000122104" />
+            <code value="613003" />
+            <!--REVISAR ejemplo código-->
+            <display value="síndrome del cromosoma X frágil" />
+          </coding>
+        </code>
+        <subject>
+          <type value="Patient" />
+          <identifier>
+            <type>
+              <coding>
+                <system value="http://snomed.info/sct/900000001000122104" />
+                <code value="1551000122105" />
+                <display value="código de identificación personal en el Sistema Nacional de Salud" />
+              </coding>
+            </type>
+            <system value="urn:oid:2.16.724.4.40" />
+            <value value="BBBBBBBBQR648597" />
+          </identifier>
+          <display value="Maria Puig Grau" />
+        </subject>
+        <onsetDateTime value="2024-12-09T00:00:00Z" />
+        <participant>
+          <actor>
+            <type value="Practitioner" />
+            <identifier>
+              <type>
+                <coding>
+                  <system value="http://snomed.info/sct/900000001000122104?fhir_vs-refset/900000251000122107" />
+                  <code value="22851000122109" />
+                  <display value="documento nacional de identidad" />
+                </coding>
+              </type>
+              <system value="urn:oid:1.3.6.1.4.1.19126.3" />
+              <value value="0000001X" />
+            </identifier>
+            <display value="Eva Alabart" />
+          </actor>
+        </participant>
+      </Condition>
+    </resource>
+    <request>
+      <method value="PUT" />
+      <url value="[base]/Condition?identifier=urn:regcess:0908005177|id-interno-enfermedadprevia-ejemplo-300" />
+    </request>
+  </entry>
+  <!--******************** Recurso Condition: Antecedente neonatal ********************-->
+  <entry>
+    <fullUrl value="urn:uuid:5082cfc0-7780-468f-9313-f6e4b6418ae3" />
+    <resource>
+      <Condition>
+        <meta>
+          <profile value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASConditionEnfermedad" />
+        </meta>
+        <identifier>
+          <system value="urn:regcess:0908005177" />
+          <value value="id-interno-enfermedadneonatal-ejemplo-300" />
+        </identifier>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical" />
+            <code value="resolved" />
+            <display value="Resolved" />
+          </coding>
+        </clinicalStatus>
+        <category>
+          <coding>
+            <system value="http://snomed.info/sct/900000001000122104" />
+            <code value="31261000122101" />
+            <!--REVISAR ejemplo código-->
+            <display value="antecedentes neonatales, obstétricos y quirúrgicos" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct/900000001000122104" />
+            <code value="613003" />
+            <!--REVISAR ejemplo código-->
+            <display value="síndrome del cromosoma X frágil" />
+          </coding>
+        </code>
+        <subject>
+          <type value="Patient" />
+          <identifier>
+            <type>
+              <coding>
+                <system value="http://snomed.info/sct/900000001000122104" />
+                <code value="1551000122105" />
+                <display value="código de identificación personal en el Sistema Nacional de Salud" />
+              </coding>
+            </type>
+            <system value="urn:oid:2.16.724.4.40" />
+            <value value="BBBBBBBBQR648597" />
+          </identifier>
+          <display value="Maria Puig Grau" />
+        </subject>
+        <onsetDateTime value="2020-12-09T00:00:00Z" />
+        <participant>
+          <actor>
+            <type value="Practitioner" />
+            <identifier>
+              <type>
+                <coding>
+                  <system value="http://snomed.info/sct/900000001000122104?fhir_vs-refset/900000251000122107" />
+                  <code value="22851000122109" />
+                  <display value="documento nacional de identidad" />
+                </coding>
+              </type>
+              <system value="urn:oid:1.3.6.1.4.1.19126.3" />
+              <value value="0000001X" />
+            </identifier>
+            <display value="Eva Alabart" />
+          </actor>
+        </participant>
+      </Condition>
+    </resource>
+    <request>
+      <method value="PUT" />
+      <url value="[base]/Condition?identifier=urn:regcess:0908005177|id-interno-enfermedadneonatal-ejemplo-300" />
+    </request>
+  </entry>
+  <!--******************** Recurso Observation: Antropometría neonatal - Peso ********************-->
+  <entry>
+    <fullUrl value="urn:uuid:4c9eb40f-980d-4bb1-bc82-24805e2f7c53" />
+    <resource>
+      <Observation>
+        <meta>
+          <profile value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASObservationAntropometria" />
+        </meta>
+        <identifier>
+          <system value="urn:regcess:0908005177" />
+          <value value="id-interno-pesoneonatal-ejemplo-300" />
+        </identifier>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://snomed.info/sct/900000001000122104" />
+            <code value="31261000122101" />
+            <!--REVISAR ejemplo código-->
+            <display value="antecedentes neonatales, obstétricos y quirúrgicos" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct/900000001000122104" />
+            <code value="726527001" />
+            <!--REVISAR ejemplo código-->
+            <display value="peso" />
+          </coding>
+        </code>
+        <subject>
+          <type value="Patient" />
+          <identifier>
+            <type>
+              <coding>
+                <system value="http://snomed.info/sct/900000001000122104" />
+                <code value="1551000122105" />
+                <display value="código de identificación personal en el Sistema Nacional de Salud" />
+              </coding>
+            </type>
+            <system value="urn:oid:2.16.724.4.40" />
+            <value value="BBBBBBBBQR648597" />
+          </identifier>
+          <display value="Maria Puig Grau" />
+        </subject>
+        <effectiveDateTime value="2020-12-09T00:00:00Z" />
+        <performer>
+          <type value="Practitioner" />
+          <identifier>
+            <type>
+              <coding>
+                <system value="http://snomed.info/sct/900000001000122104?fhir_vs-refset/900000251000122107" />
+                <code value="22851000122109" />
+                <display value="documento nacional de identidad" />
+              </coding>
+            </type>
+            <system value="urn:oid:1.3.6.1.4.1.19126.3" />
+            <value value="0000001X" />
+          </identifier>
+          <display value="Eva Alabart" />
+        </performer>
+        <valueQuantity>
+          <value value="4" />
+          <unit value="kilogram" />
+          <system value="http://unitsofmeasure.org" />
+          <code value="kg" />
+        </valueQuantity>
+      </Observation>
+    </resource>
+    <request>
+      <method value="PUT" />
+      <url value="[base]/Observation?identifier=urn:regcess:0908005177|id-interno-pesoneonatal-ejemplo-300" />
+    </request>
+  </entry>
+  <!--******************** Recurso Observation: Antropometría neonatal - Perímetro cefálico ********************-->
+  <entry>
+    <fullUrl value="urn:uuid:4c1a1c7c-7374-4f47-bf70-7a4a498b6e9b" />
+    <resource>
+      <Observation>
+        <meta>
+          <profile value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASObservationAntropometria" />
+        </meta>
+        <identifier>
+          <system value="urn:regcess:0908005177" />
+          <value value="id-interno-perimetrocefaliconeonatal-ejemplo-300" />
+        </identifier>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://snomed.info/sct/900000001000122104" />
+            <code value="363812007" />
+            <!--REVISAR ejemplo código-->
+            <display value="antecedentes neonatales, obstétricos y quirúrgicos" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct/900000001000122104" />
+            <code value="726527001" />
+            <!--REVISAR ejemplo código-->
+            <display value="perímetro cefálico" />
+          </coding>
+        </code>
+        <subject>
+          <type value="Patient" />
+          <identifier>
+            <type>
+              <coding>
+                <system value="http://snomed.info/sct/900000001000122104" />
+                <code value="1551000122105" />
+                <display value="código de identificación personal en el Sistema Nacional de Salud" />
+              </coding>
+            </type>
+            <system value="urn:oid:2.16.724.4.40" />
+            <value value="BBBBBBBBQR648597" />
+          </identifier>
+          <display value="Maria Puig Grau" />
+        </subject>
+        <effectiveDateTime value="2020-12-09T00:00:00Z" />
+        <performer>
+          <type value="Practitioner" />
+          <identifier>
+            <type>
+              <coding>
+                <system value="http://snomed.info/sct/900000001000122104?fhir_vs-refset/900000251000122107" />
+                <code value="22851000122109" />
+                <display value="documento nacional de identidad" />
+              </coding>
+            </type>
+            <system value="urn:oid:1.3.6.1.4.1.19126.3" />
+            <value value="0000001X" />
+          </identifier>
+          <display value="Eva Alabart" />
+        </performer>
+        <valueQuantity>
+          <value value="20" />
+          <unit value="centimeter" />
+          <system value="http://unitsofmeasure.org" />
+          <code value="cm" />
+        </valueQuantity>
+      </Observation>
+    </resource>
+    <request>
+      <method value="PUT" />
+      <url value="[base]/Observation?identifier=urn:regcess:0908005177|id-interno-perimetrocefaliconeonatal-ejemplo-300" />
+    </request>
+  </entry>
+  <!--******************** Recurso Observation: Antropometría neonatal - Altura ********************-->
+  <entry>
+    <fullUrl value="urn:uuid:f44330b5-bc49-431c-97da-2998f8d33c0b" />
+    <resource>
+      <Observation>
+        <meta>
+          <profile value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASObservationAntropometria" />
+        </meta>
+        <identifier>
+          <system value="urn:regcess:0908005177" />
+          <value value="id-interno-alturaneonatal-ejemplo-300" />
+        </identifier>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://snomed.info/sct/900000001000122104" />
+            <code value="363812007" />
+            <!--REVISAR ejemplo código-->
+            <display value="antecedentes neonatales, obstétricos y quirúrgicos" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct/900000001000122104" />
+            <code value="1153637007" />
+            <!--REVISAR ejemplo código-->
+            <display value="altura corporal" />
+          </coding>
+        </code>
+        <subject>
+          <type value="Patient" />
+          <identifier>
+            <type>
+              <coding>
+                <system value="http://snomed.info/sct/900000001000122104" />
+                <code value="1551000122105" />
+                <display value="código de identificación personal en el Sistema Nacional de Salud" />
+              </coding>
+            </type>
+            <system value="urn:oid:2.16.724.4.40" />
+            <value value="BBBBBBBBQR648597" />
+          </identifier>
+          <display value="Maria Puig Grau" />
+        </subject>
+        <effectiveDateTime value="2020-12-09T00:00:00Z" />
+        <performer>
+          <type value="Practitioner" />
+          <identifier>
+            <type>
+              <coding>
+                <system value="http://snomed.info/sct/900000001000122104?fhir_vs-refset/900000251000122107" />
+                <code value="22851000122109" />
+                <display value="documento nacional de identidad" />
+              </coding>
+            </type>
+            <system value="urn:oid:1.3.6.1.4.1.19126.3" />
+            <value value="0000001X" />
+          </identifier>
+          <display value="Eva Alabart" />
+        </performer>
+        <valueQuantity>
+          <value value="90" />
+          <unit value="centimeter" />
+          <system value="http://unitsofmeasure.org" />
+          <code value="cm" />
+        </valueQuantity>
+      </Observation>
+    </resource>
+    <request>
+      <method value="PUT" />
+      <url value="[base]/Observation?identifier=urn:regcess:0908005177|id-interno-alturaneonatal-ejemplo-300" />
+    </request>
+  </entry>
+  <!--******************** Recurso Observation: Antecedentes obstétricos ********************-->
+  <entry>
+    <fullUrl value="urn:uuid:dbdc6180-61a0-4de9-9e11-e61f951c992e" />
+    <resource>
+      <Observation>
+        <meta>
+          <profile value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASObservationObstetrico" />
+        </meta>
+        <identifier>
+          <system value="urn:regcess:0908005177" />
+          <value value="id-interno-obstetrico-ejemplo-300" />
+        </identifier>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://snomed.info/sct/900000001000122104" />
+            <code value="363812007" />
+            <!--REVISAR ejemplo código-->
+            <display value="antecedentes neonatales, obstétricos y quirúrgicos" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct/900000001000122104" />
+            <code value="118185001" />
+            <!--REVISAR ejemplo código-->
+            <display value="hallazgo relacionado con el embarazo" />
+          </coding>
+        </code>
+        <subject>
+          <type value="Patient" />
+          <identifier>
+            <type>
+              <coding>
+                <system value="http://snomed.info/sct/900000001000122104" />
+                <code value="1551000122105" />
+                <display value="código de identificación personal en el Sistema Nacional de Salud" />
+              </coding>
+            </type>
+            <system value="urn:oid:2.16.724.4.40" />
+            <value value="BBBBBBBBQR648597" />
+          </identifier>
+          <display value="Maria Puig Grau" />
+        </subject>
+        <effectiveDateTime value="2024-12-09T00:00:00Z" />
+        <performer>
+          <type value="Practitioner" />
+          <identifier>
+            <type>
+              <coding>
+                <system value="http://snomed.info/sct/900000001000122104?fhir_vs-refset/900000251000122107" />
+                <code value="22851000122109" />
+                <display value="documento nacional de identidad" />
+              </coding>
+            </type>
+            <system value="urn:oid:1.3.6.1.4.1.19126.3" />
+            <value value="0000001X" />
+          </identifier>
+          <display value="Eva Alabart" />
+        </performer>
+      </Observation>
+    </resource>
+    <request>
+      <method value="PUT" />
+      <url value="[base]/Observation?identifier=urn:regcess:0908005177|id-interno-obstetrico-ejemplo-300" />
+    </request>
+  </entry>
+  <!--******************** Recurso Procedure: Antecedente quirúrgico ********************-->
+  <entry>
+    <fullUrl value="urn:uuid:d53363b9-206a-40a0-bd26-dc7ddd5df039" />
+    <resource>
+      <Procedure>
+        <meta>
+          <profile value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASProcedure" />
+        </meta>
+        <identifier>
+          <system value="urn:regcess:0908005177" />
+          <value value="id-interno-quirurgico-ejemplo-300" />
+        </identifier>
+        <status value="completed" />
+        <category>
+          <coding>
+            <system value="http://snomed.info/sct/900000001000122104" />
+            <code value="363812007" />
+            <!--REVISAR ejemplo código-->
+            <display value="antecedentes neonatales, obstétricos y quirúrgicos" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct/900000001000122104" />
+            <code value="367336001" />
+            <!--REVISAR ejemplo código-->
+            <display value="quimioterapia" />
+          </coding>
+        </code>
+        <subject>
+          <type value="Patient" />
+          <identifier>
+            <type>
+              <coding>
+                <system value="http://snomed.info/sct/900000001000122104" />
+                <code value="1551000122105" />
+                <display value="código de identificación personal en el Sistema Nacional de Salud" />
+              </coding>
+            </type>
+            <system value="urn:oid:2.16.724.4.40" />
+            <value value="BBBBBBBBQR648597" />
+          </identifier>
+          <display value="Maria Puig Grau" />
+        </subject>
+        <occurrenceDateTime value="2024-12-09T00:00:00Z" />
+        <performer>
+          <actor>
+            <type value="Practitioner" />
+            <identifier>
+              <type>
+                <coding>
+                  <system value="http://snomed.info/sct/900000001000122104?fhir_vs-refset/900000251000122107" />
+                  <code value="22851000122109" />
+                  <display value="documento nacional de identidad" />
+                </coding>
+              </type>
+              <system value="urn:oid:1.3.6.1.4.1.19126.3" />
+              <value value="0000001X" />
+            </identifier>
+            <display value="Eva Alabart" />
+          </actor>
+        </performer>
+      </Procedure>
+    </resource>
+    <request>
+      <method value="PUT" />
+      <url value="[base]/Procedure?identifier=urn:regcess:0908005177|id-interno-quirurgico-ejemplo-300" />
+    </request>
+  </entry>
+  <!--******************** Recurso FamilyMemberHistory: Antecedente familiar ********************-->
+  <entry>
+    <fullUrl value="urn:uuid:c1b8426f-60d3-4403-aebd-a34ae6ae70f2" />
+    <resource>
+      <FamilyMemberHistory>
+        <meta>
+          <profile value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASFamilyMemberHistory" />
+        </meta>
+        <identifier>
+          <system value="urn:regcess:0908005177" />
+          <value value="id-interno-enfermedadfamiliar-ejemplo-300" />
+        </identifier>
+        <status value="completed" />
+        <patient>
+          <type value="Patient" />
+          <identifier>
+            <type>
+              <coding>
+                <system value="http://snomed.info/sct/900000001000122104" />
+                <code value="1551000122105" />
+                <display value="código de identificación personal en el Sistema Nacional de Salud" />
+              </coding>
+            </type>
+            <system value="urn:oid:2.16.724.4.40" />
+            <value value="BBBBBBBBQR648597" />
+          </identifier>
+          <display value="Maria Puig Grau" />
+        </patient>
+        <relationship>
+          <coding>
+            <system value="http://snomed.info/sct/900000001000122104" />
+            <code value="9947008" />
+            <!--REVISAR ejemplo código-->
+            <display value="padre natural" />
+          </coding>
+        </relationship>
+        <condition>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct/900000001000122104" />
+              <code value="613003" />
+              <!--REVISAR ejemplo código-->
+              <display value="síndrome del cromosoma X frágil" />
+            </coding>
+          </code>
+        </condition>
+      </FamilyMemberHistory>
+    </resource>
+    <request>
+      <method value="PUT" />
+      <url value="[base]/FamilyMemberHistory?identifier=urn:regcess:0908005177|id-interno-enfermedadfamiliar-ejemplo-300" />
+    </request>
+  </entry>
+  <!--******************** Recurso Observation: Dato antropométrico - Peso ********************-->
+  <entry>
+    <fullUrl value="urn:uuid:096c8b3b-73af-40cc-a4d8-c29111412890" />
+    <resource>
+      <Observation>
+        <meta>
+          <profile value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASObservationAntropometria" />
+        </meta>
+        <identifier>
+          <system value="urn:regcess:0908005177" />
+          <value value="id-interno-pesoprevia-ejemplo-300" />
+        </identifier>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://snomed.info/sct/900000001000122104" />
+            <code value="248326004" />
+            <!--REVISAR ejemplo código-->
+            <display value="medida corporal" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct/900000001000122104" />
+            <code value="726527001" />
+            <!--REVISAR ejemplo código-->
+            <display value="peso" />
+          </coding>
+        </code>
+        <subject>
+          <type value="Patient" />
+          <identifier>
+            <type>
+              <coding>
+                <system value="http://snomed.info/sct/900000001000122104" />
+                <code value="1551000122105" />
+                <display value="código de identificación personal en el Sistema Nacional de Salud" />
+              </coding>
+            </type>
+            <system value="urn:oid:2.16.724.4.40" />
+            <value value="BBBBBBBBQR648597" />
+          </identifier>
+          <display value="Maria Puig Grau" />
+        </subject>
+        <effectiveDateTime value="2024-12-09T00:00:00Z" />
+        <performer>
+          <type value="Practitioner" />
+          <identifier>
+            <type>
+              <coding>
+                <system value="http://snomed.info/sct/900000001000122104?fhir_vs-refset/900000251000122107" />
+                <code value="22851000122109" />
+                <display value="documento nacional de identidad" />
+              </coding>
+            </type>
+            <system value="urn:oid:1.3.6.1.4.1.19126.3" />
+            <value value="0000001X" />
+          </identifier>
+          <display value="Eva Alabart" />
+        </performer>
+        <valueQuantity>
+          <value value="35" />
+          <unit value="kilogram" />
+          <system value="http://unitsofmeasure.org" />
+          <code value="kg" />
+        </valueQuantity>
+      </Observation>
+    </resource>
+    <request>
+      <method value="PUT" />
+      <url value="[base]/Observation?identifier=urn:regcess:0908005177|id-interno-pesoprevia-ejemplo-300" />
+    </request>
+  </entry>
+  <!--******************** Recurso Observation: Dato antropométrico - Perímetro cefálico ********************-->
+  <entry>
+    <fullUrl value="urn:uuid:2717ec20-9866-414f-81bb-2a724377a507" />
+    <resource>
+      <Observation>
+        <meta>
+          <profile value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASObservationAntropometria" />
+        </meta>
+        <identifier>
+          <system value="urn:regcess:0908005177" />
+          <value value="id-interno-perimetrocefalicoprevia-ejemplo-300" />
+        </identifier>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://snomed.info/sct/900000001000122104" />
+            <code value="248326004" />
+            <!--REVISAR ejemplo código-->
+            <display value="medida corporal" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct/900000001000122104" />
+            <code value="726527001" />
+            <!--REVISAR ejemplo código-->
+            <display value="perímetro cefálico" />
+          </coding>
+        </code>
+        <subject>
+          <type value="Patient" />
+          <identifier>
+            <type>
+              <coding>
+                <system value="http://snomed.info/sct/900000001000122104" />
+                <code value="1551000122105" />
+                <display value="código de identificación personal en el Sistema Nacional de Salud" />
+              </coding>
+            </type>
+            <system value="urn:oid:2.16.724.4.40" />
+            <value value="BBBBBBBBQR648597" />
+          </identifier>
+          <display value="Maria Puig Grau" />
+        </subject>
+        <effectiveDateTime value="2024-12-09T00:00:00Z" />
+        <performer>
+          <type value="Practitioner" />
+          <identifier>
+            <type>
+              <coding>
+                <system value="http://snomed.info/sct/900000001000122104?fhir_vs-refset/900000251000122107" />
+                <code value="22851000122109" />
+                <display value="documento nacional de identidad" />
+              </coding>
+            </type>
+            <system value="urn:oid:1.3.6.1.4.1.19126.3" />
+            <value value="0000001X" />
+          </identifier>
+          <display value="Eva Alabart" />
+        </performer>
+        <valueQuantity>
+          <value value="30" />
+          <unit value="centimeter" />
+          <system value="http://unitsofmeasure.org" />
+          <code value="cm" />
+        </valueQuantity>
+      </Observation>
+    </resource>
+    <request>
+      <method value="PUT" />
+      <url value="[base]/Observation?identifier=urn:regcess:0908005177|id-interno-perimetrocefalicoprevia-ejemplo-300" />
+    </request>
+  </entry>
+  <!--******************** Recurso Observation: Dato antropométrico - Altura ********************-->
+  <entry>
+    <fullUrl value="urn:uuid:d97214bc-52fd-4bab-8543-6ee45c632461" />
+    <resource>
+      <Observation>
+        <meta>
+          <profile value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASObservationAntropometria" />
+        </meta>
+        <identifier>
+          <system value="urn:regcess:0908005177" />
+          <value value="id-interno-alturaprevia-ejemplo-300" />
+        </identifier>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://snomed.info/sct/900000001000122104" />
+            <code value="248326004" />
+            <!--REVISAR ejemplo código-->
+            <display value="medida corporal" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct/900000001000122104" />
+            <code value="1153637007" />
+            <!--REVISAR ejemplo código-->
+            <display value="altura corporal" />
+          </coding>
+        </code>
+        <subject>
+          <type value="Patient" />
+          <identifier>
+            <type>
+              <coding>
+                <system value="http://snomed.info/sct/900000001000122104" />
+                <code value="1551000122105" />
+                <display value="código de identificación personal en el Sistema Nacional de Salud" />
+              </coding>
+            </type>
+            <system value="urn:oid:2.16.724.4.40" />
+            <value value="BBBBBBBBQR648597" />
+          </identifier>
+          <display value="Maria Puig Grau" />
+        </subject>
+        <effectiveDateTime value="2024-12-09T00:00:00Z" />
+        <performer>
+          <type value="Practitioner" />
+          <identifier>
+            <type>
+              <coding>
+                <system value="http://snomed.info/sct/900000001000122104?fhir_vs-refset/900000251000122107" />
+                <code value="22851000122109" />
+                <display value="documento nacional de identidad" />
+              </coding>
+            </type>
+            <system value="urn:oid:1.3.6.1.4.1.19126.3" />
+            <value value="0000001X" />
+          </identifier>
+          <display value="Eva Alabart" />
+        </performer>
+        <valueQuantity>
+          <value value="120" />
+          <unit value="centimeter" />
+          <system value="http://unitsofmeasure.org" />
+          <code value="cm" />
+        </valueQuantity>
+      </Observation>
+    </resource>
+    <request>
+      <method value="PUT" />
+      <url value="[base]/Observation?identifier=urn:regcess:0908005177|id-interno-alturaprevia-ejemplo-300" />
+    </request>
+  </entry>
+  <!--******************** Recurso Observation: Hábito tóxico ********************-->
+  <entry>
+    <fullUrl value="urn:uuid:6f150ec4-7bc7-4498-be02-d7e5d3b54dde" />
+    <resource>
+      <Observation>
+        <meta>
+          <profile value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASObservationHabitoToxico" />
+        </meta>
+        <identifier>
+          <system value="urn:regcess:0908005177" />
+          <value value="id-interno-habitotoxico-ejemplo-300" />
+        </identifier>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://snomed.info/sct/900000001000122104" />
+            <code value="31251000122103" />
+            <!--REVISAR ejemplo código-->
+            <display value="hábitos tóxicos" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct/900000001000122104" />
+            <code value="43783005" />
+            <!--REVISAR ejemplo código-->
+            <display value="bebedor moderado" />
+          </coding>
+        </code>
+        <subject>
+          <type value="Patient" />
+          <identifier>
+            <type>
+              <coding>
+                <system value="http://snomed.info/sct/900000001000122104" />
+                <code value="1551000122105" />
+                <display value="código de identificación personal en el Sistema Nacional de Salud" />
+              </coding>
+            </type>
+            <system value="urn:oid:2.16.724.4.40" />
+            <value value="BBBBBBBBQR648597" />
+          </identifier>
+          <display value="Maria Puig Grau" />
+        </subject>
+        <effectivePeriod>
+          <start value="2014-12-09T00:00:00Z" />
+          <end value="2024-12-09T00:00:00Z" />
+        </effectivePeriod>
+        <performer>
+          <type value="Practitioner" />
+          <identifier>
+            <type>
+              <coding>
+                <system value="http://snomed.info/sct/900000001000122104?fhir_vs-refset/900000251000122107" />
+                <code value="22851000122109" />
+                <display value="documento nacional de identidad" />
+              </coding>
+            </type>
+            <system value="urn:oid:1.3.6.1.4.1.19126.3" />
+            <value value="0000001X" />
+          </identifier>
+          <display value="Eva Alabart" />
+        </performer>
+        <component>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct/900000001000122104" />
+              <code value="228311005" />
+              <!--REVISAR ejemplo código-->
+              <display value="patrón de consumo de alcohol durante la semana" />
+            </coding>
+          </code>
+          <valueQuantity>
+            <value value="100" />
+            <unit value="milliliter" />
+            <system value="http://unitsofmeasure.org" />
+            <code value="mL" />
+          </valueQuantity>
+        </component>
+      </Observation>
+    </resource>
+    <request>
+      <method value="PUT" />
+      <url value="[base]/Observation?identifier=urn:regcess:0908005177|id-interno-habitotoxico-ejemplo-300" />
+    </request>
+  </entry>
+  <!--******************** Recurso Observation: Hábito no saludable ********************-->
+  <entry>
+    <fullUrl value="urn:uuid:6714a1db-0ff7-4ac3-be59-32f8ce740d59" />
+    <resource>
+      <Observation>
+        <meta>
+          <profile value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASObservationHabitoNoSaludable" />
+        </meta>
+        <identifier>
+          <system value="urn:regcess:0908005177" />
+          <value value="id-interno-habitonosaludable-ejemplo-300" />
+        </identifier>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://snomed.info/sct/900000001000122104" />
+            <code value="365949003" />
+            <!--REVISAR ejemplo código-->
+            <display value="hallazgo relacionado con conductas vinculadas a la salud" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct/900000001000122104" />
+            <code value="157861000146108" />
+            <!--REVISAR ejemplo código-->
+            <display value="pasa tiempo frente a una pantalla antes de ir a dormir" />
+          </coding>
+        </code>
+        <subject>
+          <type value="Patient" />
+          <identifier>
+            <type>
+              <coding>
+                <system value="http://snomed.info/sct/900000001000122104" />
+                <code value="1551000122105" />
+                <display value="código de identificación personal en el Sistema Nacional de Salud" />
+              </coding>
+            </type>
+            <system value="urn:oid:2.16.724.4.40" />
+            <value value="BBBBBBBBQR648597" />
+          </identifier>
+          <display value="Maria Puig Grau" />
+        </subject>
+        <effectivePeriod>
+          <start value="2014-12-09T00:00:00Z" />
+          <end value="2024-12-09T00:00:00Z" />
+        </effectivePeriod>
+        <performer>
+          <type value="Practitioner" />
+          <identifier>
+            <type>
+              <coding>
+                <system value="http://snomed.info/sct/900000001000122104?fhir_vs-refset/900000251000122107" />
+                <code value="22851000122109" />
+                <display value="documento nacional de identidad" />
+              </coding>
+            </type>
+            <system value="urn:oid:1.3.6.1.4.1.19126.3" />
+            <value value="0000001X" />
+          </identifier>
+          <display value="Eva Alabart" />
+        </performer>
+      </Observation>
+    </resource>
+    <request>
+      <method value="PUT" />
+      <url value="[base]/Observation?identifier=urn:regcess:0908005177|id-interno-habitonosaludable-ejemplo-300" />
+    </request>
+  </entry>
+  <!--******************** Recurso Medication: Fármaco previo  ********************-->
+  <entry>
+    <fullUrl value="urn:uuid:8a9a9e8f-485b-4a79-8962-69cfcd2ecb66" />
+    <resource>
+      <Medication>
+        <meta>
+          <profile value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASMedication" />
+        </meta>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct/900000001000122104" />
+            <code value="156301000140108" />
+            <!--REVISAR ejemplo código-->
+            <display value="bedaquilina" />
+          </coding>
+          <text value="ejemplo nombre comercial del producto" />
+        </code>
+        <status value="active" />
+        <doseForm>
+          <coding>
+            <system value="urn:oid:2.16.724.4.21.5.14.1" />
+            <code value="42" />
+            <!--REVISAR ejemplo código-->
+            <display value="COMPRIMIDO RECUBIERTO CON PELÍCULA" />
+          </coding>
+        </doseForm>
+        <ingredient>
+          <item>
+            <concept>
+              <coding>
+                <system value="http://snomed.info/sct/900000001000122104" />
+                <code value="714086004" />
+                <!--REVISAR ejemplo código-->
+                <display value="bedaquilina" />
+              </coding>
+            </concept>
+          </item>
+        </ingredient>
+      </Medication>
+    </resource>
+    <request>
+      <method value="PUT" />
+      <url value="[base]/Medication?code=http://snomed.info/sct/900000001000122104|156301000140108" />
+    </request>
+  </entry>
+  <!--******************** Recurso MedicationStatement: Fármaco previo y Tratamiento farmacológico previo ********************-->
+  <entry>
+    <fullUrl value="urn:uuid:6714a1db-0ff7-4ac3-be59-32f8ce740d59" />
+    <resource>
+      <MedicationStatement>
+        <meta>
+          <profile value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASMedicationStatement" />
+        </meta>
+        <identifier>
+          <system value="urn:regcess:0908005177" />
+          <value value="id-interno-tratamientofarmacologicoprevio-ejemplo-300" />
+        </identifier>
+        <status value="recorded" />
+        <medication>
+          <concept>
+            <coding>
+              <system value="http://snomed.info/sct/900000001000122104" />
+              <code value="156301000140108" />
+              <!--REVISAR ejemplo código-->
+              <display value="bedaquilina" />
+            </coding>
+            <text value="ejemplo nombre comercial del producto" />
+          </concept>
+        </medication>
+        <subject>
+          <type value="Patient" />
+          <identifier>
+            <type>
+              <coding>
+                <system value="http://snomed.info/sct/900000001000122104" />
+                <code value="1551000122105" />
+                <display value="código de identificación personal en el Sistema Nacional de Salud" />
+              </coding>
+            </type>
+            <system value="urn:oid:2.16.724.4.40" />
+            <value value="BBBBBBBBQR648597" />
+          </identifier>
+          <display value="Maria Puig Grau" />
+        </subject>
+        <effectivePeriod>
+          <start value="2024-07-23T13:28:17.239+02:00" />
+          <end value="2024-08-23T13:28:17.239+02:00" />
+        </effectivePeriod>
+        <informationSource>
+          <type value="Practitioner" />
+          <identifier>
+            <type>
+              <coding>
+                <system value="http://snomed.info/sct/900000001000122104?fhir_vs-refset/900000251000122107" />
+                <code value="22851000122109" />
+                <display value="documento nacional de identidad" />
+              </coding>
+            </type>
+            <system value="urn:oid:1.3.6.1.4.1.19126.3" />
+            <value value="0000001X" />
+          </identifier>
+          <display value="Eva Alabart" />
+        </informationSource>
+        <dosage>
+          <text value="ejemplo comentarios para el farmacéutico" />
+          <route>
+            <coding>
+              <system value="urn:oid:2.16.724.4.21.5.14.2" />
+              <code value="54" />
+              <!--REVISAR ejemplo código-->
+              <display value="VÍA ORAL" />
+            </coding>
+          </route>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="0.5" />
+              <unit value="milligram" />
+              <system value="http://unitsofmeasure.org" />
+              <code value="mg" />
+            </doseQuantity>
+            <rateQuantity>
+              <value value="8" />
+              <unit value="hour per day" />
+              <system value="http://unitsofmeasure.org" />
+              <code value="h/d" />
+            </rateQuantity>
+          </doseAndRate>
+        </dosage>
+      </MedicationStatement>
+    </resource>
+    <request>
+      <method value="PUT" />
+      <url value="[base]/MedicationStatement?identifier=urn:regcess:0908005177|id-interno-tratamientofarmacologicoprevio-ejemplo-300" />
+    </request>
+  </entry>
+</Bundle>

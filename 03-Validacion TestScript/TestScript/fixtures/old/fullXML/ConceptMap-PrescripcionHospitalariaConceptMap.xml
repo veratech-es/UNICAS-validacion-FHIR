@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="PrescripcionHospitalariaConceptMap"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ConceptMap PrescripcionHospitalariaConceptMap</b></p><a name="PrescripcionHospitalariaConceptMap"> </a><a name="hcPrescripcionHospitalariaConceptMap"> </a><a name="PrescripcionHospitalariaConceptMap-en-US"> </a><p>Mapping from <a href="StructureDefinition-PrescripcionHospitalariaModeloLogico.html">Modelo Logico de Prescripción hospitalaria ÚNICAS</a> to (not specified)</p><br/><p><b>Group 1 </b>Mapping from <a href="StructureDefinition-PrescripcionHospitalariaModeloLogico.html">Modelo Logico de Prescripción hospitalaria ÚNICAS</a> to <a href="StructureDefinition-UNICASMedicationAdministration.html">MedicationAdministration Prescripción ÚNICAS</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>PrescripcionHospitalariaModeloLogico.FarmacoPrescripcionHospitalaria (Fármaco de la prescripción (Consumo y la dispensación de medicamento en el hospital))</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>MedicationAdministration.medication.concept (Fármaco)</td></tr><tr><td>PrescripcionHospitalariaModeloLogico.FechaPrescripcionHospitalaria (Fecha de la prescripción (Consumo y la dispensación de medicamento en el hospital))</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>MedicationAdministration.recorded (Fecha de la prescripción)</td></tr><tr><td>PrescripcionHospitalariaModeloLogico.FechaTratamientoPH (Fecha de inicio del tratamiento y/o Fecha de fin del tratamiento (Duración del tratamiento) de la prescripción (Consumo y la dispensación de medicamento en el hospital))</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>MedicationAdministration.occurence[x] (Fecha de inicio del tratamiento y/o Fecha de fin del tratamiento (Duración del tratamiento))</td></tr><tr><td>PrescripcionHospitalariaModeloLogico.ComentariosFarmaceuticoPH (Comentarios para el farmacéutico de la prescripción (Consumo y la dispensación de medicamento en el hospital))</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>MedicationAdministration.dosage.text (Comentarios para el farmacéutico)</td></tr><tr><td>PrescripcionHospitalariaModeloLogico.ViaAdmnistracionPH (Vía de administración de la prescripción (Consumo y la dispensación de medicamento en el hospital))</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>MedicationAdministration.dosage.route (Vía de administración)</td></tr><tr><td>PrescripcionHospitalariaModeloLogico.DosisPH (Dosis del medicamento de la prescripción (Consumo y la dispensación de medicamento en el hospital))</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>MedicationAdministration.dosage.dose (Dosis del medicamento)</td></tr><tr><td>PrescripcionHospitalariaModeloLogico.FrecuenciaTomasPH (Frecuencia de tomas (Posología) de la prescripción (Consumo y la dispensación de medicamento en el hospital))</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>MedicationAdministration.dosage.rate[x] (Frecuencia de tomas (Posología))</td></tr><tr><td>PrescripcionHospitalariaModeloLogico.ReferenciaProfesionalSanitarioPH (Referencia al profesional sanitario de la prescripción (Consumo y la dispensación de medicamento en el hospital))</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>MMedicationAdministration.performer.actor (Referencia al profesional sanitario que realizó la prescripción)</td></tr><tr><td>PrescripcionHospitalariaModeloLogico.ReferenciaPacientePH (Referencia al paciente de la prescripción (Consumo y la dispensación de medicamento en el hospital))</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>MedicationAdministration.subject (Referencia al paciente)</td></tr><tr><td>PrescripcionHospitalariaModeloLogico.ReferenciaFarmacoPH (Referencia al fármaco de la prescripción (Consumo y la dispensación de medicamento en el hospital))</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>MedicationAdministration.medication.reference (Referencia al fármaco)</td></tr></table><hr/><p><b>Group 2 </b>Mapping from <a href="StructureDefinition-PrescripcionHospitalariaModeloLogico.html">Modelo Logico de Prescripción hospitalaria ÚNICAS</a> to <a href="StructureDefinition-UNICASMedicationStatement.html">MedicationStatement Prescripción ÚNICAS</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>PrescripcionHospitalariaModeloLogico.FarmacoPrescripcionHospitalariaActiva (Fármaco de la prescripción (Registro de la medicación inyectada durante el hospital))</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>MedicationStatement.medication.concept (Fármaco)</td></tr><tr><td>PrescripcionHospitalariaModeloLogico.FechaPrescripcionHospitalariaActiva (Fecha de la prescripción (Registro de la medicación inyectada durante el hospital))</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>MedicationStatement.dateAsserted (Fecha de la prescripción)</td></tr><tr><td>PrescripcionHospitalariaModeloLogico.FechaTratamientoPHA (Fecha de inicio del tratamiento y/o Fecha de fin del tratamiento (Duración del tratamiento) de la prescripción (Registro de la medicación inyectada durante el hospital))</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>MedicationStatement.effective[x] (Fecha de inicio del tratamiento y/o Fecha de fin del tratamiento (Duración del tratamiento))</td></tr><tr><td>PrescripcionHospitalariaModeloLogico.ComentariosFarmaceuticoPHA (Comentarios para el farmacéutico de la prescripción (Registro de la medicación inyectada durante el hospital))</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>MedicationStatement.dosage.text (Comentarios para el farmacéutico)</td></tr><tr><td>PrescripcionHospitalariaModeloLogico.ViaAdmnistracionPHA (Vía de administración de la prescripción (Registro de la medicación inyectada durante el hospital))</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>MedicationStatement.dosage.route (Vía de administración)</td></tr><tr><td>PrescripcionHospitalariaModeloLogico.DosisPHA (Dosis del medicamento de la prescripción (Registro de la medicación inyectada durante el hospital))</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>MedicationStatement.dosage.doseAndRate.dose[x] (Dosis del medicamento)</td></tr><tr><td>PrescripcionHospitalariaModeloLogico.FrecuenciaTomasPHA (Frecuencia de tomas (Posología) de la prescripción (Registro de la medicación inyectada durante el hospital))</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>MedicationStatement.dosage.doseAndRate.rate[x] (Frecuencia de tomas (Posología))</td></tr><tr><td>PrescripcionHospitalariaModeloLogico.ReferenciaProfesionalSanitarioPHA (Referencia al profesional sanitario de la prescripción (Registro de la medicación inyectada durante el hospital))</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>MedicationStatement.informationSource (Referencia al profesional sanitario que realizó la prescripción)</td></tr><tr><td>PrescripcionHospitalariaModeloLogico.ReferenciaPacientePHA (Referencia al paciente de la prescripción (Registro de la medicación inyectada durante el hospital))</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>MedicationStatement.subject (Referencia al paciente)</td></tr><tr><td>PrescripcionHospitalariaModeloLogico.ReferenciaFarmacoPHA (Referencia al fármaco de la prescripción (Registro de la medicación inyectada durante el hospital))</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>MedicationStatement.medication.reference (Referencia al fármaco)</td></tr></table></div>
+  </text>
+  <url value="https://unicas-fhir.sanidad.gob.es/ConceptMap/PrescripcionHospitalariaConceptMap"/>
+  <version value="0.0.1"/>
+  <name value="PrescripcionHospitalariaConceptMap"/>
+  <title value="Modelo de Prescripción Hospitalaria mapeado en FHIR profile"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-04-09T15:17:44+02:00"/>
+  <description value="Este recurso muestra cómo se asigna el modelo de prescripción hospitalaria al FHIR Profile/StructureDefinition"/>
+  <sourceScopeUri value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/PrescripcionHospitalariaModeloLogico"/>
+  <group>
+    <source value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/PrescripcionHospitalariaModeloLogico"/>
+    <target value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASMedicationAdministration"/>
+    <element>
+      <code value="PrescripcionHospitalariaModeloLogico.FarmacoPrescripcionHospitalaria"/>
+      <display value="Fármaco de la prescripción (Consumo y la dispensación de medicamento en el hospital)"/>
+      <target>
+        <code value="MedicationAdministration.medication.concept"/>
+        <display value="Fármaco"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="PrescripcionHospitalariaModeloLogico.FechaPrescripcionHospitalaria"/>
+      <display value="Fecha de la prescripción (Consumo y la dispensación de medicamento en el hospital)"/>
+      <target>
+        <code value="MedicationAdministration.recorded"/>
+        <display value="Fecha de la prescripción"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="PrescripcionHospitalariaModeloLogico.FechaTratamientoPH"/>
+      <display value="Fecha de inicio del tratamiento y/o Fecha de fin del tratamiento (Duración del tratamiento) de la prescripción (Consumo y la dispensación de medicamento en el hospital)"/>
+      <target>
+        <code value="MedicationAdministration.occurence[x]"/>
+        <display value="Fecha de inicio del tratamiento y/o Fecha de fin del tratamiento (Duración del tratamiento)"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="PrescripcionHospitalariaModeloLogico.ComentariosFarmaceuticoPH"/>
+      <display value="Comentarios para el farmacéutico de la prescripción (Consumo y la dispensación de medicamento en el hospital)"/>
+      <target>
+        <code value="MedicationAdministration.dosage.text"/>
+        <display value="Comentarios para el farmacéutico"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="PrescripcionHospitalariaModeloLogico.ViaAdmnistracionPH"/>
+      <display value="Vía de administración de la prescripción (Consumo y la dispensación de medicamento en el hospital)"/>
+      <target>
+        <code value="MedicationAdministration.dosage.route"/>
+        <display value="Vía de administración"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="PrescripcionHospitalariaModeloLogico.DosisPH"/>
+      <display value="Dosis del medicamento de la prescripción (Consumo y la dispensación de medicamento en el hospital)"/>
+      <target>
+        <code value="MedicationAdministration.dosage.dose"/>
+        <display value="Dosis del medicamento"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="PrescripcionHospitalariaModeloLogico.FrecuenciaTomasPH"/>
+      <display value="Frecuencia de tomas (Posología) de la prescripción (Consumo y la dispensación de medicamento en el hospital)"/>
+      <target>
+        <code value="MedicationAdministration.dosage.rate[x]"/>
+        <display value="Frecuencia de tomas (Posología)"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="PrescripcionHospitalariaModeloLogico.ReferenciaProfesionalSanitarioPH"/>
+      <display value="Referencia al profesional sanitario de la prescripción (Consumo y la dispensación de medicamento en el hospital)"/>
+      <target>
+        <code value="MMedicationAdministration.performer.actor"/>
+        <display value="Referencia al profesional sanitario que realizó la prescripción"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="PrescripcionHospitalariaModeloLogico.ReferenciaPacientePH"/>
+      <display value="Referencia al paciente de la prescripción (Consumo y la dispensación de medicamento en el hospital)"/>
+      <target>
+        <code value="MedicationAdministration.subject"/>
+        <display value="Referencia al paciente"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="PrescripcionHospitalariaModeloLogico.ReferenciaFarmacoPH"/>
+      <display value="Referencia al fármaco de la prescripción (Consumo y la dispensación de medicamento en el hospital)"/>
+      <target>
+        <code value="MedicationAdministration.medication.reference"/>
+        <display value="Referencia al fármaco"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+  </group>
+  <group>
+    <source value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/PrescripcionHospitalariaModeloLogico"/>
+    <target value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASMedicationStatement"/>
+    <element>
+      <code value="PrescripcionHospitalariaModeloLogico.FarmacoPrescripcionHospitalariaActiva"/>
+      <display value="Fármaco de la prescripción (Registro de la medicación inyectada durante el hospital)"/>
+      <target>
+        <code value="MedicationStatement.medication.concept"/>
+        <display value="Fármaco"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="PrescripcionHospitalariaModeloLogico.FechaPrescripcionHospitalariaActiva"/>
+      <display value="Fecha de la prescripción (Registro de la medicación inyectada durante el hospital)"/>
+      <target>
+        <code value="MedicationStatement.dateAsserted"/>
+        <display value="Fecha de la prescripción"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="PrescripcionHospitalariaModeloLogico.FechaTratamientoPHA"/>
+      <display value="Fecha de inicio del tratamiento y/o Fecha de fin del tratamiento (Duración del tratamiento) de la prescripción (Registro de la medicación inyectada durante el hospital)"/>
+      <target>
+        <code value="MedicationStatement.effective[x]"/>
+        <display value="Fecha de inicio del tratamiento y/o Fecha de fin del tratamiento (Duración del tratamiento)"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="PrescripcionHospitalariaModeloLogico.ComentariosFarmaceuticoPHA"/>
+      <display value="Comentarios para el farmacéutico de la prescripción (Registro de la medicación inyectada durante el hospital)"/>
+      <target>
+        <code value="MedicationStatement.dosage.text"/>
+        <display value="Comentarios para el farmacéutico"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="PrescripcionHospitalariaModeloLogico.ViaAdmnistracionPHA"/>
+      <display value="Vía de administración de la prescripción (Registro de la medicación inyectada durante el hospital)"/>
+      <target>
+        <code value="MedicationStatement.dosage.route"/>
+        <display value="Vía de administración"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="PrescripcionHospitalariaModeloLogico.DosisPHA"/>
+      <display value="Dosis del medicamento de la prescripción (Registro de la medicación inyectada durante el hospital)"/>
+      <target>
+        <code value="MedicationStatement.dosage.doseAndRate.dose[x]"/>
+        <display value="Dosis del medicamento"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="PrescripcionHospitalariaModeloLogico.FrecuenciaTomasPHA"/>
+      <display value="Frecuencia de tomas (Posología) de la prescripción (Registro de la medicación inyectada durante el hospital)"/>
+      <target>
+        <code value="MedicationStatement.dosage.doseAndRate.rate[x]"/>
+        <display value="Frecuencia de tomas (Posología)"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="PrescripcionHospitalariaModeloLogico.ReferenciaProfesionalSanitarioPHA"/>
+      <display value="Referencia al profesional sanitario de la prescripción (Registro de la medicación inyectada durante el hospital)"/>
+      <target>
+        <code value="MedicationStatement.informationSource"/>
+        <display value="Referencia al profesional sanitario que realizó la prescripción"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="PrescripcionHospitalariaModeloLogico.ReferenciaPacientePHA"/>
+      <display value="Referencia al paciente de la prescripción (Registro de la medicación inyectada durante el hospital)"/>
+      <target>
+        <code value="MedicationStatement.subject"/>
+        <display value="Referencia al paciente"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="PrescripcionHospitalariaModeloLogico.ReferenciaFarmacoPHA"/>
+      <display value="Referencia al fármaco de la prescripción (Registro de la medicación inyectada durante el hospital)"/>
+      <target>
+        <code value="MedicationStatement.medication.reference"/>
+        <display value="Referencia al fármaco"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

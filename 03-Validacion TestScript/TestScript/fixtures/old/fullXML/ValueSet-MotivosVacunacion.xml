@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="MotivosVacunacion"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet MotivosVacunacion</b></p><a name="MotivosVacunacion"> </a><a name="hcMotivosVacunacion"> </a><a name="MotivosVacunacion-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<code>urn:oid:2.16.724.4.21.5.13</code> where NOMBRE-VARIABLE  = Motivos de vacunación</li><li>Include these codes as defined in <code>urn:oid:2.16.724.4.21.5.13</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>75521000122109</td><td>Vacunación indicada incluida en calendario de vacunación</td></tr><tr><td>75531000122107</td><td>Vacunación indicada por condición de riesgo para enfermedad</td></tr><tr><td>75511000122103</td><td>Vacunación indicada por riesgo de complicación durante embarazo</td></tr><tr><td>75541000122104</td><td>Vacunación indicada antes de viaje</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://unicas-fhir.sanidad.gob.es/ValueSet/MotivosVacunacion"/>
+  <version value="0.0.1"/>
+  <name value="ValuesetMotivosVacunacion"/>
+  <title value="Value set de Motivos de la vacunación"/>
+  <status value="draft"/>
+  <date value="2025-02-05"/>
+  <description value="Este value set incluye los códigos correspondientes a los motivos de vacunación del catálogo Sistema de Información en Vacunaciones e Inmunizaciones (SIVAIN) (OID: 2.16.724.4.21.5.13)."/>
+  <compose>
+    <include>
+      <system value="urn:oid:2.16.724.4.21.5.13"/>
+      <filter>
+        <property value="NOMBRE-VARIABLE"/>
+        <op value="="/>
+        <value value="Motivos de vacunación"/>
+      </filter>
+    </include>
+    <include>
+      <system value="urn:oid:2.16.724.4.21.5.13"/>
+      <concept>
+        <code value="75521000122109"/>
+        <display value="Vacunación indicada incluida en calendario de vacunación"/>
+      </concept>
+      <concept>
+        <code value="75531000122107"/>
+        <display value="Vacunación indicada por condición de riesgo para enfermedad"/>
+      </concept>
+      <concept>
+        <code value="75511000122103"/>
+        <display value="Vacunación indicada por riesgo de complicación durante embarazo"/>
+      </concept>
+      <concept>
+        <code value="75541000122104"/>
+        <display value="Vacunación indicada antes de viaje"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

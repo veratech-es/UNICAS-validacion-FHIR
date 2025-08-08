@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="AlergiaConceptMap"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ConceptMap AlergiaConceptMap</b></p><a name="AlergiaConceptMap"> </a><a name="hcAlergiaConceptMap"> </a><a name="AlergiaConceptMap-en-US"> </a><p>Mapping from <a href="StructureDefinition-AlergiaModeloLogico.html">Modelo Lógico de Alergia ÚNICAS</a> to <a href="StructureDefinition-UNICASAllergyIntolerance.html">AllergyIntolerance Alergia ÚNICAS</a></p><br/><p><b>Group 1 </b>Mapping from <a href="StructureDefinition-AlergiaModeloLogico.html">Modelo Lógico de Alergia ÚNICAS</a> to <a href="StructureDefinition-UNICASAllergyIntolerance.html">AllergyIntolerance Alergia ÚNICAS</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>AlergiaModeloLogico.AgenteCausal (Agente causal)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>AllergyIntolerance.code (Agente causal)</td></tr><tr><td>AlergiaModeloLogico.AgenteCausal (Agente causal)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>AllergyIntolerance.reaction.substance (Agente causal)</td></tr><tr><td>AlergiaModeloLogico.Gravedad (Gravedad de la reacción)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>AllergyIntolerance.reaction.severity (Gravedad de la reacción)</td></tr><tr><td>AlergiaModeloLogico.Criticidad (Criticidad clínica)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>AllergyIntolerance.criticality (Criticidad clínica)</td></tr><tr><td>AlergiaModeloLogico.NivelCerteza (Nivel de certeza)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>AllergyIntolerance.verificationStatus (Nivel de certeza)</td></tr><tr><td>AlergiaModeloLogico.Estado (Estado de la alergia)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>AllergyIntolerance.clinicalStatus (Estado de la alergia)</td></tr><tr><td>AlergiaModeloLogico.ManifestacionClinica (Manifestación clínica)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>AllergyIntolerance.reaction.manifestation (Manifestación clínica)</td></tr><tr><td>AlergiaModeloLogico.FechaInicio (Fecha de inicio)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>AllergyIntolerance.onset[x] (Fecha de inicio (Fecha en que se identificó por primera vez la alergia o ocurrió la primera reacción))</td></tr><tr><td>AlergiaModeloLogico.FechaFin (Fecha de fin)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>AllergyIntolerance.lastOccurrence (Fecha de fin (Puede corresponder a la fecha de la última ocurrencia de la reacción alérgica))</td></tr><tr><td>AlergiaModeloLogico.Comentario (Comentario)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>AllergyIntolerance.note.text (Comentario)</td></tr><tr><td>AlergiaModeloLogico.ReferenciaProfesionalSanitario (Referencia al profesional sanitario)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>AllergyIntolerance.participant.actor (Referencia al profesional sanitario)</td></tr><tr><td>AlergiaModeloLogico.ReferenciaPaciente (Referencia al paciente)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>AllergyIntolerance.patient (Referencia al paciente)</td></tr></table></div>
+  </text>
+  <url value="https://unicas-fhir.sanidad.gob.es/ConceptMap/AlergiaConceptMap"/>
+  <version value="0.0.1"/>
+  <name value="AlergiaConceptMap"/>
+  <title value="Modelo de Alergia mapeado en FHIR profile"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-04-09T15:17:44+02:00"/>
+  <description value="Este recurso muestra cómo se asigna el modelo de alergia al FHIR Profile/StructureDefinition"/>
+  <sourceScopeUri value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/AlergiaModeloLogico"/>
+  <targetScopeUri value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASAllergyIntolerance"/>
+  <group>
+    <source value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/AlergiaModeloLogico"/>
+    <target value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASAllergyIntolerance"/>
+    <element>
+      <code value="AlergiaModeloLogico.AgenteCausal"/>
+      <display value="Agente causal"/>
+      <target>
+        <code value="AllergyIntolerance.code"/>
+        <display value="Agente causal"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="AlergiaModeloLogico.AgenteCausal"/>
+      <display value="Agente causal"/>
+      <target>
+        <code value="AllergyIntolerance.reaction.substance"/>
+        <display value="Agente causal"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="AlergiaModeloLogico.Gravedad"/>
+      <display value="Gravedad de la reacción"/>
+      <target>
+        <code value="AllergyIntolerance.reaction.severity"/>
+        <display value="Gravedad de la reacción"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="AlergiaModeloLogico.Criticidad"/>
+      <display value="Criticidad clínica"/>
+      <target>
+        <code value="AllergyIntolerance.criticality"/>
+        <display value="Criticidad clínica"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="AlergiaModeloLogico.NivelCerteza"/>
+      <display value="Nivel de certeza"/>
+      <target>
+        <code value="AllergyIntolerance.verificationStatus"/>
+        <display value="Nivel de certeza"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="AlergiaModeloLogico.Estado"/>
+      <display value="Estado de la alergia"/>
+      <target>
+        <code value="AllergyIntolerance.clinicalStatus"/>
+        <display value="Estado de la alergia"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="AlergiaModeloLogico.ManifestacionClinica"/>
+      <display value="Manifestación clínica"/>
+      <target>
+        <code value="AllergyIntolerance.reaction.manifestation"/>
+        <display value="Manifestación clínica"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="AlergiaModeloLogico.FechaInicio"/>
+      <display value="Fecha de inicio"/>
+      <target>
+        <code value="AllergyIntolerance.onset[x]"/>
+        <display value="Fecha de inicio (Fecha en que se identificó por primera vez la alergia o ocurrió la primera reacción)"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="AlergiaModeloLogico.FechaFin"/>
+      <display value="Fecha de fin"/>
+      <target>
+        <code value="AllergyIntolerance.lastOccurrence"/>
+        <display value="Fecha de fin (Puede corresponder a la fecha de la última ocurrencia de la reacción alérgica)"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="AlergiaModeloLogico.Comentario"/>
+      <display value="Comentario"/>
+      <target>
+        <code value="AllergyIntolerance.note.text"/>
+        <display value="Comentario"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="AlergiaModeloLogico.ReferenciaProfesionalSanitario"/>
+      <display value="Referencia al profesional sanitario"/>
+      <target>
+        <code value="AllergyIntolerance.participant.actor"/>
+        <display value="Referencia al profesional sanitario"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="AlergiaModeloLogico.ReferenciaPaciente"/>
+      <display value="Referencia al paciente"/>
+      <target>
+        <code value="AllergyIntolerance.patient"/>
+        <display value="Referencia al paciente"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

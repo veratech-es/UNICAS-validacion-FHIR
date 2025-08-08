@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="InstitucionConceptMap"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ConceptMap InstitucionConceptMap</b></p><a name="InstitucionConceptMap"> </a><a name="hcInstitucionConceptMap"> </a><a name="InstitucionConceptMap-en-US"> </a><p>Mapping from <a href="StructureDefinition-InstitucionModeloLogico.html">Modelo Lógico de Institución o Centro ÚNICAS</a> to (not specified)</p><br/><p><b>Group 1 </b>Mapping from <a href="StructureDefinition-InstitucionModeloLogico.html">Modelo Lógico de Institución o Centro ÚNICAS</a> to <a href="StructureDefinition-UNICASOrganization.html">Organization Institución ÚNICAS</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>InstitucionModeloLogico.CodigoREGCESS (Código REGCESS del centro)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Organization.identifier:CodigoREGCESS (Identificador del centro REGCESS)</td></tr><tr><td>InstitucionModeloLogico.CodigoCentroAutonomico (Código del centro autonómico)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Organization.identifier:CodigoCentroAutonomico (Identificador del centro autonómico)</td></tr><tr><td>InstitucionModeloLogico.CodigoEntidadSanitariaAutonomica (Código de la entidad sanitaria autonómica)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Organization.identifier:CodigoEntidadSanitaria (Identificador de la entidad sanitaria autonómica)</td></tr><tr><td>InstitucionModeloLogico.CodigoUnidadSanitariaAutonomica (Código de la unidad sanitaria autonómica)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Organization.identifier:CodigoUnidadSanitaria (Identificador de la unidad sanitaria autonómica)</td></tr><tr><td>InstitucionModeloLogico.DenominacionCentro (Denominación del centro)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Organization.name (Denominación del centro (Nombre usado por el centro))</td></tr><tr><td>InstitucionModeloLogico.Telefono (Teléfono)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Organization.contact.telecom:Telefono (Teléfono de contacto)</td></tr><tr><td>InstitucionModeloLogico.DireccionWeb (Dirección web)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Organization.contact.telecom:WebIntranet (Dirección de la página web o intranet del centro)</td></tr><tr><td>InstitucionModeloLogico.CorreoElectronico (Correo electrónico)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Organization.contact.telecom:CorreoElectronico (Correo electrónico)</td></tr><tr><td>InstitucionModeloLogico.DireccionCentro (Tipo de vía, nombre de la vía, número de la vía, piso, letra)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Organization.contact.address.line (Tipo de vía, nombre de la vía, número de la vía, piso, letra)</td></tr><tr><td>InstitucionModeloLogico.Ciudad (Ciudad)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Organization.contact.address.city (Ciudad)</td></tr><tr><td>InstitucionModeloLogico.Municipio (Municipio)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Organization.contact.address.extension:municipio (Municipio en la dirección)</td></tr><tr><td>InstitucionModeloLogico.Provincia (Provincia)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Organization.contact.address.extension:provincia (Provincia en la dirección)</td></tr><tr><td>InstitucionModeloLogico.ComunidadAutonoma (Comunidad Autónoma)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>Organization.contact.address.state (Comunidad Autónoma)</td></tr><tr><td>InstitucionModeloLogico.CodigoPostal (Código Postal)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Organization.contact.address.postalCode (Código postal)</td></tr><tr><td>InstitucionModeloLogico.Pais (País)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Organization.contact.address.country (País)</td></tr><tr><td>InstitucionModeloLogico.IdentificadorNodoCCAA (Identificador del Nodo Comunidad Autónoma)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Organization.extension:nodoCCAA (Identificador del Nodo CCAA)</td></tr><tr><td>InstitucionModeloLogico.ReferenciaSistemaInformacion (Referencia al sistema de información)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>Organization.endpoint (Referencia al sistema de información)</td></tr></table><hr/><p><b>Group 2 </b>Mapping from <a href="StructureDefinition-InstitucionModeloLogico.html">Modelo Lógico de Institución o Centro ÚNICAS</a> to <a href="StructureDefinition-UNICASEndpoint.html">Endpoint Sistema de Información ÚNICAS</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>InstitucionModeloLogico.TipoConexionEndpoint (Tipo de conexión Endpoint)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Endpoint.connectionType</td></tr><tr><td>InstitucionModeloLogico.ServicioSalud (Servicio de salud)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>Endpoint.name (Nombre del sistema de información)</td></tr><tr><td>InstitucionModeloLogico.ServicioSalud (Servicio de salud)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>Endpoint.description (Descripción del sistema de información)</td></tr><tr><td>InstitucionModeloLogico.URLEndpoint (URL de endpoint)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Endpoint.address (URL de endpoint)</td></tr></table></div>
+  </text>
+  <url value="https://unicas-fhir.sanidad.gob.es/ConceptMap/InstitucionConceptMap"/>
+  <version value="0.0.1"/>
+  <name value="InstitucionConceptMap"/>
+  <title value="Modelo de Institución o Centro mapeado en FHIR profile"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-04-09T15:17:44+02:00"/>
+  <description value="Este recurso muestra cómo se asigna el modelo del institución o centro al FHIR Profile/StructureDefinition"/>
+  <sourceScopeUri value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/InstitucionModeloLogico"/>
+  <group>
+    <source value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/InstitucionModeloLogico"/>
+    <target value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASOrganization"/>
+    <element>
+      <code value="InstitucionModeloLogico.CodigoREGCESS"/>
+      <display value="Código REGCESS del centro"/>
+      <target>
+        <code value="Organization.identifier:CodigoREGCESS"/>
+        <display value="Identificador del centro REGCESS"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="InstitucionModeloLogico.CodigoCentroAutonomico"/>
+      <display value="Código del centro autonómico"/>
+      <target>
+        <code value="Organization.identifier:CodigoCentroAutonomico"/>
+        <display value="Identificador del centro autonómico"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="InstitucionModeloLogico.CodigoEntidadSanitariaAutonomica"/>
+      <display value="Código de la entidad sanitaria autonómica"/>
+      <target>
+        <code value="Organization.identifier:CodigoEntidadSanitaria"/>
+        <display value="Identificador de la entidad sanitaria autonómica"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="InstitucionModeloLogico.CodigoUnidadSanitariaAutonomica"/>
+      <display value="Código de la unidad sanitaria autonómica"/>
+      <target>
+        <code value="Organization.identifier:CodigoUnidadSanitaria"/>
+        <display value="Identificador de la unidad sanitaria autonómica"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="InstitucionModeloLogico.DenominacionCentro"/>
+      <display value="Denominación del centro"/>
+      <target>
+        <code value="Organization.name"/>
+        <display value="Denominación del centro (Nombre usado por el centro)"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="InstitucionModeloLogico.Telefono"/>
+      <display value="Teléfono"/>
+      <target>
+        <code value="Organization.contact.telecom:Telefono"/>
+        <display value="Teléfono de contacto"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="InstitucionModeloLogico.DireccionWeb"/>
+      <display value="Dirección web"/>
+      <target>
+        <code value="Organization.contact.telecom:WebIntranet"/>
+        <display value="Dirección de la página web o intranet del centro"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="InstitucionModeloLogico.CorreoElectronico"/>
+      <display value="Correo electrónico"/>
+      <target>
+        <code value="Organization.contact.telecom:CorreoElectronico"/>
+        <display value="Correo electrónico"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="InstitucionModeloLogico.DireccionCentro"/>
+      <display value="Tipo de vía, nombre de la vía, número de la vía, piso, letra"/>
+      <target>
+        <code value="Organization.contact.address.line"/>
+        <display value="Tipo de vía, nombre de la vía, número de la vía, piso, letra"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="InstitucionModeloLogico.Ciudad"/>
+      <display value="Ciudad"/>
+      <target>
+        <code value="Organization.contact.address.city"/>
+        <display value="Ciudad"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="InstitucionModeloLogico.Municipio"/>
+      <display value="Municipio"/>
+      <target>
+        <code value="Organization.contact.address.extension:municipio"/>
+        <display value="Municipio en la dirección"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="InstitucionModeloLogico.Provincia"/>
+      <display value="Provincia"/>
+      <target>
+        <code value="Organization.contact.address.extension:provincia"/>
+        <display value="Provincia en la dirección"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="InstitucionModeloLogico.ComunidadAutonoma"/>
+      <display value="Comunidad Autónoma"/>
+      <target>
+        <code value="Organization.contact.address.state"/>
+        <display value="Comunidad Autónoma"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="InstitucionModeloLogico.CodigoPostal"/>
+      <display value="Código Postal"/>
+      <target>
+        <code value="Organization.contact.address.postalCode"/>
+        <display value="Código postal"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="InstitucionModeloLogico.Pais"/>
+      <display value="País"/>
+      <target>
+        <code value="Organization.contact.address.country"/>
+        <display value="País"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="InstitucionModeloLogico.IdentificadorNodoCCAA"/>
+      <display value="Identificador del Nodo Comunidad Autónoma"/>
+      <target>
+        <code value="Organization.extension:nodoCCAA"/>
+        <display value="Identificador del Nodo CCAA"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="InstitucionModeloLogico.ReferenciaSistemaInformacion"/>
+      <display value="Referencia al sistema de información"/>
+      <target>
+        <code value="Organization.endpoint"/>
+        <display value="Referencia al sistema de información"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+  </group>
+  <group>
+    <source value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/InstitucionModeloLogico"/>
+    <target value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASEndpoint"/>
+    <element>
+      <code value="InstitucionModeloLogico.TipoConexionEndpoint"/>
+      <display value="Tipo de conexión Endpoint"/>
+      <target>
+        <code value="Endpoint.connectionType"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="InstitucionModeloLogico.ServicioSalud"/>
+      <display value="Servicio de salud"/>
+      <target>
+        <code value="Endpoint.name"/>
+        <display value="Nombre del sistema de información"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="InstitucionModeloLogico.ServicioSalud"/>
+      <display value="Servicio de salud"/>
+      <target>
+        <code value="Endpoint.description"/>
+        <display value="Descripción del sistema de información"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="InstitucionModeloLogico.URLEndpoint"/>
+      <display value="URL de endpoint"/>
+      <target>
+        <code value="Endpoint.address"/>
+        <display value="URL de endpoint"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

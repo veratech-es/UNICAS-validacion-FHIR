@@ -1,0 +1,70 @@
+{
+  "id": "011a15efad749448ee542b0f9a8946a5f5819cd9ab951fe8597ba52dfa017369",
+  "url": "https://github.com/fhir-crucible/testscript-generator/011a15efad749448ee542b0f9a8946a5f5819cd9ab951fe8597ba52dfa017369",
+  "version": "0.0",
+  "name": "UnicasUNICASBundleCitasAgendaReadProfile",
+  "title": "IG: unicas; Profile: UNICASBundleCitasAgenda; Case: Read Profile",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-07-07T20:12:01+02:00",
+  "publisher": "The MITRE Corporation",
+  "profile": [
+    {
+      "id": "targetProfileUNICASBundleCitasAgenda",
+      "reference": "https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASBundleCitasAgenda"
+    }
+  ],
+  "variable": [
+    {
+      "name": "targetResourceIdUNICASBundleCitasAgenda",
+      "defaultValue": "example",
+      "description": "Enter a known instance id on the destination system. Will be checked for conformance against profile UNICASBundleCitasAgenda.",
+      "hint": "[resource.id]"
+    }
+  ],
+  "test": [
+    {
+      "name": "Validate the identified resource conforms to the UNICASBundleCitasAgenda profile",
+      "action": [
+        {
+          "operation": {
+            "type": {
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
+              "code": "read"
+            },
+            "resource": "Bundle",
+            "label": "Read_Bundle_Instance",
+            "description": "Read Bundle Instance",
+            "encodeRequestUrl": false,
+            "params": "/${targetResourceIdUNICASBundleCitasAgenda}",
+            "responseId": "targetInstance"
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_Response_OK",
+            "response": "okay",
+            "warningOnly": false
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_Bundle_Returned",
+            "description": "Assert Bundle Returned",
+            "resource": "Bundle",
+            "warningOnly": false
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_Instance_Conforms_to_UNICASBundleCitasAgenda_Profile",
+            "description": "Assert returned instance conforms to the UNICASBundleCitasAgenda Profile",
+            "validateProfileId": "targetProfileUNICASBundleCitasAgenda",
+            "warningOnly": false
+          }
+        }
+      ]
+    }
+  ],
+  "resourceType": "TestScript"
+}

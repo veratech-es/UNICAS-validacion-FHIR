@@ -1,0 +1,70 @@
+{
+  "id": "a0ef61f2410307f85db1803307d07640ea5f7e6d78547c826d9db068f77c2647",
+  "url": "https://github.com/fhir-crucible/testscript-generator/a0ef61f2410307f85db1803307d07640ea5f7e6d78547c826d9db068f77c2647",
+  "version": "0.0",
+  "name": "UnicasUNICASBundlePrescripcionesHospitalariasReadProfile",
+  "title": "IG: unicas; Profile: UNICASBundlePrescripcionesHospitalarias; Case: Read Profile",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-07-07T20:12:00+02:00",
+  "publisher": "The MITRE Corporation",
+  "profile": [
+    {
+      "id": "targetProfileUNICASBundlePrescripcionesHospitalarias",
+      "reference": "https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASPrescripcionesHospitalarias"
+    }
+  ],
+  "variable": [
+    {
+      "name": "targetResourceIdUNICASBundlePrescripcionesHospitalarias",
+      "defaultValue": "example",
+      "description": "Enter a known instance id on the destination system. Will be checked for conformance against profile UNICASBundlePrescripcionesHospitalarias.",
+      "hint": "[resource.id]"
+    }
+  ],
+  "test": [
+    {
+      "name": "Validate the identified resource conforms to the UNICASBundlePrescripcionesHospitalarias profile",
+      "action": [
+        {
+          "operation": {
+            "type": {
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
+              "code": "read"
+            },
+            "resource": "Bundle",
+            "label": "Read_Bundle_Instance",
+            "description": "Read Bundle Instance",
+            "encodeRequestUrl": false,
+            "params": "/${targetResourceIdUNICASBundlePrescripcionesHospitalarias}",
+            "responseId": "targetInstance"
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_Response_OK",
+            "response": "okay",
+            "warningOnly": false
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_Bundle_Returned",
+            "description": "Assert Bundle Returned",
+            "resource": "Bundle",
+            "warningOnly": false
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_Instance_Conforms_to_UNICASBundlePrescripcionesHospitalarias_Profile",
+            "description": "Assert returned instance conforms to the UNICASBundlePrescripcionesHospitalarias Profile",
+            "validateProfileId": "targetProfileUNICASBundlePrescripcionesHospitalarias",
+            "warningOnly": false
+          }
+        }
+      ]
+    }
+  ],
+  "resourceType": "TestScript"
+}

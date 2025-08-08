@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="InmunizacionConceptMap"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ConceptMap InmunizacionConceptMap</b></p><a name="InmunizacionConceptMap"> </a><a name="hcInmunizacionConceptMap"> </a><a name="InmunizacionConceptMap-en-US"> </a><p>Mapping from <a href="StructureDefinition-InmunizacionModeloLogico.html">Modelo Lógico de Inmunización ÚNICAS</a> to <a href="StructureDefinition-UNICASImmunization.html">Immunization Inmunización ÚNICAS</a></p><br/><p><b>Group 1 </b>Mapping from <a href="StructureDefinition-InmunizacionModeloLogico.html">Modelo Lógico de Inmunización ÚNICAS</a> to <a href="StructureDefinition-UNICASImmunization.html">Immunization Inmunización ÚNICAS</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>InmunizacionModeloLogico.Vacuna (Vacuna (producto))</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Immunization.vaccineCode (Vacuna (producto))</td></tr><tr><td>InmunizacionModeloLogico.NombreComercial (Nombre comercial)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>Immunization.vaccineCode.text (Nombre comercial de la vacuna)</td></tr><tr><td>InmunizacionModeloLogico.FechaAdministracion (Fecha de administración)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Immunization.occurrence[x] (Fecha de administración)</td></tr><tr><td>InmunizacionModeloLogico.LocalizacionAdmnistracion (Localización anatómica de administración)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Immunization.site (Localización anatómica de administración)</td></tr><tr><td>InmunizacionModeloLogico.ViaAdmnistracion (Vía de administración)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Immunization.route (Vía de administración)</td></tr><tr><td>InmunizacionModeloLogico.Dosis (Dosis)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Immunization.doseQuantity (Dosis administrada)</td></tr><tr><td>InmunizacionModeloLogico.MotivoVacunacion (Motivo de la vacunación)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Immunization.reason (Motivo de la vacunación)</td></tr><tr><td>InmunizacionModeloLogico.Lote (Lote)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Immunization.lotNumber (Número de lote de la vacuna)</td></tr><tr><td>InmunizacionModeloLogico.FechaCaducidad (Fecha de caducidad)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Immunization.expirationDate (Fecha de caducidad)</td></tr><tr><td>InmunizacionModeloLogico.ReferenciaProfesionalSanitario (Referencia al profesional sanitario)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>Immunization.performer.actor (Referencia al profesional sanitario)</td></tr><tr><td>InmunizacionModeloLogico.ReferenciaPaciente (Referencia al paciente)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Immunization.patient (Referencia al paciente)</td></tr></table></div>
+  </text>
+  <url value="https://unicas-fhir.sanidad.gob.es/ConceptMap/InmunizacionConceptMap"/>
+  <version value="0.0.1"/>
+  <name value="InmunizacionConceptMap"/>
+  <title value="Modelo de Inmunización mapeado en FHIR profile"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-04-09T15:17:44+02:00"/>
+  <description value="Este recurso muestra cómo se asigna el modelo de inmunización al FHIR Profile/StructureDefinition"/>
+  <sourceScopeUri value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/InmunizacionModeloLogico"/>
+  <targetScopeUri value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASImmunization"/>
+  <group>
+    <source value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/InmunizacionModeloLogico"/>
+    <target value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASImmunization"/>
+    <element>
+      <code value="InmunizacionModeloLogico.Vacuna"/>
+      <display value="Vacuna (producto)"/>
+      <target>
+        <code value="Immunization.vaccineCode"/>
+        <display value="Vacuna (producto)"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="InmunizacionModeloLogico.NombreComercial"/>
+      <display value="Nombre comercial"/>
+      <target>
+        <code value="Immunization.vaccineCode.text"/>
+        <display value="Nombre comercial de la vacuna"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="InmunizacionModeloLogico.FechaAdministracion"/>
+      <display value="Fecha de administración"/>
+      <target>
+        <code value="Immunization.occurrence[x]"/>
+        <display value="Fecha de administración"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="InmunizacionModeloLogico.LocalizacionAdmnistracion"/>
+      <display value="Localización anatómica de administración"/>
+      <target>
+        <code value="Immunization.site"/>
+        <display value="Localización anatómica de administración"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="InmunizacionModeloLogico.ViaAdmnistracion"/>
+      <display value="Vía de administración"/>
+      <target>
+        <code value="Immunization.route"/>
+        <display value="Vía de administración"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="InmunizacionModeloLogico.Dosis"/>
+      <display value="Dosis"/>
+      <target>
+        <code value="Immunization.doseQuantity"/>
+        <display value="Dosis administrada"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="InmunizacionModeloLogico.MotivoVacunacion"/>
+      <display value="Motivo de la vacunación"/>
+      <target>
+        <code value="Immunization.reason"/>
+        <display value="Motivo de la vacunación"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="InmunizacionModeloLogico.Lote"/>
+      <display value="Lote"/>
+      <target>
+        <code value="Immunization.lotNumber"/>
+        <display value="Número de lote de la vacuna"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="InmunizacionModeloLogico.FechaCaducidad"/>
+      <display value="Fecha de caducidad"/>
+      <target>
+        <code value="Immunization.expirationDate"/>
+        <display value="Fecha de caducidad"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="InmunizacionModeloLogico.ReferenciaProfesionalSanitario"/>
+      <display value="Referencia al profesional sanitario"/>
+      <target>
+        <code value="Immunization.performer.actor"/>
+        <display value="Referencia al profesional sanitario"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="InmunizacionModeloLogico.ReferenciaPaciente"/>
+      <display value="Referencia al paciente"/>
+      <target>
+        <code value="Immunization.patient"/>
+        <display value="Referencia al paciente"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

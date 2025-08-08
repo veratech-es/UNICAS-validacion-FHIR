@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="CitaAgenda"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ConceptMap CitaAgenda</b></p><a name="CitaAgenda"> </a><a name="hcCitaAgenda"> </a><a name="CitaAgenda-en-US"> </a><p>Mapping from <a href="StructureDefinition-CitaAgendaModeloLogico.html">Modelo Lógico de Cita Agenda ÚNICAS</a> to (not specified)</p><br/><p><b>Group 1 </b>Mapping from <a href="StructureDefinition-CitaAgendaModeloLogico.html">Modelo Lógico de Cita Agenda ÚNICAS</a> to <a href="StructureDefinition-UNICASAppointment.html">Appointment Cita Agenda ÚNICAS</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>CitaAgendaModeloLogico.MotivoCita (Motivo de cita)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>Appointment.reason (Motivo de cita)</td></tr><tr><td>CitaAgendaModeloLogico.CanalCita (Canal de cita)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>Appointment.serviceType (Canal de cita)</td></tr><tr><td>CitaAgendaModeloLogico.CategorizacionCita (Categorización de la cita)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>Appointment.serviceCategory (Categorización de la cita)</td></tr><tr><td>CitaAgendaModeloLogico.FechaCitaProgramada (Fecha y hora de inicio de la cita programada)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>Appointment.start (Fecha y hora de inicio de la cita programada)</td></tr><tr><td>CitaAgendaModeloLogico.FechaCitaProgramada (Fecha y hora de fin de la cita programada)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>Appointment.end (Fecha y hora de fin de la cita programada)</td></tr><tr><td>CitaAgendaModeloLogico.FechaCitaProgramada (Duración de la cita programada)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>Appointment.minutesDuration (Duración de la cita programada)</td></tr><tr><td>CitaAgendaModeloLogico.FechaCreacionCita (Fecha y hora de creación de la cita)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Appointment.created (Fecha y hora de creación de la cita)</td></tr><tr><td>CitaAgendaModeloLogico.FechaCancelacionCita (Fecha y hora de cancelación de la cita)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Appointment.cancellationDate (Fecha y hora de cancelación de la cita)</td></tr><tr><td>CitaAgendaModeloLogico.Comentario (Comentario)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>Appointment.note.text (Comentario)</td></tr><tr><td>CitaAgendaModeloLogico.ReferenciaProfesionalSanitario (Referencia al profesional sanitario)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Appointment.participant:ProfesionalSanitarioParticipante (Profesional sanitario participante)</td></tr><tr><td>CitaAgendaModeloLogico.ReferenciaPaciente (Referencia al paciente)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Appointment.subject (Referencia al paciente)</td></tr><tr><td>CitaAgendaModeloLogico.ReferenciaLocalizacion (Referencia al lugar donde se realiza la cita)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>Appointment.participant:ServicioAsistencialParticipante (Servicio asistencial (Localización) participante)</td></tr></table><hr/><p><b>Group 2 </b>Mapping from <a href="StructureDefinition-CitaAgendaModeloLogico.html">Modelo Lógico de Cita Agenda ÚNICAS</a> to <a href="StructureDefinition-UNICASLocation.html">Location Localización y Servicio Asistencial ÚNICAS</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>CitaAgendaModeloLogico.Localizacion (Lugar donde se realiza la cita)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>Location.name (Lugar donde se realiza la cita)</td></tr><tr><td>CitaAgendaModeloLogico.DescripcionLocalizacion (Descripción completa de lugar donde se realiza la cita)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>Location.description (Descripción completa de lugar donde se realiza la cita)</td></tr><tr><td>CitaAgendaModeloLogico.ReferenciaCentro (Referencia al centro donde se realiza la cita)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>Location.managingOrganization (Referencia al servicio asistencial donde se realiza la cita)</td></tr></table></div>
+  </text>
+  <url value="https://unicas-fhir.sanidad.gob.es/ConceptMap/CitaAgenda"/>
+  <version value="0.0.1"/>
+  <name value="CitaAgenda"/>
+  <title value="Modelo de Cita Agenda mapeado en FHIR profile"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-04-09T15:17:44+02:00"/>
+  <description value="Este recurso muestra cómo se asigna el modelo de cita agenda al FHIR Profile/StructureDefinition"/>
+  <sourceScopeUri value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/CitaAgendaModeloLogico"/>
+  <group>
+    <source value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/CitaAgendaModeloLogico"/>
+    <target value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASAppointment"/>
+    <element>
+      <code value="CitaAgendaModeloLogico.MotivoCita"/>
+      <display value="Motivo de cita"/>
+      <target>
+        <code value="Appointment.reason"/>
+        <display value="Motivo de cita"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="CitaAgendaModeloLogico.CanalCita"/>
+      <display value="Canal de cita"/>
+      <target>
+        <code value="Appointment.serviceType"/>
+        <display value="Canal de cita"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="CitaAgendaModeloLogico.CategorizacionCita"/>
+      <display value="Categorización de la cita"/>
+      <target>
+        <code value="Appointment.serviceCategory"/>
+        <display value="Categorización de la cita"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="CitaAgendaModeloLogico.FechaCitaProgramada"/>
+      <display value="Fecha y hora de inicio de la cita programada"/>
+      <target>
+        <code value="Appointment.start"/>
+        <display value="Fecha y hora de inicio de la cita programada"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="CitaAgendaModeloLogico.FechaCitaProgramada"/>
+      <display value="Fecha y hora de fin de la cita programada"/>
+      <target>
+        <code value="Appointment.end"/>
+        <display value="Fecha y hora de fin de la cita programada"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="CitaAgendaModeloLogico.FechaCitaProgramada"/>
+      <display value="Duración de la cita programada"/>
+      <target>
+        <code value="Appointment.minutesDuration"/>
+        <display value="Duración de la cita programada"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="CitaAgendaModeloLogico.FechaCreacionCita"/>
+      <display value="Fecha y hora de creación de la cita"/>
+      <target>
+        <code value="Appointment.created"/>
+        <display value="Fecha y hora de creación de la cita"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="CitaAgendaModeloLogico.FechaCancelacionCita"/>
+      <display value="Fecha y hora de cancelación de la cita"/>
+      <target>
+        <code value="Appointment.cancellationDate"/>
+        <display value="Fecha y hora de cancelación de la cita"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="CitaAgendaModeloLogico.Comentario"/>
+      <display value="Comentario"/>
+      <target>
+        <code value="Appointment.note.text"/>
+        <display value="Comentario"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="CitaAgendaModeloLogico.ReferenciaProfesionalSanitario"/>
+      <display value="Referencia al profesional sanitario"/>
+      <target>
+        <code value="Appointment.participant:ProfesionalSanitarioParticipante"/>
+        <display value="Profesional sanitario participante"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="CitaAgendaModeloLogico.ReferenciaPaciente"/>
+      <display value="Referencia al paciente"/>
+      <target>
+        <code value="Appointment.subject"/>
+        <display value="Referencia al paciente"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="CitaAgendaModeloLogico.ReferenciaLocalizacion"/>
+      <display value="Referencia al lugar donde se realiza la cita"/>
+      <target>
+        <code value="Appointment.participant:ServicioAsistencialParticipante"/>
+        <display value="Servicio asistencial (Localización) participante"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+  </group>
+  <group>
+    <source value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/CitaAgendaModeloLogico"/>
+    <target value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASLocation"/>
+    <element>
+      <code value="CitaAgendaModeloLogico.Localizacion"/>
+      <display value="Lugar donde se realiza la cita"/>
+      <target>
+        <code value="Location.name"/>
+        <display value="Lugar donde se realiza la cita"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="CitaAgendaModeloLogico.DescripcionLocalizacion"/>
+      <display value="Descripción completa de lugar donde se realiza la cita"/>
+      <target>
+        <code value="Location.description"/>
+        <display value="Descripción completa de lugar donde se realiza la cita"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="CitaAgendaModeloLogico.ReferenciaCentro"/>
+      <display value="Referencia al centro donde se realiza la cita"/>
+      <target>
+        <code value="Location.managingOrganization"/>
+        <display value="Referencia al servicio asistencial donde se realiza la cita"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

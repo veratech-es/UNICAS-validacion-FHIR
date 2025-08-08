@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="CodigosActividadesUNICAS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem CodigosActividadesUNICAS</b></p><a name="CodigosActividadesUNICAS"> </a><a name="hcCodigosActividadesUNICAS"> </a><a name="CodigosActividadesUNICAS-en-US"> </a><p>This  code system <code>https://unicas-fhir.sanidad.gob.es/CodeSystem/CodigosActividadesUNICAS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">01<a name="CodigosActividadesUNICAS-01"> </a></td><td>Admisión administrativa</td></tr><tr><td style="white-space:nowrap">02<a name="CodigosActividadesUNICAS-02"> </a></td><td>Visita a urgencias</td></tr><tr><td style="white-space:nowrap">03<a name="CodigosActividadesUNICAS-03"> </a></td><td>Hospitalización</td></tr><tr><td style="white-space:nowrap">04<a name="CodigosActividadesUNICAS-04"> </a></td><td>Visitas a consulta externa</td></tr><tr><td style="white-space:nowrap">05<a name="CodigosActividadesUNICAS-05"> </a></td><td>Farmacia y terapias avanzadas</td></tr><tr><td style="white-space:nowrap">06<a name="CodigosActividadesUNICAS-06"> </a></td><td>Otras actividades del plan terapéutico</td></tr><tr><td style="white-space:nowrap">07<a name="CodigosActividadesUNICAS-07"> </a></td><td>Procedimientos quirúrgicos</td></tr><tr><td style="white-space:nowrap">08<a name="CodigosActividadesUNICAS-08"> </a></td><td>Atención intermedia-sociosanitaria</td></tr><tr><td style="white-space:nowrap">09<a name="CodigosActividadesUNICAS-09"> </a></td><td>Pruebas de laboratorio</td></tr><tr><td style="white-space:nowrap">10<a name="CodigosActividadesUNICAS-10"> </a></td><td>Pruebas de imagen</td></tr><tr><td style="white-space:nowrap">11<a name="CodigosActividadesUNICAS-11"> </a></td><td>Pruebas genómicas</td></tr><tr><td style="white-space:nowrap">12<a name="CodigosActividadesUNICAS-12"> </a></td><td>Otras pruebas diagnósticas</td></tr><tr><td style="white-space:nowrap">13<a name="CodigosActividadesUNICAS-13"> </a></td><td>Información de la derivación y otros tipos de movilidad</td></tr><tr><td style="white-space:nowrap">14<a name="CodigosActividadesUNICAS-14"> </a></td><td>Comités</td></tr><tr><td style="white-space:nowrap">15<a name="CodigosActividadesUNICAS-15"> </a></td><td>Sin actividad</td></tr></table></div>
+  </text>
+  <url value="https://unicas-fhir.sanidad.gob.es/CodeSystem/CodigosActividadesUNICAS"/>
+  <version value="0.0.1"/>
+  <name value="CodesystemActividadesUNICAS"/>
+  <title value="Code system de Actividades ÚNICAS"/>
+  <status value="draft"/>
+  <date value="2025-02-04"/>
+  <description value="Este code system incluye los códigos para actividades ÚNICAS."/>
+  <content value="complete"/>
+  <count value="15"/>
+  <concept>
+    <code value="01"/>
+    <display value="Admisión administrativa"/>
+  </concept>
+  <concept>
+    <code value="02"/>
+    <display value="Visita a urgencias"/>
+  </concept>
+  <concept>
+    <code value="03"/>
+    <display value="Hospitalización"/>
+  </concept>
+  <concept>
+    <code value="04"/>
+    <display value="Visitas a consulta externa"/>
+  </concept>
+  <concept>
+    <code value="05"/>
+    <display value="Farmacia y terapias avanzadas"/>
+  </concept>
+  <concept>
+    <code value="06"/>
+    <display value="Otras actividades del plan terapéutico"/>
+  </concept>
+  <concept>
+    <code value="07"/>
+    <display value="Procedimientos quirúrgicos"/>
+  </concept>
+  <concept>
+    <code value="08"/>
+    <display value="Atención intermedia-sociosanitaria"/>
+  </concept>
+  <concept>
+    <code value="09"/>
+    <display value="Pruebas de laboratorio"/>
+  </concept>
+  <concept>
+    <code value="10"/>
+    <display value="Pruebas de imagen"/>
+  </concept>
+  <concept>
+    <code value="11"/>
+    <display value="Pruebas genómicas"/>
+  </concept>
+  <concept>
+    <code value="12"/>
+    <display value="Otras pruebas diagnósticas"/>
+  </concept>
+  <concept>
+    <code value="13"/>
+    <display value="Información de la derivación y otros tipos de movilidad"/>
+  </concept>
+  <concept>
+    <code value="14"/>
+    <display value="Comités"/>
+  </concept>
+  <concept>
+    <code value="15"/>
+    <display value="Sin actividad"/>
+  </concept>
+</CodeSystem>

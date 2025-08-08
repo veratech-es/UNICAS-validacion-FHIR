@@ -1,0 +1,80 @@
+{
+  "id": "Unicas-Https://unicas-Fhir.sanidad.gob.es/structuredefinition/objetivoprocesomodelologico-Search_by-Profile",
+  "url": "https://github.com/fhir-crucible/testscript-generator",
+  "version": "0.0",
+  "name": "Unicas_Https://unicas_Fhir.sanidad.gob.es/structuredefinition/objetivoprocesomodelologico_Search_by_Profile",
+  "title": "unicas https://unicas fhir.sanidad.gob.es/structuredefinition/objetivoprocesomodelologico search_by profile",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-07-07T20:11:53+02:00",
+  "publisher": "The MITRE Corporation",
+  "fixture": [
+    {
+      "id": "example_https://unicas-fhir.sanidad.gob.es/structuredefinition/objetivoprocesomodelologico",
+      "autocreate": false,
+      "autodelete": false,
+      "resource": {
+        "reference": "fixtures/example_https://unicas-fhir.sanidad.gob.es/structuredefinition/objetivoprocesomodelologico.json"
+      }
+    }
+  ],
+  "variable": [
+    {
+      "name": "pUizD6ZkMmoAxdLT",
+      "expression": "https://unicas-fhir.sanidad.gob.es/StructureDefinition/ObjetivoProcesoModeloLogico.meta.profile",
+      "sourceId": "ODQ0ljT28O7eyyLY"
+    }
+  ],
+  "setup": {
+    "action": [
+      {
+        "operation": {
+          "type": {
+            "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
+            "code": "create"
+          },
+          "label": "Operation_1",
+          "encodeRequestUrl": false,
+          "responseId": "ODQ0ljT28O7eyyLY",
+          "sourceId": "example_https://unicas-fhir.sanidad.gob.es/structuredefinition/objetivoprocesomodelologico"
+        }
+      }
+    ]
+  },
+  "test": [
+    {
+      "name": "Test_1",
+      "action": [
+        {
+          "operation": {
+            "type": {
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
+              "code": "search"
+            },
+            "resource": "https://unicas-fhir.sanidad.gob.es/StructureDefinition/ObjetivoProcesoModeloLogico",
+            "label": "Operation_2",
+            "encodeRequestUrl": false,
+            "params": "?_profile=${pUizD6ZkMmoAxdLT}"
+          }
+        }
+      ]
+    }
+  ],
+  "teardown": {
+    "action": [
+      {
+        "operation": {
+          "type": {
+            "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
+            "code": "delete"
+          },
+          "resource": "https://unicas-fhir.sanidad.gob.es/StructureDefinition/ObjetivoProcesoModeloLogico",
+          "label": "Operation_3",
+          "encodeRequestUrl": false,
+          "params": "/${pUizD6ZkMmoAxdLT}"
+        }
+      }
+    ]
+  },
+  "resourceType": "TestScript"
+}

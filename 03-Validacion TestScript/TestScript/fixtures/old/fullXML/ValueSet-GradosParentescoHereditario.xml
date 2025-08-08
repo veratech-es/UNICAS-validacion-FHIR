@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="GradosParentescoHereditario"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet GradosParentescoHereditario</b></p><a name="GradosParentescoHereditario"> </a><a name="hcGradosParentescoHereditario"> </a><a name="GradosParentescoHereditario-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<code>http://snomed.info/sct/900000001000122104</code> where concept  descends from 125679009</li><li>Include these codes as defined in <code>http://snomed.info/sct/900000001000122104</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>21093007</td><td>medio hermano de sexo femenino o masculino</td></tr><tr><td>1285415004</td><td>tía natural</td></tr><tr><td>1285411008</td><td>sobrino natural</td></tr><tr><td>1285593009</td><td>sobrino nieto natural</td></tr><tr><td>9947008</td><td>padre natural</td></tr><tr><td>1269486006</td><td>familiar consanguíneo de cuarto grado</td></tr><tr><td>719766008</td><td>medio hermano materno</td></tr><tr><td>113158006</td><td>hermano mellizo dicigótico de sexo femenino o masculino</td></tr><tr><td>19343003</td><td>hermana melliza</td></tr><tr><td>2272004</td><td>media hermana</td></tr><tr><td>1285591006</td><td>tío abuelo natural</td></tr><tr><td>699110007</td><td>familiar consanguíneo de segundo grado</td></tr><tr><td>1285432000</td><td>sobrina natural</td></tr><tr><td>78272007</td><td>abuelos naturales</td></tr><tr><td>13646006</td><td>padres naturales</td></tr><tr><td>113160008</td><td>hijo natural</td></tr><tr><td>10896006</td><td>hermano mellizo monocigótico de sexo femenino o masculino</td></tr><tr><td>313415001</td><td>gemelo monocigótico</td></tr><tr><td>50058005</td><td>hermana gemela</td></tr><tr><td>1269487002</td><td>familiar consanguíneo de tercer grado</td></tr><tr><td>81467001</td><td>hermano mellizo dicigótico</td></tr><tr><td>73678001</td><td>hermana natural</td></tr><tr><td>1285625002</td><td>bisabuelo natural</td></tr><tr><td>719762005</td><td>medio hermano paterno</td></tr><tr><td>11286003</td><td>hermano mellizo de sexo femenino o masculino</td></tr><tr><td>1285416003</td><td>tío natural</td></tr><tr><td>65656005</td><td>madre natural</td></tr><tr><td>719765007</td><td>media hermana materna</td></tr><tr><td>719764006</td><td>media hermana paterna</td></tr><tr><td>82101005</td><td>hermano natural de sexo femenino o masculino</td></tr><tr><td>313416000</td><td>gemelo dicigótico</td></tr><tr><td>83420006</td><td>hija natural</td></tr><tr><td>1286885008</td><td>primo hermano natural</td></tr><tr><td>81276006</td><td>hermano mellizo</td></tr><tr><td>1285592004</td><td>tía abuela natural</td></tr><tr><td>125678001</td><td>familiar consanguíneo de primer grado</td></tr><tr><td>1285414000</td><td>familiar masculino consanguíneo de segundo grado</td></tr><tr><td>45929001</td><td>medio hermano</td></tr><tr><td>62296006</td><td>abuelo natural</td></tr><tr><td>75226009</td><td>hijo natural (genérico)</td></tr><tr><td>1236822007</td><td>familiar consanguíneo de segundo grado femenino</td></tr><tr><td>1285594003</td><td>sobrina nieta natural</td></tr><tr><td>17945006</td><td>abuela natural</td></tr><tr><td>60614009</td><td>hermano natural</td></tr><tr><td>78194006</td><td>hermano gemelo</td></tr><tr><td>29644004</td><td>hermana melliza dicigótica</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://unicas-fhir.sanidad.gob.es/ValueSet/GradosParentescoHereditario"/>
+  <version value="0.0.1"/>
+  <name value="ValuesetGradosParentescoHereditario"/>
+  <title value="Value set de Tipos de relaciones de parentesco entre el paciente y el familiar con enfermedades hereditarias en ÚNICAS (Grados de parentesco)"/>
+  <status value="draft"/>
+  <date value="2025-02-05"/>
+  <description value="Este value set incluye los códigos de SNOMED CT posibles descendientes del 125679009 (familiar consanguíneo (persona)) de SNOMED CT. Extensión para España del SNS (OID: 2.16.724.4.21.5.8)."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct/900000001000122104"/>
+      <filter>
+        <property value="concept"/>
+        <op value="descendent-of"/>
+        <value value="125679009"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct/900000001000122104"/>
+      <concept>
+        <code value="21093007"/>
+        <display value="medio hermano de sexo femenino o masculino"/>
+      </concept>
+      <concept>
+        <code value="1285415004"/>
+        <display value="tía natural"/>
+      </concept>
+      <concept>
+        <code value="1285411008"/>
+        <display value="sobrino natural"/>
+      </concept>
+      <concept>
+        <code value="1285593009"/>
+        <display value="sobrino nieto natural"/>
+      </concept>
+      <concept>
+        <code value="9947008"/>
+        <display value="padre natural"/>
+      </concept>
+      <concept>
+        <code value="1269486006"/>
+        <display value="familiar consanguíneo de cuarto grado"/>
+      </concept>
+      <concept>
+        <code value="719766008"/>
+        <display value="medio hermano materno"/>
+      </concept>
+      <concept>
+        <code value="113158006"/>
+        <display value="hermano mellizo dicigótico de sexo femenino o masculino"/>
+      </concept>
+      <concept>
+        <code value="19343003"/>
+        <display value="hermana melliza"/>
+      </concept>
+      <concept>
+        <code value="2272004"/>
+        <display value="media hermana"/>
+      </concept>
+      <concept>
+        <code value="1285591006"/>
+        <display value="tío abuelo natural"/>
+      </concept>
+      <concept>
+        <code value="699110007"/>
+        <display value="familiar consanguíneo de segundo grado"/>
+      </concept>
+      <concept>
+        <code value="1285432000"/>
+        <display value="sobrina natural"/>
+      </concept>
+      <concept>
+        <code value="78272007"/>
+        <display value="abuelos naturales"/>
+      </concept>
+      <concept>
+        <code value="13646006"/>
+        <display value="padres naturales"/>
+      </concept>
+      <concept>
+        <code value="113160008"/>
+        <display value="hijo natural"/>
+      </concept>
+      <concept>
+        <code value="10896006"/>
+        <display value="hermano mellizo monocigótico de sexo femenino o masculino"/>
+      </concept>
+      <concept>
+        <code value="313415001"/>
+        <display value="gemelo monocigótico"/>
+      </concept>
+      <concept>
+        <code value="50058005"/>
+        <display value="hermana gemela"/>
+      </concept>
+      <concept>
+        <code value="1269487002"/>
+        <display value="familiar consanguíneo de tercer grado"/>
+      </concept>
+      <concept>
+        <code value="81467001"/>
+        <display value="hermano mellizo dicigótico"/>
+      </concept>
+      <concept>
+        <code value="73678001"/>
+        <display value="hermana natural"/>
+      </concept>
+      <concept>
+        <code value="1285625002"/>
+        <display value="bisabuelo natural"/>
+      </concept>
+      <concept>
+        <code value="719762005"/>
+        <display value="medio hermano paterno"/>
+      </concept>
+      <concept>
+        <code value="11286003"/>
+        <display value="hermano mellizo de sexo femenino o masculino"/>
+      </concept>
+      <concept>
+        <code value="1285416003"/>
+        <display value="tío natural"/>
+      </concept>
+      <concept>
+        <code value="65656005"/>
+        <display value="madre natural"/>
+      </concept>
+      <concept>
+        <code value="719765007"/>
+        <display value="media hermana materna"/>
+      </concept>
+      <concept>
+        <code value="719764006"/>
+        <display value="media hermana paterna"/>
+      </concept>
+      <concept>
+        <code value="82101005"/>
+        <display value="hermano natural de sexo femenino o masculino"/>
+      </concept>
+      <concept>
+        <code value="313416000"/>
+        <display value="gemelo dicigótico"/>
+      </concept>
+      <concept>
+        <code value="83420006"/>
+        <display value="hija natural"/>
+      </concept>
+      <concept>
+        <code value="1286885008"/>
+        <display value="primo hermano natural"/>
+      </concept>
+      <concept>
+        <code value="81276006"/>
+        <display value="hermano mellizo"/>
+      </concept>
+      <concept>
+        <code value="1285592004"/>
+        <display value="tía abuela natural"/>
+      </concept>
+      <concept>
+        <code value="125678001"/>
+        <display value="familiar consanguíneo de primer grado"/>
+      </concept>
+      <concept>
+        <code value="1285414000"/>
+        <display value="familiar masculino consanguíneo de segundo grado"/>
+      </concept>
+      <concept>
+        <code value="45929001"/>
+        <display value="medio hermano"/>
+      </concept>
+      <concept>
+        <code value="62296006"/>
+        <display value="abuelo natural"/>
+      </concept>
+      <concept>
+        <code value="75226009"/>
+        <display value="hijo natural (genérico)"/>
+      </concept>
+      <concept>
+        <code value="1236822007"/>
+        <display value="familiar consanguíneo de segundo grado femenino"/>
+      </concept>
+      <concept>
+        <code value="1285594003"/>
+        <display value="sobrina nieta natural"/>
+      </concept>
+      <concept>
+        <code value="17945006"/>
+        <display value="abuela natural"/>
+      </concept>
+      <concept>
+        <code value="60614009"/>
+        <display value="hermano natural"/>
+      </concept>
+      <concept>
+        <code value="78194006"/>
+        <display value="hermano gemelo"/>
+      </concept>
+      <concept>
+        <code value="29644004"/>
+        <display value="hermana melliza dicigótica"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,74 @@
+<?xml version="1.0" ?>
+<TestScript xmlns="http://hl7.org/fhir" id="Observation-UNICASObservationObstetrico-read" url="http://example.org/fhir/TestScript/Observation-UNICASObservationObstetrico-read">
+  <status value="draft"/>
+  <name value="Observation read TestScript"/>
+  <title value="Observation read TestScript"/>
+  <publisher value="Generado por VeraTech for Health"/>
+  <fixture>
+    <id value="fixture-Observation"/>
+    <autocreate value="true"/>
+    <autodelete value="true"/>
+    <extension url="http://hl7.org/fhir/StructureDefinition/testscript-source-url">
+      <valueUri value="fixtures/UNICAS-ObservationObsterico-example-300.xml"/>
+    </extension>
+    <resource>&lt;!-- External resource expected at fixtures/UNICAS-ObservationObsterico-example-300.xml --&gt;</resource>
+  </fixture>
+  <setup>
+    <action>
+      <operation>
+        <type>
+          <coding>
+            <system value="http://hl7.org/fhir/restful-interaction"/>
+            <code value="read"/>
+          </coding>
+        </type>
+        <resource value="Observation"/>
+        <method value="put"/>
+        <params value="Observation?identifier=urn:regcess:0908005177|id-interno-obstetrico-ejemplo-300"/>
+      </operation>
+      <assert>
+        <description value="Server must return resource conforming to profile"/>
+        <path value="meta.profile"/>
+        <operator value="contains"/>
+        <value value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASObservationObstetrico"/>
+      </assert>
+    </action>
+  </setup>
+  <test>
+    <name value="Test read on Observation"/>
+    <description value="Verify server supports read interaction on Observation"/>
+    <action>
+      <operation>
+        <type>
+          <coding>
+            <system value="http://hl7.org/fhir/restful-interaction"/>
+            <code value="read"/>
+          </coding>
+        </type>
+        <resource value="Observation"/>
+        <method value="get"/>
+        <params value="Observation?identifier=urn:regcess:0908005177|id-interno-obstetrico-ejemplo-300"/>
+      </operation>
+      <assert>
+        <description value="HTTP returns Ok"/>
+        <response value="okay"/>
+        <stopTestOnFail value="false"/>
+        <warningOnly value="false"/>
+      </assert>
+      <assert>
+        <description value="Server must return resource conforming to profile"/>
+        <path value="meta.profile"/>
+        <operator value="contains"/>
+        <value value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASObservationObstetrico"/>
+        <stopTestOnFail value="false"/>
+        <warningOnly value="false"/>
+      </assert>
+      <assert>
+        <description value="Server must return resource Observation"/>
+        <resource value="Observation"/>
+        <stopTestOnFail value="false"/>
+        <warningOnly value="false"/>
+      </assert>
+    </action>
+  </test>
+</TestScript>

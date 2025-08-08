@@ -1,0 +1,70 @@
+{
+  "id": "a5d60174cea2cade32b58f918045e15b6222d3b485c78402e820cd81f99df403",
+  "url": "https://github.com/fhir-crucible/testscript-generator/a5d60174cea2cade32b58f918045e15b6222d3b485c78402e820cd81f99df403",
+  "version": "0.0",
+  "name": "UnicasUNICASObservationObstetricoReadProfile",
+  "title": "IG: unicas; Profile: UNICASObservationObstetrico; Case: Read Profile",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-07-07T20:11:59+02:00",
+  "publisher": "The MITRE Corporation",
+  "profile": [
+    {
+      "id": "targetProfileUNICASObservationObstetrico",
+      "reference": "https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASObservationObstetrico"
+    }
+  ],
+  "variable": [
+    {
+      "name": "targetResourceIdUNICASObservationObstetrico",
+      "defaultValue": "example",
+      "description": "Enter a known instance id on the destination system. Will be checked for conformance against profile UNICASObservationObstetrico.",
+      "hint": "[resource.id]"
+    }
+  ],
+  "test": [
+    {
+      "name": "Validate the identified resource conforms to the UNICASObservationObstetrico profile",
+      "action": [
+        {
+          "operation": {
+            "type": {
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
+              "code": "read"
+            },
+            "resource": "Observation",
+            "label": "Read_Observation_Instance",
+            "description": "Read Observation Instance",
+            "encodeRequestUrl": false,
+            "params": "/${targetResourceIdUNICASObservationObstetrico}",
+            "responseId": "targetInstance"
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_Response_OK",
+            "response": "okay",
+            "warningOnly": false
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_Observation_Returned",
+            "description": "Assert Observation Returned",
+            "resource": "Observation",
+            "warningOnly": false
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_Instance_Conforms_to_UNICASObservationObstetrico_Profile",
+            "description": "Assert returned instance conforms to the UNICASObservationObstetrico Profile",
+            "validateProfileId": "targetProfileUNICASObservationObstetrico",
+            "warningOnly": false
+          }
+        }
+      ]
+    }
+  ],
+  "resourceType": "TestScript"
+}

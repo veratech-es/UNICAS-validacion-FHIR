@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="ProfesionalSanitarioConceptMap"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ConceptMap ProfesionalSanitarioConceptMap</b></p><a name="ProfesionalSanitarioConceptMap"> </a><a name="hcProfesionalSanitarioConceptMap"> </a><a name="ProfesionalSanitarioConceptMap-en-US"> </a><p>Mapping from <a href="StructureDefinition-ProfesionalSanitarioModeloLogico.html">Modelo Lógico de Profesional Sanitario ÚNICAS</a> to <a href="StructureDefinition-UNICASPractitioner.html">Practitioner Profesional Sanitario ÚNICAS</a></p><br/><p><b>Group 1 </b>Mapping from <a href="StructureDefinition-ProfesionalSanitarioModeloLogico.html">Modelo Lógico de Profesional Sanitario ÚNICAS</a> to <a href="StructureDefinition-UNICASPractitioner.html">Practitioner Profesional Sanitario ÚNICAS</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>ProfesionalSanitarioModeloLogico.IdentificadorProfesionalSanitario (Identificadores del profesional sanitario (documento nacional de identidad, pasaporte, tarjeta de identidad de extranjero, número de colegiado))</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#source-is-broader-than-target" title="source-is-broader-than-target">is broader than</a></td><td>Practitioner.identifier (Identificadores del profesional sanitario (Pueden ser documento nacional de identidad, pasaporte, tarjeta de identidad de extranjero, número de colegiado))</td></tr><tr><td>ProfesionalSanitarioModeloLogico.NombreCompleto (Nombre completo del profesional sanitario)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>Practitioner.name.text (Nombre completo del profesional sanitario)</td></tr><tr><td>ProfesionalSanitarioModeloLogico.Nombre (Nombre del profesional sanitario)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Practitioner.name.given (Nombre del profesional sanitario)</td></tr><tr><td>ProfesionalSanitarioModeloLogico.PrimerApellido (Primer apellido del profesional sanitario)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>Practitioner.name.family.extension:primerApellido (Primer apellido del profesional sanitario)</td></tr><tr><td>ProfesionalSanitarioModeloLogico.SegundoApellido (Segundo apellido del profesional sanitario)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>Practitioner.name.family.extension:segundoApellido (Segundo apellido del profesional sanitario)</td></tr><tr><td>ProfesionalSanitarioModeloLogico.Telefono (Teléfono)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Practitioner.telecom (Teléfono)</td></tr></table></div>
+  </text>
+  <url value="https://unicas-fhir.sanidad.gob.es/ConceptMap/ProfesionalSanitarioConceptMap"/>
+  <version value="0.0.1"/>
+  <name value="ProfesionalSanitarioConceptMap"/>
+  <title value="Modelo de Profesional Sanitario mapeado en FHIR profile"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-04-09T15:17:44+02:00"/>
+  <description value="Este recurso muestra cómo se asigna el modelo del profesional sanitario al FHIR Profile/StructureDefinition"/>
+  <sourceScopeUri value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/ProfesionalSanitarioModeloLogico"/>
+  <targetScopeUri value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASPractitioner"/>
+  <group>
+    <source value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/ProfesionalSanitarioModeloLogico"/>
+    <target value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASPractitioner"/>
+    <element>
+      <code value="ProfesionalSanitarioModeloLogico.IdentificadorProfesionalSanitario"/>
+      <display value="Identificadores del profesional sanitario (documento nacional de identidad, pasaporte, tarjeta de identidad de extranjero, número de colegiado)"/>
+      <target>
+        <code value="Practitioner.identifier"/>
+        <display value="Identificadores del profesional sanitario (Pueden ser documento nacional de identidad, pasaporte, tarjeta de identidad de extranjero, número de colegiado)"/>
+        <relationship value="source-is-broader-than-target"/>
+      </target>
+    </element>
+    <element>
+      <code value="ProfesionalSanitarioModeloLogico.NombreCompleto"/>
+      <display value="Nombre completo del profesional sanitario"/>
+      <target>
+        <code value="Practitioner.name.text"/>
+        <display value="Nombre completo del profesional sanitario"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="ProfesionalSanitarioModeloLogico.Nombre"/>
+      <display value="Nombre del profesional sanitario"/>
+      <target>
+        <code value="Practitioner.name.given"/>
+        <display value="Nombre del profesional sanitario"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="ProfesionalSanitarioModeloLogico.PrimerApellido"/>
+      <display value="Primer apellido del profesional sanitario"/>
+      <target>
+        <code value="Practitioner.name.family.extension:primerApellido"/>
+        <display value="Primer apellido del profesional sanitario"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="ProfesionalSanitarioModeloLogico.SegundoApellido"/>
+      <display value="Segundo apellido del profesional sanitario"/>
+      <target>
+        <code value="Practitioner.name.family.extension:segundoApellido"/>
+        <display value="Segundo apellido del profesional sanitario"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="ProfesionalSanitarioModeloLogico.Telefono"/>
+      <display value="Teléfono"/>
+      <target>
+        <code value="Practitioner.telecom"/>
+        <display value="Teléfono"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

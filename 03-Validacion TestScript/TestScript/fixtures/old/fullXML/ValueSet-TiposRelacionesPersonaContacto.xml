@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="TiposRelacionesPersonaContacto"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet TiposRelacionesPersonaContacto</b></p><a name="TiposRelacionesPersonaContacto"> </a><a name="hcTiposRelacionesPersonaContacto"> </a><a name="TiposRelacionesPersonaContacto-en-US"> </a><ul><li>Include these codes as defined in <code>http://snomed.info/sct/900000001000122104</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>58626002</td><td>tutor legal</td></tr><tr><td>160503002</td><td>progenitor de</td></tr><tr><td>125677006</td><td>familiar</td></tr><tr><td>394863008</td><td>no es miembro de la familia</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://unicas-fhir.sanidad.gob.es/ValueSet/TiposRelacionesPersonaContacto"/>
+  <version value="0.0.1"/>
+  <name value="ValuesetTiposRelacionesEntrePacientePersonaContacto"/>
+  <title value="Value set de Tipos de relaciones entre el paciente y su persona de contacto en ÚNICAS"/>
+  <status value="draft"/>
+  <date value="2025-02-05"/>
+  <description value="Este value set define un conjunto de códigos de SNOMED CT. Extensión para España del SNS (OID: 2.16.724.4.21.5.8) que pueden utilizarse para indicar los tipos de relación de las personas de contacto asociadas a paciente."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct/900000001000122104"/>
+      <concept>
+        <code value="58626002"/>
+        <display value="tutor legal"/>
+      </concept>
+      <concept>
+        <code value="160503002"/>
+        <display value="progenitor de"/>
+      </concept>
+      <concept>
+        <code value="125677006"/>
+        <display value="familiar"/>
+      </concept>
+      <concept>
+        <code value="394863008"/>
+        <display value="no es miembro de la familia"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

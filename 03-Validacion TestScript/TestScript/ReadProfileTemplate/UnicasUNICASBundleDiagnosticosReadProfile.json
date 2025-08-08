@@ -1,0 +1,70 @@
+{
+  "id": "d88c9d1c8c78397ec5f44b23643935536f2541aba2920c2fb2206a31e42d6183",
+  "url": "https://github.com/fhir-crucible/testscript-generator/d88c9d1c8c78397ec5f44b23643935536f2541aba2920c2fb2206a31e42d6183",
+  "version": "0.0",
+  "name": "UnicasUNICASBundleDiagnosticosReadProfile",
+  "title": "IG: unicas; Profile: UNICASBundleDiagnosticos; Case: Read Profile",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-07-07T20:12:01+02:00",
+  "publisher": "The MITRE Corporation",
+  "profile": [
+    {
+      "id": "targetProfileUNICASBundleDiagnosticos",
+      "reference": "https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASBundleDiagnosticos"
+    }
+  ],
+  "variable": [
+    {
+      "name": "targetResourceIdUNICASBundleDiagnosticos",
+      "defaultValue": "example",
+      "description": "Enter a known instance id on the destination system. Will be checked for conformance against profile UNICASBundleDiagnosticos.",
+      "hint": "[resource.id]"
+    }
+  ],
+  "test": [
+    {
+      "name": "Validate the identified resource conforms to the UNICASBundleDiagnosticos profile",
+      "action": [
+        {
+          "operation": {
+            "type": {
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
+              "code": "read"
+            },
+            "resource": "Bundle",
+            "label": "Read_Bundle_Instance",
+            "description": "Read Bundle Instance",
+            "encodeRequestUrl": false,
+            "params": "/${targetResourceIdUNICASBundleDiagnosticos}",
+            "responseId": "targetInstance"
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_Response_OK",
+            "response": "okay",
+            "warningOnly": false
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_Bundle_Returned",
+            "description": "Assert Bundle Returned",
+            "resource": "Bundle",
+            "warningOnly": false
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_Instance_Conforms_to_UNICASBundleDiagnosticos_Profile",
+            "description": "Assert returned instance conforms to the UNICASBundleDiagnosticos Profile",
+            "validateProfileId": "targetProfileUNICASBundleDiagnosticos",
+            "warningOnly": false
+          }
+        }
+      ]
+    }
+  ],
+  "resourceType": "TestScript"
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="Enfermedades"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet Enfermedades</b></p><a name="Enfermedades"> </a><a name="hcEnfermedades"> </a><a name="Enfermedades-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<code>http://snomed.info/sct/900000001000122104</code> where concept  is-a 404684003</li><li>Include all codes defined in <code>urn:oid:2.16.724.4.21.5.29</code></li><li>Include all codes defined in <code>urn:oid:2.16.724.4.21.5.22</code></li></ul></div>
+  </text>
+  <url value="https://unicas-fhir.sanidad.gob.es/ValueSet/Enfermedades"/>
+  <version value="0.0.1"/>
+  <name value="ValuesetEnfermedades"/>
+  <title value="Value set de Enfermedades"/>
+  <status value="draft"/>
+  <date value="2025-02-05"/>
+  <description value="Este value set incluye los códigos de SNOMED CT correspondientes al eje 404684003 (hallazgo clínico (hallazgo)) de SNOMED CT. Extensión para España del SNS (OID: 2.16.724.4.21.5.8). También incluye todos los códigos de la terminología CIE-10-ES. Diagnósticos (OID: 2.16.724.4.21.5.29) y ORPHA (OID: 2.16.724.4.21.5.22)."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct/900000001000122104"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="404684003"/>
+      </filter>
+    </include>
+    <include>
+      <system value="urn:oid:2.16.724.4.21.5.29"/>
+    </include>
+    <include>
+      <system value="urn:oid:2.16.724.4.21.5.22"/>
+    </include>
+  </compose>
+</ValueSet>

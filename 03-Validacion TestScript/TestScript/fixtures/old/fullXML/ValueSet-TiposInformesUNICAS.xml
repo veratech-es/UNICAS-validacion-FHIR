@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="TiposInformesUNICAS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet TiposInformesUNICAS</b></p><a name="TiposInformesUNICAS"> </a><a name="hcTiposInformesUNICAS"> </a><a name="TiposInformesUNICAS-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <code>http://snomed.info/sct/900000001000122104?fhir_vs-refset/900000631000122100</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>373942005</td><td>informe clínico de alta</td></tr><tr><td>1031000122106</td><td>informe clínico de consulta externa</td></tr><tr><td>1041000122103</td><td>informe clínico de urgencias</td></tr><tr><td>1051000122101</td><td>informe clínico de atención primaria</td></tr><tr><td>1061000122104</td><td>informe de resultados de pruebas de laboratorio</td></tr><tr><td>1071000122109</td><td>informe de resultados de pruebas de imagen</td></tr><tr><td>1081000122107</td><td>informe de cuidados de enfermería</td></tr><tr><td>1021000122108</td><td>historia clínica resumida</td></tr><tr><td>1091000122105</td><td>informe de resultados de otras pruebas diagnósticas</td></tr></table></li><li>Include these codes as defined in <code>http://snomed.info/sct/900000001000122104</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>2094711000122100</td><td>Resumen de Paciente de la Unión Europea</td></tr><tr><td>371524004</td><td>informe clínico</td></tr><tr><td>2094821000122101</td><td>informe genético</td></tr><tr><td>2094721000122106</td><td>informe de inmunización</td></tr><tr><td>2094731000122109</td><td>informe de alergias</td></tr><tr><td>2094641000122105</td><td>informe salud mental</td></tr><tr><td>33811000122104</td><td>informe de valoración de servicios sociales</td></tr><tr><td>2094651000122107</td><td>informe de trasplante</td></tr><tr><td>2094701000122103</td><td>informe de terapias avanzadas</td></tr><tr><td>2094791000122108</td><td>informe de terapias farmacológicas</td></tr><tr><td>2094801000122109</td><td>informe de rehabilitación y fisioterapia</td></tr><tr><td>2094661000122109</td><td>informe de nutrición</td></tr><tr><td>2094811000122107</td><td>informe de tratamiento no farmacológico</td></tr><tr><td>2094781000122105</td><td>informe de comité multidisciplinar intrahospitalario</td></tr><tr><td>2094681000122101</td><td>informe de comité red europea</td></tr><tr><td>2094691000122103</td><td>informe de comité red ÚNICAS</td></tr><tr><td>2094771000122107</td><td>informe de comité interhospitalario</td></tr><tr><td>371525003</td><td>informe de procedimiento clínico</td></tr><tr><td>2094761000122102</td><td>informe de derivación</td></tr><tr><td>2094671000122104</td><td>informe de comité de tumores</td></tr><tr><td>2094741000122101</td><td>informe de atención intermedia</td></tr><tr><td>722446000</td><td>registro de alergia</td></tr><tr><td>31221000122105</td><td>antecedentes</td></tr><tr><td>721981007</td><td>informe de estudios diagnósticos</td></tr><tr><td>41000179103</td><td>registro de inmunización</td></tr><tr><td>440545006</td><td>registro de prescripción</td></tr><tr><td>2095321000122106</td><td>registro de citas programadas</td></tr><tr><td>2095331000122109</td><td>Receta Electrónica del SNS</td></tr><tr><td>XXXXXXXX2</td><td>registro de variables clínicas</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://unicas-fhir.sanidad.gob.es/ValueSet/TiposInformesUNICAS"/>
+  <version value="0.0.1"/>
+  <name value="ValuesetTiposInformesUNICAS"/>
+  <title value="Value set de Tipos de informes para ÚNICAS"/>
+  <status value="draft"/>
+  <date value="2025-02-05"/>
+  <description value="Este value set incluye todos los códigos de SNOMED CT del refset Documentos del CMDIC (OID: 2.16.724.4.21.5.8.60). Además, incorpora un conjunto de códigos de SNOMED CT. Extensión para España del SNS (OID: 2.16.724.4.21.5.8) para identificar los tipos de informes utilizados en la red de ÚNICAS."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct/900000001000122104?fhir_vs-refset/900000631000122100"/>
+      <concept>
+        <code value="373942005"/>
+        <display value="informe clínico de alta"/>
+      </concept>
+      <concept>
+        <code value="1031000122106"/>
+        <display value="informe clínico de consulta externa"/>
+      </concept>
+      <concept>
+        <code value="1041000122103"/>
+        <display value="informe clínico de urgencias"/>
+      </concept>
+      <concept>
+        <code value="1051000122101"/>
+        <display value="informe clínico de atención primaria"/>
+      </concept>
+      <concept>
+        <code value="1061000122104"/>
+        <display value="informe de resultados de pruebas de laboratorio"/>
+      </concept>
+      <concept>
+        <code value="1071000122109"/>
+        <display value="informe de resultados de pruebas de imagen"/>
+      </concept>
+      <concept>
+        <code value="1081000122107"/>
+        <display value="informe de cuidados de enfermería"/>
+      </concept>
+      <concept>
+        <code value="1021000122108"/>
+        <display value="historia clínica resumida"/>
+      </concept>
+      <concept>
+        <code value="1091000122105"/>
+        <display value="informe de resultados de otras pruebas diagnósticas"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct/900000001000122104"/>
+      <concept>
+        <code value="2094711000122100"/>
+        <display value="Resumen de Paciente de la Unión Europea"/>
+      </concept>
+      <concept>
+        <code value="371524004"/>
+        <display value="informe clínico"/>
+      </concept>
+      <concept>
+        <code value="2094821000122101"/>
+        <display value="informe genético"/>
+      </concept>
+      <concept>
+        <code value="2094721000122106"/>
+        <display value="informe de inmunización"/>
+      </concept>
+      <concept>
+        <code value="2094731000122109"/>
+        <display value="informe de alergias"/>
+      </concept>
+      <concept>
+        <code value="2094641000122105"/>
+        <display value="informe salud mental"/>
+      </concept>
+      <concept>
+        <code value="33811000122104"/>
+        <display value="informe de valoración de servicios sociales"/>
+      </concept>
+      <concept>
+        <code value="2094651000122107"/>
+        <display value="informe de trasplante"/>
+      </concept>
+      <concept>
+        <code value="2094701000122103"/>
+        <display value="informe de terapias avanzadas"/>
+      </concept>
+      <concept>
+        <code value="2094791000122108"/>
+        <display value="informe de terapias farmacológicas"/>
+      </concept>
+      <concept>
+        <code value="2094801000122109"/>
+        <display value="informe de rehabilitación y fisioterapia"/>
+      </concept>
+      <concept>
+        <code value="2094661000122109"/>
+        <display value="informe de nutrición"/>
+      </concept>
+      <concept>
+        <code value="2094811000122107"/>
+        <display value="informe de tratamiento no farmacológico"/>
+      </concept>
+      <concept>
+        <code value="2094781000122105"/>
+        <display value="informe de comité multidisciplinar intrahospitalario"/>
+      </concept>
+      <concept>
+        <code value="2094681000122101"/>
+        <display value="informe de comité red europea"/>
+      </concept>
+      <concept>
+        <code value="2094691000122103"/>
+        <display value="informe de comité red ÚNICAS"/>
+      </concept>
+      <concept>
+        <code value="2094771000122107"/>
+        <display value="informe de comité interhospitalario"/>
+      </concept>
+      <concept>
+        <code value="371525003"/>
+        <display value="informe de procedimiento clínico"/>
+      </concept>
+      <concept>
+        <code value="2094761000122102"/>
+        <display value="informe de derivación"/>
+      </concept>
+      <concept>
+        <code value="2094671000122104"/>
+        <display value="informe de comité de tumores"/>
+      </concept>
+      <concept>
+        <code value="2094741000122101"/>
+        <display value="informe de atención intermedia"/>
+      </concept>
+      <concept>
+        <code value="722446000"/>
+        <display value="registro de alergia"/>
+      </concept>
+      <concept>
+        <code value="31221000122105"/>
+        <display value="antecedentes"/>
+      </concept>
+      <concept>
+        <code value="721981007"/>
+        <display value="informe de estudios diagnósticos"/>
+      </concept>
+      <concept>
+        <code value="41000179103"/>
+        <display value="registro de inmunización"/>
+      </concept>
+      <concept>
+        <code value="440545006"/>
+        <display value="registro de prescripción"/>
+      </concept>
+      <concept>
+        <code value="2095321000122106"/>
+        <display value="registro de citas programadas"/>
+      </concept>
+      <concept>
+        <code value="2095331000122109"/>
+        <display value="Receta Electrónica del SNS"/>
+      </concept>
+      <concept>
+        <code value="XXXXXXXX2"/>
+        <display value="registro de variables clínicas"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

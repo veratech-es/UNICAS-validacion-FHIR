@@ -4,11 +4,11 @@ Esta carpeta contiene scripts y herramientas para verificar que un servidor FHIR
 
 ## Contenido
 
-- Workspaces para Postman e Insomnia
-  - **Insomnia**
-    - [`Insomnia_collection.yaml`](./Insomnia_collection.yaml)
-  - **Postman**
-    - [`Postman_collection.json`](./Postman_collection.json)
+Workspaces para Postman e Insomnia
+- **Insomnia**
+  - [`Insomnia_collection.yaml`](./Insomnia_collection.yaml)
+- **Postman**
+  - [`Postman_collection.json`](./Postman_collection.json)
 
 ## Objetivo
 

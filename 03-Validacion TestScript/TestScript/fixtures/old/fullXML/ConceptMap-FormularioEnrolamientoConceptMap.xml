@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="FormularioEnrolamientoConceptMap"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ConceptMap FormularioEnrolamientoConceptMap</b></p><a name="FormularioEnrolamientoConceptMap"> </a><a name="hcFormularioEnrolamientoConceptMap"> </a><a name="FormularioEnrolamientoConceptMap-en-US"> </a><p>Mapping from <a href="StructureDefinition-FormularioEnrolamientoModeloLogico.html">Modelo Lógico de Formulario de Enrolamiento ÚNICAS</a> to <a href="StructureDefinition-UNICASDiagnosticReport.html">DiagnosticReport Formulario de Enrolamiento ÚNICAS</a></p><br/><p><b>Group 1 </b>Mapping from <a href="StructureDefinition-FormularioEnrolamientoModeloLogico.html">Modelo Lógico de Formulario de Enrolamiento ÚNICAS</a> to <a href="StructureDefinition-UNICASDiagnosticReport.html">DiagnosticReport Formulario de Enrolamiento ÚNICAS</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>FormularioEnrolamientoModeloLogico.Diagnostico (Diagnóstico)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>DiagnosticReport.code (Diagnóstico)</td></tr><tr><td>FormularioEnrolamientoModeloLogico.ClasificacionDiagnostico (Clasificación de diagnóstico (diagnóstico primario | diagnóstico secundario | diagnóstico genético | diagnóstico sindrómico | diagnóstico etiológico))</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>DiagnosticReport.category:ClasificacionDiagnostico (Clasificación de diagnóstico)</td></tr><tr><td>FormularioEnrolamientoModeloLogico.TipoDiagnostico (Tipo de diagnóstico (diagnóstico confirmado | diagnóstico posible | estado de portador, enfermedad asintomática))</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>DiagnosticReport.category:TipoDiagnostico (Tipo de diagnóstico)</td></tr><tr><td>FormularioEnrolamientoModeloLogico.FechaDiagnostico (Fecha de diagnóstico)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>DiagnosticReport.effective[x] (Fecha de diagnóstico)</td></tr><tr><td>FormularioEnrolamientoModeloLogico.Comentario (Comentario)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>DiagnosticReport.note.text (Comentario)</td></tr><tr><td>FormularioEnrolamientoModeloLogico.GradoSospecha (Grado de sospecha en la detección de enfermedad (sospecha alta de enfermedad minoritaria | sospecha media de enfermedad minoritaria | sospecha baja de enfermedad minoritaria))</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>DiagnosticReport.conclusionCode:GradoSospecha (Grado de sospecha)</td></tr><tr><td>FormularioEnrolamientoModeloLogico.CriterioDiagnosticoClinico (Criterio de diagnóstico clínico)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#source-is-narrower-than-target" title="source-is-narrower-than-target">is narrower than</a></td><td>DiagnosticReport.conclusionCode:CriteriosSospecha (Criterios de sospecha (criterio de diagnóstico clínico, criterio de prueba genética, criterio de prueba bioquímica, criterio de prueba hematológica, criterio de prueba histológica, criterio de prueba inmunológica, criterio de prueba de imagen))</td></tr><tr><td>FormularioEnrolamientoModeloLogico.CriterioPruebaGenetica (Criterio de prueba genética (Pruebas complementarias. Prueba de laboratorio))</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#source-is-narrower-than-target" title="source-is-narrower-than-target">is narrower than</a></td><td>DiagnosticReport.conclusionCode:CriteriosSospecha (Criterios de sospecha (criterio de diagnóstico clínico, criterio de prueba genética, criterio de prueba bioquímica, criterio de prueba hematológica, criterio de prueba histológica, criterio de prueba inmunológica, criterio de prueba de imagen))</td></tr><tr><td>FormularioEnrolamientoModeloLogico.CriterioPruebaBioquimica (Criterio de prueba bioquímica (Pruebas complementarias. Prueba de laboratorio))</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#source-is-narrower-than-target" title="source-is-narrower-than-target">is narrower than</a></td><td>DiagnosticReport.conclusionCode:CriteriosSospecha (Criterios de sospecha (criterio de diagnóstico clínico, criterio de prueba genética, criterio de prueba bioquímica, criterio de prueba hematológica, criterio de prueba histológica, criterio de prueba inmunológica, criterio de prueba de imagen))</td></tr><tr><td>FormularioEnrolamientoModeloLogico.CriterioPruebaHematologica (Criterio de prueba hematológica (Pruebas complementarias. Prueba de laboratorio))</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#source-is-narrower-than-target" title="source-is-narrower-than-target">is narrower than</a></td><td>DiagnosticReport.conclusionCode:CriteriosSospecha (Criterios de sospecha (criterio de diagnóstico clínico, criterio de prueba genética, criterio de prueba bioquímica, criterio de prueba hematológica, criterio de prueba histológica, criterio de prueba inmunológica, criterio de prueba de imagen))</td></tr><tr><td>FormularioEnrolamientoModeloLogico.CriterioPruebaHistologica (Criterio de prueba histológica (Pruebas complementarias. Otras pruebas))</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#source-is-narrower-than-target" title="source-is-narrower-than-target">is narrower than</a></td><td>DiagnosticReport.conclusionCode:CriteriosSospecha (Criterios de sospecha (criterio de diagnóstico clínico, criterio de prueba genética, criterio de prueba bioquímica, criterio de prueba hematológica, criterio de prueba histológica, criterio de prueba inmunológica, criterio de prueba de imagen))</td></tr><tr><td>FormularioEnrolamientoModeloLogico.CriterioPruebaImmunologica (Criterio de prueba inmunológica (Pruebas complementarias. Otras pruebas))</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#source-is-narrower-than-target" title="source-is-narrower-than-target">is narrower than</a></td><td>DiagnosticReport.conclusionCode:CriteriosSospecha (Criterios de sospecha (criterio de diagnóstico clínico, criterio de prueba genética, criterio de prueba bioquímica, criterio de prueba hematológica, criterio de prueba histológica, criterio de prueba inmunológica, criterio de prueba de imagen))</td></tr><tr><td>FormularioEnrolamientoModeloLogico.CriterioPruebaImagen (Criterio de prueba de imagen (Pruebas complementarias. Prueba de imagen))</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#source-is-narrower-than-target" title="source-is-narrower-than-target">is narrower than</a></td><td>DiagnosticReport.conclusionCode:CriteriosSospecha (Criterios de sospecha (criterio de diagnóstico clínico, criterio de prueba genética, criterio de prueba bioquímica, criterio de prueba hematológica, criterio de prueba histológica, criterio de prueba inmunológica, criterio de prueba de imagen))</td></tr><tr><td>FormularioEnrolamientoModeloLogico.ReferenciaProfesionalSanitario (Referencia al profesional sanitario)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>DiagnosticReport.performer (Referencia al profesional sanitario)</td></tr><tr><td>FormularioEnrolamientoModeloLogico.ReferenciaPaciente (Referencia al paciente)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>DiagnosticReport.subject (Referencia al paciente)</td></tr></table></div>
+  </text>
+  <url value="https://unicas-fhir.sanidad.gob.es/ConceptMap/FormularioEnrolamientoConceptMap"/>
+  <version value="0.0.1"/>
+  <name value="FormularioEnrolamientoConceptMap"/>
+  <title value="Modelo de Formulario de Enrolamiento mapeado en FHIR profile"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-04-09T15:17:44+02:00"/>
+  <description value="Este recurso muestra cómo se asigna el modelo de formulario de enrolamiento al FHIR Profile/StructureDefinition"/>
+  <sourceScopeUri value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/FormularioEnrolamientoModeloLogico"/>
+  <targetScopeUri value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASDiagnosticReport"/>
+  <group>
+    <source value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/FormularioEnrolamientoModeloLogico"/>
+    <target value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASDiagnosticReport"/>
+    <element>
+      <code value="FormularioEnrolamientoModeloLogico.Diagnostico"/>
+      <display value="Diagnóstico"/>
+      <target>
+        <code value="DiagnosticReport.code"/>
+        <display value="Diagnóstico"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="FormularioEnrolamientoModeloLogico.ClasificacionDiagnostico"/>
+      <display value="Clasificación de diagnóstico (diagnóstico primario | diagnóstico secundario | diagnóstico genético | diagnóstico sindrómico | diagnóstico etiológico)"/>
+      <target>
+        <code value="DiagnosticReport.category:ClasificacionDiagnostico"/>
+        <display value="Clasificación de diagnóstico"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="FormularioEnrolamientoModeloLogico.TipoDiagnostico"/>
+      <display value="Tipo de diagnóstico (diagnóstico confirmado | diagnóstico posible | estado de portador, enfermedad asintomática)"/>
+      <target>
+        <code value="DiagnosticReport.category:TipoDiagnostico"/>
+        <display value="Tipo de diagnóstico"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="FormularioEnrolamientoModeloLogico.FechaDiagnostico"/>
+      <display value="Fecha de diagnóstico"/>
+      <target>
+        <code value="DiagnosticReport.effective[x]"/>
+        <display value="Fecha de diagnóstico"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="FormularioEnrolamientoModeloLogico.Comentario"/>
+      <display value="Comentario"/>
+      <target>
+        <code value="DiagnosticReport.note.text"/>
+        <display value="Comentario"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="FormularioEnrolamientoModeloLogico.GradoSospecha"/>
+      <display value="Grado de sospecha en la detección de enfermedad (sospecha alta de enfermedad minoritaria | sospecha media de enfermedad minoritaria | sospecha baja de enfermedad minoritaria)"/>
+      <target>
+        <code value="DiagnosticReport.conclusionCode:GradoSospecha"/>
+        <display value="Grado de sospecha"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="FormularioEnrolamientoModeloLogico.CriterioDiagnosticoClinico"/>
+      <display value="Criterio de diagnóstico clínico"/>
+      <target>
+        <code value="DiagnosticReport.conclusionCode:CriteriosSospecha"/>
+        <display value="Criterios de sospecha (criterio de diagnóstico clínico, criterio de prueba genética, criterio de prueba bioquímica, criterio de prueba hematológica, criterio de prueba histológica, criterio de prueba inmunológica, criterio de prueba de imagen)"/>
+        <relationship value="source-is-narrower-than-target"/>
+      </target>
+    </element>
+    <element>
+      <code value="FormularioEnrolamientoModeloLogico.CriterioPruebaGenetica"/>
+      <display value="Criterio de prueba genética (Pruebas complementarias. Prueba de laboratorio)"/>
+      <target>
+        <code value="DiagnosticReport.conclusionCode:CriteriosSospecha"/>
+        <display value="Criterios de sospecha (criterio de diagnóstico clínico, criterio de prueba genética, criterio de prueba bioquímica, criterio de prueba hematológica, criterio de prueba histológica, criterio de prueba inmunológica, criterio de prueba de imagen)"/>
+        <relationship value="source-is-narrower-than-target"/>
+      </target>
+    </element>
+    <element>
+      <code value="FormularioEnrolamientoModeloLogico.CriterioPruebaBioquimica"/>
+      <display value="Criterio de prueba bioquímica (Pruebas complementarias. Prueba de laboratorio)"/>
+      <target>
+        <code value="DiagnosticReport.conclusionCode:CriteriosSospecha"/>
+        <display value="Criterios de sospecha (criterio de diagnóstico clínico, criterio de prueba genética, criterio de prueba bioquímica, criterio de prueba hematológica, criterio de prueba histológica, criterio de prueba inmunológica, criterio de prueba de imagen)"/>
+        <relationship value="source-is-narrower-than-target"/>
+      </target>
+    </element>
+    <element>
+      <code value="FormularioEnrolamientoModeloLogico.CriterioPruebaHematologica"/>
+      <display value="Criterio de prueba hematológica (Pruebas complementarias. Prueba de laboratorio)"/>
+      <target>
+        <code value="DiagnosticReport.conclusionCode:CriteriosSospecha"/>
+        <display value="Criterios de sospecha (criterio de diagnóstico clínico, criterio de prueba genética, criterio de prueba bioquímica, criterio de prueba hematológica, criterio de prueba histológica, criterio de prueba inmunológica, criterio de prueba de imagen)"/>
+        <relationship value="source-is-narrower-than-target"/>
+      </target>
+    </element>
+    <element>
+      <code value="FormularioEnrolamientoModeloLogico.CriterioPruebaHistologica"/>
+      <display value="Criterio de prueba histológica (Pruebas complementarias. Otras pruebas)"/>
+      <target>
+        <code value="DiagnosticReport.conclusionCode:CriteriosSospecha"/>
+        <display value="Criterios de sospecha (criterio de diagnóstico clínico, criterio de prueba genética, criterio de prueba bioquímica, criterio de prueba hematológica, criterio de prueba histológica, criterio de prueba inmunológica, criterio de prueba de imagen)"/>
+        <relationship value="source-is-narrower-than-target"/>
+      </target>
+    </element>
+    <element>
+      <code value="FormularioEnrolamientoModeloLogico.CriterioPruebaImmunologica"/>
+      <display value="Criterio de prueba inmunológica (Pruebas complementarias. Otras pruebas)"/>
+      <target>
+        <code value="DiagnosticReport.conclusionCode:CriteriosSospecha"/>
+        <display value="Criterios de sospecha (criterio de diagnóstico clínico, criterio de prueba genética, criterio de prueba bioquímica, criterio de prueba hematológica, criterio de prueba histológica, criterio de prueba inmunológica, criterio de prueba de imagen)"/>
+        <relationship value="source-is-narrower-than-target"/>
+      </target>
+    </element>
+    <element>
+      <code value="FormularioEnrolamientoModeloLogico.CriterioPruebaImagen"/>
+      <display value="Criterio de prueba de imagen (Pruebas complementarias. Prueba de imagen)"/>
+      <target>
+        <code value="DiagnosticReport.conclusionCode:CriteriosSospecha"/>
+        <display value="Criterios de sospecha (criterio de diagnóstico clínico, criterio de prueba genética, criterio de prueba bioquímica, criterio de prueba hematológica, criterio de prueba histológica, criterio de prueba inmunológica, criterio de prueba de imagen)"/>
+        <relationship value="source-is-narrower-than-target"/>
+      </target>
+    </element>
+    <element>
+      <code value="FormularioEnrolamientoModeloLogico.ReferenciaProfesionalSanitario"/>
+      <display value="Referencia al profesional sanitario"/>
+      <target>
+        <code value="DiagnosticReport.performer"/>
+        <display value="Referencia al profesional sanitario"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="FormularioEnrolamientoModeloLogico.ReferenciaPaciente"/>
+      <display value="Referencia al paciente"/>
+      <target>
+        <code value="DiagnosticReport.subject"/>
+        <display value="Referencia al paciente"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

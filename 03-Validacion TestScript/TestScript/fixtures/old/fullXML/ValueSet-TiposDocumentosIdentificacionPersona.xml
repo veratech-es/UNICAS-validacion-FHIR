@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="TiposDocumentosIdentificacionPersona"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet TiposDocumentosIdentificacionPersona</b></p><a name="TiposDocumentosIdentificacionPersona"> </a><a name="hcTiposDocumentosIdentificacionPersona"> </a><a name="TiposDocumentosIdentificacionPersona-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <code>http://snomed.info/sct/900000001000122104?fhir_vs-refset/900000251000122107</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>22851000122109</td><td>documento nacional de identidad</td></tr><tr><td>22861000122106</td><td>pasaporte</td></tr><tr><td>22871000122101</td><td>tarjeta de identidad de extranjero</td></tr></table></li><li>Include these codes as defined in <code>http://snomed.info/sct/900000001000122104</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>398225001</td><td>número de historia clínica</td></tr><tr><td>398093005</td><td>número de afiliación a la Seguridad Social</td></tr><tr><td>1571000122102</td><td>código de identificación del paciente en la comunidad autónoma</td></tr><tr><td>1551000122105</td><td>código de identificación personal en el Sistema Nacional de Salud</td></tr><tr><td>1561000122107</td><td>código de identificación personal europeo</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://unicas-fhir.sanidad.gob.es/ValueSet/TiposDocumentosIdentificacionPersona"/>
+  <version value="0.0.1"/>
+  <name value="ValuesetTiposDocumentosIdentificacionPersonaUNICAS"/>
+  <title value="Value set de Tipos de documentos de identificación para persona ÚNICAS"/>
+  <status value="draft"/>
+  <date value="2025-02-05"/>
+  <description value="Este value set incluye todos los códigos de SNOMED CT del refset Tipos de documento para identificación personal (OID: 2.16.724.4.21.5.8.45). Además, incorpora un conjunto de códigos de SNOMED CT. Extensión para España del SNS (OID: 2.16.724.4.21.5.8), que corresponden a los tipos de identificadores utilizados en la red de ÚNICAS para la identificación de personas."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct/900000001000122104?fhir_vs-refset/900000251000122107"/>
+      <concept>
+        <code value="22851000122109"/>
+        <display value="documento nacional de identidad"/>
+      </concept>
+      <concept>
+        <code value="22861000122106"/>
+        <display value="pasaporte"/>
+      </concept>
+      <concept>
+        <code value="22871000122101"/>
+        <display value="tarjeta de identidad de extranjero"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct/900000001000122104"/>
+      <concept>
+        <code value="398225001"/>
+        <display value="número de historia clínica"/>
+      </concept>
+      <concept>
+        <code value="398093005"/>
+        <display value="número de afiliación a la Seguridad Social"/>
+      </concept>
+      <concept>
+        <code value="1571000122102"/>
+        <display value="código de identificación del paciente en la comunidad autónoma"/>
+      </concept>
+      <concept>
+        <code value="1551000122105"/>
+        <display value="código de identificación personal en el Sistema Nacional de Salud"/>
+      </concept>
+      <concept>
+        <code value="1561000122107"/>
+        <display value="código de identificación personal europeo"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

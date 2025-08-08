@@ -1,0 +1,70 @@
+{
+  "id": "ecbdd8042189d77ecb8ed82235155074bf21cc45e7d5c339d603ffe7da88f6de",
+  "url": "https://github.com/fhir-crucible/testscript-generator/ecbdd8042189d77ecb8ed82235155074bf21cc45e7d5c339d603ffe7da88f6de",
+  "version": "0.0",
+  "name": "UnicasUNICASFamilyMemberHistoryReadProfile",
+  "title": "IG: unicas; Profile: UNICASFamilyMemberHistory; Case: Read Profile",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-07-07T20:12:00+02:00",
+  "publisher": "The MITRE Corporation",
+  "profile": [
+    {
+      "id": "targetProfileUNICASFamilyMemberHistory",
+      "reference": "https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASFamilyMemberHistory"
+    }
+  ],
+  "variable": [
+    {
+      "name": "targetResourceIdUNICASFamilyMemberHistory",
+      "defaultValue": "example",
+      "description": "Enter a known instance id on the destination system. Will be checked for conformance against profile UNICASFamilyMemberHistory.",
+      "hint": "[resource.id]"
+    }
+  ],
+  "test": [
+    {
+      "name": "Validate the identified resource conforms to the UNICASFamilyMemberHistory profile",
+      "action": [
+        {
+          "operation": {
+            "type": {
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
+              "code": "read"
+            },
+            "resource": "FamilyMemberHistory",
+            "label": "Read_FamilyMemberHistory_Instance",
+            "description": "Read FamilyMemberHistory Instance",
+            "encodeRequestUrl": false,
+            "params": "/${targetResourceIdUNICASFamilyMemberHistory}",
+            "responseId": "targetInstance"
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_Response_OK",
+            "response": "okay",
+            "warningOnly": false
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_FamilyMemberHistory_Returned",
+            "description": "Assert FamilyMemberHistory Returned",
+            "resource": "FamilyMemberHistory",
+            "warningOnly": false
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_Instance_Conforms_to_UNICASFamilyMemberHistory_Profile",
+            "description": "Assert returned instance conforms to the UNICASFamilyMemberHistory Profile",
+            "validateProfileId": "targetProfileUNICASFamilyMemberHistory",
+            "warningOnly": false
+          }
+        }
+      ]
+    }
+  ],
+  "resourceType": "TestScript"
+}

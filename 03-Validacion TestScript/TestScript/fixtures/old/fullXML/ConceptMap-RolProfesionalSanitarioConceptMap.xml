@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="RolProfesionalSanitarioConceptMap"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ConceptMap RolProfesionalSanitarioConceptMap</b></p><a name="RolProfesionalSanitarioConceptMap"> </a><a name="hcRolProfesionalSanitarioConceptMap"> </a><a name="RolProfesionalSanitarioConceptMap-en-US"> </a><p>Mapping from <a href="StructureDefinition-RolProfesionalSanitarioModeloLogico.html">Modelo Lógico de Rol de Profesional Sanitario ÚNICAS</a> to <a href="StructureDefinition-UNICASPractitionerRole.html">PractitionerRole Profesional Sanitario ÚNICAS</a></p><br/><p><b>Group 1 </b>Mapping from <a href="StructureDefinition-RolProfesionalSanitarioModeloLogico.html">Modelo Lógico de Rol de Profesional Sanitario ÚNICAS</a> to <a href="StructureDefinition-UNICASPractitionerRole.html">PractitionerRole Profesional Sanitario ÚNICAS</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>RolProfesionalSanitarioModeloLogico.CategoriaProfesional (Categoría profesional)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>PractitionerRole.code (Categoría profesional)</td></tr><tr><td>RolProfesionalSanitarioModeloLogico.ReferenciaProfesionalSanitario (Referencia al profesional sanitario)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>PractitionerRole.practitioner (Referencial al profesional sanitario)</td></tr><tr><td>RolProfesionalSanitarioModeloLogico.ReferenciaInstitucionAfiliado (Referencia al institución o centro afiliado al profesional sanitario)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>PractitionerRole.organization (Referencia al institución o centro afiliado al profesional sanitario)</td></tr></table></div>
+  </text>
+  <url value="https://unicas-fhir.sanidad.gob.es/ConceptMap/RolProfesionalSanitarioConceptMap"/>
+  <version value="0.0.1"/>
+  <name value="RolProfesionalSanitarioConceptMap"/>
+  <title value="Modelo de Rol de Profesional Sanitario mapeado en FHIR profile"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-04-09T15:17:44+02:00"/>
+  <description value="Este recurso muestra cómo se asigna el modelo del rol de profesional sanitario al FHIR Profile/StructureDefinition"/>
+  <sourceScopeUri value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/RolProfesionalSanitarioModeloLogico"/>
+  <targetScopeUri value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASPractitionerRole"/>
+  <group>
+    <source value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/RolProfesionalSanitarioModeloLogico"/>
+    <target value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASPractitionerRole"/>
+    <element>
+      <code value="RolProfesionalSanitarioModeloLogico.CategoriaProfesional"/>
+      <display value="Categoría profesional"/>
+      <target>
+        <code value="PractitionerRole.code"/>
+        <display value="Categoría profesional"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="RolProfesionalSanitarioModeloLogico.ReferenciaProfesionalSanitario"/>
+      <display value="Referencia al profesional sanitario"/>
+      <target>
+        <code value="PractitionerRole.practitioner"/>
+        <display value="Referencial al profesional sanitario"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="RolProfesionalSanitarioModeloLogico.ReferenciaInstitucionAfiliado"/>
+      <display value="Referencia al institución o centro afiliado al profesional sanitario"/>
+      <target>
+        <code value="PractitionerRole.organization"/>
+        <display value="Referencia al institución o centro afiliado al profesional sanitario"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

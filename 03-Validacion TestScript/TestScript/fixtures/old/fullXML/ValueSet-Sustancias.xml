@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="Sustancias"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet Sustancias</b></p><a name="Sustancias"> </a><a name="hcSustancias"> </a><a name="Sustancias-en-US"> </a><ul><li>Include codes from<code>http://snomed.info/sct/900000001000122104</code> where concept  is-a 105590001</li></ul></div>
+  </text>
+  <url value="https://unicas-fhir.sanidad.gob.es/ValueSet/Sustancias"/>
+  <version value="0.0.1"/>
+  <name value="ValuesetSustancias"/>
+  <title value="Value set de Sustancias"/>
+  <status value="draft"/>
+  <date value="2025-03-18"/>
+  <description value="Este value set incluye los códigos de SNOMED CT correspondientes al eje 105590001 (sustancia (sustancia)) de SNOMED CT. Extensión para España del SNS (OID: 2.16.724.4.21.5.8)."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct/900000001000122104"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="105590001"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

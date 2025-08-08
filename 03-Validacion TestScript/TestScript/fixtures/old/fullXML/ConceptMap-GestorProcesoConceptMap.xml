@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="GestorProcesoConceptMap"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ConceptMap GestorProcesoConceptMap</b></p><a name="GestorProcesoConceptMap"> </a><a name="hcGestorProcesoConceptMap"> </a><a name="GestorProcesoConceptMap-en-US"> </a><p>Mapping from <a href="StructureDefinition-GestorProcesoModeloLogico.html">Modelo Lógico de Gestor de Proceso de ÚNICAS</a> to <a href="StructureDefinition-UNICASCarePlan.html">CarePlan Gestor del Proceso ÚNICAS</a></p><br/><p><b>Group 1 </b>Mapping from <a href="StructureDefinition-GestorProcesoModeloLogico.html">Modelo Lógico de Gestor de Proceso de ÚNICAS</a> to <a href="StructureDefinition-UNICASCarePlan.html">CarePlan Gestor del Proceso ÚNICAS</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>GestorProcesoModeloLogico.EventoUNICAS (Tipo de evento ÚNICAS)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>CarePlan.category (Tipo de evento ÚNICAS)</td></tr><tr><td>GestorProcesoModeloLogico.Comentario (Comentario)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>CarePlan.note.text (Comentario)</td></tr><tr><td>GestorProcesoModeloLogico.ReferenciaEncounter (Referencia a la traça del encounter)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>CarePlan.encounter (Referencia a la traça del encounter)</td></tr><tr><td>GestorProcesoModeloLogico.ReferenciaDiagnostico (Referencia al diagnóstico)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>CarePlan.addresses.reference (Referencia al diagnóstico)</td></tr><tr><td>GestorProcesoModeloLogico.ReferenciaInformacion (Referencia a la información incluida como parte del proceso)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>CarePlan.supportingInfo (Referencia a la información incluida como parte del proceso)</td></tr><tr><td>GestorProcesoModeloLogico.ReferenciaObjetivo (Referencia al objetivo del proceso)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>CarePlan.goal (Referencia al objetivo del proceso)</td></tr><tr><td>GestorProcesoModeloLogico.ReferenciaInstitucion (Referencia a la institución responsable)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>CarePlan.custodian (Referencia a la institución responsable)</td></tr><tr><td>GestorProcesoModeloLogico.ReferenciaProfesionalSanitario (Referencia al profesional sanitario)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>CarePlan.contributor (Referencia al profesional sanitario)</td></tr><tr><td>GestorProcesoModeloLogico.ReferenciaPaciente (Referencia al paciente)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>CarePlan.subject (Referencia al paciente)</td></tr></table></div>
+  </text>
+  <url value="https://unicas-fhir.sanidad.gob.es/ConceptMap/GestorProcesoConceptMap"/>
+  <version value="0.0.1"/>
+  <name value="GestorProcesoConceptMap"/>
+  <title value="Modelo de Gestor de Proceso mapeado en FHIR profile"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-04-09T15:17:44+02:00"/>
+  <description value="Este recurso muestra cómo se asigna el modelo del gestor de proceso al FHIR Profile/StructureDefinition"/>
+  <sourceScopeUri value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/GestorProcesoModeloLogico"/>
+  <targetScopeUri value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASCarePlan"/>
+  <group>
+    <source value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/GestorProcesoModeloLogico"/>
+    <target value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASCarePlan"/>
+    <element>
+      <code value="GestorProcesoModeloLogico.EventoUNICAS"/>
+      <display value="Tipo de evento ÚNICAS"/>
+      <target>
+        <code value="CarePlan.category"/>
+        <display value="Tipo de evento ÚNICAS"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="GestorProcesoModeloLogico.Comentario"/>
+      <display value="Comentario"/>
+      <target>
+        <code value="CarePlan.note.text"/>
+        <display value="Comentario"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="GestorProcesoModeloLogico.ReferenciaEncounter"/>
+      <display value="Referencia a la traça del encounter"/>
+      <target>
+        <code value="CarePlan.encounter"/>
+        <display value="Referencia a la traça del encounter"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="GestorProcesoModeloLogico.ReferenciaDiagnostico"/>
+      <display value="Referencia al diagnóstico"/>
+      <target>
+        <code value="CarePlan.addresses.reference"/>
+        <display value="Referencia al diagnóstico"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="GestorProcesoModeloLogico.ReferenciaInformacion"/>
+      <display value="Referencia a la información incluida como parte del proceso"/>
+      <target>
+        <code value="CarePlan.supportingInfo"/>
+        <display value="Referencia a la información incluida como parte del proceso"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="GestorProcesoModeloLogico.ReferenciaObjetivo"/>
+      <display value="Referencia al objetivo del proceso"/>
+      <target>
+        <code value="CarePlan.goal"/>
+        <display value="Referencia al objetivo del proceso"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="GestorProcesoModeloLogico.ReferenciaInstitucion"/>
+      <display value="Referencia a la institución responsable"/>
+      <target>
+        <code value="CarePlan.custodian"/>
+        <display value="Referencia a la institución responsable"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="GestorProcesoModeloLogico.ReferenciaProfesionalSanitario"/>
+      <display value="Referencia al profesional sanitario"/>
+      <target>
+        <code value="CarePlan.contributor"/>
+        <display value="Referencia al profesional sanitario"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="GestorProcesoModeloLogico.ReferenciaPaciente"/>
+      <display value="Referencia al paciente"/>
+      <target>
+        <code value="CarePlan.subject"/>
+        <display value="Referencia al paciente"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

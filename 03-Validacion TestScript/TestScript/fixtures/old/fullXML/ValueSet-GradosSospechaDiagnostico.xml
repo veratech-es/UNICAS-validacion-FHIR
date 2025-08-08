@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="GradosSospechaDiagnostico"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet GradosSospechaDiagnostico</b></p><a name="GradosSospechaDiagnostico"> </a><a name="hcGradosSospechaDiagnostico"> </a><a name="GradosSospechaDiagnostico-en-US"> </a><ul><li>Include these codes as defined in <code>http://snomed.info/sct/900000001000122104</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>2095221000122101</td><td>grado de sospecha de enfermedad minoritaria</td></tr><tr><td>2095291000122104</td><td>sospecha alta de enfermedad minoritaria</td></tr><tr><td>2095301000122103</td><td>sospecha media de enfermedad minoritaria</td></tr><tr><td>2095311000122100</td><td>sospecha baja de enfermedad minoritaria</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://unicas-fhir.sanidad.gob.es/ValueSet/GradosSospechaDiagnostico"/>
+  <version value="0.0.1"/>
+  <name value="ValuesetGradosSospechaDiagnostico"/>
+  <title value="Value set de Grados de sospecha del diagnóstico"/>
+  <status value="draft"/>
+  <date value="2025-03-14"/>
+  <description value="Este value set define un conjunto de códigos de SNOMED CT. Extensión para España del SNS (OID: 2.16.724.4.21.5.8) que pueden utilizarse para identificar los tipos de grados de sospecha de un diagnóstico en el caso de uso de ÚNICAS."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct/900000001000122104"/>
+      <concept>
+        <code value="2095221000122101"/>
+        <display value="grado de sospecha de enfermedad minoritaria"/>
+      </concept>
+      <concept>
+        <code value="2095291000122104"/>
+        <display value="sospecha alta de enfermedad minoritaria"/>
+      </concept>
+      <concept>
+        <code value="2095301000122103"/>
+        <display value="sospecha media de enfermedad minoritaria"/>
+      </concept>
+      <concept>
+        <code value="2095311000122100"/>
+        <display value="sospecha baja de enfermedad minoritaria"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

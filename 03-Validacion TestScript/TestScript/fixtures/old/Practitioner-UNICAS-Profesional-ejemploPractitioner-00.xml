@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="UNICAS-Profesional-ejemploPractitioner-00"/>
+  <meta>
+    <profile value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASPractitioner"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Practitioner UNICAS-Profesional-ejemploPractitioner-00</b></p><a name="UNICAS-Profesional-ejemploPractitioner-00"> </a><a name="hcUNICAS-Profesional-ejemploPractitioner-00"> </a><a name="UNICAS-Profesional-ejemploPractitioner-00-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-UNICASPractitioner.html">Practitioner Profesional Sanitario ÚNICAS</a></p></div><p><b>identifier</b>: documento nacional de identidad/0000001X</p><p><b>name</b>: Eva Alabart</p><p><b>telecom</b>: ph: 666666666(Work)</p></div>
+  </text>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://snomed.info/sct/900000001000122104?fhir_vs-refset/900000251000122107"/>
+        <code value="22851000122109"/>
+        <display value="documento nacional de identidad"/>
+      </coding>
+    </type>
+    <system value="urn:oid:1.3.6.1.4.1.19126.3"/>
+    <value value="0000001X"/>
+  </identifier>
+  <name>
+    <text value="Eva Alabart"/>
+    <family value="Alabart">
+      <extension url="http://hl7.org/fhir/StructureDefinition/humanname-fathers">
+        <valueString value="Alabart"/>
+      </extension>
+    </family>
+    <given value="Eva"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="666666666"/>
+    <use value="work"/>
+  </telecom>
+</Practitioner>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ProcedimientoQuirurgico"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ProcedimientoQuirurgico</b></p><a name="ProcedimientoQuirurgico"> </a><a name="hcProcedimientoQuirurgico"> </a><a name="ProcedimientoQuirurgico-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<code>http://snomed.info/sct/900000001000122104</code> where concept  is-a 71388002</li><li>Include all codes defined in <code>urn:oid:2.16.724.4.21.5.30</code></li></ul></div>
+  </text>
+  <url value="https://unicas-fhir.sanidad.gob.es/ValueSet/ProcedimientoQuirurgico"/>
+  <version value="0.0.1"/>
+  <name value="ValuesetProcedimientoQuirurgico"/>
+  <title value="Value set de Procedimiento quirúrgico"/>
+  <status value="draft"/>
+  <date value="2025-03-20"/>
+  <description value="Este value set incluye los códigos de SNOMED CT correspondientes al eje 71388002 (procedimiento (procedimiento)) de SNOMED CT. Extensión para España del SNS (OID: 2.16.724.4.21.5.8). También incluye todos los códigos de la terminología CIE-10-ES. Procedimientos (OID: 2.16.724.4.21.5.30)."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct/900000001000122104"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="71388002"/>
+      </filter>
+    </include>
+    <include>
+      <system value="urn:oid:2.16.724.4.21.5.30"/>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="HabitosYPatronesConsumo"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet HabitosYPatronesConsumo</b></p><a name="HabitosYPatronesConsumo"> </a><a name="hcHabitosYPatronesConsumo"> </a><a name="HabitosYPatronesConsumo-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<code>http://snomed.info/sct/900000001000122104</code> where concept  is-a 363787002</li><li>Include codes from<code>http://snomed.info/sct/900000001000122104</code> where concept  is-a 404684003</li></ul></div>
+  </text>
+  <url value="https://unicas-fhir.sanidad.gob.es/ValueSet/HabitosYPatronesConsumo"/>
+  <version value="0.0.1"/>
+  <name value="ValuesetHabitosYPatronesConsumo"/>
+  <title value="Value set de Hábitos y Patrones de consumo"/>
+  <status value="draft"/>
+  <date value="2025-03-20"/>
+  <description value="Este value set incluye los códigos de SNOMED CT correspondientes a los ejes 363787002 (entidad observable (entidad observable)) y 404684003 (hallazgo clínico (hallazgo)) de SNOMED CT. Extensión para España del SNS (OID: 2.16.724.4.21.5.8)."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct/900000001000122104"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="363787002"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct/900000001000122104"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="404684003"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

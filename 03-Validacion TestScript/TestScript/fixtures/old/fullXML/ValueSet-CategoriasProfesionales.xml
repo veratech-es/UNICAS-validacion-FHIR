@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="CategoriasProfesionales"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet CategoriasProfesionales</b></p><a name="CategoriasProfesionales"> </a><a name="hcCategoriasProfesionales"> </a><a name="CategoriasProfesionales-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <code>http://snomed.info/sct/900000001000122104?fhir_vs-refset/900000311000122104</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1791000122107</td><td>biólogo residente</td></tr><tr><td>308211001</td><td>enfermero</td></tr><tr><td>6816002</td><td>enfermera especialista</td></tr><tr><td>1751000122103</td><td>enfermera residente</td></tr><tr><td>2581000122107</td><td>facultativo especialista de área</td></tr><tr><td>1781000122109</td><td>farmacéutico residente</td></tr><tr><td>1771000122106</td><td>jefe de sección</td></tr><tr><td>224579007</td><td>jefe de servicio</td></tr><tr><td>62247001</td><td>médico de familia</td></tr><tr><td>405277009</td><td>médico residente</td></tr></table></li><li>Include codes from<code>http://snomed.info/sct/900000001000122104</code> where concept  is-a 14679004</li></ul></div>
+  </text>
+  <url value="https://unicas-fhir.sanidad.gob.es/ValueSet/CategoriasProfesionales"/>
+  <version value="0.0.1"/>
+  <name value="ValuesetCategoriasProfesionales"/>
+  <title value="Value set de Categorías profesionales"/>
+  <status value="draft"/>
+  <date value="2025-03-25"/>
+  <description value="Este value set incluye todos los códigos de SNOMED CT del refset Categoría profesional 1. Además, incluye los códigos de SNOMED CT correspondientes al eje 14679004 (ocupación (ocupación)) de SNOMED CT. Extensión para España del SNS (OID: 2.16.724.4.21.5.8)."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct/900000001000122104?fhir_vs-refset/900000311000122104"/>
+      <concept>
+        <code value="1791000122107"/>
+        <display value="biólogo residente"/>
+      </concept>
+      <concept>
+        <code value="308211001"/>
+        <display value="enfermero"/>
+      </concept>
+      <concept>
+        <code value="6816002"/>
+        <display value="enfermera especialista"/>
+      </concept>
+      <concept>
+        <code value="1751000122103"/>
+        <display value="enfermera residente"/>
+      </concept>
+      <concept>
+        <code value="2581000122107"/>
+        <display value="facultativo especialista de área"/>
+      </concept>
+      <concept>
+        <code value="1781000122109"/>
+        <display value="farmacéutico residente"/>
+      </concept>
+      <concept>
+        <code value="1771000122106"/>
+        <display value="jefe de sección"/>
+      </concept>
+      <concept>
+        <code value="224579007"/>
+        <display value="jefe de servicio"/>
+      </concept>
+      <concept>
+        <code value="62247001"/>
+        <display value="médico de familia"/>
+      </concept>
+      <concept>
+        <code value="405277009"/>
+        <display value="médico residente"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct/900000001000122104"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="14679004"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

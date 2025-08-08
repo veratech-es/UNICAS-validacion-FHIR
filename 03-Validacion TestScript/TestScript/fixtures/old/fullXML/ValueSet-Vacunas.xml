@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="Vacunas"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet Vacunas</b></p><a name="Vacunas"> </a><a name="hcVacunas"> </a><a name="Vacunas-en-US"> </a><ul><li>Include all codes defined in <code>urn:oid:2.16.724.4.21.5.13</code></li></ul></div>
+  </text>
+  <url value="https://unicas-fhir.sanidad.gob.es/ValueSet/Vacunas"/>
+  <version value="0.0.1"/>
+  <name value="ValuesetVacunas"/>
+  <title value="Value set de Vacunas"/>
+  <status value="draft"/>
+  <date value="2025-02-05"/>
+  <description value="Este value set incluye los códigos del catálogo Sistema de Información en Vacunaciones e Inmunizaciones (SIVAIN) (OID: 2.16.724.4.21.5.13)."/>
+  <compose>
+    <include>
+      <system value="urn:oid:2.16.724.4.21.5.13"/>
+    </include>
+  </compose>
+</ValueSet>

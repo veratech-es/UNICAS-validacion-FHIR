@@ -1,0 +1,80 @@
+{
+  "id": "Unicas-Https://unicas-Fhir.sanidad.gob.es/structuredefinition/formularioenrolamientomodelologico-Search_by-Type",
+  "url": "https://github.com/fhir-crucible/testscript-generator",
+  "version": "0.0",
+  "name": "Unicas_Https://unicas_Fhir.sanidad.gob.es/structuredefinition/formularioenrolamientomodelologico_Search_by_Type",
+  "title": "unicas https://unicas fhir.sanidad.gob.es/structuredefinition/formularioenrolamientomodelologico search_by type",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-07-07T20:11:59+02:00",
+  "publisher": "The MITRE Corporation",
+  "fixture": [
+    {
+      "id": "example_https://unicas-fhir.sanidad.gob.es/structuredefinition/formularioenrolamientomodelologico",
+      "autocreate": false,
+      "autodelete": false,
+      "resource": {
+        "reference": "fixtures/example_https://unicas-fhir.sanidad.gob.es/structuredefinition/formularioenrolamientomodelologico.json"
+      }
+    }
+  ],
+  "variable": [
+    {
+      "name": "bcuIiZJFnIKmHfKb",
+      "expression": "https://unicas-fhir.sanidad.gob.es/StructureDefinition/FormularioEnrolamientoModeloLogico.id",
+      "sourceId": "82pY81InqO48SzOm"
+    }
+  ],
+  "setup": {
+    "action": [
+      {
+        "operation": {
+          "type": {
+            "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
+            "code": "create"
+          },
+          "label": "Operation_1",
+          "encodeRequestUrl": false,
+          "responseId": "82pY81InqO48SzOm",
+          "sourceId": "example_https://unicas-fhir.sanidad.gob.es/structuredefinition/formularioenrolamientomodelologico"
+        }
+      }
+    ]
+  },
+  "test": [
+    {
+      "name": "Test_1",
+      "action": [
+        {
+          "operation": {
+            "type": {
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
+              "code": "search"
+            },
+            "resource": "https://unicas-fhir.sanidad.gob.es/StructureDefinition/FormularioEnrolamientoModeloLogico",
+            "label": "Operation_2",
+            "encodeRequestUrl": false,
+            "params": "?_type"
+          }
+        }
+      ]
+    }
+  ],
+  "teardown": {
+    "action": [
+      {
+        "operation": {
+          "type": {
+            "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
+            "code": "delete"
+          },
+          "resource": "https://unicas-fhir.sanidad.gob.es/StructureDefinition/FormularioEnrolamientoModeloLogico",
+          "label": "Operation_3",
+          "encodeRequestUrl": false,
+          "params": "/${bcuIiZJFnIKmHfKb}"
+        }
+      }
+    ]
+  },
+  "resourceType": "TestScript"
+}

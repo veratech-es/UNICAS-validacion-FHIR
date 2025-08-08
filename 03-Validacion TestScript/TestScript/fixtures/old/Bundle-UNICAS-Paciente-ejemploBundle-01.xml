@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="UNICAS-Paciente-ejemploBundle-01"/>
+  <meta>
+    <profile value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASBundlePaciente"/>
+  </meta>
+  <identifier>
+    <system value="urn:ietf:rfc:4122"/>
+    <value value="b51e0404-3366-49d2-af43-a04d07d6aae5"/>
+  </identifier>
+  <type value="transaction"/>
+  <timestamp value="2025-04-08T11:28:17.239+00:00"/>
+  <entry>
+    <fullUrl value="urn:uuid:db992cd3-d601-4dc1-9351-bb87b662bd39"/>
+    <resource>
+      <Patient>
+        <id value="patient-01"/>
+        <meta>
+          <profile value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASPatient"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Patient_patient-01"> </a><p class="res-header-id"><b>Generated Narrative: Patient patient-01</b></p><a name="patient-01"> </a><a name="hcpatient-01"> </a><a name="patient-01-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-UNICASPatient.html">Patient Paciente ÚNICAS</a></p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Maria Puig Grau Female, DoB: 1972-01-01 ( documento nacional de identidad: 0000000X)</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Other Id (see the one above)">Other Id:</td><td colspan="3">código de identificación personal en el Sistema Nacional de Salud/BBBBBBBBQR648597</td></tr><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Detail</td><td colspan="3"><ul><li>ph: 666666666(Mobile)</li><li>ph: 999999999(Home)</li><li><a href="mailto:ejemplo@ejemplo.cat">ejemplo@ejemplo.cat</a></li><li>Carrer d'Aragó, 330, 332, Eixample, 08009 Barcelona Barcelona Catalunya 08009 España </li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Nominated Contact: familiar">familiar:</td><td colspan="3"><ul><li>Josep Grau Pla</li><li>ph: 666666666(Mobile)</li><li>ph: 999999999(Home)</li><li><a href="mailto:ejemplo@ejemplo.com">ejemplo@ejemplo.com</a></li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Patient Links">Links:</td><td colspan="3"><ul><li>Managing Organization: Hospital Sant Joan de Déu (Identifier: <code>urn:oid:2.16.724.4.21.5.10</code>/0908005177)</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Edad del paciente"><a href="StructureDefinition-extension-edad-paciente.html">Edad del Paciente</a></td><td colspan="3">5</td></tr><tr><td style="background-color: #f3f5da" title="Estado de enrolamiento del paciente en la red de ÚNICAS">Estado de Enrolamiento del Paciente en la red de ÚNICAS:</td><td colspan="3"><ul><li>estado-enrolamiento: true</li></ul></td></tr></table></div>
+        </text>
+        <extension url="https://unicas-fhir.sanidad.gob.es/StructureDefinition/EdadPaciente">
+          <valueInteger value="5"/>
+        </extension>
+        <extension url="https://unicas-fhir.sanidad.gob.es/StructureDefinition/EstadoEnrolamientoPaciente">
+          <extension url="estado-enrolamiento">
+            <valueBoolean value="true"/>
+          </extension>
+        </extension>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://snomed.info/sct/900000001000122104?fhir_vs-refset/900000251000122107"/>
+              <code value="22851000122109"/>
+              <display value="documento nacional de identidad"/>
+            </coding>
+          </type>
+          <system value="urn:oid:1.3.6.1.4.1.19126.3"/>
+          <value value="0000000X"/>
+        </identifier>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://snomed.info/sct/900000001000122104"/>
+              <code value="1551000122105"/>
+              <display value="código de identificación personal en el Sistema Nacional de Salud"/>
+            </coding>
+          </type>
+          <system value="urn:oid:2.16.724.4.40"/>
+          <value value="BBBBBBBBQR648597"/>
+        </identifier>
+        <name>
+          <text value="Maria Puig Grau"/>
+          <family value="Puig Grau">
+            <extension url="http://hl7.org/fhir/StructureDefinition/humanname-fathers">
+              <valueString value="Puig"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/humanname-mothers">
+              <valueString value="Grau"/>
+            </extension>
+          </family>
+          <given value="Maria"/>
+        </name>
+        <telecom>
+          <system value="phone"/>
+          <value value="666666666"/>
+          <use value="mobile"/>
+        </telecom>
+        <telecom>
+          <system value="phone"/>
+          <value value="999999999"/>
+          <use value="home"/>
+        </telecom>
+        <telecom>
+          <system value="email"/>
+          <value value="ejemplo@ejemplo.cat"/>
+        </telecom>
+        <gender value="female"/>
+        <birthDate value="1972-01-01"/>
+        <address>
+          <extension url="https://unicas-fhir.sanidad.gob.es/StructureDefinition/Municipio">
+            <valueString value="Barcelona"/>
+          </extension>
+          <extension url="https://unicas-fhir.sanidad.gob.es/StructureDefinition/Provincia">
+            <valueString value="Barcelona"/>
+          </extension>
+          <line value="Carrer d'Aragó, 330, 332, Eixample, 08009 Barcelona"/>
+          <city value="Barcelona"/>
+          <state value="Catalunya"/>
+          <postalCode value="08009"/>
+          <country value="España"/>
+        </address>
+        <contact>
+          <relationship>
+            <coding>
+              <system value="http://snomed.info/sct/900000001000122104"/>
+              <code value="125677006"/>
+              <display value="familiar"/>
+            </coding>
+          </relationship>
+          <name>
+            <text value="Josep Grau Pla"/>
+            <family value="Grau Pla">
+              <extension url="http://hl7.org/fhir/StructureDefinition/humanname-fathers">
+                <valueString value="Grau"/>
+              </extension>
+              <extension url="http://hl7.org/fhir/StructureDefinition/humanname-mothers">
+                <valueString value="Pla"/>
+              </extension>
+            </family>
+            <given value="Josep"/>
+          </name>
+          <telecom>
+            <system value="phone"/>
+            <value value="666666666"/>
+            <use value="mobile"/>
+          </telecom>
+          <telecom>
+            <system value="phone"/>
+            <value value="999999999"/>
+            <use value="home"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="ejemplo@ejemplo.com"/>
+          </telecom>
+        </contact>
+        <managingOrganization>
+          <type value="Organization"/>
+          <identifier>
+            <system value="urn:oid:2.16.724.4.21.5.10"/>
+            <value value="0908005177"/>
+          </identifier>
+          <display value="Hospital Sant Joan de Déu"/>
+        </managingOrganization>
+      </Patient>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="Patient"/>
+      <ifNoneExist value="[base]/Patient?identifier=urn:oid:2.16.724.4.40|BBBBBBBBQR648597"/>
+    </request>
+  </entry>
+</Bundle>

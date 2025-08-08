@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="TareaProcesoConceptMap"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ConceptMap TareaProcesoConceptMap</b></p><a name="TareaProcesoConceptMap"> </a><a name="hcTareaProcesoConceptMap"> </a><a name="TareaProcesoConceptMap-en-US"> </a><p>Mapping from <a href="StructureDefinition-TareaProcesoModeloLogico.html">Modelo Lógico de Tarea en el Proceso de ÚNICAS</a> to <a href="StructureDefinition-UNICASTask.html">Task Tarea ÚNICAS</a></p><br/><p><b>Group 1 </b>Mapping from <a href="StructureDefinition-TareaProcesoModeloLogico.html">Modelo Lógico de Tarea en el Proceso de ÚNICAS</a> to <a href="StructureDefinition-UNICASTask.html">Task Tarea ÚNICAS</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>TareaProcesoModeloLogico.EventoUNICAS (Tipo de evento ÚNICAS)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>Task.code (Tipo de evento ÚNICAS)</td></tr><tr><td>TareaProcesoModeloLogico.ActividadUNICAS (Tipo de actividad ÚNICAS)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>Task.input.type (Tipo de actividad ÚNICAS)</td></tr><tr><td>TareaProcesoModeloLogico.DocumentoUNICAS (Tipo de informe/información ÚNICAS)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>Task.input.value[x] (Tipo de informe/información ÚNICAS)</td></tr><tr><td>TareaProcesoModeloLogico.Entrada (Entrada para realizar la tarea)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>Task.input (Entrada para realizar la tarea)</td></tr><tr><td>TareaProcesoModeloLogico.Resultado (Resultado generado como parte de la tarea)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>Task.output (Resultado generado como parte de la tarea)</td></tr><tr><td>TareaProcesoModeloLogico.ReferenciaEncounter (Referencia a la traça del encounter)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>Task.encounter (Referencia a la traça del encounter)</td></tr><tr><td>TareaProcesoModeloLogico.ReferenciaInstitucion (Referencia al autor o Institución que solicita la ejecución de la tarea)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>Task.requester (Referencia al autor o Institución que solicita la ejecución de la tarea)</td></tr><tr><td>TareaProcesoModeloLogico.ReferenciaProfesionalSanitario (Referencia al autor o Institución específico que debe realizar la tarea)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>Task.requestedPerformer.reference (Referencia al autor o Institución específico que debe realizar la tarea)</td></tr><tr><td>TareaProcesoModeloLogico.ReferenciaPaciente (Referencia al paciente)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>Task.for (Referencia al paciente)</td></tr></table></div>
+  </text>
+  <url value="https://unicas-fhir.sanidad.gob.es/ConceptMap/TareaProcesoConceptMap"/>
+  <version value="0.0.1"/>
+  <name value="TareaProcesoConceptMap"/>
+  <title value="Modelo de Tarea en el Proceso mapeado en FHIR profile"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-04-09T15:17:44+02:00"/>
+  <description value="Este recurso muestra cómo se asigna el modelo de la tarea en el proceso al FHIR Profile/StructureDefinition"/>
+  <sourceScopeUri value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/TareaProcesoModeloLogico"/>
+  <targetScopeUri value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASTask"/>
+  <group>
+    <source value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/TareaProcesoModeloLogico"/>
+    <target value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASTask"/>
+    <element>
+      <code value="TareaProcesoModeloLogico.EventoUNICAS"/>
+      <display value="Tipo de evento ÚNICAS"/>
+      <target>
+        <code value="Task.code"/>
+        <display value="Tipo de evento ÚNICAS"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="TareaProcesoModeloLogico.ActividadUNICAS"/>
+      <display value="Tipo de actividad ÚNICAS"/>
+      <target>
+        <code value="Task.input.type"/>
+        <display value="Tipo de actividad ÚNICAS"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="TareaProcesoModeloLogico.DocumentoUNICAS"/>
+      <display value="Tipo de informe/información ÚNICAS"/>
+      <target>
+        <code value="Task.input.value[x]"/>
+        <display value="Tipo de informe/información ÚNICAS"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="TareaProcesoModeloLogico.Entrada"/>
+      <display value="Entrada para realizar la tarea"/>
+      <target>
+        <code value="Task.input"/>
+        <display value="Entrada para realizar la tarea"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="TareaProcesoModeloLogico.Resultado"/>
+      <display value="Resultado generado como parte de la tarea"/>
+      <target>
+        <code value="Task.output"/>
+        <display value="Resultado generado como parte de la tarea"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="TareaProcesoModeloLogico.ReferenciaEncounter"/>
+      <display value="Referencia a la traça del encounter"/>
+      <target>
+        <code value="Task.encounter"/>
+        <display value="Referencia a la traça del encounter"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="TareaProcesoModeloLogico.ReferenciaInstitucion"/>
+      <display value="Referencia al autor o Institución que solicita la ejecución de la tarea"/>
+      <target>
+        <code value="Task.requester"/>
+        <display value="Referencia al autor o Institución que solicita la ejecución de la tarea"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="TareaProcesoModeloLogico.ReferenciaProfesionalSanitario"/>
+      <display value="Referencia al autor o Institución específico que debe realizar la tarea"/>
+      <target>
+        <code value="Task.requestedPerformer.reference"/>
+        <display value="Referencia al autor o Institución específico que debe realizar la tarea"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+    <element>
+      <code value="TareaProcesoModeloLogico.ReferenciaPaciente"/>
+      <display value="Referencia al paciente"/>
+      <target>
+        <code value="Task.for"/>
+        <display value="Referencia al paciente"/>
+        <relationship value="related-to"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

@@ -1,0 +1,32 @@
+<Medication>
+        <meta>
+          <profile value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASMedication" />
+        </meta>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct/900000001000122104" />
+            <code value="156301000140108" />
+            <display value="bedaquilina" />
+          </coding>
+          <text value="ejemplo nombre comercial del producto" />
+        </code>
+        <status value="active" />
+        <doseForm>
+          <coding>
+            <system value="urn:oid:2.16.724.4.21.5.14.1" />
+            <code value="42" />
+            <display value="COMPRIMIDO RECUBIERTO CON PELÍCULA" />
+          </coding>
+        </doseForm>
+        <ingredient>
+          <item>
+            <concept>
+              <coding>
+                <system value="http://snomed.info/sct/900000001000122104" />
+                <code value="714086004" />
+                <display value="bedaquilina" />
+              </coding>
+            </concept>
+          </item>
+        </ingredient>
+      </Medication>

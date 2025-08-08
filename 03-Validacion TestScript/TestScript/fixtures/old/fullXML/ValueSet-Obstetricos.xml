@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="Obstetricos"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet Obstetricos</b></p><a name="Obstetricos"> </a><a name="hcObstetricos"> </a><a name="Obstetricos-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>http://snomed.info/sct/900000001000122104</code></li><li>Include all codes defined in <code>urn:oid:2.16.724.4.21.5.29</code></li></ul></div>
+  </text>
+  <url value="https://unicas-fhir.sanidad.gob.es/ValueSet/Obstetricos"/>
+  <version value="0.0.1"/>
+  <name value="ValuesetObstetricos"/>
+  <title value="Value set de Obstétricos"/>
+  <status value="draft"/>
+  <date value="2025-03-20"/>
+  <description value="Este value set incluye los códigos de SNOMED CT. Extensión para España del SNS (OID: 2.16.724.4.21.5.8) y de CIE-10-ES. Diagnósticos (OID: 2.16.724.4.21.5.29)."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct/900000001000122104"/>
+    </include>
+    <include>
+      <system value="urn:oid:2.16.724.4.21.5.29"/>
+    </include>
+  </compose>
+</ValueSet>

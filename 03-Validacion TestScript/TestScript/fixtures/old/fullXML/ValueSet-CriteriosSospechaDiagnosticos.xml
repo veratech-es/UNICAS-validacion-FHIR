@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="CriteriosSospechaDiagnosticos"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet CriteriosSospechaDiagnosticos</b></p><a name="CriteriosSospechaDiagnosticos"> </a><a name="hcCriteriosSospechaDiagnosticos"> </a><a name="CriteriosSospechaDiagnosticos-en-US"> </a><ul><li>Include these codes as defined in <code>http://snomed.info/sct/900000001000122104</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>2095231000122103</td><td>criterio de diagnóstico clínico</td></tr><tr><td>2095241000122106</td><td>criterio de prueba genética</td></tr><tr><td>2095251000122108</td><td>criterio de prueba bioquímica</td></tr><tr><td>2095271000122100</td><td>criterio de prueba hematológica</td></tr><tr><td>2095261000122105</td><td>criterio de prueba inmunológica</td></tr><tr><td>2095281000122102</td><td>criterio de prueba de imagen</td></tr><tr><td>31874001</td><td>verdadero</td></tr><tr><td>64100000</td><td>falso</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://unicas-fhir.sanidad.gob.es/ValueSet/CriteriosSospechaDiagnosticos"/>
+  <version value="0.0.1"/>
+  <name value="ValuesetCriteriosSospechaDiagnosticos"/>
+  <title value="Value set de Criterios de sospecha del diagnóstico"/>
+  <status value="draft"/>
+  <date value="2025-03-19"/>
+  <description value="Este value set define un conjunto de códigos de SNOMED CT. Extensión para España del SNS (OID: 2.16.724.4.21.5.8) que pueden utilizarse para identificar los criterios de sospecha del diagnóstico en el caso de uso de ÚNICAS."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct/900000001000122104"/>
+      <concept>
+        <code value="2095231000122103"/>
+        <display value="criterio de diagnóstico clínico"/>
+      </concept>
+      <concept>
+        <code value="2095241000122106"/>
+        <display value="criterio de prueba genética"/>
+      </concept>
+      <concept>
+        <code value="2095251000122108"/>
+        <display value="criterio de prueba bioquímica"/>
+      </concept>
+      <concept>
+        <code value="2095271000122100"/>
+        <display value="criterio de prueba hematológica"/>
+      </concept>
+      <concept>
+        <code value="2095261000122105"/>
+        <display value="criterio de prueba inmunológica"/>
+      </concept>
+      <concept>
+        <code value="2095281000122102"/>
+        <display value="criterio de prueba de imagen"/>
+      </concept>
+      <concept>
+        <code value="31874001"/>
+        <display value="verdadero"/>
+      </concept>
+      <concept>
+        <code value="64100000"/>
+        <display value="falso"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,70 @@
+{
+  "id": "eb9941a2f3ef73363b9cc0442ca7f0e905d0ed5ab14db07f1e9d99715a27e555",
+  "url": "https://github.com/fhir-crucible/testscript-generator/eb9941a2f3ef73363b9cc0442ca7f0e905d0ed5ab14db07f1e9d99715a27e555",
+  "version": "0.0",
+  "name": "UnicasUNICASObservationHabitoNoSaludableReadProfile",
+  "title": "IG: unicas; Profile: UNICASObservationHabitoNoSaludable; Case: Read Profile",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-07-07T20:12:00+02:00",
+  "publisher": "The MITRE Corporation",
+  "profile": [
+    {
+      "id": "targetProfileUNICASObservationHabitoNoSaludable",
+      "reference": "https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASObservationHabitoNoSaludable"
+    }
+  ],
+  "variable": [
+    {
+      "name": "targetResourceIdUNICASObservationHabitoNoSaludable",
+      "defaultValue": "example",
+      "description": "Enter a known instance id on the destination system. Will be checked for conformance against profile UNICASObservationHabitoNoSaludable.",
+      "hint": "[resource.id]"
+    }
+  ],
+  "test": [
+    {
+      "name": "Validate the identified resource conforms to the UNICASObservationHabitoNoSaludable profile",
+      "action": [
+        {
+          "operation": {
+            "type": {
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
+              "code": "read"
+            },
+            "resource": "Observation",
+            "label": "Read_Observation_Instance",
+            "description": "Read Observation Instance",
+            "encodeRequestUrl": false,
+            "params": "/${targetResourceIdUNICASObservationHabitoNoSaludable}",
+            "responseId": "targetInstance"
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_Response_OK",
+            "response": "okay",
+            "warningOnly": false
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_Observation_Returned",
+            "description": "Assert Observation Returned",
+            "resource": "Observation",
+            "warningOnly": false
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_Instance_Conforms_to_UNICASObservationHabitoNoSaludable_Profile",
+            "description": "Assert returned instance conforms to the UNICASObservationHabitoNoSaludable Profile",
+            "validateProfileId": "targetProfileUNICASObservationHabitoNoSaludable",
+            "warningOnly": false
+          }
+        }
+      ]
+    }
+  ],
+  "resourceType": "TestScript"
+}

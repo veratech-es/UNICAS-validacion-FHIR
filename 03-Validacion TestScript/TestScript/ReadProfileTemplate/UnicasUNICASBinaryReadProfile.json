@@ -1,0 +1,70 @@
+{
+  "id": "ca872bb93efdfbbadde1847bf8744e7ccea078d18c4abf2795ee3d4aab79bb7e",
+  "url": "https://github.com/fhir-crucible/testscript-generator/ca872bb93efdfbbadde1847bf8744e7ccea078d18c4abf2795ee3d4aab79bb7e",
+  "version": "0.0",
+  "name": "UnicasUNICASBinaryReadProfile",
+  "title": "IG: unicas; Profile: UNICASBinary; Case: Read Profile",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-07-07T20:12:01+02:00",
+  "publisher": "The MITRE Corporation",
+  "profile": [
+    {
+      "id": "targetProfileUNICASBinary",
+      "reference": "https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASBinary"
+    }
+  ],
+  "variable": [
+    {
+      "name": "targetResourceIdUNICASBinary",
+      "defaultValue": "example",
+      "description": "Enter a known instance id on the destination system. Will be checked for conformance against profile UNICASBinary.",
+      "hint": "[resource.id]"
+    }
+  ],
+  "test": [
+    {
+      "name": "Validate the identified resource conforms to the UNICASBinary profile",
+      "action": [
+        {
+          "operation": {
+            "type": {
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
+              "code": "read"
+            },
+            "resource": "Binary",
+            "label": "Read_Binary_Instance",
+            "description": "Read Binary Instance",
+            "encodeRequestUrl": false,
+            "params": "/${targetResourceIdUNICASBinary}",
+            "responseId": "targetInstance"
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_Response_OK",
+            "response": "okay",
+            "warningOnly": false
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_Binary_Returned",
+            "description": "Assert Binary Returned",
+            "resource": "Binary",
+            "warningOnly": false
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_Instance_Conforms_to_UNICASBinary_Profile",
+            "description": "Assert returned instance conforms to the UNICASBinary Profile",
+            "validateProfileId": "targetProfileUNICASBinary",
+            "warningOnly": false
+          }
+        }
+      ]
+    }
+  ],
+  "resourceType": "TestScript"
+}

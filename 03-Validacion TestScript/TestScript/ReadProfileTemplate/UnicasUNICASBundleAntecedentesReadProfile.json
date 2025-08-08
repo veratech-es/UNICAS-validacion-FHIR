@@ -1,0 +1,70 @@
+{
+  "id": "9082dcd1db60d504e04f3750ac9d86bf9025b70beddac48d1001e01e14600320",
+  "url": "https://github.com/fhir-crucible/testscript-generator/9082dcd1db60d504e04f3750ac9d86bf9025b70beddac48d1001e01e14600320",
+  "version": "0.0",
+  "name": "UnicasUNICASBundleAntecedentesReadProfile",
+  "title": "IG: unicas; Profile: UNICASBundleAntecedentes; Case: Read Profile",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-07-07T20:12:01+02:00",
+  "publisher": "The MITRE Corporation",
+  "profile": [
+    {
+      "id": "targetProfileUNICASBundleAntecedentes",
+      "reference": "https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASBundleAntecedentes"
+    }
+  ],
+  "variable": [
+    {
+      "name": "targetResourceIdUNICASBundleAntecedentes",
+      "defaultValue": "example",
+      "description": "Enter a known instance id on the destination system. Will be checked for conformance against profile UNICASBundleAntecedentes.",
+      "hint": "[resource.id]"
+    }
+  ],
+  "test": [
+    {
+      "name": "Validate the identified resource conforms to the UNICASBundleAntecedentes profile",
+      "action": [
+        {
+          "operation": {
+            "type": {
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
+              "code": "read"
+            },
+            "resource": "Bundle",
+            "label": "Read_Bundle_Instance",
+            "description": "Read Bundle Instance",
+            "encodeRequestUrl": false,
+            "params": "/${targetResourceIdUNICASBundleAntecedentes}",
+            "responseId": "targetInstance"
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_Response_OK",
+            "response": "okay",
+            "warningOnly": false
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_Bundle_Returned",
+            "description": "Assert Bundle Returned",
+            "resource": "Bundle",
+            "warningOnly": false
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_Instance_Conforms_to_UNICASBundleAntecedentes_Profile",
+            "description": "Assert returned instance conforms to the UNICASBundleAntecedentes Profile",
+            "validateProfileId": "targetProfileUNICASBundleAntecedentes",
+            "warningOnly": false
+          }
+        }
+      ]
+    }
+  ],
+  "resourceType": "TestScript"
+}

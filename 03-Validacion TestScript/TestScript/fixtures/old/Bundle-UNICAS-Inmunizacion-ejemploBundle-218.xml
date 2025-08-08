@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="UNICAS-Inmunizacion-ejemploBundle-218"/>
+  <meta>
+    <profile value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASBundleInmunizaciones"/>
+  </meta>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://snomed.info/sct/900000001000122104"/>
+        <code value="41000179103"/>
+        <display value="registro de inmunización"/>
+      </coding>
+    </type>
+    <system value="urn:ietf:rfc:4122"/>
+    <value value="9db4040e-e820-4437-b6ff-044e96ce6ca7"/>
+  </identifier>
+  <type value="transaction"/>
+  <timestamp value="2025-02-19T11:28:17.239+00:00"/>
+  <entry>
+    <fullUrl value="urn:uuid:c500f00a-dc56-47d5-b88c-450b92789bd9"/>
+    <resource>
+      <Immunization>
+        <id value="immunization-218-inmunizacion"/>
+        <meta>
+          <profile value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASImmunization"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Immunization_immunization-218-inmunizacion"> </a><p class="res-header-id"><b>Generated Narrative: Immunization immunization-218-inmunizacion</b></p><a name="immunization-218-inmunizacion"> </a><a name="hcimmunization-218-inmunizacion"> </a><a name="immunization-218-inmunizacion-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-UNICASImmunization.html">Immunization Inmunización ÚNICAS</a></p></div><p><b>identifier</b>: <code>urn:ietf:rfc:4122</code>/c500f00a-dc56-47d5-b88c-450b92789bd9</p><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title="Codes:{urn:oid:2.16.724.4.21.5.13 2241000221103}">[Nombre comercial de la vacuna]</span></p><p><b>lotNumber</b>: 234</p><p><b>expirationDate</b>: 2025-12-09</p><p><b>patient</b>: Maria Puig Grau (Identifier: código de identificación personal en el Sistema Nacional de Salud/BBBBBBBBQR648597)</p><p><b>occurrence</b>: 2024-08-23 11:28:17+0000</p><p><b>site</b>: <span title="Codes:{urn:oid:2.16.724.4.21.5.13 35259002}">Músculo deltoides</span></p><p><b>route</b>: <span title="Codes:{urn:oid:2.16.724.4.21.5.13 78421000}">Vía intramuscular</span></p><p><b>doseQuantity</b>: 1 u<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeu = 'u')</span></p><h3>Performers</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Actor</b></td></tr><tr><td style="display: none">*</td><td>Eva Alabart (Identifier: documento nacional de identidad/0000001X)</td></tr></table><h3>Reasons</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{urn:oid:2.16.724.4.21.5.13 75521000122109}">Vacunación indicada incluida en calendario de vacunación</span></td></tr></table></div>
+        </text>
+        <identifier>
+          <system value="urn:ietf:rfc:4122"/>
+          <value value="c500f00a-dc56-47d5-b88c-450b92789bd9"/>
+        </identifier>
+        <status value="completed"/>
+        <vaccineCode>
+          <coding>
+            <system value="urn:oid:2.16.724.4.21.5.13"/>
+            <code value="2241000221103"/>
+            <display value="vacuna que contiene antígenos vivos atenuados de Morbilivirus del sarampión, Ortorubulavirus de la parotiditis y virus de la Rubéola como únicos ingredientes (producto medicinal)"/>
+          </coding>
+          <text value="[Nombre comercial de la vacuna]"/>
+        </vaccineCode>
+        <lotNumber value="234"/>
+        <expirationDate value="2025-12-09"/>
+        <patient>
+          <type value="Patient"/>
+          <identifier>
+            <type>
+              <coding>
+                <system value="http://snomed.info/sct/900000001000122104"/>
+                <code value="1551000122105"/>
+                <display value="código de identificación personal en el Sistema Nacional de Salud"/>
+              </coding>
+            </type>
+            <system value="urn:oid:2.16.724.4.40"/>
+            <value value="BBBBBBBBQR648597"/>
+          </identifier>
+          <display value="Maria Puig Grau"/>
+        </patient>
+        <occurrenceDateTime value="2024-08-23T11:28:17.239+00:00"/>
+        <site>
+          <coding>
+            <system value="urn:oid:2.16.724.4.21.5.13"/>
+            <code value="35259002"/>
+            <display value="Músculo deltoides"/>
+          </coding>
+        </site>
+        <route>
+          <coding>
+            <system value="urn:oid:2.16.724.4.21.5.13"/>
+            <code value="78421000"/>
+            <display value="Vía intramuscular"/>
+          </coding>
+        </route>
+        <doseQuantity>
+          <value value="1"/>
+          <unit value="u"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="u"/>
+        </doseQuantity>
+        <performer>
+          <actor>
+            <type value="Practitioner"/>
+            <identifier>
+              <type>
+                <coding>
+                  <system value="http://snomed.info/sct/900000001000122104?fhir_vs-refset/900000251000122107"/>
+                  <code value="22851000122109"/>
+                  <display value="documento nacional de identidad"/>
+                </coding>
+              </type>
+              <system value="urn:oid:1.3.6.1.4.1.19126.3"/>
+              <value value="0000001X"/>
+            </identifier>
+            <display value="Eva Alabart"/>
+          </actor>
+        </performer>
+        <reason>
+          <concept>
+            <coding>
+              <system value="urn:oid:2.16.724.4.21.5.13"/>
+              <code value="75521000122109"/>
+              <display value="Vacunación indicada incluida en calendario de vacunación"/>
+            </coding>
+          </concept>
+        </reason>
+      </Immunization>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Immunization"/>
+      <ifNoneExist value="[base]/Immunization?identifier=urn:ietf:rfc:4122|c500f00a-dc56-47d5-b88c-450b92789bd9"/>
+    </request>
+  </entry>
+</Bundle>

@@ -1,0 +1,57 @@
+<Observation>
+        <meta>
+          <profile value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASObservationObstetrico" />
+        </meta>
+        <identifier>
+          <system value="urn:regcess:0908005177" />
+          <value value="id-interno-obstetrico-ejemplo-300" />
+        </identifier>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://snomed.info/sct/900000001000122104" />
+            <code value="363812007" />
+            <!--REVISAR ejemplo código-->
+            <display value="antecedentes neonatales, obstétricos y quirúrgicos" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct/900000001000122104" />
+            <code value="118185001" />
+            <!--REVISAR ejemplo código-->
+            <display value="hallazgo relacionado con el embarazo" />
+          </coding>
+        </code>
+        <subject>
+          <type value="Patient" />
+          <identifier>
+            <type>
+              <coding>
+                <system value="http://snomed.info/sct/900000001000122104" />
+                <code value="1551000122105" />
+                <display value="código de identificación personal en el Sistema Nacional de Salud" />
+              </coding>
+            </type>
+            <system value="urn:oid:2.16.724.4.40" />
+            <value value="BBBBBBBBQR648597" />
+          </identifier>
+          <display value="Maria Puig Grau" />
+        </subject>
+        <effectiveDateTime value="2024-12-09T00:00:00Z" />
+        <performer>
+          <type value="Practitioner" />
+          <identifier>
+            <type>
+              <coding>
+                <system value="http://snomed.info/sct/900000001000122104?fhir_vs-refset/900000251000122107" />
+                <code value="22851000122109" />
+                <display value="documento nacional de identidad" />
+              </coding>
+            </type>
+            <system value="urn:oid:1.3.6.1.4.1.19126.3" />
+            <value value="0000001X" />
+          </identifier>
+          <display value="Eva Alabart" />
+        </performer>
+      </Observation>

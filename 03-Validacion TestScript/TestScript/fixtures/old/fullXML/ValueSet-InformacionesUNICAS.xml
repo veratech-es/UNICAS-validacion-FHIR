@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="InformacionesUNICAS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet InformacionesUNICAS</b></p><a name="InformacionesUNICAS"> </a><a name="hcInformacionesUNICAS"> </a><a name="InformacionesUNICAS-en-US"> </a><ul><li>Include these codes as defined in <code>http://snomed.info/sct/900000001000122104</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>31231000122108</td><td>enfermedades previas</td></tr><tr><td>31261000122101</td><td>antecedentes neonatales, obstétricos y quirúrgicos</td></tr><tr><td>31301000122108</td><td>enfermedades familiares hereditarias</td></tr><tr><td>248326004</td><td>medida corporal</td></tr><tr><td>31251000122103</td><td>hábitos tóxicos</td></tr><tr><td>365949003</td><td>hallazgo relacionado con conductas vinculadas a la salud</td></tr><tr><td>31281000122109</td><td>medicación previa</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://unicas-fhir.sanidad.gob.es/ValueSet/TiposInformacionesUNICAS"/>
+  <version value="0.0.1"/>
+  <name value="ValueSetTiposInformacionesUNICAS"/>
+  <title value="Value set de Tipos de informaciones para ÚNICAS"/>
+  <status value="draft"/>
+  <date value="2025-02-05"/>
+  <description value="Este value set define un conjunto de códigos de SNOMED CT. Extensión para España del SNS (OID: 2.16.724.4.21.5.8) para identificar los distintos tipos de información utilizados en la red de ÚNICAS."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct/900000001000122104"/>
+      <concept>
+        <code value="31231000122108"/>
+        <display value="enfermedades previas"/>
+      </concept>
+      <concept>
+        <code value="31261000122101"/>
+        <display value="antecedentes neonatales, obstétricos y quirúrgicos"/>
+      </concept>
+      <concept>
+        <code value="31301000122108"/>
+        <display value="enfermedades familiares hereditarias"/>
+      </concept>
+      <concept>
+        <code value="248326004"/>
+        <display value="medida corporal"/>
+      </concept>
+      <concept>
+        <code value="31251000122103"/>
+        <display value="hábitos tóxicos"/>
+      </concept>
+      <concept>
+        <code value="365949003"/>
+        <display value="hallazgo relacionado con conductas vinculadas a la salud"/>
+      </concept>
+      <concept>
+        <code value="31281000122109"/>
+        <display value="medicación previa"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

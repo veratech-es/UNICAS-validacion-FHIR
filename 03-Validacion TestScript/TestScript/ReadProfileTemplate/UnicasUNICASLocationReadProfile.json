@@ -1,0 +1,70 @@
+{
+  "id": "3ee9dbc97313c72208e69a1acd505a21f88b723ecdfc533bf4994cccfd79d366",
+  "url": "https://github.com/fhir-crucible/testscript-generator/3ee9dbc97313c72208e69a1acd505a21f88b723ecdfc533bf4994cccfd79d366",
+  "version": "0.0",
+  "name": "UnicasUNICASLocationReadProfile",
+  "title": "IG: unicas; Profile: UNICASLocation; Case: Read Profile",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-07-07T20:12:00+02:00",
+  "publisher": "The MITRE Corporation",
+  "profile": [
+    {
+      "id": "targetProfileUNICASLocation",
+      "reference": "https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASLocation"
+    }
+  ],
+  "variable": [
+    {
+      "name": "targetResourceIdUNICASLocation",
+      "defaultValue": "example",
+      "description": "Enter a known instance id on the destination system. Will be checked for conformance against profile UNICASLocation.",
+      "hint": "[resource.id]"
+    }
+  ],
+  "test": [
+    {
+      "name": "Validate the identified resource conforms to the UNICASLocation profile",
+      "action": [
+        {
+          "operation": {
+            "type": {
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
+              "code": "read"
+            },
+            "resource": "Location",
+            "label": "Read_Location_Instance",
+            "description": "Read Location Instance",
+            "encodeRequestUrl": false,
+            "params": "/${targetResourceIdUNICASLocation}",
+            "responseId": "targetInstance"
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_Response_OK",
+            "response": "okay",
+            "warningOnly": false
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_Location_Returned",
+            "description": "Assert Location Returned",
+            "resource": "Location",
+            "warningOnly": false
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_Instance_Conforms_to_UNICASLocation_Profile",
+            "description": "Assert returned instance conforms to the UNICASLocation Profile",
+            "validateProfileId": "targetProfileUNICASLocation",
+            "warningOnly": false
+          }
+        }
+      ]
+    }
+  ],
+  "resourceType": "TestScript"
+}

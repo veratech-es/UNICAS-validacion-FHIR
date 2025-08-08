@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<TestScript xmlns="http://hl7.org/fhir" id="DocumentReference-UNICASDocumentReference-create" url="http://example.org/fhir/TestScript/DocumentReference-UNICASDocumentReference-create">
+  <status value="draft"/>
+  <name value="DocumentReference create TestScript"/>
+  <title value="DocumentReference create TestScript"/>
+  <publisher value="Generado por VeraTech for Health"/>
+  <fixture>
+    <id value="fixture-DocumentReference"/>
+    <autocreate value="true"/>
+    <autodelete value="true"/>
+    <extension url="http://hl7.org/fhir/StructureDefinition/testscript-source-url">
+      <valueUri value="fixtures/UNICAS-DocumentReference-example-215.xml"/>
+    </extension>
+    <resource>&lt;!-- External resource expected at fixtures/UNICAS-DocumentReference-example-215.xml --&gt;</resource>
+  </fixture>
+  <test>
+    <name value="Test create on DocumentReference"/>
+    <description value="Verify server supports create interaction on DocumentReference"/>
+    <action>
+      <operation>
+        <type>
+          <coding>
+            <system value="http://hl7.org/fhir/restful-interaction"/>
+            <code value="create"/>
+          </coding>
+        </type>
+        <resource value="DocumentReference"/>
+        <sourceId value="fixture-DocumentReference"/>
+        <method value="put"/>
+        <params value="DocumentReference?identifier=urn:regcess:0908005177|id-interno-documento-ejemplo-215"/>
+      </operation>
+      <assert>
+        <description value="HTTP returns Ok"/>
+        <response value="okay"/>
+        <stopTestOnFail value="false"/>
+        <warningOnly value="false"/>
+      </assert>
+      <assert>
+        <description value="Server must return resource conforming to profile"/>
+        <path value="meta.profile"/>
+        <operator value="contains"/>
+        <value value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASDocumentReference"/>
+        <stopTestOnFail value="false"/>
+        <warningOnly value="false"/>
+      </assert>
+      <assert>
+        <description value="Server must return resource DocumentReference"/>
+        <resource value="DocumentReference"/>
+        <stopTestOnFail value="false"/>
+        <warningOnly value="false"/>
+      </assert>
+    </action>
+  </test>
+</TestScript>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="TiposServicios"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet TiposServicios</b></p><a name="TiposServicios"> </a><a name="hcTiposServicios"> </a><a name="TiposServicios-en-US"> </a><ul><li>Include all codes defined in <code>urn:oid:2.16.724.4.21.5.9</code></li></ul></div>
+  </text>
+  <url value="https://unicas-fhir.sanidad.gob.es/ValueSet/TiposServicios"/>
+  <version value="0.0.1"/>
+  <name value="ValuesetTiposServiciosAsistenciales"/>
+  <title value="Value set de Tipos de servicios asistenciales para ÚNICAS"/>
+  <status value="draft"/>
+  <date value="2025-02-05"/>
+  <description value="Este value set incluye todos los códigos del catálogo de clasificación de Servicios (OID: 2.16.724.4.21.5.9)."/>
+  <compose>
+    <include>
+      <system value="urn:oid:2.16.724.4.21.5.9"/>
+    </include>
+  </compose>
+</ValueSet>

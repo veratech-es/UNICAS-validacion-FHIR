@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="IdentificadoresNodoCCAA"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet IdentificadoresNodoCCAA</b></p><a name="IdentificadoresNodoCCAA"> </a><a name="hcIdentificadoresNodoCCAA"> </a><a name="IdentificadoresNodoCCAA-en-US"> </a><ul><li>Include these codes as defined in <code>urn:oid:2.16.840.1.113883.2.19.40.5</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>01</td><td>Andalucía</td></tr><tr><td>02</td><td>Aragón</td></tr><tr><td>03</td><td>Asturias, Principado de</td></tr><tr><td>04</td><td>Balears, Illes</td></tr><tr><td>05</td><td>Canarias</td></tr><tr><td>06</td><td>Cantabria</td></tr><tr><td>07</td><td>Castilla y León</td></tr><tr><td>08</td><td>Castilla - La Mancha</td></tr><tr><td>09</td><td>Cataluña</td></tr><tr><td>10</td><td>Comunitat Valenciana</td></tr><tr><td>11</td><td>Extremadura</td></tr><tr><td>12</td><td>Galicia</td></tr><tr><td>13</td><td>Madrid, Comunidad de</td></tr><tr><td>14</td><td>Murcia, Región de</td></tr><tr><td>15</td><td>Navarra, Comunidad Foral de</td></tr><tr><td>16</td><td>País Vasco</td></tr><tr><td>17</td><td>Rioja, La</td></tr><tr><td>18</td><td>Ceuta</td></tr><tr><td>19</td><td>Melilla</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://unicas-fhir.sanidad.gob.es/ValueSet/IdentificadoresNodoCCAA"/>
+  <version value="0.0.1"/>
+  <name value="ValuesetIdentificadoresNodoCCAA"/>
+  <title value="Value set de Nodos Autónomicos de cada CCAA que participa en ÚNICAS (Identificadores Nodo CCAA)"/>
+  <status value="draft"/>
+  <date value="2025-02-05"/>
+  <description value="Este value set incluye todos los códigos del catálogo de provincias INE (OID: 2.16.840.1.113883.2.19.40.5)."/>
+  <compose>
+    <include>
+      <system value="urn:oid:2.16.840.1.113883.2.19.40.5"/>
+      <concept>
+        <code value="01"/>
+        <display value="Andalucía"/>
+      </concept>
+      <concept>
+        <code value="02"/>
+        <display value="Aragón"/>
+      </concept>
+      <concept>
+        <code value="03"/>
+        <display value="Asturias, Principado de"/>
+      </concept>
+      <concept>
+        <code value="04"/>
+        <display value="Balears, Illes"/>
+      </concept>
+      <concept>
+        <code value="05"/>
+        <display value="Canarias"/>
+      </concept>
+      <concept>
+        <code value="06"/>
+        <display value="Cantabria"/>
+      </concept>
+      <concept>
+        <code value="07"/>
+        <display value="Castilla y León"/>
+      </concept>
+      <concept>
+        <code value="08"/>
+        <display value="Castilla - La Mancha"/>
+      </concept>
+      <concept>
+        <code value="09"/>
+        <display value="Cataluña"/>
+      </concept>
+      <concept>
+        <code value="10"/>
+        <display value="Comunitat Valenciana"/>
+      </concept>
+      <concept>
+        <code value="11"/>
+        <display value="Extremadura"/>
+      </concept>
+      <concept>
+        <code value="12"/>
+        <display value="Galicia"/>
+      </concept>
+      <concept>
+        <code value="13"/>
+        <display value="Madrid, Comunidad de"/>
+      </concept>
+      <concept>
+        <code value="14"/>
+        <display value="Murcia, Región de"/>
+      </concept>
+      <concept>
+        <code value="15"/>
+        <display value="Navarra, Comunidad Foral de"/>
+      </concept>
+      <concept>
+        <code value="16"/>
+        <display value="País Vasco"/>
+      </concept>
+      <concept>
+        <code value="17"/>
+        <display value="Rioja, La"/>
+      </concept>
+      <concept>
+        <code value="18"/>
+        <display value="Ceuta"/>
+      </concept>
+      <concept>
+        <code value="19"/>
+        <display value="Melilla"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

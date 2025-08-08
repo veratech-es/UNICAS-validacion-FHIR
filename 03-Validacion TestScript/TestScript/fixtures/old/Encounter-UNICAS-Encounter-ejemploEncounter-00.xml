@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="UNICAS-Encounter-ejemploEncounter-00"/>
+  <meta>
+    <profile value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASEncounter"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Encounter UNICAS-Encounter-ejemploEncounter-00</b></p><a name="UNICAS-Encounter-ejemploEncounter-00"> </a><a name="hcUNICAS-Encounter-ejemploEncounter-00"> </a><a name="UNICAS-Encounter-ejemploEncounter-00-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-UNICASEncounter.html">Encounter ÚNICAS</a></p></div><p><b>identifier</b>: <code>urn:ietf:rfc:4122</code>/7928347e-09f9-431a-a40c-04e15aab4f9d</p><p><b>status</b>: In Progress</p><p><b>subject</b>: Maria Puig Grau (Identifier: código de identificación personal en el Sistema Nacional de Salud/BBBBBBBBQR648597)</p><p><b>serviceProvider</b>: Hospital Sant Joan de Déu (Identifier: <code>urn:oid:2.16.724.4.21.5.10</code>/0908005177)</p><h3>Participants</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Actor</b></td></tr><tr><td style="display: none">*</td><td>Eva Alabart (Identifier: documento nacional de identidad/0000001X)</td></tr></table><blockquote><p><b>diagnosis</b></p><h3>Conditions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Reference</b></td></tr><tr><td style="display: none">*</td><td>Identifier: <code>urn:ietf:rfc:4122</code>/fed14569-e64a-4ee9-af9a-92e20218ffcf</td></tr></table></blockquote></div>
+  </text>
+  <identifier>
+    <system value="urn:ietf:rfc:4122"/>
+    <value value="7928347e-09f9-431a-a40c-04e15aab4f9d"/>
+  </identifier>
+  <status value="in-progress"/>
+  <subject>
+    <type value="Patient"/>
+    <identifier>
+      <type>
+        <coding>
+          <system value="http://snomed.info/sct/900000001000122104"/>
+          <code value="1551000122105"/>
+          <display value="código de identificación personal en el Sistema Nacional de Salud"/>
+        </coding>
+      </type>
+      <system value="urn:oid:2.16.724.4.40"/>
+      <value value="BBBBBBBBQR648597"/>
+    </identifier>
+    <display value="Maria Puig Grau"/>
+  </subject>
+  <serviceProvider>
+    <type value="Organization"/>
+    <identifier>
+      <system value="urn:oid:2.16.724.4.21.5.10"/>
+      <value value="0908005177"/>
+    </identifier>
+    <display value="Hospital Sant Joan de Déu"/>
+  </serviceProvider>
+  <participant>
+    <actor>
+      <type value="Practitioner"/>
+      <identifier>
+        <type>
+          <coding>
+            <system value="http://snomed.info/sct/900000001000122104?fhir_vs-refset/900000251000122107"/>
+            <code value="22851000122109"/>
+            <display value="documento nacional de identidad"/>
+          </coding>
+        </type>
+        <system value="urn:oid:1.3.6.1.4.1.19126.3"/>
+        <value value="0000001X"/>
+      </identifier>
+      <display value="Eva Alabart"/>
+    </actor>
+  </participant>
+  <diagnosis>
+    <condition>
+      <reference>
+        <type value="Condition"/>
+        <identifier>
+          <system value="urn:ietf:rfc:4122"/>
+          <value value="fed14569-e64a-4ee9-af9a-92e20218ffcf"/>
+        </identifier>
+      </reference>
+    </condition>
+  </diagnosis>
+</Encounter>

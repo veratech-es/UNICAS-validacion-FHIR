@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CarePlan xmlns="http://hl7.org/fhir">
+  <id value="UNICAS-GestorProceso-ejemploCarePlan-00"/>
+  <meta>
+    <profile value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASCarePlan"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CarePlan UNICAS-GestorProceso-ejemploCarePlan-00</b></p><a name="UNICAS-GestorProceso-ejemploCarePlan-00"> </a><a name="hcUNICAS-GestorProceso-ejemploCarePlan-00"> </a><a name="UNICAS-GestorProceso-ejemploCarePlan-00-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-UNICASCarePlan.html">CarePlan Gestor del Proceso ÚNICAS</a></p></div><p><b>identifier</b>: <code>urn:ietf:rfc:4122</code>/7a06fa26-2134-4a90-9f79-eff11ac5369e</p><p><b>status</b>: On Hold</p><p><b>intent</b>: Proposal</p><p><b>category</b>: <span title="Codes:{https://unicas-fhir.sanidad.gob.es/CodeSystem/CodigosEventosUNICAS 01}">Evento de entrada</span></p><p><b>subject</b>: Maria Puig Grau (Identifier: código de identificación personal en el Sistema Nacional de Salud/BBBBBBBBQR648597)</p><p><b>encounter</b>: Identifier: <code>urn:ietf:rfc:4122</code>/7928347e-09f9-431a-a40c-04e15aab4f9d</p><p><b>custodian</b>: Hospital Sant Joan de Déu (Identifier: <code>urn:oid:2.16.724.4.21.5.10</code>/0908005177)</p><p><b>contributor</b>: Eva Alabart (Identifier: documento nacional de identidad/0000001X)</p><h3>Addresses</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Reference</b></td></tr><tr><td style="display: none">*</td><td>Identifier: <code>urn:ietf:rfc:4122</code>/fed14569-e64a-4ee9-af9a-92e20218ffcf</td></tr></table><p><b>supportingInfo</b>: Identifier: <code>urn:ietf:rfc:4122</code>/3c4d58d4-ac66-423b-89fc-c13602e3d089</p><p><b>goal</b>: Identifier: <code>urn:ietf:rfc:4122</code>/bf513850-6537-4165-83cf-a33c73d05fa7</p><p><b>note</b>: [Comentario]</p></div>
+  </text>
+  <identifier>
+    <system value="urn:ietf:rfc:4122"/>
+    <value value="7a06fa26-2134-4a90-9f79-eff11ac5369e"/>
+  </identifier>
+  <status value="on-hold"/>
+  <intent value="proposal"/>
+  <category>
+    <coding>
+      <system value="https://unicas-fhir.sanidad.gob.es/CodeSystem/CodigosEventosUNICAS"/>
+      <code value="01"/>
+      <display value="Evento de entrada"/>
+    </coding>
+  </category>
+  <subject>
+    <type value="Patient"/>
+    <identifier>
+      <type>
+        <coding>
+          <system value="http://snomed.info/sct/900000001000122104"/>
+          <code value="1551000122105"/>
+          <display value="código de identificación personal en el Sistema Nacional de Salud"/>
+        </coding>
+      </type>
+      <system value="urn:oid:2.16.724.4.40"/>
+      <value value="BBBBBBBBQR648597"/>
+    </identifier>
+    <display value="Maria Puig Grau"/>
+  </subject>
+  <encounter>
+    <type value="Encounter"/>
+    <identifier>
+      <system value="urn:ietf:rfc:4122"/>
+      <value value="7928347e-09f9-431a-a40c-04e15aab4f9d"/>
+    </identifier>
+  </encounter>
+  <custodian>
+    <type value="Organization"/>
+    <identifier>
+      <system value="urn:oid:2.16.724.4.21.5.10"/>
+      <value value="0908005177"/>
+    </identifier>
+    <display value="Hospital Sant Joan de Déu"/>
+  </custodian>
+  <contributor>
+    <type value="Practitioner"/>
+    <identifier>
+      <type>
+        <coding>
+          <system value="http://snomed.info/sct/900000001000122104?fhir_vs-refset/900000251000122107"/>
+          <code value="22851000122109"/>
+          <display value="documento nacional de identidad"/>
+        </coding>
+      </type>
+      <system value="urn:oid:1.3.6.1.4.1.19126.3"/>
+      <value value="0000001X"/>
+    </identifier>
+    <display value="Eva Alabart"/>
+  </contributor>
+  <addresses>
+    <reference>
+      <type value="Condition"/>
+      <identifier>
+        <system value="urn:ietf:rfc:4122"/>
+        <value value="fed14569-e64a-4ee9-af9a-92e20218ffcf"/>
+      </identifier>
+    </reference>
+  </addresses>
+  <supportingInfo>
+    <type value="DiagnosticReport"/>
+    <identifier>
+      <system value="urn:ietf:rfc:4122"/>
+      <value value="3c4d58d4-ac66-423b-89fc-c13602e3d089"/>
+    </identifier>
+  </supportingInfo>
+  <goal>
+    <type value="Goal"/>
+    <identifier>
+      <system value="urn:ietf:rfc:4122"/>
+      <value value="bf513850-6537-4165-83cf-a33c73d05fa7"/>
+    </identifier>
+  </goal>
+  <note>
+    <text value="[Comentario]"/>
+  </note>
+</CarePlan>

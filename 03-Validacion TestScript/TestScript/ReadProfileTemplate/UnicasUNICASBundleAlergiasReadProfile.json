@@ -1,0 +1,70 @@
+{
+  "id": "01f25ba26988c0cb598061937a9290051dd7471c8fe8e969bdbc773f24ec88d5",
+  "url": "https://github.com/fhir-crucible/testscript-generator/01f25ba26988c0cb598061937a9290051dd7471c8fe8e969bdbc773f24ec88d5",
+  "version": "0.0",
+  "name": "UnicasUNICASBundleAlergiasReadProfile",
+  "title": "IG: unicas; Profile: UNICASBundleAlergias; Case: Read Profile",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-07-07T20:12:01+02:00",
+  "publisher": "The MITRE Corporation",
+  "profile": [
+    {
+      "id": "targetProfileUNICASBundleAlergias",
+      "reference": "https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASBundleAlergias"
+    }
+  ],
+  "variable": [
+    {
+      "name": "targetResourceIdUNICASBundleAlergias",
+      "defaultValue": "example",
+      "description": "Enter a known instance id on the destination system. Will be checked for conformance against profile UNICASBundleAlergias.",
+      "hint": "[resource.id]"
+    }
+  ],
+  "test": [
+    {
+      "name": "Validate the identified resource conforms to the UNICASBundleAlergias profile",
+      "action": [
+        {
+          "operation": {
+            "type": {
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
+              "code": "read"
+            },
+            "resource": "Bundle",
+            "label": "Read_Bundle_Instance",
+            "description": "Read Bundle Instance",
+            "encodeRequestUrl": false,
+            "params": "/${targetResourceIdUNICASBundleAlergias}",
+            "responseId": "targetInstance"
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_Response_OK",
+            "response": "okay",
+            "warningOnly": false
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_Bundle_Returned",
+            "description": "Assert Bundle Returned",
+            "resource": "Bundle",
+            "warningOnly": false
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_Instance_Conforms_to_UNICASBundleAlergias_Profile",
+            "description": "Assert returned instance conforms to the UNICASBundleAlergias Profile",
+            "validateProfileId": "targetProfileUNICASBundleAlergias",
+            "warningOnly": false
+          }
+        }
+      ]
+    }
+  ],
+  "resourceType": "TestScript"
+}

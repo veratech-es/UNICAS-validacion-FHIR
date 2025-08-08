@@ -1,0 +1,70 @@
+{
+  "id": "4aa8dc493e88b82edf1d6956f95516d0ec949d2417c7c8f2619738ffb3855b92",
+  "url": "https://github.com/fhir-crucible/testscript-generator/4aa8dc493e88b82edf1d6956f95516d0ec949d2417c7c8f2619738ffb3855b92",
+  "version": "0.0",
+  "name": "UnicasUNICASConditionEnfermedadReadProfile",
+  "title": "IG: unicas; Profile: UNICASConditionEnfermedad; Case: Read Profile",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-07-07T20:12:00+02:00",
+  "publisher": "The MITRE Corporation",
+  "profile": [
+    {
+      "id": "targetProfileUNICASConditionEnfermedad",
+      "reference": "https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASConditionEnfermedad"
+    }
+  ],
+  "variable": [
+    {
+      "name": "targetResourceIdUNICASConditionEnfermedad",
+      "defaultValue": "example",
+      "description": "Enter a known instance id on the destination system. Will be checked for conformance against profile UNICASConditionEnfermedad.",
+      "hint": "[resource.id]"
+    }
+  ],
+  "test": [
+    {
+      "name": "Validate the identified resource conforms to the UNICASConditionEnfermedad profile",
+      "action": [
+        {
+          "operation": {
+            "type": {
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
+              "code": "read"
+            },
+            "resource": "Condition",
+            "label": "Read_Condition_Instance",
+            "description": "Read Condition Instance",
+            "encodeRequestUrl": false,
+            "params": "/${targetResourceIdUNICASConditionEnfermedad}",
+            "responseId": "targetInstance"
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_Response_OK",
+            "response": "okay",
+            "warningOnly": false
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_Condition_Returned",
+            "description": "Assert Condition Returned",
+            "resource": "Condition",
+            "warningOnly": false
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_Instance_Conforms_to_UNICASConditionEnfermedad_Profile",
+            "description": "Assert returned instance conforms to the UNICASConditionEnfermedad Profile",
+            "validateProfileId": "targetProfileUNICASConditionEnfermedad",
+            "warningOnly": false
+          }
+        }
+      ]
+    }
+  ],
+  "resourceType": "TestScript"
+}

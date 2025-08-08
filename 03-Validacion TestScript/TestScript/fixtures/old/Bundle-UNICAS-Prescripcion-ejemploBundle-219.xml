@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="UNICAS-Prescripcion-ejemploBundle-219"/>
+  <meta>
+    <profile value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASPrescripcionesHospitalarias"/>
+  </meta>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://snomed.info/sct/900000001000122104"/>
+        <code value="440545006"/>
+        <display value="registro de prescripción"/>
+      </coding>
+    </type>
+    <system value="urn:ietf:rfc:4122"/>
+    <value value="39a1213e-b8e3-4647-b486-ebf557ee8c3a"/>
+  </identifier>
+  <type value="transaction"/>
+  <timestamp value="2025-02-19T11:28:17.239+00:00"/>
+  <entry>
+    <fullUrl value="urn:uuid:3a6f6ac9-00e2-4b13-aa54-665b8e1814d5"/>
+    <resource>
+      <Medication>
+        <id value="medication-219-prescripcion"/>
+        <meta>
+          <profile value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASMedication"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Medication_medication-219-prescripcion"> </a><p class="res-header-id"><b>Generated Narrative: Medication medication-219-prescripcion</b></p><a name="medication-219-prescripcion"> </a><a name="hcmedication-219-prescripcion"> </a><a name="medication-219-prescripcion-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-UNICASMedication.html">Medication Medicación ÚNICAS</a></p></div><p><b>identifier</b>: <code>urn:ietf:rfc:4122</code>/3a6f6ac9-00e2-4b13-aa54-665b8e1814d5</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct/900000001000122104 246981000140101}">[Nombre comercial del producto]</span></p><p><b>status</b>: Active</p><p><b>doseForm</b>: <span title="Codes:{urn:oid:2.16.724.4.21.5.14.1 42}">COMPRIMIDO RECUBIERTO CON PELÍCULA</span></p><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct/900000001000122104 761851004}">abemaciclib</span></td></tr></table></blockquote></div>
+        </text>
+        <identifier>
+          <system value="urn:ietf:rfc:4122"/>
+          <value value="3a6f6ac9-00e2-4b13-aa54-665b8e1814d5"/>
+        </identifier>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct/900000001000122104"/>
+            <code value="246981000140101"/>
+            <display value="abemaciclib"/>
+          </coding>
+          <text value="[Nombre comercial del producto]"/>
+        </code>
+        <status value="active"/>
+        <doseForm>
+          <coding>
+            <system value="urn:oid:2.16.724.4.21.5.14.1"/>
+            <code value="42"/>
+            <display value="COMPRIMIDO RECUBIERTO CON PELÍCULA"/>
+          </coding>
+        </doseForm>
+        <ingredient>
+          <item>
+            <concept>
+              <coding>
+                <system value="http://snomed.info/sct/900000001000122104"/>
+                <code value="761851004"/>
+                <display value="abemaciclib"/>
+              </coding>
+            </concept>
+          </item>
+        </ingredient>
+      </Medication>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Medication"/>
+      <ifNoneExist value="[base]/Medication?identifier=urn:ietf:rfc:4122|3a6f6ac9-00e2-4b13-aa54-665b8e1814d5"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:29396c48-fae8-4ac9-a40d-600d4ef0778e"/>
+    <resource>
+      <MedicationAdministration>
+        <id value="medicationAdministration-219-prescripcion"/>
+        <meta>
+          <profile value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASMedicationAdministration"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MedicationAdministration_medicationAdministration-219-prescripcion"> </a><p class="res-header-id"><b>Generated Narrative: MedicationAdministration medicationAdministration-219-prescripcion</b></p><a name="medicationAdministration-219-prescripcion"> </a><a name="hcmedicationAdministration-219-prescripcion"> </a><a name="medicationAdministration-219-prescripcion-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-UNICASMedicationAdministration.html">MedicationAdministration Prescripción ÚNICAS</a></p></div><p><b>identifier</b>: <code>urn:ietf:rfc:4122</code>/29396c48-fae8-4ac9-a40d-600d4ef0778e</p><p><b>status</b>: Completed</p><h3>Medications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct/900000001000122104 246981000140101}">[Nombre comercial del producto]</span></td></tr></table><p><b>subject</b>: Maria Puig Grau (Identifier: código de identificación personal en el Sistema Nacional de Salud/BBBBBBBBQR648597)</p><p><b>occurence</b>: 2024-07-23 11:28:17+0000 --&gt; 2024-08-23 11:28:17+0000</p><p><b>recorded</b>: 2024-08-23 11:28:17+0000</p><blockquote><p><b>performer</b></p><h3>Actors</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Reference</b></td></tr><tr><td style="display: none">*</td><td>Eva Alabart (Identifier: documento nacional de identidad/0000001X)</td></tr></table></blockquote><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td><td><b>Route</b></td><td><b>Dose</b></td><td><b>Rate[x]</b></td></tr><tr><td style="display: none">*</td><td>[Comentarios para el farmacéutico]</td><td><span title="Codes:{urn:oid:2.16.724.4.21.5.14.2 54}">VÍA ORAL</span></td><td>0.5 milligram<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td><td>8 hour per day<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeh/d = 'h/d')</span></td></tr></table></div>
+        </text>
+        <identifier>
+          <system value="urn:ietf:rfc:4122"/>
+          <value value="29396c48-fae8-4ac9-a40d-600d4ef0778e"/>
+        </identifier>
+        <status value="completed"/>
+        <medication>
+          <concept>
+            <coding>
+              <system value="http://snomed.info/sct/900000001000122104"/>
+              <code value="246981000140101"/>
+              <display value="abemaciclib"/>
+            </coding>
+            <text value="[Nombre comercial del producto]"/>
+          </concept>
+        </medication>
+        <subject>
+          <type value="Patient"/>
+          <identifier>
+            <type>
+              <coding>
+                <system value="http://snomed.info/sct/900000001000122104"/>
+                <code value="1551000122105"/>
+                <display value="código de identificación personal en el Sistema Nacional de Salud"/>
+              </coding>
+            </type>
+            <system value="urn:oid:2.16.724.4.40"/>
+            <value value="BBBBBBBBQR648597"/>
+          </identifier>
+          <display value="Maria Puig Grau"/>
+        </subject>
+        <occurencePeriod>
+          <start value="2024-07-23T11:28:17.239+00:00"/>
+          <end value="2024-08-23T11:28:17.239+00:00"/>
+        </occurencePeriod>
+        <recorded value="2024-08-23T11:28:17.239+00:00"/>
+        <performer>
+          <actor>
+            <reference>
+              <type value="Practitioner"/>
+              <identifier>
+                <type>
+                  <coding>
+                    <system value="http://snomed.info/sct/900000001000122104?fhir_vs-refset/900000251000122107"/>
+                    <code value="22851000122109"/>
+                    <display value="documento nacional de identidad"/>
+                  </coding>
+                </type>
+                <system value="urn:oid:1.3.6.1.4.1.19126.3"/>
+                <value value="0000001X"/>
+              </identifier>
+              <display value="Eva Alabart"/>
+            </reference>
+          </actor>
+        </performer>
+        <dosage>
+          <text value="[Comentarios para el farmacéutico]"/>
+          <route>
+            <coding>
+              <system value="urn:oid:2.16.724.4.21.5.14.2"/>
+              <code value="54"/>
+              <display value="VÍA ORAL"/>
+            </coding>
+          </route>
+          <dose>
+            <value value="0.5"/>
+            <unit value="milligram"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="mg"/>
+          </dose>
+          <rateQuantity>
+            <value value="8"/>
+            <unit value="hour per day"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="h/d"/>
+          </rateQuantity>
+        </dosage>
+      </MedicationAdministration>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="MedicationAdministration"/>
+      <ifNoneExist value="[base]/MedicationAdministration?identifier=urn:ietf:rfc:4122|29396c48-fae8-4ac9-a40d-600d4ef0778e"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:f3fc61f1-d31c-4ca1-b01d-a5d8ec36f749"/>
+    <resource>
+      <Medication>
+        <id value="medication-219-activa"/>
+        <meta>
+          <profile value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASMedication"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Medication_medication-219-activa"> </a><p class="res-header-id"><b>Generated Narrative: Medication medication-219-activa</b></p><a name="medication-219-activa"> </a><a name="hcmedication-219-activa"> </a><a name="medication-219-activa-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-UNICASMedication.html">Medication Medicación ÚNICAS</a></p></div><p><b>identifier</b>: <code>urn:ietf:rfc:4122</code>/f3fc61f1-d31c-4ca1-b01d-a5d8ec36f749</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct/900000001000122104 156301000140108}">[Nombre comercial del producto]</span></p><p><b>status</b>: Active</p><p><b>doseForm</b>: <span title="Codes:{urn:oid:2.16.724.4.21.5.14.1 42}">COMPRIMIDO RECUBIERTO CON PELÍCULA</span></p><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct/900000001000122104 714086004}">bedaquilina</span></td></tr></table></blockquote></div>
+        </text>
+        <identifier>
+          <system value="urn:ietf:rfc:4122"/>
+          <value value="f3fc61f1-d31c-4ca1-b01d-a5d8ec36f749"/>
+        </identifier>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct/900000001000122104"/>
+            <code value="156301000140108"/>
+            <display value="bedaquilina"/>
+          </coding>
+          <text value="[Nombre comercial del producto]"/>
+        </code>
+        <status value="active"/>
+        <doseForm>
+          <coding>
+            <system value="urn:oid:2.16.724.4.21.5.14.1"/>
+            <code value="42"/>
+            <display value="COMPRIMIDO RECUBIERTO CON PELÍCULA"/>
+          </coding>
+        </doseForm>
+        <ingredient>
+          <item>
+            <concept>
+              <coding>
+                <system value="http://snomed.info/sct/900000001000122104"/>
+                <code value="714086004"/>
+                <display value="bedaquilina"/>
+              </coding>
+            </concept>
+          </item>
+        </ingredient>
+      </Medication>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Medication"/>
+      <ifNoneExist value="[base]/Medication?identifier=urn:ietf:rfc:4122|f3fc61f1-d31c-4ca1-b01d-a5d8ec36f749"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:f9a9bcac-16ed-44a3-a7ba-68e39f45b606"/>
+    <resource>
+      <MedicationStatement>
+        <id value="medicationStatement-219-medicacionActiva"/>
+        <meta>
+          <profile value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASMedicationStatement"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MedicationStatement_medicationStatement-219-medicacionActiva"> </a><p class="res-header-id"><b>Generated Narrative: MedicationStatement medicationStatement-219-medicacionActiva</b></p><a name="medicationStatement-219-medicacionActiva"> </a><a name="hcmedicationStatement-219-medicacionActiva"> </a><a name="medicationStatement-219-medicacionActiva-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-UNICASMedicationStatement.html">MedicationStatement Prescripción ÚNICAS</a></p></div><p><b>identifier</b>: <code>urn:ietf:rfc:4122</code>/f9a9bcac-16ed-44a3-a7ba-68e39f45b606</p><p><b>status</b>: Recorded</p><h3>Medications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct/900000001000122104 156301000140108}">[Nombre comercial del producto]</span></td></tr></table><p><b>subject</b>: Maria Puig Grau (Identifier: código de identificación personal en el Sistema Nacional de Salud/BBBBBBBBQR648597)</p><p><b>effective</b>: 2024-07-23 11:28:17+0000 --&gt; 2024-08-23 11:28:17+0000</p><p><b>informationSource</b>: Eva Alabart (Identifier: documento nacional de identidad/0000001X)</p><blockquote><p><b>dosage</b></p><p><b>text</b>: [Comentarios para el farmacéutico]</p><p><b>route</b>: <span title="Codes:{urn:oid:2.16.724.4.21.5.14.2 54}">VÍA ORAL</span></p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td><td><b>Rate[x]</b></td></tr><tr><td style="display: none">*</td><td>0.5 milligram<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td><td>8 hour per day<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeh/d = 'h/d')</span></td></tr></table></blockquote></div>
+        </text>
+        <identifier>
+          <system value="urn:ietf:rfc:4122"/>
+          <value value="f9a9bcac-16ed-44a3-a7ba-68e39f45b606"/>
+        </identifier>
+        <status value="recorded"/>
+        <medication>
+          <concept>
+            <coding>
+              <system value="http://snomed.info/sct/900000001000122104"/>
+              <code value="156301000140108"/>
+              <display value="bedaquilina"/>
+            </coding>
+            <text value="[Nombre comercial del producto]"/>
+          </concept>
+        </medication>
+        <subject>
+          <type value="Patient"/>
+          <identifier>
+            <type>
+              <coding>
+                <system value="http://snomed.info/sct/900000001000122104"/>
+                <code value="1551000122105"/>
+                <display value="código de identificación personal en el Sistema Nacional de Salud"/>
+              </coding>
+            </type>
+            <system value="urn:oid:2.16.724.4.40"/>
+            <value value="BBBBBBBBQR648597"/>
+          </identifier>
+          <display value="Maria Puig Grau"/>
+        </subject>
+        <effectivePeriod>
+          <start value="2024-07-23T11:28:17.239+00:00"/>
+          <end value="2024-08-23T11:28:17.239+00:00"/>
+        </effectivePeriod>
+        <informationSource>
+          <type value="Practitioner"/>
+          <identifier>
+            <type>
+              <coding>
+                <system value="http://snomed.info/sct/900000001000122104?fhir_vs-refset/900000251000122107"/>
+                <code value="22851000122109"/>
+                <display value="documento nacional de identidad"/>
+              </coding>
+            </type>
+            <system value="urn:oid:1.3.6.1.4.1.19126.3"/>
+            <value value="0000001X"/>
+          </identifier>
+          <display value="Eva Alabart"/>
+        </informationSource>
+        <dosage>
+          <text value="[Comentarios para el farmacéutico]"/>
+          <route>
+            <coding>
+              <system value="urn:oid:2.16.724.4.21.5.14.2"/>
+              <code value="54"/>
+              <display value="VÍA ORAL"/>
+            </coding>
+          </route>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="0.5"/>
+              <unit value="milligram"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </doseQuantity>
+            <rateQuantity>
+              <value value="8"/>
+              <unit value="hour per day"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="h/d"/>
+            </rateQuantity>
+          </doseAndRate>
+        </dosage>
+      </MedicationStatement>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="MedicationStatement"/>
+      <ifNoneExist value="[base]/MedicationStatement?identifier=urn:ietf:rfc:4122|f9a9bcac-16ed-44a3-a7ba-68e39f45b606"/>
+    </request>
+  </entry>
+</Bundle>

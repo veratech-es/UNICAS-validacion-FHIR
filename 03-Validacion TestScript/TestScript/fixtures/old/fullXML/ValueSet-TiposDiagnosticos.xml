@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="TiposDiagnosticos"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet TiposDiagnosticos</b></p><a name="TiposDiagnosticos"> </a><a name="hcTiposDiagnosticos"> </a><a name="TiposDiagnosticos-en-US"> </a><ul><li>Include these codes as defined in <code>http://snomed.info/sct/900000001000122104</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>255545003</td><td>diagnóstico confirmado</td></tr><tr><td>60022001</td><td>diagnóstico en sospecha</td></tr><tr><td>24800002</td><td>diagnóstico portador asintomático</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://unicas-fhir.sanidad.gob.es/ValueSet/TiposDiagnosticos"/>
+  <version value="0.0.1"/>
+  <name value="ValuesetTiposDiagnosticos"/>
+  <title value="Value set de Tipos de diagnósticos"/>
+  <status value="draft"/>
+  <date value="2025-03-14"/>
+  <description value="Este value set define un conjunto de códigos de SNOMED CT. Extensión para España del SNS (OID: 2.16.724.4.21.5.8) que pueden utilizarse para identificar los distintos tipos de diagnóstico realizados a los pacientes en el caso de uso de ÚNICAS."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct/900000001000122104"/>
+      <concept>
+        <code value="255545003"/>
+        <display value="diagnóstico confirmado"/>
+      </concept>
+      <concept>
+        <code value="60022001"/>
+        <display value="diagnóstico en sospecha"/>
+      </concept>
+      <concept>
+        <code value="24800002"/>
+        <display value="diagnóstico portador asintomático"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,80 @@
+{
+  "id": "Unicas-Location-Search_by-Source",
+  "url": "https://github.com/fhir-crucible/testscript-generator",
+  "version": "0.0",
+  "name": "Unicas_Location_Search_by_Source",
+  "title": "unicas location search_by source",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-07-07T20:11:54+02:00",
+  "publisher": "The MITRE Corporation",
+  "fixture": [
+    {
+      "id": "example_location",
+      "autocreate": false,
+      "autodelete": false,
+      "resource": {
+        "reference": "fixtures/example_location.json"
+      }
+    }
+  ],
+  "variable": [
+    {
+      "name": "kK9rvkszI9xdWYmL",
+      "expression": "Location.meta.source",
+      "sourceId": "Kg9d3TSDiitiUSIo"
+    }
+  ],
+  "setup": {
+    "action": [
+      {
+        "operation": {
+          "type": {
+            "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
+            "code": "create"
+          },
+          "label": "Operation_1",
+          "encodeRequestUrl": false,
+          "responseId": "Kg9d3TSDiitiUSIo",
+          "sourceId": "example_location"
+        }
+      }
+    ]
+  },
+  "test": [
+    {
+      "name": "Test_1",
+      "action": [
+        {
+          "operation": {
+            "type": {
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
+              "code": "search"
+            },
+            "resource": "Location",
+            "label": "Operation_2",
+            "encodeRequestUrl": false,
+            "params": "?_source=${kK9rvkszI9xdWYmL}"
+          }
+        }
+      ]
+    }
+  ],
+  "teardown": {
+    "action": [
+      {
+        "operation": {
+          "type": {
+            "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
+            "code": "delete"
+          },
+          "resource": "Location",
+          "label": "Operation_3",
+          "encodeRequestUrl": false,
+          "params": "/${kK9rvkszI9xdWYmL}"
+        }
+      }
+    ]
+  },
+  "resourceType": "TestScript"
+}

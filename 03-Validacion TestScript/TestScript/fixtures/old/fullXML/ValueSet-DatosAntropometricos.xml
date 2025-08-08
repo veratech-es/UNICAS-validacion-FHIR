@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="DatosAntropometricos"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet DatosAntropometricos</b></p><a name="DatosAntropometricos"> </a><a name="hcDatosAntropometricos"> </a><a name="DatosAntropometricos-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<code>http://snomed.info/sct/900000001000122104</code> where concept  descends from 248326004</li><li>Include these codes as defined in <code>http://snomed.info/sct/900000001000122104</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>27113001</td><td>peso corporal</td></tr><tr><td>363812007</td><td>perímetro cefálico</td></tr><tr><td>1153637007</td><td>altura corporal</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://unicas-fhir.sanidad.gob.es/ValueSet/DatosAntropometricos"/>
+  <version value="0.0.1"/>
+  <name value="ValueSetDatosAntropometricos"/>
+  <title value="Value set de Medidas antropométricas"/>
+  <status value="draft"/>
+  <date value="2025-03-20"/>
+  <description value="Este value set incluye los códigos de SNOMED CT posibles descendientes del 248326004 (medida corporal (entidad observable)) de SNOMED CT. Extensión para España del SNS (OID: 2.16.724.4.21.5.8) para representar las diferentes medidas antropométricas utilizadas en la red de ÚNICAS."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct/900000001000122104"/>
+      <filter>
+        <property value="concept"/>
+        <op value="descendent-of"/>
+        <value value="248326004"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct/900000001000122104"/>
+      <concept>
+        <code value="27113001"/>
+        <display value="peso corporal"/>
+      </concept>
+      <concept>
+        <code value="363812007"/>
+        <display value="perímetro cefálico"/>
+      </concept>
+      <concept>
+        <code value="1153637007"/>
+        <display value="altura corporal"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

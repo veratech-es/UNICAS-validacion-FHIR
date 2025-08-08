@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<TestScript xmlns="http://hl7.org/fhir" id="Bundle-UNICASBundleDiagnosticos-patch" url="http://example.org/fhir/TestScript/Bundle-UNICASBundleDiagnosticos-patch">
+  <status value="draft"/>
+  <name value="Bundle patch TestScript"/>
+  <title value="Bundle patch TestScript"/>
+  <publisher value="Generado por VeraTech for Health"/>
+  <fixture>
+    <id value="fixture-Bundle"/>
+    <autocreate value="true"/>
+    <autodelete value="true"/>
+    <extension url="http://hl7.org/fhir/StructureDefinition/testscript-source-url">
+      <valueUri value="fixtures/UNICAS-Diagnostico-ejemploBundle-221.xml"/>
+    </extension>
+    <resource>&lt;!-- External resource expected at fixtures/UNICAS-Diagnostico-ejemploBundle-221.xml --&gt;</resource>
+  </fixture>
+  <test>
+    <name value="Test patch on Bundle"/>
+    <description value="Verify server supports patch interaction on Bundle"/>
+    <action>
+      <operation>
+        <type>
+          <coding>
+            <system value="http://hl7.org/fhir/restful-interaction"/>
+            <code value="patch"/>
+          </coding>
+        </type>
+        <resource value="Bundle"/>
+        <sourceId value="fixture-Bundle"/>
+        <method value="put"/>
+        <params value="Bundle?identifier=urn:ietf:rfc:4122|27dff901-f60f-45c7-aefc-b1327930f00c"/>
+      </operation>
+      <assert>
+        <description value="HTTP returns Ok"/>
+        <response value="okay"/>
+        <stopTestOnFail value="false"/>
+        <warningOnly value="false"/>
+      </assert>
+      <assert>
+        <description value="Server must return resource conforming to profile"/>
+        <path value="meta.profile"/>
+        <operator value="contains"/>
+        <value value="https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASBundleDiagnosticos"/>
+        <stopTestOnFail value="false"/>
+        <warningOnly value="false"/>
+      </assert>
+      <assert>
+        <description value="Server must return resource Bundle"/>
+        <resource value="Bundle"/>
+        <stopTestOnFail value="false"/>
+        <warningOnly value="false"/>
+      </assert>
+    </action>
+  </test>
+</TestScript>

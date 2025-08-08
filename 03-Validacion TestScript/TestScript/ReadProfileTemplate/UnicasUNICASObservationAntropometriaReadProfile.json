@@ -1,0 +1,70 @@
+{
+  "id": "cc1f45316e5ba684e84528899f3e9641df34b31efede5701de3efa0524de31f1",
+  "url": "https://github.com/fhir-crucible/testscript-generator/cc1f45316e5ba684e84528899f3e9641df34b31efede5701de3efa0524de31f1",
+  "version": "0.0",
+  "name": "UnicasUNICASObservationAntropometriaReadProfile",
+  "title": "IG: unicas; Profile: UNICASObservationAntropometria; Case: Read Profile",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-07-07T20:12:00+02:00",
+  "publisher": "The MITRE Corporation",
+  "profile": [
+    {
+      "id": "targetProfileUNICASObservationAntropometria",
+      "reference": "https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASObservationAntropometria"
+    }
+  ],
+  "variable": [
+    {
+      "name": "targetResourceIdUNICASObservationAntropometria",
+      "defaultValue": "example",
+      "description": "Enter a known instance id on the destination system. Will be checked for conformance against profile UNICASObservationAntropometria.",
+      "hint": "[resource.id]"
+    }
+  ],
+  "test": [
+    {
+      "name": "Validate the identified resource conforms to the UNICASObservationAntropometria profile",
+      "action": [
+        {
+          "operation": {
+            "type": {
+              "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
+              "code": "read"
+            },
+            "resource": "Observation",
+            "label": "Read_Observation_Instance",
+            "description": "Read Observation Instance",
+            "encodeRequestUrl": false,
+            "params": "/${targetResourceIdUNICASObservationAntropometria}",
+            "responseId": "targetInstance"
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_Response_OK",
+            "response": "okay",
+            "warningOnly": false
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_Observation_Returned",
+            "description": "Assert Observation Returned",
+            "resource": "Observation",
+            "warningOnly": false
+          }
+        },
+        {
+          "assert": {
+            "label": "Assert_Instance_Conforms_to_UNICASObservationAntropometria_Profile",
+            "description": "Assert returned instance conforms to the UNICASObservationAntropometria Profile",
+            "validateProfileId": "targetProfileUNICASObservationAntropometria",
+            "warningOnly": false
+          }
+        }
+      ]
+    }
+  ],
+  "resourceType": "TestScript"
+}

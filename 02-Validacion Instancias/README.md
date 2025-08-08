@@ -4,7 +4,7 @@ Aquí se presentan el manual para la validación de instancias HL7 FHIR respecto
 
 # Manual de validación — Herramientas y Procedimiento
 
-> A continuación se muestra [`Manual validador instancias FHIR`](./Manual%20validador%20instancias%20FHIR.docx).
+> A continuación se muestra online el contenido del [`Manual validador instancias FHIR`](./Manual%20validador%20instancias%20FHIR.docx).
 
 ## Guía de implementación ÚNICAS
 

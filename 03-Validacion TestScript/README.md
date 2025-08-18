@@ -11,7 +11,7 @@ Esta carpeta contiene los conjuntos de casos de pruebas en TestScript (en format
 
 ## Tipos de TestScript
 
-- [`ReadProfileTemplate`](./ReadProfileTemplate) contiene un conjunto de TestScript para la validación de instancias para cada uno de los perfiles en el servidor declarados en el CapabilityStatement. Generado con testscript-generator
-- [`search_params`](./search_params) contiene un conjunto de TestScript para la validación de los parámetros de búsqueda declarados en el CapabilityStatement. Generado con testscript-generator
-- [`operacionesUNICAS`](./operacionesUNICAS) contiene un conjunto de TestScript para la validación de las operaciones permitidas para cada uno de los perfiles declarados en el CapabilityStatement. Generado por la oficina técnica de UNICAS
-- [`fixtures`](./fixtures) contiene los ejemplos referenciados por los distintos TestScript
+- [`ReadProfileTemplate`](./TestScript/ReadProfileTemplate) contiene un conjunto de TestScript para la validación de instancias para cada uno de los perfiles en el servidor declarados en el CapabilityStatement. Generado con testscript-generator
+- [`search_params`](./TestScript/search_params) contiene un conjunto de TestScript para la validación de los parámetros de búsqueda declarados en el CapabilityStatement. Generado con testscript-generator
+- [`operacionesUNICAS`](./TestScript/operacionesUNICAS) contiene un conjunto de TestScript para la validación de las operaciones permitidas para cada uno de los perfiles declarados en el CapabilityStatement. Generado por la oficina técnica de UNICAS
+- [`fixtures`](./TestScript/fixtures) contiene los ejemplos referenciados por los distintos TestScript

@@ -1,6 +1,9 @@
-# Proyecto de Validación de Datos y Servidores FHIR
+# Proyecto de Validación de Datos y Servidores FHIR UNICAS
 
-Este repositorio contiene herramientas y scripts para realizar validaciones sobre servidores FHIR, instancias de recursos y conjuntos de TestScripts.
+Este repositorio contiene herramientas y scripts para realizar validaciones sobre servidores FHIR, instancias de recursos y conjuntos de TestScripts en el contexto del proyecto UNICAS.
+
+La guía de implementación ÚNICAS está disponible en:  
+<https://unicas-fhir.sanidad.gob.es/>
 
 ## Estructura del proyecto
 

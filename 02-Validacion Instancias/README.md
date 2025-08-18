@@ -55,4 +55,54 @@ java -jar validator_cli.jar RUTA_A_VALIDAR \
 - **`-html-output`** *(opcional)*: Genera un informe HTML con los resultados de validación.  
   Si la `RUTA_A_VALIDAR` es un directorio, el HTML resultante contendrá la validación de todos los artefactos identificados en la carpeta.
   
-...etc
+## Validación respecto a la guía de implementación ÚNICAS
+
+Para validar una instancia frente a la guía ÚNICAS utilizaremos su URL de referencia:  
+<https://unicas-fhir.sanidad.gob.es/>
+
+### Ejemplo
+
+```bash
+java -jar validator_cli.jar RUTA_A_VALIDAR \
+    -ig https://unicas-fhir.sanidad.gob.es/
+```
+
+Además, podemos validar la instancia frente a un perfil concreto si lo necesitamos con el parámetro
+‘-profile’.
+Por ejemplo, una instancia de Prescripción Hospitalaria frente a su perfil:
+
+```bash
+java -jar validator_cli.jar RUTA_A_VALIDAR 
+                            -ig https://unicas-fhir.sanidad.gob.es/ 
+                            -profile https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASPrescripcionesHospitalarias
+```
+
+También podríamos indicar la versión FHIR a utilizar, que en el caso de ÚNICAS es R5.
+
+```bash
+java -jar validator_cli.jar RUTA_A_VALIDAR 
+                            -ig https://unicas-fhir.sanidad.gob.es/ 
+                            -version 5.0
+```
+
+Cabe destacar que, en principio, los parámetros -ig, -profile y -version no son necesarios si en la instancia está correctamente anotado a que perfil de la guía UNICAS corresponde la instancia, dado que el validador es capaz de leer la instancia y saber el perfil y versión sobre el que realizar la validación (mirando el campo meta.profile de la instancia de datos).
+
+
+## Configuración proxy
+
+Si la aplicación se lanza desde dentro de una intranet, es posible que se requiera el uso de un proxy para que el validador sea capaz de conectarse con la guía de implementación ÚNICAS.
+Para configurar el validador añadiremos ‘-proxy’ o ‘-https-proxy’ dependiendo si el proxy es http o https. El proxy se expresa como IP:PUERTO.
+
+```bash
+java -jar validator_cli.jar RUTA_A_VALIDAR -proxy 192.168.0.1:8080
+
+java -jar validator_cli.jar RUTA_A_VALIDAR -https-proxy 192.168.0.1:443
+```
+
+Si el proxy requiere autenticación, se le pasará con el parámetro ‘-auth’ seguido de ‘usuario:contraseña’.
+
+```bash
+java -jar validator_cli.jar RUTA_A_VALIDAR 
+                            -proxy 192.168.0.1:8080 
+                            -auth user:pass
+```

@@ -960,2894 +960,1278 @@ collection:
             method: POST
             body:
               mimeType: application/json
-              text: "{
-
-                \  \"resourceType\" : \"Bundle\",
-
-                \  \"id\" : \"UNICAS-Antecedentes-ejemploBundle-300\",
-
-                \  \"meta\" : {
-
-                \    \"profile\" :
-                [\"https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICA\
-                SBundleAntecedentes\"]
-
-                \  },
-
-                \  \"identifier\" : {
-
-                \    \"type\" : {
-
-                \      \"coding\" : [{
-
-                \        \"system\" :
-                \"http://snomed.info/sct/900000001000122104\",
-
-                \        \"code\" : \"31221000122105\",
-
-                \        \"display\" : \"antecedentes\"
-
-                \      }]
-
-                \    },
-
-                \    \"system\" : \"urn:ietf:rfc:4122\",
-
-                \    \"value\" : \"a13f9746-795a-4a11-864f-4f40b51b62de\"
-
-                \  },
-
-                \  \"type\" : \"transaction\",
-
-                \  \"timestamp\" : \"2025-02-19T11:28:17.239+00:00\",
-
-                \  \"entry\" : [{
-
-                \    \"fullUrl\" :
-                \"urn:uuid:5d84c09e-4d7f-4825-9044-ff1683f0982f\",
-
-                \    \"resource\" : {
-
-                \      \"resourceType\" : \"Condition\",
-
-                \      \"id\" : \"condition-300-enfermedadPrevia\",
-
-                \      \"meta\" : {
-
-                \        \"profile\" :
-                [\"https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICA\
-                SConditionEnfermedadPrevia\"]
-
-                \      },
-
-                \      \"text\" : {
-
-                \        \"status\" : \"generated\",
-
-                \        \"div\" : \"<div
-                xmlns=\\\"http://www.w3.org/1999/xhtml\\\"><a
-                name=\\\"Condition_condition-300-enfermedadPrevia\\\"> </a><p
-                class=\\\"res-header-id\\\"><b>Generated Narrative: Condition
-                condition-300-enfermedadPrevia</b></p><a
-                name=\\\"condition-300-enfermedadPrevia\\\"> </a><a
-                name=\\\"hccondition-300-enfermedadPrevia\\\"> </a><a
-                name=\\\"condition-300-enfermedadPrevia-en-US\\\"> </a><div
-                style=\\\"display: inline-block; background-color: #d9e0e7;
-                padding: 6px; margin: 4px; border: 1px solid #8da1b4;
-                border-radius: 5px; line-height: 60%\\\"><p
-                style=\\\"margin-bottom: 0px\\\"/><p style=\\\"margin-bottom:
-                0px\\\">Profile: <a
-                href=\\\"StructureDefinition-UNICASConditionEnfermedadPrevia.ht\
-                ml\\\">Condition Enfermedad Previa
-                ÃšNICAS</a></p></div><p><b>identifier</b>:
-                <code>urn:ietf:rfc:4122</code>/5d84c09e-4d7f-4825-9044-ff1683f0\
-                982f</p><p><b>clinicalStatus</b>: <span
-                title=\\\"Codes:{http://terminology.hl7.org/CodeSystem/conditio\
-                n-clinical resolved}\\\">Resolved</span></p><p><b>category</b>:
-                <span title=\\\"Codes:{http://snomed.info/sct/900000001000122104
-                31231000122108}\\\">enfermedades
-                previas</span></p><p><b>code</b>: <span
-                title=\\\"Codes:{http://snomed.info/sct/900000001000122104
-                613003}\\\">sÃ­ndrome del cromosoma X
-                frÃ¡gil</span></p><p><b>subject</b>: Maria Puig Grau
-                (Identifier: cÃ³digo de identificaciÃ³n personal en el Sistema
-                Nacional de Salud/BBBBBBBBQR648597)</p><p><b>onset</b>:
-                2024-12-09 00:00:00+0000</p><h3>Participants</h3><table
-                class=\\\"grid\\\"><tr><td style=\\\"display:
-                none\\\">-</td><td><b>Actor</b></td></tr><tr><td
-                style=\\\"display: none\\\">*</td><td>Eva Alabart (Identifier:
-                documento nacional de
-                identidad/0000001X)</td></tr></table></div>\"
-
-                \      },
-
-                \      \"identifier\" : [{
-
-                \        \"system\" : \"urn:ietf:rfc:4122\",
-
-                \        \"value\" : \"5d84c09e-4d7f-4825-9044-ff1683f0982f\"
-
-                \      }],
-
-                \      \"clinicalStatus\" : {
-
-                \        \"coding\" : [{
-
-                \          \"system\" :
-                \"http://terminology.hl7.org/CodeSystem/condition-clinical\",
-
-                \          \"code\" : \"resolved\",
-
-                \          \"display\" : \"Resolved\"
-
-                \        }]
-
-                \      },
-
-                \      \"category\" : [{
-
-                \        \"coding\" : [{
-
-                \          \"system\" :
-                \"http://snomed.info/sct/900000001000122104\",
-
-                \          \"code\" : \"31231000122108\",
-
-                \          \"display\" : \"enfermedades previas\"
-
-                \        }]
-
-                \      }],
-
-                \      \"code\" : {
-
-                \        \"coding\" : [{
-
-                \          \"system\" :
-                \"http://snomed.info/sct/900000001000122104\",
-
-                \          \"code\" : \"613003\",
-
-                \          \"display\" : \"sÃ­ndrome del cromosoma X frÃ¡gil\"
-
-                \        }]
-
-                \      },
-
-                \      \"subject\" : {
-
-                \        \"type\" : \"Patient\",
-
-                \        \"identifier\" : {
-
-                \          \"type\" : {
-
-                \            \"coding\" : [{
-
-                \              \"system\" :
-                \"http://snomed.info/sct/900000001000122104\",
-
-                \              \"code\" : \"1551000122105\",
-
-                \              \"display\" : \"cÃ³digo de identificaciÃ³n
-                personal en el Sistema Nacional de Salud\"
-
-                \            }]
-
-                \          },
-
-                \          \"system\" : \"urn:oid:2.16.724.4.40\",
-
-                \          \"value\" : \"BBBBBBBBQR648597\"
-
-                \        },
-
-                \        \"display\" : \"Maria Puig Grau\"
-
-                \      },
-
-                \      \"onsetDateTime\" : \"2024-12-09T00:00:00Z\",
-
-                \      \"participant\" : [{
-
-                \        \"actor\" : {
-
-                \          \"type\" : \"Practitioner\",
-
-                \          \"identifier\" : {
-
-                \            \"type\" : {
-
-                \              \"coding\" : [{
-
-                \                \"system\" :
-                \"http://snomed.info/sct/900000001000122104?fhir_vs-refset/9000\
-                00251000122107\",
-
-                \                \"code\" : \"22851000122109\",
-
-                \                \"display\" : \"documento nacional de
-                identidad\"
-
-                \              }]
-
-                \            },
-
-                \            \"system\" : \"urn:oid:1.3.6.1.4.1.19126.3\",
-
-                \            \"value\" : \"0000001X\"
-
-                \          },
-
-                \          \"display\" : \"Eva Alabart\"
-
-                \        }
-
-                \      }]
-
-                \    },
-
-                \    \"request\" : {
-
-                \      \"method\" : \"PUT\",
-
-                \      \"url\" : \"Condition\",
-
-                \      \"ifNoneExist\" :
-                \"[base]/Condition?identifier=urn:ietf:rfc:4122|5d84c09e-4d7f-4\
-                825-9044-ff1683f0982f\"
-
-                \    }
-
-                \  },
-
-                \  {
-
-                \    \"fullUrl\" :
-                \"urn:uuid:5082cfc0-7780-468f-9313-f6e4b6418ae3\",
-
-                \    \"resource\" : {
-
-                \      \"resourceType\" : \"Condition\",
-
-                \      \"id\" : \"condition-300-neonatal\",
-
-                \      \"meta\" : {
-
-                \        \"profile\" :
-                [\"https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICA\
-                SConditionNeonatal\"]
-
-                \      },
-
-                \      \"text\" : {
-
-                \        \"status\" : \"generated\",
-
-                \        \"div\" : \"<div
-                xmlns=\\\"http://www.w3.org/1999/xhtml\\\"><a
-                name=\\\"Condition_condition-300-neonatal\\\"> </a><p
-                class=\\\"res-header-id\\\"><b>Generated Narrative: Condition
-                condition-300-neonatal</b></p><a
-                name=\\\"condition-300-neonatal\\\"> </a><a
-                name=\\\"hccondition-300-neonatal\\\"> </a><a
-                name=\\\"condition-300-neonatal-en-US\\\"> </a><div
-                style=\\\"display: inline-block; background-color: #d9e0e7;
-                padding: 6px; margin: 4px; border: 1px solid #8da1b4;
-                border-radius: 5px; line-height: 60%\\\"><p
-                style=\\\"margin-bottom: 0px\\\"/><p style=\\\"margin-bottom:
-                0px\\\">Profile: <a
-                href=\\\"StructureDefinition-UNICASConditionNeonatal.html\\\">C\
-                ondition Enfermedad Neonatal
-                ÃšNICAS</a></p></div><p><b>identifier</b>:
-                <code>urn:ietf:rfc:4122</code>/5082cfc0-7780-468f-9313-f6e4b641\
-                8ae3</p><p><b>clinicalStatus</b>: <span
-                title=\\\"Codes:{http://terminology.hl7.org/CodeSystem/conditio\
-                n-clinical resolved}\\\">Resolved</span></p><p><b>category</b>:
-                <span title=\\\"Codes:{http://snomed.info/sct/900000001000122104
-                31261000122101}\\\">antecedentes neonatales, obstÃ©tricos y
-                quirÃºrgicos</span></p><p><b>code</b>: <span
-                title=\\\"Codes:{http://snomed.info/sct/900000001000122104
-                613003}\\\">sÃ­ndrome del cromosoma X
-                frÃ¡gil</span></p><p><b>subject</b>: Maria Puig Grau
-                (Identifier: cÃ³digo de identificaciÃ³n personal en el Sistema
-                Nacional de
-                Salud/BBBBBBBBQR648597)</p><h3>Participants</h3><table
-                class=\\\"grid\\\"><tr><td style=\\\"display:
-                none\\\">-</td><td><b>Actor</b></td></tr><tr><td
-                style=\\\"display: none\\\">*</td><td>Eva Alabart (Identifier:
-                documento nacional de
-                identidad/0000001X)</td></tr></table></div>\"
-
-                \      },
-
-                \      \"identifier\" : [{
-
-                \        \"system\" : \"urn:ietf:rfc:4122\",
-
-                \        \"value\" : \"5082cfc0-7780-468f-9313-f6e4b6418ae3\"
-
-                \      }],
-
-                \      \"clinicalStatus\" : {
-
-                \        \"coding\" : [{
-
-                \          \"system\" :
-                \"http://terminology.hl7.org/CodeSystem/condition-clinical\",
-
-                \          \"code\" : \"resolved\",
-
-                \          \"display\" : \"Resolved\"
-
-                \        }]
-
-                \      },
-
-                \      \"category\" : [{
-
-                \        \"coding\" : [{
-
-                \          \"system\" :
-                \"http://snomed.info/sct/900000001000122104\",
-
-                \          \"code\" : \"31261000122101\",
-
-                \          \"display\" : \"antecedentes neonatales, obstÃ©tricos
-                y quirÃºrgicos\"
-
-                \        }]
-
-                \      }],
-
-                \      \"code\" : {
-
-                \        \"coding\" : [{
-
-                \          \"system\" :
-                \"http://snomed.info/sct/900000001000122104\",
-
-                \          \"code\" : \"613003\",
-
-                \          \"display\" : \"sÃ­ndrome del cromosoma X frÃ¡gil\"
-
-                \        }]
-
-                \      },
-
-                \      \"subject\" : {
-
-                \        \"type\" : \"Patient\",
-
-                \        \"identifier\" : {
-
-                \          \"type\" : {
-
-                \            \"coding\" : [{
-
-                \              \"system\" :
-                \"http://snomed.info/sct/900000001000122104\",
-
-                \              \"code\" : \"1551000122105\",
-
-                \              \"display\" : \"cÃ³digo de identificaciÃ³n
-                personal en el Sistema Nacional de Salud\"
-
-                \            }]
-
-                \          },
-
-                \          \"system\" : \"urn:oid:2.16.724.4.40\",
-
-                \          \"value\" : \"BBBBBBBBQR648597\"
-
-                \        },
-
-                \        \"display\" : \"Maria Puig Grau\"
-
-                \      },
-
-                \      \"participant\" : [{
-
-                \        \"actor\" : {
-
-                \          \"type\" : \"Practitioner\",
-
-                \          \"identifier\" : {
-
-                \            \"type\" : {
-
-                \              \"coding\" : [{
-
-                \                \"system\" :
-                \"http://snomed.info/sct/900000001000122104?fhir_vs-refset/9000\
-                00251000122107\",
-
-                \                \"code\" : \"22851000122109\",
-
-                \                \"display\" : \"documento nacional de
-                identidad\"
-
-                \              }]
-
-                \            },
-
-                \            \"system\" : \"urn:oid:1.3.6.1.4.1.19126.3\",
-
-                \            \"value\" : \"0000001X\"
-
-                \          },
-
-                \          \"display\" : \"Eva Alabart\"
-
-                \        }
-
-                \      }]
-
-                \    },
-
-                \    \"request\" : {
-
-                \      \"method\" : \"PUT\",
-
-                \      \"url\" : \"Condition\",
-
-                \      \"ifNoneExist\" :
-                \"[base]/Condition?identifier=urn:ietf:rfc:4122|5082cfc0-7780-4\
-                68f-9313-f6e4b6418ae3\"
-
-                \    }
-
-                \  },
-
-                \  {
-
-                \    \"fullUrl\" :
-                \"urn:uuid:89acb0c9-b127-41b7-8548-666fed5c45f4\",
-
-                \    \"resource\" : {
-
-                \      \"resourceType\" : \"Observation\",
-
-                \      \"id\" : \"observation-300-antropometriaNeonatalPeso\",
-
-                \      \"meta\" : {
-
-                \        \"profile\" :
-                [\"https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICA\
-                SObservationAntropometria\"]
-
-                \      },
-
-                \      \"text\" : {
-
-                \        \"status\" : \"generated\",
-
-                \        \"div\" : \"<div
-                xmlns=\\\"http://www.w3.org/1999/xhtml\\\"><a
-                name=\\\"Observation_observation-300-antropometriaNeonatalPeso\\\
-                \"> </a><p class=\\\"res-header-id\\\"><b>Generated Narrative:
-                Observation observation-300-antropometriaNeonatalPeso</b></p><a
-                name=\\\"observation-300-antropometriaNeonatalPeso\\\"> </a><a
-                name=\\\"hcobservation-300-antropometriaNeonatalPeso\\\"> </a><a
-                name=\\\"observation-300-antropometriaNeonatalPeso-en-US\\\">
-                </a><div style=\\\"display: inline-block; background-color:
-                #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4;
-                border-radius: 5px; line-height: 60%\\\"><p
-                style=\\\"margin-bottom: 0px\\\"/><p style=\\\"margin-bottom:
-                0px\\\">Profile: <a
-                href=\\\"StructureDefinition-UNICASObservationAntropometria.html\
-                \\\">Observation Dato AntropomÃ©trico
-                ÃšNICAS</a></p></div><p><b>identifier</b>:
-                <code>urn:ietf:rfc:4122</code>/89acb0c9-b127-41b7-8548-666fed5c\
-                45f4</p><p><b>status</b>: Final</p><p><b>category</b>: <span
-                title=\\\"Codes:{http://snomed.info/sct/900000001000122104
-                31261000122101}\\\">antecedentes neonatales, obstÃ©tricos y
-                quirÃºrgicos</span></p><p><b>code</b>: <span
-                title=\\\"Codes:{http://snomed.info/sct/900000001000122104
-                726527001}\\\">peso</span></p><p><b>subject</b>: Maria Puig Grau
-                (Identifier: cÃ³digo de identificaciÃ³n personal en el Sistema
-                Nacional de Salud/BBBBBBBBQR648597)</p><p><b>effective</b>:
-                2024-12-09 00:00:00+0000</p><p><b>performer</b>: Eva Alabart
-                (Identifier: documento nacional de
-                identidad/0000001X)</p><p><b>value</b>: 4 kilogram<span
-                style=\\\"background: LightGoldenRodYellow\\\"> (Details:
-                UCUM  codekg = 'kg')</span></p></div>\"
-
-                \      },
-
-                \      \"identifier\" : [{
-
-                \        \"system\" : \"urn:ietf:rfc:4122\",
-
-                \        \"value\" : \"89acb0c9-b127-41b7-8548-666fed5c45f4\"
-
-                \      }],
-
-                \      \"status\" : \"final\",
-
-                \      \"category\" : [{
-
-                \        \"coding\" : [{
-
-                \          \"system\" :
-                \"http://snomed.info/sct/900000001000122104\",
-
-                \          \"code\" : \"31261000122101\",
-
-                \          \"display\" : \"antecedentes neonatales, obstÃ©tricos
-                y quirÃºrgicos\"
-
-                \        }]
-
-                \      }],
-
-                \      \"code\" : {
-
-                \        \"coding\" : [{
-
-                \          \"system\" :
-                \"http://snomed.info/sct/900000001000122104\",
-
-                \          \"code\" : \"726527001\",
-
-                \          \"display\" : \"peso\"
-
-                \        }]
-
-                \      },
-
-                \      \"subject\" : {
-
-                \        \"type\" : \"Patient\",
-
-                \        \"identifier\" : {
-
-                \          \"type\" : {
-
-                \            \"coding\" : [{
-
-                \              \"system\" :
-                \"http://snomed.info/sct/900000001000122104\",
-
-                \              \"code\" : \"1551000122105\",
-
-                \              \"display\" : \"cÃ³digo de identificaciÃ³n
-                personal en el Sistema Nacional de Salud\"
-
-                \            }]
-
-                \          },
-
-                \          \"system\" : \"urn:oid:2.16.724.4.40\",
-
-                \          \"value\" : \"BBBBBBBBQR648597\"
-
-                \        },
-
-                \        \"display\" : \"Maria Puig Grau\"
-
-                \      },
-
-                \      \"effectiveDateTime\" : \"2024-12-09T00:00:00Z\",
-
-                \      \"performer\" : [{
-
-                \        \"type\" : \"Practitioner\",
-
-                \        \"identifier\" : {
-
-                \          \"type\" : {
-
-                \            \"coding\" : [{
-
-                \              \"system\" :
-                \"http://snomed.info/sct/900000001000122104?fhir_vs-refset/9000\
-                00251000122107\",
-
-                \              \"code\" : \"22851000122109\",
-
-                \              \"display\" : \"documento nacional de identidad\"
-
-                \            }]
-
-                \          },
-
-                \          \"system\" : \"urn:oid:1.3.6.1.4.1.19126.3\",
-
-                \          \"value\" : \"0000001X\"
-
-                \        },
-
-                \        \"display\" : \"Eva Alabart\"
-
-                \      }],
-
-                \      \"valueQuantity\" : {
-
-                \        \"value\" : 4,
-
-                \        \"unit\" : \"kilogram\",
-
-                \        \"system\" : \"http://unitsofmeasure.org\",
-
-                \        \"code\" : \"kg\"
-
-                \      }
-
-                \    },
-
-                \    \"request\" : {
-
-                \      \"method\" : \"PUT\",
-
-                \      \"url\" : \"Observation\",
-
-                \      \"ifNoneExist\" :
-                \"[base]/Observation?identifier=urn:ietf:rfc:4122|89acb0c9-b127\
-                -41b7-8548-666fed5c45f4\"
-
-                \    }
-
-                \  },
-
-                \  {
-
-                \    \"fullUrl\" :
-                \"urn:uuid:2482fa05-2673-4741-a84e-a72ba88824e1\",
-
-                \    \"resource\" : {
-
-                \      \"resourceType\" : \"Observation\",
-
-                \      \"id\" :
-                \"observation-300-antropometriaNeonatalPerimetroCefalico\",
-
-                \      \"meta\" : {
-
-                \        \"profile\" :
-                [\"https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICA\
-                SObservationAntropometria\"]
-
-                \      },
-
-                \      \"text\" : {
-
-                \        \"status\" : \"generated\",
-
-                \        \"div\" : \"<div
-                xmlns=\\\"http://www.w3.org/1999/xhtml\\\"><a
-                name=\\\"Observation_observation-300-antropometriaNeonatalPerim\
-                etroCefalico\\\"> </a><p
-                class=\\\"res-header-id\\\"><b>Generated Narrative: Observation
-                observation-300-antropometriaNeonatalPerimetroCefalico</b></p><a
-                name=\\\"observation-300-antropometriaNeonatalPerimetroCefalico\
-                \\\"> </a><a
-                name=\\\"hcobservation-300-antropometriaNeonatalPerimetroCefali\
-                co\\\"> </a><a
-                name=\\\"observation-300-antropometriaNeonatalPerimetroCefalico\
-                -en-US\\\"> </a><div style=\\\"display: inline-block;
-                background-color: #d9e0e7; padding: 6px; margin: 4px; border:
-                1px solid #8da1b4; border-radius: 5px; line-height: 60%\\\"><p
-                style=\\\"margin-bottom: 0px\\\"/><p style=\\\"margin-bottom:
-                0px\\\">Profile: <a
-                href=\\\"StructureDefinition-UNICASObservationAntropometria.html\
-                \\\">Observation Dato AntropomÃ©trico
-                ÃšNICAS</a></p></div><p><b>identifier</b>:
-                <code>urn:ietf:rfc:4122</code>/2482fa05-2673-4741-a84e-a72ba888\
-                24e1</p><p><b>status</b>: Final</p><p><b>category</b>: <span
-                title=\\\"Codes:{http://snomed.info/sct/900000001000122104
-                363812007}\\\">antecedentes neonatales, obstÃ©tricos y
-                quirÃºrgicos</span></p><p><b>code</b>: <span
-                title=\\\"Codes:{http://snomed.info/sct/900000001000122104
-                726527001}\\\">perÃ­metro cefÃ¡lico</span></p><p><b>subject</b>:
-                Maria Puig Grau (Identifier: cÃ³digo de identificaciÃ³n personal
-                en el Sistema Nacional de
-                Salud/BBBBBBBBQR648597)</p><p><b>effective</b>: 2024-12-09
-                00:00:00+0000</p><p><b>performer</b>: Eva Alabart (Identifier:
-                documento nacional de identidad/0000001X)</p><p><b>value</b>: 20
-                centimeter<span style=\\\"background: LightGoldenRodYellow\\\">
-                (Details: UCUM  codecm = 'cm')</span></p></div>\"
-
-                \      },
-
-                \      \"identifier\" : [{
-
-                \        \"system\" : \"urn:ietf:rfc:4122\",
-
-                \        \"value\" : \"2482fa05-2673-4741-a84e-a72ba88824e1\"
-
-                \      }],
-
-                \      \"status\" : \"final\",
-
-                \      \"category\" : [{
-
-                \        \"coding\" : [{
-
-                \          \"system\" :
-                \"http://snomed.info/sct/900000001000122104\",
-
-                \          \"code\" : \"363812007\",
-
-                \          \"display\" : \"antecedentes neonatales, obstÃ©tricos
-                y quirÃºrgicos\"
-
-                \        }]
-
-                \      }],
-
-                \      \"code\" : {
-
-                \        \"coding\" : [{
-
-                \          \"system\" :
-                \"http://snomed.info/sct/900000001000122104\",
-
-                \          \"code\" : \"726527001\",
-
-                \          \"display\" : \"perÃ­metro cefÃ¡lico\"
-
-                \        }]
-
-                \      },
-
-                \      \"subject\" : {
-
-                \        \"type\" : \"Patient\",
-
-                \        \"identifier\" : {
-
-                \          \"type\" : {
-
-                \            \"coding\" : [{
-
-                \              \"system\" :
-                \"http://snomed.info/sct/900000001000122104\",
-
-                \              \"code\" : \"1551000122105\",
-
-                \              \"display\" : \"cÃ³digo de identificaciÃ³n
-                personal en el Sistema Nacional de Salud\"
-
-                \            }]
-
-                \          },
-
-                \          \"system\" : \"urn:oid:2.16.724.4.40\",
-
-                \          \"value\" : \"BBBBBBBBQR648597\"
-
-                \        },
-
-                \        \"display\" : \"Maria Puig Grau\"
-
-                \      },
-
-                \      \"effectiveDateTime\" : \"2024-12-09T00:00:00Z\",
-
-                \      \"performer\" : [{
-
-                \        \"type\" : \"Practitioner\",
-
-                \        \"identifier\" : {
-
-                \          \"type\" : {
-
-                \            \"coding\" : [{
-
-                \              \"system\" :
-                \"http://snomed.info/sct/900000001000122104?fhir_vs-refset/9000\
-                00251000122107\",
-
-                \              \"code\" : \"22851000122109\",
-
-                \              \"display\" : \"documento nacional de identidad\"
-
-                \            }]
-
-                \          },
-
-                \          \"system\" : \"urn:oid:1.3.6.1.4.1.19126.3\",
-
-                \          \"value\" : \"0000001X\"
-
-                \        },
-
-                \        \"display\" : \"Eva Alabart\"
-
-                \      }],
-
-                \      \"valueQuantity\" : {
-
-                \        \"value\" : 20,
-
-                \        \"unit\" : \"centimeter\",
-
-                \        \"system\" : \"http://unitsofmeasure.org\",
-
-                \        \"code\" : \"cm\"
-
-                \      }
-
-                \    },
-
-                \    \"request\" : {
-
-                \      \"method\" : \"PUT\",
-
-                \      \"url\" : \"Observation\",
-
-                \      \"ifNoneExist\" :
-                \"[base]/Observation?identifier=urn:ietf:rfc:4122|2482fa05-2673\
-                -4741-a84e-a72ba88824e1\"
-
-                \    }
-
-                \  },
-
-                \  {
-
-                \    \"fullUrl\" :
-                \"urn:uuid:6047f352-a3e6-428a-9e07-c895d696655b\",
-
-                \    \"resource\" : {
-
-                \      \"resourceType\" : \"Observation\",
-
-                \      \"id\" : \"observation-300-antropometriaNeonatalAltura\",
-
-                \      \"meta\" : {
-
-                \        \"profile\" :
-                [\"https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICA\
-                SObservationAntropometria\"]
-
-                \      },
-
-                \      \"text\" : {
-
-                \        \"status\" : \"generated\",
-
-                \        \"div\" : \"<div
-                xmlns=\\\"http://www.w3.org/1999/xhtml\\\"><a
-                name=\\\"Observation_observation-300-antropometriaNeonatalAltura\
-                \\\"> </a><p class=\\\"res-header-id\\\"><b>Generated Narrative:
-                Observation
-                observation-300-antropometriaNeonatalAltura</b></p><a
-                name=\\\"observation-300-antropometriaNeonatalAltura\\\"> </a><a
-                name=\\\"hcobservation-300-antropometriaNeonatalAltura\\\">
-                </a><a
-                name=\\\"observation-300-antropometriaNeonatalAltura-en-US\\\">
-                </a><div style=\\\"display: inline-block; background-color:
-                #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4;
-                border-radius: 5px; line-height: 60%\\\"><p
-                style=\\\"margin-bottom: 0px\\\"/><p style=\\\"margin-bottom:
-                0px\\\">Profile: <a
-                href=\\\"StructureDefinition-UNICASObservationAntropometria.html\
-                \\\">Observation Dato AntropomÃ©trico
-                ÃšNICAS</a></p></div><p><b>identifier</b>:
-                <code>urn:ietf:rfc:4122</code>/6047f352-a3e6-428a-9e07-c895d696\
-                655b</p><p><b>status</b>: Final</p><p><b>category</b>: <span
-                title=\\\"Codes:{http://snomed.info/sct/900000001000122104
-                363812007}\\\">antecedentes neonatales, obstÃ©tricos y
-                quirÃºrgicos</span></p><p><b>code</b>: <span
-                title=\\\"Codes:{http://snomed.info/sct/900000001000122104
-                1153637007}\\\">altura corporal</span></p><p><b>subject</b>:
-                Maria Puig Grau (Identifier: cÃ³digo de identificaciÃ³n personal
-                en el Sistema Nacional de
-                Salud/BBBBBBBBQR648597)</p><p><b>effective</b>: 2024-12-09
-                00:00:00+0000</p><p><b>performer</b>: Eva Alabart (Identifier:
-                documento nacional de identidad/0000001X)</p><p><b>value</b>: 90
-                centimeter<span style=\\\"background: LightGoldenRodYellow\\\">
-                (Details: UCUM  codecm = 'cm')</span></p></div>\"
-
-                \      },
-
-                \      \"identifier\" : [{
-
-                \        \"system\" : \"urn:ietf:rfc:4122\",
-
-                \        \"value\" : \"6047f352-a3e6-428a-9e07-c895d696655b\"
-
-                \      }],
-
-                \      \"status\" : \"final\",
-
-                \      \"category\" : [{
-
-                \        \"coding\" : [{
-
-                \          \"system\" :
-                \"http://snomed.info/sct/900000001000122104\",
-
-                \          \"code\" : \"363812007\",
-
-                \          \"display\" : \"antecedentes neonatales, obstÃ©tricos
-                y quirÃºrgicos\"
-
-                \        }]
-
-                \      }],
-
-                \      \"code\" : {
-
-                \        \"coding\" : [{
-
-                \          \"system\" :
-                \"http://snomed.info/sct/900000001000122104\",
-
-                \          \"code\" : \"1153637007\",
-
-                \          \"display\" : \"altura corporal\"
-
-                \        }]
-
-                \      },
-
-                \      \"subject\" : {
-
-                \        \"type\" : \"Patient\",
-
-                \        \"identifier\" : {
-
-                \          \"type\" : {
-
-                \            \"coding\" : [{
-
-                \              \"system\" :
-                \"http://snomed.info/sct/900000001000122104\",
-
-                \              \"code\" : \"1551000122105\",
-
-                \              \"display\" : \"cÃ³digo de identificaciÃ³n
-                personal en el Sistema Nacional de Salud\"
-
-                \            }]
-
-                \          },
-
-                \          \"system\" : \"urn:oid:2.16.724.4.40\",
-
-                \          \"value\" : \"BBBBBBBBQR648597\"
-
-                \        },
-
-                \        \"display\" : \"Maria Puig Grau\"
-
-                \      },
-
-                \      \"effectiveDateTime\" : \"2024-12-09T00:00:00Z\",
-
-                \      \"performer\" : [{
-
-                \        \"type\" : \"Practitioner\",
-
-                \        \"identifier\" : {
-
-                \          \"type\" : {
-
-                \            \"coding\" : [{
-
-                \              \"system\" :
-                \"http://snomed.info/sct/900000001000122104?fhir_vs-refset/9000\
-                00251000122107\",
-
-                \              \"code\" : \"22851000122109\",
-
-                \              \"display\" : \"documento nacional de identidad\"
-
-                \            }]
-
-                \          },
-
-                \          \"system\" : \"urn:oid:1.3.6.1.4.1.19126.3\",
-
-                \          \"value\" : \"0000001X\"
-
-                \        },
-
-                \        \"display\" : \"Eva Alabart\"
-
-                \      }],
-
-                \      \"valueQuantity\" : {
-
-                \        \"value\" : 90,
-
-                \        \"unit\" : \"centimeter\",
-
-                \        \"system\" : \"http://unitsofmeasure.org\",
-
-                \        \"code\" : \"cm\"
-
-                \      }
-
-                \    },
-
-                \    \"request\" : {
-
-                \      \"method\" : \"PUT\",
-
-                \      \"url\" : \"Observation\",
-
-                \      \"ifNoneExist\" :
-                \"[base]/Observation?identifier=urn:ietf:rfc:4122|6047f352-a3e6\
-                -428a-9e07-c895d696655b\"
-
-                \    }
-
-                \  },
-
-                \  {
-
-                \    \"fullUrl\" :
-                \"urn:uuid:297aed38-2907-4a19-af64-1e24e81f33d1\",
-
-                \    \"resource\" : {
-
-                \      \"resourceType\" : \"Observation\",
-
-                \      \"id\" : \"observation-300-obstetrico\",
-
-                \      \"meta\" : {
-
-                \        \"profile\" :
-                [\"https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICA\
-                SObservationObstetrico\"]
-
-                \      },
-
-                \      \"text\" : {
-
-                \        \"status\" : \"generated\",
-
-                \        \"div\" : \"<div
-                xmlns=\\\"http://www.w3.org/1999/xhtml\\\"><a
-                name=\\\"Observation_observation-300-obstetrico\\\"> </a><p
-                class=\\\"res-header-id\\\"><b>Generated Narrative: Observation
-                observation-300-obstetrico</b></p><a
-                name=\\\"observation-300-obstetrico\\\"> </a><a
-                name=\\\"hcobservation-300-obstetrico\\\"> </a><a
-                name=\\\"observation-300-obstetrico-en-US\\\"> </a><div
-                style=\\\"display: inline-block; background-color: #d9e0e7;
-                padding: 6px; margin: 4px; border: 1px solid #8da1b4;
-                border-radius: 5px; line-height: 60%\\\"><p
-                style=\\\"margin-bottom: 0px\\\"/><p style=\\\"margin-bottom:
-                0px\\\">Profile: <a
-                href=\\\"StructureDefinition-UNICASObservationObstetrico.html\\\
-                \">Observation Obstetrico
-                ÃšNICAS</a></p></div><p><b>identifier</b>:
-                <code>urn:ietf:rfc:4122</code>/297aed38-2907-4a19-af64-1e24e81f\
-                33d1</p><p><b>status</b>: Final</p><p><b>category</b>: <span
-                title=\\\"Codes:{http://snomed.info/sct/900000001000122104
-                363812007}\\\">antecedentes neonatales, obstÃ©tricos y
-                quirÃºrgicos</span></p><p><b>code</b>: <span
-                title=\\\"Codes:{http://snomed.info/sct/900000001000122104
-                118185001}\\\">hallazgo relacionado con el
-                embarazo</span></p><p><b>subject</b>: Maria Puig Grau
-                (Identifier: cÃ³digo de identificaciÃ³n personal en el Sistema
-                Nacional de Salud/BBBBBBBBQR648597)</p><p><b>effective</b>:
-                2024-12-09 00:00:00+0000</p><p><b>performer</b>: Eva Alabart
-                (Identifier: documento nacional de
-                identidad/0000001X)</p></div>\"
-
-                \      },
-
-                \      \"identifier\" : [{
-
-                \        \"system\" : \"urn:ietf:rfc:4122\",
-
-                \        \"value\" : \"297aed38-2907-4a19-af64-1e24e81f33d1\"
-
-                \      }],
-
-                \      \"status\" : \"final\",
-
-                \      \"category\" : [{
-
-                \        \"coding\" : [{
-
-                \          \"system\" :
-                \"http://snomed.info/sct/900000001000122104\",
-
-                \          \"code\" : \"363812007\",
-
-                \          \"display\" : \"antecedentes neonatales, obstÃ©tricos
-                y quirÃºrgicos\"
-
-                \        }]
-
-                \      }],
-
-                \      \"code\" : {
-
-                \        \"coding\" : [{
-
-                \          \"system\" :
-                \"http://snomed.info/sct/900000001000122104\",
-
-                \          \"code\" : \"118185001\",
-
-                \          \"display\" : \"hallazgo relacionado con el
-                embarazo\"
-
-                \        }]
-
-                \      },
-
-                \      \"subject\" : {
-
-                \        \"type\" : \"Patient\",
-
-                \        \"identifier\" : {
-
-                \          \"type\" : {
-
-                \            \"coding\" : [{
-
-                \              \"system\" :
-                \"http://snomed.info/sct/900000001000122104\",
-
-                \              \"code\" : \"1551000122105\",
-
-                \              \"display\" : \"cÃ³digo de identificaciÃ³n
-                personal en el Sistema Nacional de Salud\"
-
-                \            }]
-
-                \          },
-
-                \          \"system\" : \"urn:oid:2.16.724.4.40\",
-
-                \          \"value\" : \"BBBBBBBBQR648597\"
-
-                \        },
-
-                \        \"display\" : \"Maria Puig Grau\"
-
-                \      },
-
-                \      \"effectiveDateTime\" : \"2024-12-09T00:00:00Z\",
-
-                \      \"performer\" : [{
-
-                \        \"type\" : \"Practitioner\",
-
-                \        \"identifier\" : {
-
-                \          \"type\" : {
-
-                \            \"coding\" : [{
-
-                \              \"system\" :
-                \"http://snomed.info/sct/900000001000122104?fhir_vs-refset/9000\
-                00251000122107\",
-
-                \              \"code\" : \"22851000122109\",
-
-                \              \"display\" : \"documento nacional de identidad\"
-
-                \            }]
-
-                \          },
-
-                \          \"system\" : \"urn:oid:1.3.6.1.4.1.19126.3\",
-
-                \          \"value\" : \"0000001X\"
-
-                \        },
-
-                \        \"display\" : \"Eva Alabart\"
-
-                \      }]
-
-                \    },
-
-                \    \"request\" : {
-
-                \      \"method\" : \"PUT\",
-
-                \      \"url\" : \"Observation\",
-
-                \      \"ifNoneExist\" :
-                \"[base]/Observation?identifier=urn:ietf:rfc:4122|297aed38-2907\
-                -4a19-af64-1e24e81f33d1\"
-
-                \    }
-
-                \  },
-
-                \  {
-
-                \    \"fullUrl\" :
-                \"urn:uuid:71af12ba-c0fc-4945-97ca-7f105b1fe1ab\",
-
-                \    \"resource\" : {
-
-                \      \"resourceType\" : \"Procedure\",
-
-                \      \"id\" : \"procedure-300-quirurgico\",
-
-                \      \"meta\" : {
-
-                \        \"profile\" :
-                [\"https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICA\
-                SProcedure\"]
-
-                \      },
-
-                \      \"text\" : {
-
-                \        \"status\" : \"generated\",
-
-                \        \"div\" : \"<div
-                xmlns=\\\"http://www.w3.org/1999/xhtml\\\"><a
-                name=\\\"Procedure_procedure-300-quirurgico\\\"> </a><p
-                class=\\\"res-header-id\\\"><b>Generated Narrative: Procedure
-                procedure-300-quirurgico</b></p><a
-                name=\\\"procedure-300-quirurgico\\\"> </a><a
-                name=\\\"hcprocedure-300-quirurgico\\\"> </a><a
-                name=\\\"procedure-300-quirurgico-en-US\\\"> </a><div
-                style=\\\"display: inline-block; background-color: #d9e0e7;
-                padding: 6px; margin: 4px; border: 1px solid #8da1b4;
-                border-radius: 5px; line-height: 60%\\\"><p
-                style=\\\"margin-bottom: 0px\\\"/><p style=\\\"margin-bottom:
-                0px\\\">Profile: <a
-                href=\\\"StructureDefinition-UNICASProcedure.html\\\">Procedure
-                Procedimiento QuirÃºrgico
-                ÃšNICAS</a></p></div><p><b>identifier</b>:
-                <code>urn:ietf:rfc:4122</code>/71af12ba-c0fc-4945-97ca-7f105b1f\
-                e1ab</p><p><b>status</b>: Completed</p><p><b>category</b>: <span
-                title=\\\"Codes:{http://snomed.info/sct/900000001000122104
-                363812007}\\\">antecedentes neonatales, obstÃ©tricos y
-                quirÃºrgicos</span></p><p><b>code</b>: <span
-                title=\\\"Codes:{http://snomed.info/sct/900000001000122104
-                367336001}\\\">quimioterapia</span></p><p><b>subject</b>: Maria
-                Puig Grau (Identifier: cÃ³digo de identificaciÃ³n personal en el
-                Sistema Nacional de
-                Salud/BBBBBBBBQR648597)</p><p><b>occurrence</b>: 2024-12-09
-                00:00:00+0000</p><h3>Performers</h3><table
-                class=\\\"grid\\\"><tr><td style=\\\"display:
-                none\\\">-</td><td><b>Actor</b></td></tr><tr><td
-                style=\\\"display: none\\\">*</td><td>Eva Alabart (Identifier:
-                documento nacional de
-                identidad/0000001X)</td></tr></table></div>\"
-
-                \      },
-
-                \      \"identifier\" : [{
-
-                \        \"system\" : \"urn:ietf:rfc:4122\",
-
-                \        \"value\" : \"71af12ba-c0fc-4945-97ca-7f105b1fe1ab\"
-
-                \      }],
-
-                \      \"status\" : \"completed\",
-
-                \      \"category\" : [{
-
-                \        \"coding\" : [{
-
-                \          \"system\" :
-                \"http://snomed.info/sct/900000001000122104\",
-
-                \          \"code\" : \"363812007\",
-
-                \          \"display\" : \"antecedentes neonatales, obstÃ©tricos
-                y quirÃºrgicos\"
-
-                \        }]
-
-                \      }],
-
-                \      \"code\" : {
-
-                \        \"coding\" : [{
-
-                \          \"system\" :
-                \"http://snomed.info/sct/900000001000122104\",
-
-                \          \"code\" : \"367336001\",
-
-                \          \"display\" : \"quimioterapia\"
-
-                \        }]
-
-                \      },
-
-                \      \"subject\" : {
-
-                \        \"type\" : \"Patient\",
-
-                \        \"identifier\" : {
-
-                \          \"type\" : {
-
-                \            \"coding\" : [{
-
-                \              \"system\" :
-                \"http://snomed.info/sct/900000001000122104\",
-
-                \              \"code\" : \"1551000122105\",
-
-                \              \"display\" : \"cÃ³digo de identificaciÃ³n
-                personal en el Sistema Nacional de Salud\"
-
-                \            }]
-
-                \          },
-
-                \          \"system\" : \"urn:oid:2.16.724.4.40\",
-
-                \          \"value\" : \"BBBBBBBBQR648597\"
-
-                \        },
-
-                \        \"display\" : \"Maria Puig Grau\"
-
-                \      },
-
-                \      \"occurrenceDateTime\" : \"2024-12-09T00:00:00Z\",
-
-                \      \"performer\" : [{
-
-                \        \"actor\" : {
-
-                \          \"type\" : \"Practitioner\",
-
-                \          \"identifier\" : {
-
-                \            \"type\" : {
-
-                \              \"coding\" : [{
-
-                \                \"system\" :
-                \"http://snomed.info/sct/900000001000122104?fhir_vs-refset/9000\
-                00251000122107\",
-
-                \                \"code\" : \"22851000122109\",
-
-                \                \"display\" : \"documento nacional de
-                identidad\"
-
-                \              }]
-
-                \            },
-
-                \            \"system\" : \"urn:oid:1.3.6.1.4.1.19126.3\",
-
-                \            \"value\" : \"0000001X\"
-
-                \          },
-
-                \          \"display\" : \"Eva Alabart\"
-
-                \        }
-
-                \      }]
-
-                \    },
-
-                \    \"request\" : {
-
-                \      \"method\" : \"PUT\",
-
-                \      \"url\" : \"Procedure\",
-
-                \      \"ifNoneExist\" :
-                \"[base]/Procedure?identifier=urn:ietf:rfc:4122|71af12ba-c0fc-4\
-                945-97ca-7f105b1fe1ab\"
-
-                \    }
-
-                \  },
-
-                \  {
-
-                \    \"fullUrl\" :
-                \"urn:uuid:164cdf42-2916-4cd8-871c-d001b9b1e811\",
-
-                \    \"resource\" : {
-
-                \      \"resourceType\" : \"FamilyMemberHistory\",
-
-                \      \"id\" : \"familyMemberHistory-300-familiar\",
-
-                \      \"meta\" : {
-
-                \        \"profile\" :
-                [\"https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICA\
-                SFamilyMemberHistory\"]
-
-                \      },
-
-                \      \"text\" : {
-
-                \        \"status\" : \"generated\",
-
-                \        \"div\" : \"<div
-                xmlns=\\\"http://www.w3.org/1999/xhtml\\\"><a
-                name=\\\"FamilyMemberHistory_familyMemberHistory-300-familiar\\\
-                \"> </a><p class=\\\"res-header-id\\\"><b>Generated Narrative:
-                FamilyMemberHistory familyMemberHistory-300-familiar</b></p><a
-                name=\\\"familyMemberHistory-300-familiar\\\"> </a><a
-                name=\\\"hcfamilyMemberHistory-300-familiar\\\"> </a><a
-                name=\\\"familyMemberHistory-300-familiar-en-US\\\"> </a><div
-                style=\\\"display: inline-block; background-color: #d9e0e7;
-                padding: 6px; margin: 4px; border: 1px solid #8da1b4;
-                border-radius: 5px; line-height: 60%\\\"><p
-                style=\\\"margin-bottom: 0px\\\"/><p style=\\\"margin-bottom:
-                0px\\\">Profile: <a
-                href=\\\"StructureDefinition-UNICASFamilyMemberHistory.html\\\"\
-                >FamilyMemberHistory Antecedente Familiar
-                ÃšNICAS</a></p></div><p><b>identifier</b>:
-                <code>urn:ietf:rfc:4122</code>/164cdf42-2916-4cd8-871c-d001b9b1\
-                e811</p><p><b>status</b>: Completed</p><p><b>patient</b>: Maria
-                Puig Grau (Identifier: cÃ³digo de identificaciÃ³n personal en el
-                Sistema Nacional de
-                Salud/BBBBBBBBQR648597)</p><p><b>relationship</b>: <span
-                title=\\\"Codes:{http://snomed.info/sct/900000001000122104
-                9947008}\\\">padre natural</span></p><h3>Conditions</h3><table
-                class=\\\"grid\\\"><tr><td style=\\\"display:
-                none\\\">-</td><td><b>Code</b></td></tr><tr><td
-                style=\\\"display: none\\\">*</td><td><span
-                title=\\\"Codes:{http://snomed.info/sct/900000001000122104
-                613003}\\\">sÃ­ndrome del cromosoma X
-                frÃ¡gil</span></td></tr></table></div>\"
-
-                \      },
-
-                \      \"identifier\" : [{
-
-                \        \"system\" : \"urn:ietf:rfc:4122\",
-
-                \        \"value\" : \"164cdf42-2916-4cd8-871c-d001b9b1e811\"
-
-                \      }],
-
-                \      \"status\" : \"completed\",
-
-                \      \"patient\" : {
-
-                \        \"type\" : \"Patient\",
-
-                \        \"identifier\" : {
-
-                \          \"type\" : {
-
-                \            \"coding\" : [{
-
-                \              \"system\" :
-                \"http://snomed.info/sct/900000001000122104\",
-
-                \              \"code\" : \"1551000122105\",
-
-                \              \"display\" : \"cÃ³digo de identificaciÃ³n
-                personal en el Sistema Nacional de Salud\"
-
-                \            }]
-
-                \          },
-
-                \          \"system\" : \"urn:oid:2.16.724.4.40\",
-
-                \          \"value\" : \"BBBBBBBBQR648597\"
-
-                \        },
-
-                \        \"display\" : \"Maria Puig Grau\"
-
-                \      },
-
-                \      \"relationship\" : {
-
-                \        \"coding\" : [{
-
-                \          \"system\" :
-                \"http://snomed.info/sct/900000001000122104\",
-
-                \          \"code\" : \"9947008\",
-
-                \          \"display\" : \"padre natural\"
-
-                \        }]
-
-                \      },
-
-                \      \"condition\" : [{
-
-                \        \"code\" : {
-
-                \          \"coding\" : [{
-
-                \            \"system\" :
-                \"http://snomed.info/sct/900000001000122104\",
-
-                \            \"code\" : \"613003\",
-
-                \            \"display\" : \"sÃ­ndrome del cromosoma X frÃ¡gil\"
-
-                \          }]
-
-                \        }
-
-                \      }]
-
-                \    },
-
-                \    \"request\" : {
-
-                \      \"method\" : \"PUT\",
-
-                \      \"url\" : \"FamilyMemberHistory\",
-
-                \      \"ifNoneExist\" :
-                \"[base]/FamilyMemberHistory?identifier=urn:ietf:rfc:4122|164cd\
-                f42-2916-4cd8-871c-d001b9b1e811\"
-
-                \    }
-
-                \  },
-
-                \  {
-
-                \    \"fullUrl\" :
-                \"urn:uuid:1ff2cdf7-0b7c-4b2d-9a77-62e1529dc89b\",
-
-                \    \"resource\" : {
-
-                \      \"resourceType\" : \"Observation\",
-
-                \      \"id\" : \"observation-300-antropometriaPeso\",
-
-                \      \"meta\" : {
-
-                \        \"profile\" :
-                [\"https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICA\
-                SObservationAntropometria\"]
-
-                \      },
-
-                \      \"text\" : {
-
-                \        \"status\" : \"generated\",
-
-                \        \"div\" : \"<div
-                xmlns=\\\"http://www.w3.org/1999/xhtml\\\"><a
-                name=\\\"Observation_observation-300-antropometriaPeso\\\">
-                </a><p class=\\\"res-header-id\\\"><b>Generated Narrative:
-                Observation observation-300-antropometriaPeso</b></p><a
-                name=\\\"observation-300-antropometriaPeso\\\"> </a><a
-                name=\\\"hcobservation-300-antropometriaPeso\\\"> </a><a
-                name=\\\"observation-300-antropometriaPeso-en-US\\\"> </a><div
-                style=\\\"display: inline-block; background-color: #d9e0e7;
-                padding: 6px; margin: 4px; border: 1px solid #8da1b4;
-                border-radius: 5px; line-height: 60%\\\"><p
-                style=\\\"margin-bottom: 0px\\\"/><p style=\\\"margin-bottom:
-                0px\\\">Profile: <a
-                href=\\\"StructureDefinition-UNICASObservationAntropometria.html\
-                \\\">Observation Dato AntropomÃ©trico
-                ÃšNICAS</a></p></div><p><b>identifier</b>:
-                <code>urn:ietf:rfc:4122</code>/1ff2cdf7-0b7c-4b2d-9a77-62e1529d\
-                c89b</p><p><b>status</b>: Final</p><p><b>category</b>: <span
-                title=\\\"Codes:{http://snomed.info/sct/900000001000122104
-                248326004}\\\">medida corporal</span></p><p><b>code</b>: <span
-                title=\\\"Codes:{http://snomed.info/sct/900000001000122104
-                726527001}\\\">peso</span></p><p><b>subject</b>: Maria Puig Grau
-                (Identifier: cÃ³digo de identificaciÃ³n personal en el Sistema
-                Nacional de Salud/BBBBBBBBQR648597)</p><p><b>effective</b>:
-                2024-12-09 00:00:00+0000</p><p><b>performer</b>: Eva Alabart
-                (Identifier: documento nacional de
-                identidad/0000001X)</p><p><b>value</b>: 35 kilogram<span
-                style=\\\"background: LightGoldenRodYellow\\\"> (Details:
-                UCUM  codekg = 'kg')</span></p></div>\"
-
-                \      },
-
-                \      \"identifier\" : [{
-
-                \        \"system\" : \"urn:ietf:rfc:4122\",
-
-                \        \"value\" : \"1ff2cdf7-0b7c-4b2d-9a77-62e1529dc89b\"
-
-                \      }],
-
-                \      \"status\" : \"final\",
-
-                \      \"category\" : [{
-
-                \        \"coding\" : [{
-
-                \          \"system\" :
-                \"http://snomed.info/sct/900000001000122104\",
-
-                \          \"code\" : \"248326004\",
-
-                \          \"display\" : \"medida corporal\"
-
-                \        }]
-
-                \      }],
-
-                \      \"code\" : {
-
-                \        \"coding\" : [{
-
-                \          \"system\" :
-                \"http://snomed.info/sct/900000001000122104\",
-
-                \          \"code\" : \"726527001\",
-
-                \          \"display\" : \"peso\"
-
-                \        }]
-
-                \      },
-
-                \      \"subject\" : {
-
-                \        \"type\" : \"Patient\",
-
-                \        \"identifier\" : {
-
-                \          \"type\" : {
-
-                \            \"coding\" : [{
-
-                \              \"system\" :
-                \"http://snomed.info/sct/900000001000122104\",
-
-                \              \"code\" : \"1551000122105\",
-
-                \              \"display\" : \"cÃ³digo de identificaciÃ³n
-                personal en el Sistema Nacional de Salud\"
-
-                \            }]
-
-                \          },
-
-                \          \"system\" : \"urn:oid:2.16.724.4.40\",
-
-                \          \"value\" : \"BBBBBBBBQR648597\"
-
-                \        },
-
-                \        \"display\" : \"Maria Puig Grau\"
-
-                \      },
-
-                \      \"effectiveDateTime\" : \"2024-12-09T00:00:00Z\",
-
-                \      \"performer\" : [{
-
-                \        \"type\" : \"Practitioner\",
-
-                \        \"identifier\" : {
-
-                \          \"type\" : {
-
-                \            \"coding\" : [{
-
-                \              \"system\" :
-                \"http://snomed.info/sct/900000001000122104?fhir_vs-refset/9000\
-                00251000122107\",
-
-                \              \"code\" : \"22851000122109\",
-
-                \              \"display\" : \"documento nacional de identidad\"
-
-                \            }]
-
-                \          },
-
-                \          \"system\" : \"urn:oid:1.3.6.1.4.1.19126.3\",
-
-                \          \"value\" : \"0000001X\"
-
-                \        },
-
-                \        \"display\" : \"Eva Alabart\"
-
-                \      }],
-
-                \      \"valueQuantity\" : {
-
-                \        \"value\" : 35,
-
-                \        \"unit\" : \"kilogram\",
-
-                \        \"system\" : \"http://unitsofmeasure.org\",
-
-                \        \"code\" : \"kg\"
-
-                \      }
-
-                \    },
-
-                \    \"request\" : {
-
-                \      \"method\" : \"PUT\",
-
-                \      \"url\" : \"Observation\",
-
-                \      \"ifNoneExist\" :
-                \"[base]/Observation?identifier=urn:ietf:rfc:4122|1ff2cdf7-0b7c\
-                -4b2d-9a77-62e1529dc89b\"
-
-                \    }
-
-                \  },
-
-                \  {
-
-                \    \"fullUrl\" :
-                \"urn:uuid:eb0406b6-cd82-4fed-a636-d9ab70d7ae24\",
-
-                \    \"resource\" : {
-
-                \      \"resourceType\" : \"Observation\",
-
-                \      \"id\" :
-                \"observation-300-antropometriaPerimetroCefalico\",
-
-                \      \"meta\" : {
-
-                \        \"profile\" :
-                [\"https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICA\
-                SObservationAntropometria\"]
-
-                \      },
-
-                \      \"text\" : {
-
-                \        \"status\" : \"generated\",
-
-                \        \"div\" : \"<div
-                xmlns=\\\"http://www.w3.org/1999/xhtml\\\"><a
-                name=\\\"Observation_observation-300-antropometriaPerimetroCefa\
-                lico\\\"> </a><p class=\\\"res-header-id\\\"><b>Generated
-                Narrative: Observation
-                observation-300-antropometriaPerimetroCefalico</b></p><a
-                name=\\\"observation-300-antropometriaPerimetroCefalico\\\">
-                </a><a
-                name=\\\"hcobservation-300-antropometriaPerimetroCefalico\\\">
-                </a><a
-                name=\\\"observation-300-antropometriaPerimetroCefalico-en-US\\\
-                \"> </a><div style=\\\"display: inline-block; background-color:
-                #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4;
-                border-radius: 5px; line-height: 60%\\\"><p
-                style=\\\"margin-bottom: 0px\\\"/><p style=\\\"margin-bottom:
-                0px\\\">Profile: <a
-                href=\\\"StructureDefinition-UNICASObservationAntropometria.html\
-                \\\">Observation Dato AntropomÃ©trico
-                ÃšNICAS</a></p></div><p><b>identifier</b>:
-                <code>urn:ietf:rfc:4122</code>/eb0406b6-cd82-4fed-a636-d9ab70d7\
-                ae24</p><p><b>status</b>: Final</p><p><b>category</b>: <span
-                title=\\\"Codes:{http://snomed.info/sct/900000001000122104
-                248326004}\\\">medida corporal</span></p><p><b>code</b>: <span
-                title=\\\"Codes:{http://snomed.info/sct/900000001000122104
-                726527001}\\\">perÃ­metro cefÃ¡lico</span></p><p><b>subject</b>:
-                Maria Puig Grau (Identifier: cÃ³digo de identificaciÃ³n personal
-                en el Sistema Nacional de
-                Salud/BBBBBBBBQR648597)</p><p><b>effective</b>: 2024-12-09
-                00:00:00+0000</p><p><b>performer</b>: Eva Alabart (Identifier:
-                documento nacional de identidad/0000001X)</p><p><b>value</b>: 30
-                centimeter<span style=\\\"background: LightGoldenRodYellow\\\">
-                (Details: UCUM  codecm = 'cm')</span></p></div>\"
-
-                \      },
-
-                \      \"identifier\" : [{
-
-                \        \"system\" : \"urn:ietf:rfc:4122\",
-
-                \        \"value\" : \"eb0406b6-cd82-4fed-a636-d9ab70d7ae24\"
-
-                \      }],
-
-                \      \"status\" : \"final\",
-
-                \      \"category\" : [{
-
-                \        \"coding\" : [{
-
-                \          \"system\" :
-                \"http://snomed.info/sct/900000001000122104\",
-
-                \          \"code\" : \"248326004\",
-
-                \          \"display\" : \"medida corporal\"
-
-                \        }]
-
-                \      }],
-
-                \      \"code\" : {
-
-                \        \"coding\" : [{
-
-                \          \"system\" :
-                \"http://snomed.info/sct/900000001000122104\",
-
-                \          \"code\" : \"726527001\",
-
-                \          \"display\" : \"perÃ­metro cefÃ¡lico\"
-
-                \        }]
-
-                \      },
-
-                \      \"subject\" : {
-
-                \        \"type\" : \"Patient\",
-
-                \        \"identifier\" : {
-
-                \          \"type\" : {
-
-                \            \"coding\" : [{
-
-                \              \"system\" :
-                \"http://snomed.info/sct/900000001000122104\",
-
-                \              \"code\" : \"1551000122105\",
-
-                \              \"display\" : \"cÃ³digo de identificaciÃ³n
-                personal en el Sistema Nacional de Salud\"
-
-                \            }]
-
-                \          },
-
-                \          \"system\" : \"urn:oid:2.16.724.4.40\",
-
-                \          \"value\" : \"BBBBBBBBQR648597\"
-
-                \        },
-
-                \        \"display\" : \"Maria Puig Grau\"
-
-                \      },
-
-                \      \"effectiveDateTime\" : \"2024-12-09T00:00:00Z\",
-
-                \      \"performer\" : [{
-
-                \        \"type\" : \"Practitioner\",
-
-                \        \"identifier\" : {
-
-                \          \"type\" : {
-
-                \            \"coding\" : [{
-
-                \              \"system\" :
-                \"http://snomed.info/sct/900000001000122104?fhir_vs-refset/9000\
-                00251000122107\",
-
-                \              \"code\" : \"22851000122109\",
-
-                \              \"display\" : \"documento nacional de identidad\"
-
-                \            }]
-
-                \          },
-
-                \          \"system\" : \"urn:oid:1.3.6.1.4.1.19126.3\",
-
-                \          \"value\" : \"0000001X\"
-
-                \        },
-
-                \        \"display\" : \"Eva Alabart\"
-
-                \      }],
-
-                \      \"valueQuantity\" : {
-
-                \        \"value\" : 30,
-
-                \        \"unit\" : \"centimeter\",
-
-                \        \"system\" : \"http://unitsofmeasure.org\",
-
-                \        \"code\" : \"cm\"
-
-                \      }
-
-                \    },
-
-                \    \"request\" : {
-
-                \      \"method\" : \"PUT\",
-
-                \      \"url\" : \"Observation\",
-
-                \      \"ifNoneExist\" :
-                \"[base]/Observation?identifier=urn:ietf:rfc:4122|eb0406b6-cd82\
-                -4fed-a636-d9ab70d7ae24\"
-
-                \    }
-
-                \  },
-
-                \  {
-
-                \    \"fullUrl\" :
-                \"urn:uuid:3f0104ab-b36c-4828-8d84-846425b694af\",
-
-                \    \"resource\" : {
-
-                \      \"resourceType\" : \"Observation\",
-
-                \      \"id\" : \"observation-300-antropometriaAltura\",
-
-                \      \"meta\" : {
-
-                \        \"profile\" :
-                [\"https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICA\
-                SObservationAntropometria\"]
-
-                \      },
-
-                \      \"text\" : {
-
-                \        \"status\" : \"generated\",
-
-                \        \"div\" : \"<div
-                xmlns=\\\"http://www.w3.org/1999/xhtml\\\"><a
-                name=\\\"Observation_observation-300-antropometriaAltura\\\">
-                </a><p class=\\\"res-header-id\\\"><b>Generated Narrative:
-                Observation observation-300-antropometriaAltura</b></p><a
-                name=\\\"observation-300-antropometriaAltura\\\"> </a><a
-                name=\\\"hcobservation-300-antropometriaAltura\\\"> </a><a
-                name=\\\"observation-300-antropometriaAltura-en-US\\\"> </a><div
-                style=\\\"display: inline-block; background-color: #d9e0e7;
-                padding: 6px; margin: 4px; border: 1px solid #8da1b4;
-                border-radius: 5px; line-height: 60%\\\"><p
-                style=\\\"margin-bottom: 0px\\\"/><p style=\\\"margin-bottom:
-                0px\\\">Profile: <a
-                href=\\\"StructureDefinition-UNICASObservationAntropometria.html\
-                \\\">Observation Dato AntropomÃ©trico
-                ÃšNICAS</a></p></div><p><b>identifier</b>:
-                <code>urn:ietf:rfc:4122</code>/3f0104ab-b36c-4828-8d84-846425b6\
-                94af</p><p><b>status</b>: Final</p><p><b>category</b>: <span
-                title=\\\"Codes:{http://snomed.info/sct/900000001000122104
-                248326004}\\\">medida corporal</span></p><p><b>code</b>: <span
-                title=\\\"Codes:{http://snomed.info/sct/900000001000122104
-                1153637007}\\\">altura corporal</span></p><p><b>subject</b>:
-                Maria Puig Grau (Identifier: cÃ³digo de identificaciÃ³n personal
-                en el Sistema Nacional de
-                Salud/BBBBBBBBQR648597)</p><p><b>effective</b>: 2024-12-09
-                00:00:00+0000</p><p><b>performer</b>: Eva Alabart (Identifier:
-                documento nacional de identidad/0000001X)</p><p><b>value</b>:
-                120 centimeter<span style=\\\"background:
-                LightGoldenRodYellow\\\"> (Details: UCUM  codecm =
-                'cm')</span></p></div>\"
-
-                \      },
-
-                \      \"identifier\" : [{
-
-                \        \"system\" : \"urn:ietf:rfc:4122\",
-
-                \        \"value\" : \"3f0104ab-b36c-4828-8d84-846425b694af\"
-
-                \      }],
-
-                \      \"status\" : \"final\",
-
-                \      \"category\" : [{
-
-                \        \"coding\" : [{
-
-                \          \"system\" :
-                \"http://snomed.info/sct/900000001000122104\",
-
-                \          \"code\" : \"248326004\",
-
-                \          \"display\" : \"medida corporal\"
-
-                \        }]
-
-                \      }],
-
-                \      \"code\" : {
-
-                \        \"coding\" : [{
-
-                \          \"system\" :
-                \"http://snomed.info/sct/900000001000122104\",
-
-                \          \"code\" : \"1153637007\",
-
-                \          \"display\" : \"altura corporal\"
-
-                \        }]
-
-                \      },
-
-                \      \"subject\" : {
-
-                \        \"type\" : \"Patient\",
-
-                \        \"identifier\" : {
-
-                \          \"type\" : {
-
-                \            \"coding\" : [{
-
-                \              \"system\" :
-                \"http://snomed.info/sct/900000001000122104\",
-
-                \              \"code\" : \"1551000122105\",
-
-                \              \"display\" : \"cÃ³digo de identificaciÃ³n
-                personal en el Sistema Nacional de Salud\"
-
-                \            }]
-
-                \          },
-
-                \          \"system\" : \"urn:oid:2.16.724.4.40\",
-
-                \          \"value\" : \"BBBBBBBBQR648597\"
-
-                \        },
-
-                \        \"display\" : \"Maria Puig Grau\"
-
-                \      },
-
-                \      \"effectiveDateTime\" : \"2024-12-09T00:00:00Z\",
-
-                \      \"performer\" : [{
-
-                \        \"type\" : \"Practitioner\",
-
-                \        \"identifier\" : {
-
-                \          \"type\" : {
-
-                \            \"coding\" : [{
-
-                \              \"system\" :
-                \"http://snomed.info/sct/900000001000122104?fhir_vs-refset/9000\
-                00251000122107\",
-
-                \              \"code\" : \"22851000122109\",
-
-                \              \"display\" : \"documento nacional de identidad\"
-
-                \            }]
-
-                \          },
-
-                \          \"system\" : \"urn:oid:1.3.6.1.4.1.19126.3\",
-
-                \          \"value\" : \"0000001X\"
-
-                \        },
-
-                \        \"display\" : \"Eva Alabart\"
-
-                \      }],
-
-                \      \"valueQuantity\" : {
-
-                \        \"value\" : 120,
-
-                \        \"unit\" : \"centimeter\",
-
-                \        \"system\" : \"http://unitsofmeasure.org\",
-
-                \        \"code\" : \"cm\"
-
-                \      }
-
-                \    },
-
-                \    \"request\" : {
-
-                \      \"method\" : \"PUT\",
-
-                \      \"url\" : \"Observation\",
-
-                \      \"ifNoneExist\" :
-                \"[base]/Observation?identifier=urn:ietf:rfc:4122|3f0104ab-b36c\
-                -4828-8d84-846425b694af\"
-
-                \    }
-
-                \  },
-
-                \  {
-
-                \    \"fullUrl\" :
-                \"urn:uuid:84b25270-b1b9-4169-b496-896bf62bbc9c\",
-
-                \    \"resource\" : {
-
-                \      \"resourceType\" : \"Observation\",
-
-                \      \"id\" : \"observation-300-habitoToxico\",
-
-                \      \"meta\" : {
-
-                \        \"profile\" :
-                [\"https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICA\
-                SObservationHabitoToxico\"]
-
-                \      },
-
-                \      \"text\" : {
-
-                \        \"status\" : \"generated\",
-
-                \        \"div\" : \"<div
-                xmlns=\\\"http://www.w3.org/1999/xhtml\\\"><a
-                name=\\\"Observation_observation-300-habitoToxico\\\"> </a><p
-                class=\\\"res-header-id\\\"><b>Generated Narrative: Observation
-                observation-300-habitoToxico</b></p><a
-                name=\\\"observation-300-habitoToxico\\\"> </a><a
-                name=\\\"hcobservation-300-habitoToxico\\\"> </a><a
-                name=\\\"observation-300-habitoToxico-en-US\\\"> </a><div
-                style=\\\"display: inline-block; background-color: #d9e0e7;
-                padding: 6px; margin: 4px; border: 1px solid #8da1b4;
-                border-radius: 5px; line-height: 60%\\\"><p
-                style=\\\"margin-bottom: 0px\\\"/><p style=\\\"margin-bottom:
-                0px\\\">Profile: <a
-                href=\\\"StructureDefinition-UNICASObservationHabitoToxico.html\
-                \\\">Observation HÃ¡bito TÃ³xico
-                ÃšNICAS</a></p></div><p><b>identifier</b>:
-                <code>urn:ietf:rfc:4122</code>/84b25270-b1b9-4169-b496-896bf62b\
-                bc9c</p><p><b>status</b>: Final</p><p><b>category</b>: <span
-                title=\\\"Codes:{http://snomed.info/sct/900000001000122104
-                31251000122103}\\\">hÃ¡bitos tÃ³xicos</span></p><p><b>code</b>:
-                <span title=\\\"Codes:{http://snomed.info/sct/900000001000122104
-                43783005}\\\">bebedor moderado</span></p><p><b>subject</b>:
-                Maria Puig Grau (Identifier: cÃ³digo de identificaciÃ³n personal
-                en el Sistema Nacional de
-                Salud/BBBBBBBBQR648597)</p><p><b>effective</b>: 2014-12-09
-                00:00:00+0000 --&gt; 2024-12-09
-                00:00:00+0000</p><p><b>performer</b>: Eva Alabart (Identifier:
-                documento nacional de
-                identidad/0000001X)</p><h3>Components</h3><table
-                class=\\\"grid\\\"><tr><td style=\\\"display:
-                none\\\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr\
-                ><tr><td style=\\\"display: none\\\">*</td><td><span
-                title=\\\"Codes:{http://snomed.info/sct/900000001000122104
-                228311005}\\\">patrÃ³n de consumo de alcohol durante la
-                semana</span></td><td>100 milliliter<span style=\\\"background:
-                LightGoldenRodYellow\\\"> (Details: UCUM  codemL =
-                'mL')</span></td></tr></table></div>\"
-
-                \      },
-
-                \      \"identifier\" : [{
-
-                \        \"system\" : \"urn:ietf:rfc:4122\",
-
-                \        \"value\" : \"84b25270-b1b9-4169-b496-896bf62bbc9c\"
-
-                \      }],
-
-                \      \"status\" : \"final\",
-
-                \      \"category\" : [{
-
-                \        \"coding\" : [{
-
-                \          \"system\" :
-                \"http://snomed.info/sct/900000001000122104\",
-
-                \          \"code\" : \"31251000122103\",
-
-                \          \"display\" : \"hÃ¡bitos tÃ³xicos\"
-
-                \        }]
-
-                \      }],
-
-                \      \"code\" : {
-
-                \        \"coding\" : [{
-
-                \          \"system\" :
-                \"http://snomed.info/sct/900000001000122104\",
-
-                \          \"code\" : \"43783005\",
-
-                \          \"display\" : \"bebedor moderado\"
-
-                \        }]
-
-                \      },
-
-                \      \"subject\" : {
-
-                \        \"type\" : \"Patient\",
-
-                \        \"identifier\" : {
-
-                \          \"type\" : {
-
-                \            \"coding\" : [{
-
-                \              \"system\" :
-                \"http://snomed.info/sct/900000001000122104\",
-
-                \              \"code\" : \"1551000122105\",
-
-                \              \"display\" : \"cÃ³digo de identificaciÃ³n
-                personal en el Sistema Nacional de Salud\"
-
-                \            }]
-
-                \          },
-
-                \          \"system\" : \"urn:oid:2.16.724.4.40\",
-
-                \          \"value\" : \"BBBBBBBBQR648597\"
-
-                \        },
-
-                \        \"display\" : \"Maria Puig Grau\"
-
-                \      },
-
-                \      \"effectivePeriod\" : {
-
-                \        \"start\" : \"2014-12-09T00:00:00Z\",
-
-                \        \"end\" : \"2024-12-09T00:00:00Z\"
-
-                \      },
-
-                \      \"performer\" : [{
-
-                \        \"type\" : \"Practitioner\",
-
-                \        \"identifier\" : {
-
-                \          \"type\" : {
-
-                \            \"coding\" : [{
-
-                \              \"system\" :
-                \"http://snomed.info/sct/900000001000122104?fhir_vs-refset/9000\
-                00251000122107\",
-
-                \              \"code\" : \"22851000122109\",
-
-                \              \"display\" : \"documento nacional de identidad\"
-
-                \            }]
-
-                \          },
-
-                \          \"system\" : \"urn:oid:1.3.6.1.4.1.19126.3\",
-
-                \          \"value\" : \"0000001X\"
-
-                \        },
-
-                \        \"display\" : \"Eva Alabart\"
-
-                \      }],
-
-                \      \"component\" : [{
-
-                \        \"code\" : {
-
-                \          \"coding\" : [{
-
-                \            \"system\" :
-                \"http://snomed.info/sct/900000001000122104\",
-
-                \            \"code\" : \"228311005\",
-
-                \            \"display\" : \"patrÃ³n de consumo de alcohol
-                durante la semana\"
-
-                \          }]
-
-                \        },
-
-                \        \"valueQuantity\" : {
-
-                \          \"value\" : 100,
-
-                \          \"unit\" : \"milliliter\",
-
-                \          \"system\" : \"http://unitsofmeasure.org\",
-
-                \          \"code\" : \"mL\"
-
-                \        }
-
-                \      }]
-
-                \    },
-
-                \    \"request\" : {
-
-                \      \"method\" : \"PUT\",
-
-                \      \"url\" : \"Observation\",
-
-                \      \"ifNoneExist\" :
-                \"[base]/Observation?identifier=urn:ietf:rfc:4122|84b25270-b1b9\
-                -4169-b496-896bf62bbc9c\"
-
-                \    }
-
-                \  },
-
-                \  {
-
-                \    \"fullUrl\" :
-                \"urn:uuid:b198550e-f3b1-46f1-9d2d-3bc26697f81d\",
-
-                \    \"resource\" : {
-
-                \      \"resourceType\" : \"Observation\",
-
-                \      \"id\" : \"observation-300-habitoNoSaludable\",
-
-                \      \"meta\" : {
-
-                \        \"profile\" :
-                [\"https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICA\
-                SObservationHabitoNoSaludable\"]
-
-                \      },
-
-                \      \"text\" : {
-
-                \        \"status\" : \"generated\",
-
-                \        \"div\" : \"<div
-                xmlns=\\\"http://www.w3.org/1999/xhtml\\\"><a
-                name=\\\"Observation_observation-300-habitoNoSaludable\\\">
-                </a><p class=\\\"res-header-id\\\"><b>Generated Narrative:
-                Observation observation-300-habitoNoSaludable</b></p><a
-                name=\\\"observation-300-habitoNoSaludable\\\"> </a><a
-                name=\\\"hcobservation-300-habitoNoSaludable\\\"> </a><a
-                name=\\\"observation-300-habitoNoSaludable-en-US\\\"> </a><div
-                style=\\\"display: inline-block; background-color: #d9e0e7;
-                padding: 6px; margin: 4px; border: 1px solid #8da1b4;
-                border-radius: 5px; line-height: 60%\\\"><p
-                style=\\\"margin-bottom: 0px\\\"/><p style=\\\"margin-bottom:
-                0px\\\">Profile: <a
-                href=\\\"StructureDefinition-UNICASObservationHabitoNoSaludable\
-                .html\\\">Observation HÃ¡bito No Saludable
-                ÃšNICAS</a></p></div><p><b>identifier</b>:
-                <code>urn:ietf:rfc:4122</code>/b198550e-f3b1-46f1-9d2d-3bc26697\
-                f81d</p><p><b>status</b>: Final</p><p><b>category</b>: <span
-                title=\\\"Codes:{http://snomed.info/sct/900000001000122104
-                365949003}\\\">hallazgo relacionado con conductas vinculadas a
-                la salud</span></p><p><b>code</b>: <span
-                title=\\\"Codes:{http://snomed.info/sct/900000001000122104
-                157861000146108}\\\">pasa tiempo frente a una pantalla antes de
-                ir a dormir</span></p><p><b>subject</b>: Maria Puig Grau
-                (Identifier: cÃ³digo de identificaciÃ³n personal en el Sistema
-                Nacional de Salud/BBBBBBBBQR648597)</p><p><b>effective</b>:
-                2014-12-09 00:00:00+0000 --&gt; 2024-12-09
-                00:00:00+0000</p><p><b>performer</b>: Eva Alabart (Identifier:
-                documento nacional de identidad/0000001X)</p></div>\"
-
-                \      },
-
-                \      \"identifier\" : [{
-
-                \        \"system\" : \"urn:ietf:rfc:4122\",
-
-                \        \"value\" : \"b198550e-f3b1-46f1-9d2d-3bc26697f81d\"
-
-                \      }],
-
-                \      \"status\" : \"final\",
-
-                \      \"category\" : [{
-
-                \        \"coding\" : [{
-
-                \          \"system\" :
-                \"http://snomed.info/sct/900000001000122104\",
-
-                \          \"code\" : \"365949003\",
-
-                \          \"display\" : \"hallazgo relacionado con conductas
-                vinculadas a la salud\"
-
-                \        }]
-
-                \      }],
-
-                \      \"code\" : {
-
-                \        \"coding\" : [{
-
-                \          \"system\" :
-                \"http://snomed.info/sct/900000001000122104\",
-
-                \          \"code\" : \"157861000146108\",
-
-                \          \"display\" : \"pasa tiempo frente a una pantalla
-                antes de ir a dormir\"
-
-                \        }]
-
-                \      },
-
-                \      \"subject\" : {
-
-                \        \"type\" : \"Patient\",
-
-                \        \"identifier\" : {
-
-                \          \"type\" : {
-
-                \            \"coding\" : [{
-
-                \              \"system\" :
-                \"http://snomed.info/sct/900000001000122104\",
-
-                \              \"code\" : \"1551000122105\",
-
-                \              \"display\" : \"cÃ³digo de identificaciÃ³n
-                personal en el Sistema Nacional de Salud\"
-
-                \            }]
-
-                \          },
-
-                \          \"system\" : \"urn:oid:2.16.724.4.40\",
-
-                \          \"value\" : \"BBBBBBBBQR648597\"
-
-                \        },
-
-                \        \"display\" : \"Maria Puig Grau\"
-
-                \      },
-
-                \      \"effectivePeriod\" : {
-
-                \        \"start\" : \"2014-12-09T00:00:00Z\",
-
-                \        \"end\" : \"2024-12-09T00:00:00Z\"
-
-                \      },
-
-                \      \"performer\" : [{
-
-                \        \"type\" : \"Practitioner\",
-
-                \        \"identifier\" : {
-
-                \          \"type\" : {
-
-                \            \"coding\" : [{
-
-                \              \"system\" :
-                \"http://snomed.info/sct/900000001000122104?fhir_vs-refset/9000\
-                00251000122107\",
-
-                \              \"code\" : \"22851000122109\",
-
-                \              \"display\" : \"documento nacional de identidad\"
-
-                \            }]
-
-                \          },
-
-                \          \"system\" : \"urn:oid:1.3.6.1.4.1.19126.3\",
-
-                \          \"value\" : \"0000001X\"
-
-                \        },
-
-                \        \"display\" : \"Eva Alabart\"
-
-                \      }]
-
-                \    },
-
-                \    \"request\" : {
-
-                \      \"method\" : \"PUT\",
-
-                \      \"url\" : \"Observation\",
-
-                \      \"ifNoneExist\" :
-                \"[base]/Observation?identifier=urn:ietf:rfc:4122|b198550e-f3b1\
-                -46f1-9d2d-3bc26697f81d\"
-
-                \    }
-
-                \  },
-
-                \  {
-
-                \    \"fullUrl\" :
-                \"urn:uuid:8a9a9e8f-485b-4a79-8962-69cfcd2ecb66\",
-
-                \    \"resource\" : {
-
-                \      \"resourceType\" : \"Medication\",
-
-                \      \"id\" : \"medication-300-farmacoPrevio\",
-
-                \      \"meta\" : {
-
-                \        \"profile\" :
-                [\"https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICA\
-                SMedication\"]
-
-                \      },
-
-                \      \"text\" : {
-
-                \        \"status\" : \"generated\",
-
-                \        \"div\" : \"<div
-                xmlns=\\\"http://www.w3.org/1999/xhtml\\\"><a
-                name=\\\"Medication_medication-300-farmacoPrevio\\\"> </a><p
-                class=\\\"res-header-id\\\"><b>Generated Narrative: Medication
-                medication-300-farmacoPrevio</b></p><a
-                name=\\\"medication-300-farmacoPrevio\\\"> </a><a
-                name=\\\"hcmedication-300-farmacoPrevio\\\"> </a><a
-                name=\\\"medication-300-farmacoPrevio-en-US\\\"> </a><div
-                style=\\\"display: inline-block; background-color: #d9e0e7;
-                padding: 6px; margin: 4px; border: 1px solid #8da1b4;
-                border-radius: 5px; line-height: 60%\\\"><p
-                style=\\\"margin-bottom: 0px\\\"/><p style=\\\"margin-bottom:
-                0px\\\">Profile: <a
-                href=\\\"StructureDefinition-UNICASMedication.html\\\">Medicati\
-                on MedicaciÃ³n ÃšNICAS</a></p></div><p><b>identifier</b>:
-                <code>urn:ietf:rfc:4122</code>/8a9a9e8f-485b-4a79-8962-69cfcd2e\
-                cb66</p><p><b>code</b>: <span
-                title=\\\"Codes:{http://snomed.info/sct/900000001000122104
-                156301000140108}\\\">[Nombre comercial del
-                producto]</span></p><p><b>status</b>:
-                Active</p><p><b>doseForm</b>: <span
-                title=\\\"Codes:{urn:oid:2.16.724.4.21.5.14.1 42}\\\">COMPRIMIDO
-                RECUBIERTO CON
-                PELÃCULA</span></p><blockquote><p><b>ingredient</b></p><h3>Ite\
-                ms</h3><table class=\\\"grid\\\"><tr><td style=\\\"display:
-                none\\\">-</td><td><b>Concept</b></td></tr><tr><td
-                style=\\\"display: none\\\">*</td><td><span
-                title=\\\"Codes:{http://snomed.info/sct/900000001000122104
-                714086004}\\\">bedaquilina</span></td></tr></table></blockquote\
-                ></div>\"
-
-                \      },
-
-                \      \"identifier\" : [{
-
-                \        \"system\" : \"urn:ietf:rfc:4122\",
-
-                \        \"value\" : \"8a9a9e8f-485b-4a79-8962-69cfcd2ecb66\"
-
-                \      }],
-
-                \      \"code\" : {
-
-                \        \"coding\" : [{
-
-                \          \"system\" :
-                \"http://snomed.info/sct/900000001000122104\",
-
-                \          \"code\" : \"156301000140108\",
-
-                \          \"display\" : \"bedaquilina\"
-
-                \        }],
-
-                \        \"text\" : \"[Nombre comercial del producto]\"
-
-                \      },
-
-                \      \"status\" : \"active\",
-
-                \      \"doseForm\" : {
-
-                \        \"coding\" : [{
-
-                \          \"system\" : \"urn:oid:2.16.724.4.21.5.14.1\",
-
-                \          \"code\" : \"42\",
-
-                \          \"display\" : \"COMPRIMIDO RECUBIERTO CON PELÃCULA\"
-
-                \        }]
-
-                \      },
-
-                \      \"ingredient\" : [{
-
-                \        \"item\" : {
-
-                \          \"concept\" : {
-
-                \            \"coding\" : [{
-
-                \              \"system\" :
-                \"http://snomed.info/sct/900000001000122104\",
-
-                \              \"code\" : \"714086004\",
-
-                \              \"display\" : \"bedaquilina\"
-
-                \            }]
-
-                \          }
-
-                \        }
-
-                \      }]
-
-                \    },
-
-                \    \"request\" : {
-
-                \      \"method\" : \"PUT\",
-
-                \      \"url\" : \"Medication\",
-
-                \      \"ifNoneExist\" :
-                \"[base]/Medication?identifier=urn:ietf:rfc:4122|8a9a9e8f-485b-\
-                4a79-8962-69cfcd2ecb66\"
-
-                \    }
-
-                \  },
-
-                \  {
-
-                \    \"fullUrl\" :
-                \"urn:uuid:e6e114cc-bfc8-495e-9329-08e208c713bc\",
-
-                \    \"resource\" : {
-
-                \      \"resourceType\" : \"MedicationStatement\",
-
-                \      \"id\" :
-                \"medicationStatement-300-tratamientoFarmacologicoPrevio\",
-
-                \      \"meta\" : {
-
-                \        \"profile\" :
-                [\"https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICA\
-                SMedicationStatement\"]
-
-                \      },
-
-                \      \"text\" : {
-
-                \        \"status\" : \"generated\",
-
-                \        \"div\" : \"<div
-                xmlns=\\\"http://www.w3.org/1999/xhtml\\\"><a
-                name=\\\"MedicationStatement_medicationStatement-300-tratamient\
-                oFarmacologicoPrevio\\\"> </a><p
-                class=\\\"res-header-id\\\"><b>Generated Narrative:
-                MedicationStatement
-                medicationStatement-300-tratamientoFarmacologicoPrevio</b></p><a
-                name=\\\"medicationStatement-300-tratamientoFarmacologicoPrevio\
-                \\\"> </a><a
-                name=\\\"hcmedicationStatement-300-tratamientoFarmacologicoPrev\
-                io\\\"> </a><a
-                name=\\\"medicationStatement-300-tratamientoFarmacologicoPrevio\
-                -en-US\\\"> </a><div style=\\\"display: inline-block;
-                background-color: #d9e0e7; padding: 6px; margin: 4px; border:
-                1px solid #8da1b4; border-radius: 5px; line-height: 60%\\\"><p
-                style=\\\"margin-bottom: 0px\\\"/><p style=\\\"margin-bottom:
-                0px\\\">Profile: <a
-                href=\\\"StructureDefinition-UNICASMedicationStatement.html\\\"\
-                >MedicationStatement PrescripciÃ³n
-                ÃšNICAS</a></p></div><p><b>identifier</b>:
-                <code>urn:ietf:rfc:4122</code>/e6e114cc-bfc8-495e-9329-08e208c7\
-                13bc</p><p><b>status</b>: Recorded</p><h3>Medications</h3><table
-                class=\\\"grid\\\"><tr><td style=\\\"display:
-                none\\\">-</td><td><b>Concept</b></td></tr><tr><td
-                style=\\\"display: none\\\">*</td><td><span
-                title=\\\"Codes:{http://snomed.info/sct/900000001000122104
-                156301000140108}\\\">[Nombre comercial del
-                producto]</span></td></tr></table><p><b>subject</b>: Maria Puig
-                Grau (Identifier: cÃ³digo de identificaciÃ³n personal en el
-                Sistema Nacional de
-                Salud/BBBBBBBBQR648597)</p><p><b>effective</b>: 2024-07-23
-                11:28:17+0000 --&gt; 2024-08-23
-                11:28:17+0000</p><p><b>informationSource</b>: Eva Alabart
-                (Identifier: documento nacional de
-                identidad/0000001X)</p><blockquote><p><b>dosage</b></p><p><b>te\
-                xt</b>: [Comentarios para el farmacÃ©utico]</p><p><b>route</b>:
-                <span title=\\\"Codes:{urn:oid:2.16.724.4.21.5.14.2 54}\\\">VÃA
-                ORAL</span></p><h3>DoseAndRates</h3><table
-                class=\\\"grid\\\"><tr><td style=\\\"display:
-                none\\\">-</td><td><b>Dose[x]</b></td><td><b>Rate[x]</b></td></\
-                tr><tr><td style=\\\"display: none\\\">*</td><td>0.5
-                milligram<span style=\\\"background: LightGoldenRodYellow\\\">
-                (Details: UCUM  codemg = 'mg')</span></td><td>8 hour per
-                day<span style=\\\"background: LightGoldenRodYellow\\\">
-                (Details: UCUM  codeh/d =
-                'h/d')</span></td></tr></table></blockquote></div>\"
-
-                \      },
-
-                \      \"identifier\" : [{
-
-                \        \"system\" : \"urn:ietf:rfc:4122\",
-
-                \        \"value\" : \"e6e114cc-bfc8-495e-9329-08e208c713bc\"
-
-                \      }],
-
-                \      \"status\" : \"recorded\",
-
-                \      \"medication\" : {
-
-                \        \"concept\" : {
-
-                \          \"coding\" : [{
-
-                \            \"system\" :
-                \"http://snomed.info/sct/900000001000122104\",
-
-                \            \"code\" : \"156301000140108\",
-
-                \            \"display\" : \"bedaquilina\"
-
-                \          }],
-
-                \          \"text\" : \"[Nombre comercial del producto]\"
-
-                \        }
-
-                \      },
-
-                \      \"subject\" : {
-
-                \        \"type\" : \"Patient\",
-
-                \        \"identifier\" : {
-
-                \          \"type\" : {
-
-                \            \"coding\" : [{
-
-                \              \"system\" :
-                \"http://snomed.info/sct/900000001000122104\",
-
-                \              \"code\" : \"1551000122105\",
-
-                \              \"display\" : \"cÃ³digo de identificaciÃ³n
-                personal en el Sistema Nacional de Salud\"
-
-                \            }]
-
-                \          },
-
-                \          \"system\" : \"urn:oid:2.16.724.4.40\",
-
-                \          \"value\" : \"BBBBBBBBQR648597\"
-
-                \        },
-
-                \        \"display\" : \"Maria Puig Grau\"
-
-                \      },
-
-                \      \"effectivePeriod\" : {
-
-                \        \"start\" : \"2024-07-23T11:28:17.239+00:00\",
-
-                \        \"end\" : \"2024-08-23T11:28:17.239+00:00\"
-
-                \      },
-
-                \      \"informationSource\" : [{
-
-                \        \"type\" : \"Practitioner\",
-
-                \        \"identifier\" : {
-
-                \          \"type\" : {
-
-                \            \"coding\" : [{
-
-                \              \"system\" :
-                \"http://snomed.info/sct/900000001000122104?fhir_vs-refset/9000\
-                00251000122107\",
-
-                \              \"code\" : \"22851000122109\",
-
-                \              \"display\" : \"documento nacional de identidad\"
-
-                \            }]
-
-                \          },
-
-                \          \"system\" : \"urn:oid:1.3.6.1.4.1.19126.3\",
-
-                \          \"value\" : \"0000001X\"
-
-                \        },
-
-                \        \"display\" : \"Eva Alabart\"
-
-                \      }],
-
-                \      \"dosage\" : [{
-
-                \        \"text\" : \"[Comentarios para el farmacÃ©utico]\",
-
-                \        \"route\" : {
-
-                \          \"coding\" : [{
-
-                \            \"system\" : \"urn:oid:2.16.724.4.21.5.14.2\",
-
-                \            \"code\" : \"54\",
-
-                \            \"display\" : \"VÃA ORAL\"
-
-                \          }]
-
-                \        },
-
-                \        \"doseAndRate\" : [{
-
-                \          \"doseQuantity\" : {
-
-                \            \"value\" : 0.5,
-
-                \            \"unit\" : \"milligram\",
-
-                \            \"system\" : \"http://unitsofmeasure.org\",
-
-                \            \"code\" : \"mg\"
-
-                \          },
-
-                \          \"rateQuantity\" : {
-
-                \            \"value\" : 8,
-
-                \            \"unit\" : \"hour per day\",
-
-                \            \"system\" : \"http://unitsofmeasure.org\",
-
-                \            \"code\" : \"h/d\"
-
-                \          }
-
-                \        }]
-
-                \      }]
-
-                \    },
-
-                \    \"request\" : {
-
-                \      \"method\" : \"PUT\",
-
-                \      \"url\" : \"MedicationStatement\",
-
-                \      \"ifNoneExist\" :
-                \"[base]/MedicationStatement?identifier=urn:ietf:rfc:4122|e6e11\
-                4cc-bfc8-495e-9329-08e208c713bc\"
-
-                \    }
-
-                \  }]
-
-                }"
+              text: >-
+                {
+                  "resourceType": "Bundle",
+                  "meta": {
+                    "profile": [
+                      "https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASBundleAntecedentes"
+                    ]
+                  },
+                  "identifier": {
+                    "type": {
+                      "coding": [
+                        {
+                          "system": "http://snomed.info/sct/900000001000122104",
+                          "code": "31221000122105",
+                          "display": "antecedentes"
+                        }
+                      ]
+                    },
+                    "system": "urn:ietf:rfc:4122",
+                    "value": "a13f9746-795a-4a11-864f-4f40b51b62de"
+                  },
+                  "type": "transaction",
+                  "timestamp": "2025-02-19T11:28:17.239+00:00",
+                  "entry": [
+                    {
+                      "fullUrl": "urn:uuid:5d84c09e-4d7f-4825-9044-ff1683f0982f",
+                      "resource": {
+                        "resourceType": "Condition",
+                        "meta": {
+                          "profile": [
+                            "https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASConditionEnfermedad"
+                          ]
+                        },
+                        "identifier": [
+                          {
+                            "system": "urn:regcess:0908005177",
+                            "value": "id-interno-enfermedadprevia-ejemplo-300"
+                          }
+                        ],
+                        "clinicalStatus": {
+                          "coding": [
+                            {
+                              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                              "code": "resolved",
+                              "display": "Resolved"
+                            }
+                          ]
+                        },
+                        "category": [
+                          {
+                            "coding": [
+                              {
+                                "system": "http://snomed.info/sct/900000001000122104",
+                                "code": "31231000122108",
+                                "display": "enfermedades previas"
+                              }
+                            ]
+                          }
+                        ],
+                        "code": {
+                          "coding": [
+                            {
+                              "system": "http://snomed.info/sct/900000001000122104",
+                              "code": "613003",
+                              "display": "síndrome del cromosoma X frágil"
+                            }
+                          ]
+                        },
+                        "subject": {
+                          "type": "Patient",
+                          "identifier": {
+                            "type": {
+                              "coding": [
+                                {
+                                  "system": "http://snomed.info/sct/900000001000122104",
+                                  "code": "1551000122105",
+                                  "display": "código de identificación personal en el Sistema Nacional de Salud"
+                                }
+                              ]
+                            },
+                            "system": "urn:oid:2.16.724.4.40",
+                            "value": "BBBBBBBBQR648597"
+                          },
+                          "display": "Maria Puig Grau"
+                        },
+                        "onsetDateTime": "2024-12-09T00:00:00Z",
+                        "participant": [
+                          {
+                            "actor": {
+                              "type": "Practitioner",
+                              "identifier": {
+                                "type": {
+                                  "coding": [
+                                    {
+                                      "system": "http://snomed.info/sct/900000001000122104?fhir_vs-refset/900000251000122107",
+                                      "code": "22851000122109",
+                                      "display": "documento nacional de identidad"
+                                    }
+                                  ]
+                                },
+                                "system": "urn:oid:1.3.6.1.4.1.19126.3",
+                                "value": "0000001X"
+                              },
+                              "display": "Eva Alabart"
+                            }
+                          }
+                        ]
+                      },
+                      "request": {
+                        "method": "PUT",
+                        "url": "[base]/Condition?identifier=urn:regcess:0908005177|id-interno-enfermedadprevia-ejemplo-300"
+                      }
+                    },
+                    {
+                      "fullUrl": "urn:uuid:5082cfc0-7780-468f-9313-f6e4b6418ae3",
+                      "resource": {
+                        "resourceType": "Condition",
+                        "meta": {
+                          "profile": [
+                            "https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASConditionEnfermedad"
+                          ]
+                        },
+                        "identifier": [
+                          {
+                            "system": "urn:regcess:0908005177",
+                            "value": "id-interno-enfermedadneonatal-ejemplo-300"
+                          }
+                        ],
+                        "clinicalStatus": {
+                          "coding": [
+                            {
+                              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                              "code": "resolved",
+                              "display": "Resolved"
+                            }
+                          ]
+                        },
+                        "category": [
+                          {
+                            "coding": [
+                              {
+                                "system": "http://snomed.info/sct/900000001000122104",
+                                "code": "2541788014",
+                                "display": "trastorno neonatal"
+                              }
+                            ]
+                          }
+                        ],
+                        "code": {
+                          "coding": [
+                            {
+                              "system": "http://snomed.info/sct/900000001000122104",
+                              "code": "613003",
+                              "display": "síndrome del cromosoma X frágil"
+                            }
+                          ]
+                        },
+                        "subject": {
+                          "type": "Patient",
+                          "identifier": {
+                            "type": {
+                              "coding": [
+                                {
+                                  "system": "http://snomed.info/sct/900000001000122104",
+                                  "code": "1551000122105",
+                                  "display": "código de identificación personal en el Sistema Nacional de Salud"
+                                }
+                              ]
+                            },
+                            "system": "urn:oid:2.16.724.4.40",
+                            "value": "BBBBBBBBQR648597"
+                          },
+                          "display": "Maria Puig Grau"
+                        },
+                        "onsetDateTime": "2020-12-09T00:00:00Z",
+                        "participant": [
+                          {
+                            "actor": {
+                              "type": "Practitioner",
+                              "identifier": {
+                                "type": {
+                                  "coding": [
+                                    {
+                                      "system": "http://snomed.info/sct/900000001000122104?fhir_vs-refset/900000251000122107",
+                                      "code": "22851000122109",
+                                      "display": "documento nacional de identidad"
+                                    }
+                                  ]
+                                },
+                                "system": "urn:oid:1.3.6.1.4.1.19126.3",
+                                "value": "0000001X"
+                              },
+                              "display": "Eva Alabart"
+                            }
+                          }
+                        ]
+                      },
+                      "request": {
+                        "method": "PUT",
+                        "url": "[base]/Condition?identifier=urn:regcess:0908005177|id-interno-enfermedadneonatal-ejemplo-300"
+                      }
+                    },
+                    {
+                      "fullUrl": "urn:uuid:4c9eb40f-980d-4bb1-bc82-24805e2f7c53",
+                      "resource": {
+                        "resourceType": "Observation",
+                        "meta": {
+                          "profile": [
+                            "https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASObservationAntropometria"
+                          ]
+                        },
+                        "identifier": [
+                          {
+                            "system": "urn:regcess:0908005177",
+                            "value": "id-interno-pesoneonatal-ejemplo-300"
+                          }
+                        ],
+                        "status": "final",
+                        "category": [
+                          {
+                            "coding": [
+                              {
+                                "system": "http://snomed.info/sct/900000001000122104",
+                                "code": "364585000",
+                                "display": "característica observable del recién nacido"
+                              }
+                            ]
+                          }
+                        ],
+                        "code": {
+                          "coding": [
+                            {
+                              "system": "http://snomed.info/sct/900000001000122104",
+                              "code": "726527001",
+                              "display": "peso"
+                            }
+                          ]
+                        },
+                        "subject": {
+                          "type": "Patient",
+                          "identifier": {
+                            "type": {
+                              "coding": [
+                                {
+                                  "system": "http://snomed.info/sct/900000001000122104",
+                                  "code": "1551000122105",
+                                  "display": "código de identificación personal en el Sistema Nacional de Salud"
+                                }
+                              ]
+                            },
+                            "system": "urn:oid:2.16.724.4.40",
+                            "value": "BBBBBBBBQR648597"
+                          },
+                          "display": "Maria Puig Grau"
+                        },
+                        "effectiveDateTime": "2020-12-09T00:00:00Z",
+                        "performer": [
+                          {
+                            "type": "Practitioner",
+                            "identifier": {
+                              "type": {
+                                "coding": [
+                                  {
+                                    "system": "http://snomed.info/sct/900000001000122104?fhir_vs-refset/900000251000122107",
+                                    "code": "22851000122109",
+                                    "display": "documento nacional de identidad"
+                                  }
+                                ]
+                              },
+                              "system": "urn:oid:1.3.6.1.4.1.19126.3",
+                              "value": "0000001X"
+                            },
+                            "display": "Eva Alabart"
+                          }
+                        ],
+                        "valueQuantity": {
+                          "value": 4,
+                          "unit": "kilogram",
+                          "system": "http://unitsofmeasure.org",
+                          "code": "kg"
+                        }
+                      },
+                      "request": {
+                        "method": "PUT",
+                        "url": "[base]/Observation?identifier=urn:regcess:0908005177|id-interno-pesoneonatal-ejemplo-300"
+                      }
+                    },
+                    {
+                      "fullUrl": "urn:uuid:4c1a1c7c-7374-4f47-bf70-7a4a498b6e9b",
+                      "resource": {
+                        "resourceType": "Observation",
+                        "meta": {
+                          "profile": [
+                            "https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASObservationAntropometria"
+                          ]
+                        },
+                        "identifier": [
+                          {
+                            "system": "urn:regcess:0908005177",
+                            "value": "id-interno-perimetrocefaliconeonatal-ejemplo-300"
+                          }
+                        ],
+                        "status": "final",
+                        "category": [
+                          {
+                            "coding": [
+                              {
+                                "system": "http://snomed.info/sct/900000001000122104",
+                                "code": "364585000",
+                                "display": "característica observable del recién nacido"
+                              }
+                            ]
+                          }
+                        ],
+                        "code": {
+                          "coding": [
+                            {
+                              "system": "http://snomed.info/sct/900000001000122104",
+                              "code": "726527001",
+                              "display": "perímetro cefálico"
+                            }
+                          ]
+                        },
+                        "subject": {
+                          "type": "Patient",
+                          "identifier": {
+                            "type": {
+                              "coding": [
+                                {
+                                  "system": "http://snomed.info/sct/900000001000122104",
+                                  "code": "1551000122105",
+                                  "display": "código de identificación personal en el Sistema Nacional de Salud"
+                                }
+                              ]
+                            },
+                            "system": "urn:oid:2.16.724.4.40",
+                            "value": "BBBBBBBBQR648597"
+                          },
+                          "display": "Maria Puig Grau"
+                        },
+                        "effectiveDateTime": "2020-12-09T00:00:00Z",
+                        "performer": [
+                          {
+                            "type": "Practitioner",
+                            "identifier": {
+                              "type": {
+                                "coding": [
+                                  {
+                                    "system": "http://snomed.info/sct/900000001000122104?fhir_vs-refset/900000251000122107",
+                                    "code": "22851000122109",
+                                    "display": "documento nacional de identidad"
+                                  }
+                                ]
+                              },
+                              "system": "urn:oid:1.3.6.1.4.1.19126.3",
+                              "value": "0000001X"
+                            },
+                            "display": "Eva Alabart"
+                          }
+                        ],
+                        "valueQuantity": {
+                          "value": 20,
+                          "unit": "centimeter",
+                          "system": "http://unitsofmeasure.org",
+                          "code": "cm"
+                        }
+                      },
+                      "request": {
+                        "method": "PUT",
+                        "url": "[base]/Observation?identifier=urn:regcess:0908005177|id-interno-perimetrocefaliconeonatal-ejemplo-300"
+                      }
+                    },
+                    {
+                      "fullUrl": "urn:uuid:f44330b5-bc49-431c-97da-2998f8d33c0b",
+                      "resource": {
+                        "resourceType": "Observation",
+                        "meta": {
+                          "profile": [
+                            "https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASObservationAntropometria"
+                          ]
+                        },
+                        "identifier": [
+                          {
+                            "system": "urn:regcess:0908005177",
+                            "value": "id-interno-alturaneonatal-ejemplo-300"
+                          }
+                        ],
+                        "status": "final",
+                        "category": [
+                          {
+                            "coding": [
+                              {
+                                "system": "http://snomed.info/sct/900000001000122104",
+                                "code": "364585000",
+                                "display": "característica observable del recién nacido"
+                              }
+                            ]
+                          }
+                        ],
+                        "code": {
+                          "coding": [
+                            {
+                              "system": "http://snomed.info/sct/900000001000122104",
+                              "code": "1153637007",
+                              "display": "altura corporal"
+                            }
+                          ]
+                        },
+                        "subject": {
+                          "type": "Patient",
+                          "identifier": {
+                            "type": {
+                              "coding": [
+                                {
+                                  "system": "http://snomed.info/sct/900000001000122104",
+                                  "code": "1551000122105",
+                                  "display": "código de identificación personal en el Sistema Nacional de Salud"
+                                }
+                              ]
+                            },
+                            "system": "urn:oid:2.16.724.4.40",
+                            "value": "BBBBBBBBQR648597"
+                          },
+                          "display": "Maria Puig Grau"
+                        },
+                        "effectiveDateTime": "2020-12-09T00:00:00Z",
+                        "performer": [
+                          {
+                            "type": "Practitioner",
+                            "identifier": {
+                              "type": {
+                                "coding": [
+                                  {
+                                    "system": "http://snomed.info/sct/900000001000122104?fhir_vs-refset/900000251000122107",
+                                    "code": "22851000122109",
+                                    "display": "documento nacional de identidad"
+                                  }
+                                ]
+                              },
+                              "system": "urn:oid:1.3.6.1.4.1.19126.3",
+                              "value": "0000001X"
+                            },
+                            "display": "Eva Alabart"
+                          }
+                        ],
+                        "valueQuantity": {
+                          "value": 90,
+                          "unit": "centimeter",
+                          "system": "http://unitsofmeasure.org",
+                          "code": "cm"
+                        }
+                      },
+                      "request": {
+                        "method": "PUT",
+                        "url": "[base]/Observation?identifier=urn:regcess:0908005177|id-interno-alturaneonatal-ejemplo-300"
+                      }
+                    },
+                    {
+                      "fullUrl": "urn:uuid:dbdc6180-61a0-4de9-9e11-e61f951c992e",
+                      "resource": {
+                        "resourceType": "Observation",
+                        "meta": {
+                          "profile": [
+                            "https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASObservationObstetrico"
+                          ]
+                        },
+                        "identifier": [
+                          {
+                            "system": "urn:regcess:0908005177",
+                            "value": "id-interno-obstetrico-ejemplo-300"
+                          }
+                        ],
+                        "status": "final",
+                        "category": [
+                          {
+                            "coding": [
+                              {
+                                "system": "http://snomed.info/sct/900000001000122104",
+                                "code": "248983002",
+                                "display": "antecedentes obstétricos"
+                              }
+                            ]
+                          }
+                        ],
+                        "code": {
+                          "coding": [
+                            {
+                              "system": "http://snomed.info/sct/900000001000122104",
+                              "code": "118185001",
+                              "display": "hallazgo relacionado con el embarazo"
+                            }
+                          ]
+                        },
+                        "subject": {
+                          "type": "Patient",
+                          "identifier": {
+                            "type": {
+                              "coding": [
+                                {
+                                  "system": "http://snomed.info/sct/900000001000122104",
+                                  "code": "1551000122105",
+                                  "display": "código de identificación personal en el Sistema Nacional de Salud"
+                                }
+                              ]
+                            },
+                            "system": "urn:oid:2.16.724.4.40",
+                            "value": "BBBBBBBBQR648597"
+                          },
+                          "display": "Maria Puig Grau"
+                        },
+                        "effectiveDateTime": "2024-12-09T00:00:00Z",
+                        "performer": [
+                          {
+                            "type": "Practitioner",
+                            "identifier": {
+                              "type": {
+                                "coding": [
+                                  {
+                                    "system": "http://snomed.info/sct/900000001000122104?fhir_vs-refset/900000251000122107",
+                                    "code": "22851000122109",
+                                    "display": "documento nacional de identidad"
+                                  }
+                                ]
+                              },
+                              "system": "urn:oid:1.3.6.1.4.1.19126.3",
+                              "value": "0000001X"
+                            },
+                            "display": "Eva Alabart"
+                          }
+                        ]
+                      },
+                      "request": {
+                        "method": "PUT",
+                        "url": "[base]/Observation?identifier=urn:regcess:0908005177|id-interno-obstetrico-ejemplo-300"
+                      }
+                    },
+                    {
+                      "fullUrl": "urn:uuid:d53363b9-206a-40a0-bd26-dc7ddd5df039",
+                      "resource": {
+                        "resourceType": "Procedure",
+                        "meta": {
+                          "profile": [
+                            "https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASProcedure"
+                          ]
+                        },
+                        "identifier": [
+                          {
+                            "system": "urn:regcess:0908005177",
+                            "value": "id-interno-quirurgico-ejemplo-300"
+                          }
+                        ],
+                        "status": "completed",
+                        "category": [
+                          {
+                            "coding": [
+                              {
+                                "system": "http://snomed.info/sct/900000001000122104",
+                                "code": "21651000122102",
+                                "display": "antecedentes quirúrgicos"
+                              }
+                            ]
+                          }
+                        ],
+                        "code": {
+                          "coding": [
+                            {
+                              "system": "http://snomed.info/sct/900000001000122104",
+                              "code": "367336001",
+                              "display": "quimioterapia"
+                            }
+                          ]
+                        },
+                        "subject": {
+                          "type": "Patient",
+                          "identifier": {
+                            "type": {
+                              "coding": [
+                                {
+                                  "system": "http://snomed.info/sct/900000001000122104",
+                                  "code": "1551000122105",
+                                  "display": "código de identificación personal en el Sistema Nacional de Salud"
+                                }
+                              ]
+                            },
+                            "system": "urn:oid:2.16.724.4.40",
+                            "value": "BBBBBBBBQR648597"
+                          },
+                          "display": "Maria Puig Grau"
+                        },
+                        "occurrenceDateTime": "2024-12-09T00:00:00Z",
+                        "performer": [
+                          {
+                            "actor": {
+                              "type": "Practitioner",
+                              "identifier": {
+                                "type": {
+                                  "coding": [
+                                    {
+                                      "system": "http://snomed.info/sct/900000001000122104?fhir_vs-refset/900000251000122107",
+                                      "code": "22851000122109",
+                                      "display": "documento nacional de identidad"
+                                    }
+                                  ]
+                                },
+                                "system": "urn:oid:1.3.6.1.4.1.19126.3",
+                                "value": "0000001X"
+                              },
+                              "display": "Eva Alabart"
+                            }
+                          }
+                        ]
+                      },
+                      "request": {
+                        "method": "PUT",
+                        "url": "[base]/Procedure?identifier=urn:regcess:0908005177|id-interno-quirurgico-ejemplo-300"
+                      }
+                    },
+                    {
+                      "fullUrl": "urn:uuid:c1b8426f-60d3-4403-aebd-a34ae6ae70f2",
+                      "resource": {
+                        "resourceType": "FamilyMemberHistory",
+                        "meta": {
+                          "profile": [
+                            "https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASFamilyMemberHistory"
+                          ]
+                        },
+                        "identifier": [
+                          {
+                            "system": "urn:regcess:0908005177",
+                            "value": "id-interno-enfermedadfamiliar-ejemplo-300"
+                          }
+                        ],
+                        "status": "completed",
+                        "patient": {
+                          "type": "Patient",
+                          "identifier": {
+                            "type": {
+                              "coding": [
+                                {
+                                  "system": "http://snomed.info/sct/900000001000122104",
+                                  "code": "1551000122105",
+                                  "display": "código de identificación personal en el Sistema Nacional de Salud"
+                                }
+                              ]
+                            },
+                            "system": "urn:oid:2.16.724.4.40",
+                            "value": "BBBBBBBBQR648597"
+                          },
+                          "display": "Maria Puig Grau"
+                        },
+                        "relationship": {
+                          "coding": [
+                            {
+                              "system": "http://snomed.info/sct/900000001000122104",
+                              "code": "9947008",
+                              "display": "padre natural"
+                            }
+                          ]
+                        },
+                        "condition": [
+                          {
+                            "code": {
+                              "coding": [
+                                {
+                                  "system": "http://snomed.info/sct/900000001000122104",
+                                  "code": "613003",
+                                  "display": "síndrome del cromosoma X frágil"
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      },
+                      "request": {
+                        "method": "PUT",
+                        "url": "[base]/FamilyMemberHistory?identifier=urn:regcess:0908005177|id-interno-enfermedadfamiliar-ejemplo-300"
+                      }
+                    },
+                    {
+                      "fullUrl": "urn:uuid:096c8b3b-73af-40cc-a4d8-c29111412890",
+                      "resource": {
+                        "resourceType": "Observation",
+                        "meta": {
+                          "profile": [
+                            "https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASObservationAntropometria"
+                          ]
+                        },
+                        "identifier": [
+                          {
+                            "system": "urn:regcess:0908005177",
+                            "value": "id-interno-pesoprevia-ejemplo-300"
+                          }
+                        ],
+                        "status": "final",
+                        "category": [
+                          {
+                            "coding": [
+                              {
+                                "system": "http://snomed.info/sct/900000001000122104",
+                                "code": "248326004",
+                                "display": "medida corporal"
+                              }
+                            ]
+                          }
+                        ],
+                        "code": {
+                          "coding": [
+                            {
+                              "system": "http://snomed.info/sct/900000001000122104",
+                              "code": "726527001",
+                              "display": "peso"
+                            }
+                          ]
+                        },
+                        "subject": {
+                          "type": "Patient",
+                          "identifier": {
+                            "type": {
+                              "coding": [
+                                {
+                                  "system": "http://snomed.info/sct/900000001000122104",
+                                  "code": "1551000122105",
+                                  "display": "código de identificación personal en el Sistema Nacional de Salud"
+                                }
+                              ]
+                            },
+                            "system": "urn:oid:2.16.724.4.40",
+                            "value": "BBBBBBBBQR648597"
+                          },
+                          "display": "Maria Puig Grau"
+                        },
+                        "effectiveDateTime": "2024-12-09T00:00:00Z",
+                        "performer": [
+                          {
+                            "type": "Practitioner",
+                            "identifier": {
+                              "type": {
+                                "coding": [
+                                  {
+                                    "system": "http://snomed.info/sct/900000001000122104?fhir_vs-refset/900000251000122107",
+                                    "code": "22851000122109",
+                                    "display": "documento nacional de identidad"
+                                  }
+                                ]
+                              },
+                              "system": "urn:oid:1.3.6.1.4.1.19126.3",
+                              "value": "0000001X"
+                            },
+                            "display": "Eva Alabart"
+                          }
+                        ],
+                        "valueQuantity": {
+                          "value": 35,
+                          "unit": "kilogram",
+                          "system": "http://unitsofmeasure.org",
+                          "code": "kg"
+                        }
+                      },
+                      "request": {
+                        "method": "PUT",
+                        "url": "[base]/Observation?identifier=urn:regcess:0908005177|id-interno-pesoprevia-ejemplo-300"
+                      }
+                    },
+                    {
+                      "fullUrl": "urn:uuid:2717ec20-9866-414f-81bb-2a724377a507",
+                      "resource": {
+                        "resourceType": "Observation",
+                        "meta": {
+                          "profile": [
+                            "https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASObservationAntropometria"
+                          ]
+                        },
+                        "identifier": [
+                          {
+                            "system": "urn:regcess:0908005177",
+                            "value": "id-interno-perimetrocefalicoprevia-ejemplo-300"
+                          }
+                        ],
+                        "status": "final",
+                        "category": [
+                          {
+                            "coding": [
+                              {
+                                "system": "http://snomed.info/sct/900000001000122104",
+                                "code": "248326004",
+                                "display": "medida corporal"
+                              }
+                            ]
+                          }
+                        ],
+                        "code": {
+                          "coding": [
+                            {
+                              "system": "http://snomed.info/sct/900000001000122104",
+                              "code": "726527001",
+                              "display": "perímetro cefálico"
+                            }
+                          ]
+                        },
+                        "subject": {
+                          "type": "Patient",
+                          "identifier": {
+                            "type": {
+                              "coding": [
+                                {
+                                  "system": "http://snomed.info/sct/900000001000122104",
+                                  "code": "1551000122105",
+                                  "display": "código de identificación personal en el Sistema Nacional de Salud"
+                                }
+                              ]
+                            },
+                            "system": "urn:oid:2.16.724.4.40",
+                            "value": "BBBBBBBBQR648597"
+                          },
+                          "display": "Maria Puig Grau"
+                        },
+                        "effectiveDateTime": "2024-12-09T00:00:00Z",
+                        "performer": [
+                          {
+                            "type": "Practitioner",
+                            "identifier": {
+                              "type": {
+                                "coding": [
+                                  {
+                                    "system": "http://snomed.info/sct/900000001000122104?fhir_vs-refset/900000251000122107",
+                                    "code": "22851000122109",
+                                    "display": "documento nacional de identidad"
+                                  }
+                                ]
+                              },
+                              "system": "urn:oid:1.3.6.1.4.1.19126.3",
+                              "value": "0000001X"
+                            },
+                            "display": "Eva Alabart"
+                          }
+                        ],
+                        "valueQuantity": {
+                          "value": 30,
+                          "unit": "centimeter",
+                          "system": "http://unitsofmeasure.org",
+                          "code": "cm"
+                        }
+                      },
+                      "request": {
+                        "method": "PUT",
+                        "url": "[base]/Observation?identifier=urn:regcess:0908005177|id-interno-perimetrocefalicoprevia-ejemplo-300"
+                      }
+                    },
+                    {
+                      "fullUrl": "urn:uuid:d97214bc-52fd-4bab-8543-6ee45c632461",
+                      "resource": {
+                        "resourceType": "Observation",
+                        "meta": {
+                          "profile": [
+                            "https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASObservationAntropometria"
+                          ]
+                        },
+                        "identifier": [
+                          {
+                            "system": "urn:regcess:0908005177",
+                            "value": "id-interno-alturaprevia-ejemplo-300"
+                          }
+                        ],
+                        "status": "final",
+                        "category": [
+                          {
+                            "coding": [
+                              {
+                                "system": "http://snomed.info/sct/900000001000122104",
+                                "code": "248326004",
+                                "display": "medida corporal"
+                              }
+                            ]
+                          }
+                        ],
+                        "code": {
+                          "coding": [
+                            {
+                              "system": "http://snomed.info/sct/900000001000122104",
+                              "code": "1153637007",
+                              "display": "altura corporal"
+                            }
+                          ]
+                        },
+                        "subject": {
+                          "type": "Patient",
+                          "identifier": {
+                            "type": {
+                              "coding": [
+                                {
+                                  "system": "http://snomed.info/sct/900000001000122104",
+                                  "code": "1551000122105",
+                                  "display": "código de identificación personal en el Sistema Nacional de Salud"
+                                }
+                              ]
+                            },
+                            "system": "urn:oid:2.16.724.4.40",
+                            "value": "BBBBBBBBQR648597"
+                          },
+                          "display": "Maria Puig Grau"
+                        },
+                        "effectiveDateTime": "2024-12-09T00:00:00Z",
+                        "performer": [
+                          {
+                            "type": "Practitioner",
+                            "identifier": {
+                              "type": {
+                                "coding": [
+                                  {
+                                    "system": "http://snomed.info/sct/900000001000122104?fhir_vs-refset/900000251000122107",
+                                    "code": "22851000122109",
+                                    "display": "documento nacional de identidad"
+                                  }
+                                ]
+                              },
+                              "system": "urn:oid:1.3.6.1.4.1.19126.3",
+                              "value": "0000001X"
+                            },
+                            "display": "Eva Alabart"
+                          }
+                        ],
+                        "valueQuantity": {
+                          "value": 120,
+                          "unit": "centimeter",
+                          "system": "http://unitsofmeasure.org",
+                          "code": "cm"
+                        }
+                      },
+                      "request": {
+                        "method": "PUT",
+                        "url": "[base]/Observation?identifier=urn:regcess:0908005177|id-interno-alturaprevia-ejemplo-300"
+                      }
+                    },
+                    {
+                      "fullUrl": "urn:uuid:6f150ec4-7bc7-4498-be02-d7e5d3b54dde",
+                      "resource": {
+                        "resourceType": "Observation",
+                        "meta": {
+                          "profile": [
+                            "https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASObservationHabitoToxico"
+                          ]
+                        },
+                        "identifier": [
+                          {
+                            "system": "urn:regcess:0908005177",
+                            "value": "id-interno-habitotoxico-ejemplo-300"
+                          }
+                        ],
+                        "status": "final",
+                        "category": [
+                          {
+                            "coding": [
+                              {
+                                "system": "http://snomed.info/sct/900000001000122104",
+                                "code": "31251000122103",
+                                "display": "hábitos tóxicos"
+                              }
+                            ]
+                          }
+                        ],
+                        "code": {
+                          "coding": [
+                            {
+                              "system": "http://snomed.info/sct/900000001000122104",
+                              "code": "43783005",
+                              "display": "bebedor moderado"
+                            }
+                          ]
+                        },
+                        "subject": {
+                          "type": "Patient",
+                          "identifier": {
+                            "type": {
+                              "coding": [
+                                {
+                                  "system": "http://snomed.info/sct/900000001000122104",
+                                  "code": "1551000122105",
+                                  "display": "código de identificación personal en el Sistema Nacional de Salud"
+                                }
+                              ]
+                            },
+                            "system": "urn:oid:2.16.724.4.40",
+                            "value": "BBBBBBBBQR648597"
+                          },
+                          "display": "Maria Puig Grau"
+                        },
+                        "effectivePeriod": {
+                          "start": "2014-12-09T00:00:00Z",
+                          "end": "2024-12-09T00:00:00Z"
+                        },
+                        "performer": [
+                          {
+                            "type": "Practitioner",
+                            "identifier": {
+                              "type": {
+                                "coding": [
+                                  {
+                                    "system": "http://snomed.info/sct/900000001000122104?fhir_vs-refset/900000251000122107",
+                                    "code": "22851000122109",
+                                    "display": "documento nacional de identidad"
+                                  }
+                                ]
+                              },
+                              "system": "urn:oid:1.3.6.1.4.1.19126.3",
+                              "value": "0000001X"
+                            },
+                            "display": "Eva Alabart"
+                          }
+                        ],
+                        "component": [
+                          {
+                            "code": {
+                              "coding": [
+                                {
+                                  "system": "http://snomed.info/sct/900000001000122104",
+                                  "code": "228311005",
+                                  "display": "patrón de consumo de alcohol durante la semana"
+                                }
+                              ]
+                            },
+                            "valueQuantity": {
+                              "value": 100,
+                              "unit": "milliliter",
+                              "system": "http://unitsofmeasure.org",
+                              "code": "mL"
+                            }
+                          }
+                        ]
+                      },
+                      "request": {
+                        "method": "PUT",
+                        "url": "[base]/Observation?identifier=urn:regcess:0908005177|id-interno-habitotoxico-ejemplo-300"
+                      }
+                    },
+                    {
+                      "fullUrl": "urn:uuid:6714a1db-0ff7-4ac3-be59-32f8ce740d59",
+                      "resource": {
+                        "resourceType": "Observation",
+                        "meta": {
+                          "profile": [
+                            "https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASObservationHabitoNoSaludable"
+                          ]
+                        },
+                        "identifier": [
+                          {
+                            "system": "urn:regcess:0908005177",
+                            "value": "id-interno-habitonosaludable-ejemplo-300"
+                          }
+                        ],
+                        "status": "final",
+                        "category": [
+                          {
+                            "coding": [
+                              {
+                                "system": "http://snomed.info/sct/900000001000122104",
+                                "code": "365949003",
+                                "display": "hallazgo relacionado con conductas vinculadas a la salud"
+                              }
+                            ]
+                          }
+                        ],
+                        "code": {
+                          "coding": [
+                            {
+                              "system": "http://snomed.info/sct/900000001000122104",
+                              "code": "157861000146108",
+                              "display": "pasa tiempo frente a una pantalla antes de ir a dormir"
+                            }
+                          ]
+                        },
+                        "subject": {
+                          "type": "Patient",
+                          "identifier": {
+                            "type": {
+                              "coding": [
+                                {
+                                  "system": "http://snomed.info/sct/900000001000122104",
+                                  "code": "1551000122105",
+                                  "display": "código de identificación personal en el Sistema Nacional de Salud"
+                                }
+                              ]
+                            },
+                            "system": "urn:oid:2.16.724.4.40",
+                            "value": "BBBBBBBBQR648597"
+                          },
+                          "display": "Maria Puig Grau"
+                        },
+                        "effectivePeriod": {
+                          "start": "2014-12-09T00:00:00Z",
+                          "end": "2024-12-09T00:00:00Z"
+                        },
+                        "performer": [
+                          {
+                            "type": "Practitioner",
+                            "identifier": {
+                              "type": {
+                                "coding": [
+                                  {
+                                    "system": "http://snomed.info/sct/900000001000122104?fhir_vs-refset/900000251000122107",
+                                    "code": "22851000122109",
+                                    "display": "documento nacional de identidad"
+                                  }
+                                ]
+                              },
+                              "system": "urn:oid:1.3.6.1.4.1.19126.3",
+                              "value": "0000001X"
+                            },
+                            "display": "Eva Alabart"
+                          }
+                        ]
+                      },
+                      "request": {
+                        "method": "PUT",
+                        "url": "[base]/Observation?identifier=urn:regcess:0908005177|id-interno-habitonosaludable-ejemplo-300"
+                      }
+                    },
+                    {
+                      "fullUrl": "urn:uuid:8a9a9e8f-485b-4a79-8962-69cfcd2ecb66",
+                      "resource": {
+                        "resourceType": "Medication",
+                        "meta": {
+                          "profile": [
+                            "https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASMedication"
+                          ]
+                        },
+                        "code": {
+                          "coding": [
+                            {
+                              "system": "http://snomed.info/sct/900000001000122104",
+                              "code": "156301000140108",
+                              "display": "bedaquilina"
+                            }
+                          ],
+                          "text": "ejemplo nombre comercial del producto"
+                        },
+                        "status": "active",
+                        "doseForm": {
+                          "coding": [
+                            {
+                              "system": "urn:oid:2.16.724.4.21.5.14.1",
+                              "code": "42",
+                              "display": "COMPRIMIDO RECUBIERTO CON PELÍCULA"
+                            }
+                          ]
+                        },
+                        "ingredient": [
+                          {
+                            "item": {
+                              "concept": {
+                                "coding": [
+                                  {
+                                    "system": "http://snomed.info/sct/900000001000122104",
+                                    "code": "714086004",
+                                    "display": "bedaquilina"
+                                  }
+                                ]
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "request": {
+                        "method": "PUT",
+                        "url": "[base]/Medication?code=http://snomed.info/sct/900000001000122104|156301000140108"
+                      }
+                    },
+                    {
+                      "fullUrl": "urn:uuid:6714a1db-0ff7-4ac3-be59-32f8ce740d60",
+                      "resource": {
+                        "resourceType": "MedicationStatement",
+                        "meta": {
+                          "profile": [
+                            "https://unicas-fhir.sanidad.gob.es/StructureDefinition/UNICASMedicationStatement"
+                          ]
+                        },
+                        "identifier": [
+                          {
+                            "system": "urn:regcess:0908005177",
+                            "value": "id-interno-tratamientofarmacologicoprevio-ejemplo-300"
+                          }
+                        ],
+                        "status": "recorded",
+                        "medication": {
+                          "concept": {
+                            "coding": [
+                              {
+                                "system": "http://snomed.info/sct/900000001000122104",
+                                "code": "156301000140108",
+                                "display": "bedaquilina"
+                              }
+                            ],
+                            "text": "ejemplo nombre comercial del producto"
+                          }
+                        },
+                        "subject": {
+                          "type": "Patient",
+                          "identifier": {
+                            "type": {
+                              "coding": [
+                                {
+                                  "system": "http://snomed.info/sct/900000001000122104",
+                                  "code": "1551000122105",
+                                  "display": "código de identificación personal en el Sistema Nacional de Salud"
+                                }
+                              ]
+                            },
+                            "system": "urn:oid:2.16.724.4.40",
+                            "value": "BBBBBBBBQR648597"
+                          },
+                          "display": "Maria Puig Grau"
+                        },
+                        "effectivePeriod": {
+                          "start": "2024-07-23T11:28:17.239+00:00",
+                          "end": "2024-08-23T11:28:17.239+00:00"
+                        },
+                        "informationSource": [
+                          {
+                            "type": "Practitioner",
+                            "identifier": {
+                              "type": {
+                                "coding": [
+                                  {
+                                    "system": "http://snomed.info/sct/900000001000122104?fhir_vs-refset/900000251000122107",
+                                    "code": "22851000122109",
+                                    "display": "documento nacional de identidad"
+                                  }
+                                ]
+                              },
+                              "system": "urn:oid:1.3.6.1.4.1.19126.3",
+                              "value": "0000001X"
+                            },
+                            "display": "Eva Alabart"
+                          }
+                        ],
+                        "dosage": [
+                          {
+                            "text": "ejemplo comentarios para el farmacéutico",
+                            "route": {
+                              "coding": [
+                                {
+                                  "system": "urn:oid:2.16.724.4.21.5.14.2",
+                                  "code": "54",
+                                  "display": "VÍA ORAL"
+                                }
+                              ]
+                            },
+                            "doseAndRate": [
+                              {
+                                "doseQuantity": {
+                                  "value": 0.5,
+                                  "unit": "milligram",
+                                  "system": "http://unitsofmeasure.org",
+                                  "code": "mg"
+                                },
+                                "rateQuantity": {
+                                  "value": 8,
+                                  "unit": "hour per day",
+                                  "system": "http://unitsofmeasure.org",
+                                  "code": "h/d"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "request": {
+                        "method": "PUT",
+                        "url": "[base]/MedicationStatement?identifier=urn:regcess:0908005177|id-interno-tratamientofarmacologicoprevio-ejemplo-300"
+                      }
+                    }
+                  ]
+                }
             parameters:
               - id: pair_ec516e20628345aa9d04161cf877cc5d
                 name: ""

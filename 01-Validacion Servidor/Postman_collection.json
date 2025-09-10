@@ -689,7 +689,7 @@
 									}
 								],
 								"url": {
-									"raw": "{{base_url}}Patient?_id={{patient_id}}&_revinclude=Observation:subject/",
+									"raw": "{{base_url}}Patient?_id={{patient_id}}&_revinclude=Observation:subject",
 									"host": [
 										"{{base_url}}Patient"
 									],

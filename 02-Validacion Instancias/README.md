@@ -19,7 +19,7 @@ La validación de instancias se realiza con **FHIR Validator**, una aplicación 
 - Descarga (línea de comandos):  
   <https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar>
 
-**Requisito mínimo:** Java 11.
+**Requisito mínimo:** Java 17.
 
 ---
 

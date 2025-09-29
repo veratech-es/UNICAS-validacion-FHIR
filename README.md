@@ -3,7 +3,7 @@
 Este repositorio contiene herramientas y scripts para realizar validaciones sobre servidores FHIR, instancias de recursos y conjuntos de TestScripts en el contexto del proyecto UNICAS.
 
 Se incluye un manual que describe el proceso completo de validación de mensajería FHIR de la guía de implementación ÚNICAS:  
-[Proceso de validación FHIR ÚNICAS](https://github.com/veratech-es/UNICAS-validacion-FHIR/blob/main/Proceso_validaci%C3%B3n_FHIR_UNICAS.pdf)
+[Proceso de validación FHIR ÚNICAS](https://github.com/veratech-es/UNICAS-validacion-FHIR/blob/main/Proceso_validaci%C3%B3n_FHIR_UNICAS_v2.pdf)
 
 La guía de implementación ÚNICAS está disponible en:  
 <https://unicas-fhir.sanidad.gob.es/>

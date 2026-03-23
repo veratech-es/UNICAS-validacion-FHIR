@@ -9,9 +9,8 @@
     <autocreate value="true"/>
     <autodelete value="true"/>
     <extension url="http://hl7.org/fhir/StructureDefinition/testscript-source-url">
-      <valueUri value="fixtures/UNICAS-DocumentReference-example-215.xml"/>
+      <valueUri value="fixtures/fixtures/UNICAS-DocumentReference-patch-example-215.xml"/>
     </extension>
-    <resource>&lt;!-- External resource expected at fixtures/UNICAS-DocumentReference-example-215.xml --&gt;</resource>
   </fixture>
   <test>
     <name value="Test patch on DocumentReference"/>
@@ -26,8 +25,8 @@
         </type>
         <resource value="DocumentReference"/>
         <sourceId value="fixture-DocumentReference"/>
-        <method value="put"/>
-        <params value="DocumentReference?identifier=urn:regcess:0908005177|id-interno-documento-ejemplo-215"/>
+        <method value="patch"/>
+        <params value="?identifier=urn:regcess:0908005177|id-interno-documento-ejemplo-215"/>
       </operation>
       <assert>
         <description value="HTTP returns Ok"/>

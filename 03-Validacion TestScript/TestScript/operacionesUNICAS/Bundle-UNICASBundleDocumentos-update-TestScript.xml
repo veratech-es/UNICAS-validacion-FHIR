@@ -11,7 +11,6 @@
     <extension url="http://hl7.org/fhir/StructureDefinition/testscript-source-url">
       <valueUri value="fixtures/UNICAS-RCE-ejemploBundle-215.xml"/>
     </extension>
-    <resource>&lt;!-- External resource expected at fixtures/UNICAS-RCE-ejemploBundle-215.xml --&gt;</resource>
   </fixture>
   <test>
     <name value="Test update on Bundle"/>
@@ -26,8 +25,7 @@
         </type>
         <resource value="Bundle"/>
         <sourceId value="fixture-Bundle"/>
-        <method value="put"/>
-        <params value="Bundle?identifier=urn:ietf:rfc:4122|0723821c-3295-11f0-9cd2-0242ac120002"/>
+        <method value="post"/>
       </operation>
       <assert>
         <description value="HTTP returns Ok"/>

@@ -11,7 +11,6 @@
     <extension url="http://hl7.org/fhir/StructureDefinition/testscript-source-url">
       <valueUri value="fixtures/UNICAS-Medication-example-219.xml"/>
     </extension>
-    <resource>&lt;!-- External resource expected at fixtures/UNICAS-Medication-example-219.xml --&gt;</resource>
   </fixture>
   <setup>
     <action>
@@ -24,7 +23,7 @@
         </type>
         <resource value="Medication"/>
         <method value="put"/>
-        <params value="Medication?code=http://snomed.info/sct/900000001000122104|156301000140108"/>
+        <params value="?code=http://snomed.info/sct/900000001000122104|156301000140108"/>
       </operation>
       <assert>
         <description value="Server must return resource conforming to profile"/>
@@ -47,7 +46,7 @@
         </type>
         <resource value="Medication"/>
         <method value="get"/>
-        <params value="Medication?code=http://snomed.info/sct/900000001000122104|156301000140108"/>
+        <params value="?code=http://snomed.info/sct/900000001000122104|156301000140108"/>
       </operation>
       <assert>
         <description value="HTTP returns Ok"/>

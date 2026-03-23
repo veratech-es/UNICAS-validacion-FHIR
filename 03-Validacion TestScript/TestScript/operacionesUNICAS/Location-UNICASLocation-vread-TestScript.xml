@@ -11,7 +11,6 @@
     <extension url="http://hl7.org/fhir/StructureDefinition/testscript-source-url">
       <valueUri value="fixtures/UNICAS-Location-example-220.xml"/>
     </extension>
-    <resource>&lt;!-- External resource expected at fixtures/UNICAS-Location-example-220.xml --&gt;</resource>
   </fixture>
   <setup>
     <action>
@@ -24,7 +23,7 @@
         </type>
         <resource value="Location"/>
         <method value="put"/>
-        <params value="Location?identifier=urn:regcess:0908005177|id-interno-localizacion-ejemplo-220"/>
+        <params value="?identifier=urn:regcess:0908005177|id-interno-localizacion-ejemplo-220"/>
       </operation>
       <assert>
         <description value="Server must return resource conforming to profile"/>
@@ -47,7 +46,7 @@
         </type>
         <resource value="Location"/>
         <method value="get"/>
-        <params value="Location?identifier=urn:regcess:0908005177|id-interno-localizacion-ejemplo-220"/>
+        <params value="?identifier=urn:regcess:0908005177|id-interno-localizacion-ejemplo-220"/>
       </operation>
       <assert>
         <description value="HTTP returns Ok"/>

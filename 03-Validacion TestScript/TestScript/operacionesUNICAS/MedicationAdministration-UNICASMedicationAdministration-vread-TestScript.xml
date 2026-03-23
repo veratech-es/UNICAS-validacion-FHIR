@@ -11,7 +11,6 @@
     <extension url="http://hl7.org/fhir/StructureDefinition/testscript-source-url">
       <valueUri value="fixtures/UNICAS-MedicationAdministration-example-219.xml"/>
     </extension>
-    <resource>&lt;!-- External resource expected at fixtures/UNICAS-MedicationAdministration-example-219.xml --&gt;</resource>
   </fixture>
   <setup>
     <action>
@@ -24,7 +23,7 @@
         </type>
         <resource value="MedicationAdministration"/>
         <method value="put"/>
-        <params value="MedicationAdministration?identifier=urn:regcess:0908005177|id-interno-prescripcion-ejemplo-219"/>
+        <params value="?identifier=urn:regcess:0908005177|id-interno-prescripcion-ejemplo-219"/>
       </operation>
       <assert>
         <description value="Server must return resource conforming to profile"/>
@@ -47,7 +46,7 @@
         </type>
         <resource value="MedicationAdministration"/>
         <method value="get"/>
-        <params value="MedicationAdministration?identifier=urn:regcess:0908005177|id-interno-prescripcion-ejemplo-219"/>
+        <params value="?identifier=urn:regcess:0908005177|id-interno-prescripcion-ejemplo-219"/>
       </operation>
       <assert>
         <description value="HTTP returns Ok"/>

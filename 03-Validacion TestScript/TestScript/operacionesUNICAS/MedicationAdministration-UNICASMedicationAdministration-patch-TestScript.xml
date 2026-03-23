@@ -9,9 +9,8 @@
     <autocreate value="true"/>
     <autodelete value="true"/>
     <extension url="http://hl7.org/fhir/StructureDefinition/testscript-source-url">
-      <valueUri value="fixtures/UNICAS-MedicationAdministration-example-219.xml"/>
+      <valueUri value="fixtures/fixtures/UNICAS-MedicationAdministration-patch-example-219.xml"/>
     </extension>
-    <resource>&lt;!-- External resource expected at fixtures/UNICAS-MedicationAdministration-example-219.xml --&gt;</resource>
   </fixture>
   <test>
     <name value="Test patch on MedicationAdministration"/>
@@ -26,8 +25,8 @@
         </type>
         <resource value="MedicationAdministration"/>
         <sourceId value="fixture-MedicationAdministration"/>
-        <method value="put"/>
-        <params value="MedicationAdministration?identifier=urn:regcess:0908005177|id-interno-prescripcion-ejemplo-219"/>
+        <method value="patch"/>
+        <params value="?identifier=urn:regcess:0908005177|id-interno-prescripcion-ejemplo-219"/>
       </operation>
       <assert>
         <description value="HTTP returns Ok"/>

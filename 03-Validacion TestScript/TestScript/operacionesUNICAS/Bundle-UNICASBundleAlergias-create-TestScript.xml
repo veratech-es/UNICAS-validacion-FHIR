@@ -11,7 +11,6 @@
     <extension url="http://hl7.org/fhir/StructureDefinition/testscript-source-url">
       <valueUri value="fixtures/UNICAS-Alergia-ejemploBundle-217.xml"/>
     </extension>
-    <resource>&lt;!-- External resource expected at fixtures/UNICAS-Alergia-ejemploBundle-217.xml --&gt;</resource>
   </fixture>
   <test>
     <name value="Test create on Bundle"/>
@@ -26,8 +25,7 @@
         </type>
         <resource value="Bundle"/>
         <sourceId value="fixture-Bundle"/>
-        <method value="put"/>
-        <params value="Bundle?identifier=urn:ietf:rfc:4122|3669148d-4700-4883-8afa-d1eb33ffcff1"/>
+        <method value="post"/>
       </operation>
       <assert>
         <description value="HTTP returns Ok"/>

@@ -11,7 +11,6 @@
     <extension url="http://hl7.org/fhir/StructureDefinition/testscript-source-url">
       <valueUri value="fixtures/UNICAS-ObservationHabitoNoSaludable-example-300.xml"/>
     </extension>
-    <resource>&lt;!-- External resource expected at fixtures/UNICAS-ObservationHabitoNoSaludable-example-300.xml --&gt;</resource>
   </fixture>
   <test>
     <name value="Test update on Observation"/>
@@ -27,7 +26,7 @@
         <resource value="Observation"/>
         <sourceId value="fixture-Observation"/>
         <method value="put"/>
-        <params value="Observation?identifier=urn:regcess:0908005177|id-interno-habitonosaludable-ejemplo-300"/>
+        <params value="?identifier=urn:regcess:0908005177|id-interno-habitonosaludable-ejemplo-300"/>
       </operation>
       <assert>
         <description value="HTTP returns Ok"/>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Parameters xmlns="http://hl7.org/fhir">
+  <parameter>
+    <name value="operation"/>
+    <part>
+      <name value="type"/>
+      <valueCode value="replace"/>
+    </part>
+    <part>
+      <name value="path"/>
+      <valueString value="AllergyIntolerance.clinicalStatus.coding.where(system='http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical').code"/>
+    </part>
+    <part>
+      <name value="value"/>
+      <valueCode value="active"/>
+    </part>
+  </parameter>
+  <parameter>
+    <name value="operation"/>
+    <part>
+      <name value="type"/>
+      <valueCode value="replace"/>
+    </part>
+    <part>
+      <name value="path"/>
+      <valueString value="AllergyIntolerance.criticality"/>
+    </part>
+    <part>
+      <name value="value"/>
+      <valueCode value="low"/>
+    </part>
+  </parameter>
+</Parameters>

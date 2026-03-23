@@ -11,7 +11,6 @@
     <extension url="http://hl7.org/fhir/StructureDefinition/testscript-source-url">
       <valueUri value="fixtures/UNICAS-AllergyIntolerance-example-217.xml"/>
     </extension>
-    <resource>&lt;!-- External resource expected at fixtures/UNICAS-AllergyIntolerance-example-217.xml --&gt;</resource>
   </fixture>
   <setup>
     <action>
@@ -24,7 +23,7 @@
         </type>
         <resource value="AllergyIntolerance"/>
         <method value="put"/>
-        <params value="AllergyIntolerance?identifier=urn:regcess:0908005177|id-interno-alergia-ejemplo-217"/>
+        <params value="?identifier=urn:regcess:0908005177|id-interno-alergia-ejemplo-217"/>
       </operation>
       <assert>
         <description value="Server must return resource conforming to profile"/>
@@ -47,7 +46,7 @@
         </type>
         <resource value="AllergyIntolerance"/>
         <method value="get"/>
-        <params value="AllergyIntolerance?identifier=urn:regcess:0908005177|id-interno-alergia-ejemplo-217"/>
+        <params value="?identifier=urn:regcess:0908005177|id-interno-alergia-ejemplo-217"/>
       </operation>
       <assert>
         <description value="HTTP returns Ok"/>

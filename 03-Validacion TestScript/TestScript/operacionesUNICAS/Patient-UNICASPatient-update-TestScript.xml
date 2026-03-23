@@ -11,7 +11,6 @@
     <extension url="http://hl7.org/fhir/StructureDefinition/testscript-source-url">
       <valueUri value="fixtures/UNICAS-Paciente-ejemploPatient-00.xml"/>
     </extension>
-    <resource>&lt;!-- External resource expected at fixtures/UNICAS-Paciente-ejemploPatient-00.xml --&gt;</resource>
   </fixture>
   <test>
     <name value="Test update on Patient"/>
@@ -27,7 +26,7 @@
         <resource value="Patient"/>
         <sourceId value="fixture-Patient"/>
         <method value="put"/>
-        <params value="Patient?indentifier=urn:oid:2.16.724.4.40|BBBBBBBBQR648597"/>
+        <params value="?identifier=urn:oid:2.16.724.4.40|BBBBBBBBQR648597"/>
       </operation>
       <assert>
         <description value="HTTP returns Ok"/>
